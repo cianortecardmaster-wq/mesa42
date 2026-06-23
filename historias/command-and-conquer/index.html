@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>História #001 — Command and Conquer | Mesa 42</title>
+  <meta name="description" content="História #001 do Mesa 42: Command and Conquer." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/vn.css" />
+</head>
+<body class="vn-body">
+  <main class="vn-stage" id="vnStage" style="--scene-bg:url('../../assets/bg/quarto-jp.svg')">
+    <div class="vn-bg" id="vnBg" aria-hidden="true"></div>
+    <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <nav class="vn-hud" aria-label="Navegação da história">
+      <a href="../../">← Mesa 42</a>
+      <span class="vn-title" id="storyTitle">História #001 — Command and Conquer</span>
+      <button type="button" id="saveBtn">Salvar</button>
+    </nav>
+
+    <section class="investigate-panel" id="investigatePanel" aria-label="Investigação da carta">
+      <div class="inspect-card">
+        <img src="../../assets/cards/command-and-conquer-misprint.svg" alt="Carta Command and Conquer misprint" />
+        <button class="hotspot hot-name" data-inspect="nome" aria-label="Investigar nome"></button>
+        <button class="hotspot hot-top" data-inspect="topo" aria-label="Investigar borda superior"></button>
+        <button class="hotspot hot-bottom" data-inspect="baixo" aria-label="Investigar borda inferior"></button>
+        <button class="hotspot hot-foil" data-inspect="foil" aria-label="Investigar brilho foil"></button>
+      </div>
+    </section>
+
+    <section class="vn-scene" id="vnScene">
+      <div class="characters" id="characters"></div>
+      <img class="card-focus" id="cardFocus" src="../../assets/cards/command-and-conquer-misprint.svg" alt="Command and Conquer misprint" hidden />
+      <div class="dialogue-box" id="dialogueBox" tabindex="0" role="button" aria-label="Avançar texto">
+        <span class="speaker" id="speaker">Narrador</span>
+        <p class="line" id="lineText">Carregando história...</p>
+        <div class="choices" id="choices" hidden></div>
+        <span class="next-hint" id="nextHint">Clique para avançar</span>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../js/config.js"></script>
+  <script src="../../js/supabase-progress.js"></script>
+  <script src="../../js/vn-engine.js"></script>
+  <script>
+    window.Mesa42VN.init({
+      storyUrl: '../../data/command-and-conquer.json',
+      storySlug: 'command-and-conquer',
+      basePath: '../../'
+    });
+  </script>
+</body>
+</html>

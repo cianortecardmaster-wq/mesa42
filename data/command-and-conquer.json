@@ -1,0 +1,979 @@
+{
+  "title": "História #001 — Command and Conquer",
+  "slug": "command-and-conquer",
+  "startScene": "abertura",
+  "defaultBg": "assets/bg/quarto-jp.svg",
+  "inspect": {
+    "nome": {
+      "speaker": "JP",
+      "text": "Command and Conquer. Primeira impressão. Uma carta que não parecia uma carta. Parecia uma decisão."
+    },
+    "topo": {
+      "speaker": "JP",
+      "text": "A borda superior está levemente cortada. Não muito. Só o suficiente para incomodar depois que você percebe."
+    },
+    "baixo": {
+      "speaker": "Narrador",
+      "text": "Na borda inferior havia uma faixa de cor que não pertencia à carta. Nada legível. Só cor. Um fragmento preso como uma farpa sob a pele."
+    },
+    "foil": {
+      "speaker": "JP",
+      "text": "Bonita demais. O Rainbow Foil parecia forte demais, mesmo pela câmera ruim do celular. Quase vivo."
+    }
+  },
+  "scenes": [
+    {
+      "id": "abertura",
+      "bg": "assets/bg/centro-cultural.svg",
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "Todo grupo tem uma história dessas."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Uma história que começa como piada. Vira exagero. Depois vira aviso."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "E no fim ninguém gosta muito de repetir em voz alta."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Mas, de vez em quando, no Centro Cultural, alguém ainda olha para uma cadeira vazia e lembra do JP."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Não sempre."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Só quando uma Command and Conquer acerta."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Ou quando não acerta.",
+          "effect": "glitch"
+        }
+      ]
+    },
+    {
+      "id": "quarto",
+      "bg": "assets/bg/quarto-jp.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "JP tinha vinte e seis anos e a convicção irritante de quem ainda achava que perder era sempre culpa de alguma coisa corrigível."
+        },
+        {
+          "speaker": "JP",
+          "text": "Uma carta errada. Uma escolha ruim. Uma linha mal feita."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "O deck de Vynnset estava aberto sobre a mesa do quarto."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "As cartas formavam pequenas pilhas organizadas. Ataques de um lado. Defesas do outro. Equipamentos separados."
+        },
+        {
+          "speaker": "JP",
+          "text": "A lista funciona. Mas falta peso."
+        },
+        {
+          "speaker": "JP",
+          "text": "Falta ameaça."
+        },
+        {
+          "speaker": "JP",
+          "text": "Falta uma Command and Conquer."
+        }
+      ]
+    },
+    {
+      "id": "whatsapp",
+      "bg": "assets/bg/celular.svg",
+      "lines": [
+        {
+          "speaker": "JP",
+          "text": "Alguém tem Command and Conquer pra vender?"
+        },
+        {
+          "speaker": "Mateus",
+          "text": "Boa sorte kkkkk"
+        },
+        {
+          "speaker": "Bruno",
+          "text": "Se achar duas, me avisa."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Essa aí sumiu."
+        },
+        {
+          "speaker": "Lucas",
+          "text": "Quem tem não vende."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "JP já estava quase desistindo quando uma mensagem apareceu no privado. Era um número que ele não tinha salvo."
+        },
+        {
+          "speaker": "Marcos",
+          "text": "Tenho uma. Preciso vender hoje.",
+          "effect": "glitch"
+        },
+        {
+          "speaker": "JP",
+          "text": "Quem é?"
+        },
+        {
+          "speaker": "Marcos",
+          "text": "Marcos. Joguei uns eventos aí um tempo atrás."
+        }
+      ]
+    },
+    {
+      "id": "investigar-carta",
+      "bg": "assets/bg/celular.svg",
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "Antes que JP perguntasse qualquer coisa, a foto chegou."
+        },
+        {
+          "speaker": "JP",
+          "text": "Não pode ser.",
+          "card": true
+        },
+        {
+          "speaker": "Sistema",
+          "text": "Investigue a carta antes de continuar.",
+          "inspect": true
+        },
+        {
+          "speaker": "JP",
+          "text": "Ela é misprint?"
+        },
+        {
+          "speaker": "Marcos",
+          "text": "Sim. Veio assim. Faço mais barato."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Veio o preço. JP leu. Depois leu de novo. Depois sentou direito na cadeira."
+        },
+        {
+          "speaker": "JP",
+          "text": "Isso está baixo demais."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "E JP fez o que todo jogador racional faz quando encontra uma carta cara por um valor idiota: criou uma explicação que permitia comprar sem se sentir idiota."
+        },
+        {
+          "speaker": "JP",
+          "text": "Fecho."
+        },
+        {
+          "speaker": "Marcos",
+          "text": "Obrigado.",
+          "effect": "glitch"
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Não era 'fechou'. Não era 'manda o Pix'. Era obrigado. Como se JP tivesse aceitado receber uma coisa que o outro precisava tirar de perto."
+        }
+      ]
+    },
+    {
+      "id": "chegada",
+      "bg": "assets/bg/quarto-jp.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "A carta chegou dois dias depois."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "O envelope estava amassado. Mas por dentro a proteção era exagerada: papelão, plástico bolha, fita demais, sleeve, outro sleeve e um toploader antigo."
+        },
+        {
+          "speaker": "JP",
+          "text": "O cara embalou como se fosse uma bomba."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Quem embalou aquilo não queria apenas proteger a carta."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Queria prender."
+        },
+        {
+          "speaker": "JP",
+          "text": "Para de ser besta."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Quando finalmente tirou a carta, a luz do teto bateu no foil e o arco-íris correu pela arte.",
+          "card": true
+        },
+        {
+          "speaker": "JP",
+          "text": "Linda."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A borda superior realmente estava cortada. A faixa de cor embaixo parecia mais estranha ao vivo."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Era só um pedaço de outra carta. Um pedaço de outra coisa."
+        },
+        {
+          "speaker": "JP",
+          "text": "Isso deixa ela melhor."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Mais rara. Mais única."
+        },
+        {
+          "speaker": "JP",
+          "text": "Mais minha."
+        }
+      ]
+    },
+    {
+      "id": "sonho",
+      "bg": "assets/bg/centro-cultural.svg",
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "Naquela noite, a Command and Conquer entrou no deck de Vynnset."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "E JP dormiu mal."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Sonhou com uma mesa vazia."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Sonhou com quatro cartas viradas para baixo."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Sonhou que alguém, do outro lado, colocava uma carta no arsenal."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "E sorria sem mostrar os dentes.",
+          "effect": "black"
+        }
+      ]
+    },
+    {
+      "id": "centro-cultural",
+      "bg": "assets/bg/centro-cultural.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        },
+        {
+          "id": "bruno",
+          "name": "Bruno"
+        },
+        {
+          "id": "mateus",
+          "name": "Mateus"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "No domingo, JP levou o baralho para o Centro Cultural de Cianorte."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Mochilas no chão. Playmats abertos. Deck boxes sobre as mesas. Energético. Conversa alta. Risada solta."
+        },
+        {
+          "speaker": "Bruno",
+          "text": "Tá com medo de machucar o deck?"
+        },
+        {
+          "speaker": "JP",
+          "text": "Só tô respeitando o investimento."
+        },
+        {
+          "speaker": "Mateus",
+          "text": "Investimento nada. Isso aí é namoro."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A primeira partida foi contra Rafael, que jogava com a paciência irritante de quem não se desesperava quando devia."
+        }
+      ]
+    },
+    {
+      "id": "primeira-partida",
+      "bg": "assets/bg/centro-cultural.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        },
+        {
+          "id": "rafael",
+          "name": "Rafael"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "O jogo foi ficando apertado."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "No fim do próprio turno anterior, JP tinha reposto a mão. Quatro cartas novas."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A Command and Conquer estava entre elas.",
+          "card": true
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Ele viu a carta, sentiu o peito aquecer e tentou deixar o rosto parado."
+        },
+        {
+          "speaker": "Rafael",
+          "text": "Vou atacar. Fraco mesmo."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Não era exatamente um erro. Era economia. Um ataque pequeno para arrancar carta, preservar recurso e preparar o próximo turno."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "JP defendeu pouco. Só o suficiente. A Command and Conquer ficou na mão."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Rafael terminou o turno colocando uma carta no arsenal, como se guardasse a peça que faltava para finalizar o jogo depois."
+        },
+        {
+          "speaker": "JP",
+          "text": "..."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "JP olhou para o arsenal. Depois para a própria mão. Tentou não sorrir."
+        },
+        {
+          "speaker": "JP",
+          "text": "Command and Conquer.",
+          "card": true
+        },
+        {
+          "speaker": "Rafael",
+          "text": "Sério?"
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Rafael fez conta. Fez de novo. Bloqueou mal, porque às vezes não existe bloqueio bom, só o menos humilhante."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A carta acertou. O arsenal foi embora. E, com ele, o turno que Rafael achava que já estava ganho."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Dois turnos depois, Rafael perdeu."
+        }
+      ]
+    },
+    {
+      "id": "vitorias",
+      "bg": "assets/bg/loja.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        },
+        {
+          "id": "mateus",
+          "name": "Mateus"
+        },
+        {
+          "id": "bruno",
+          "name": "Bruno"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "Na segunda partida, a carta veio de novo. Na terceira, também. Na quarta, já parecia piada."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A carta não surgia do nada. Era pior. Ela chegava um passo antes."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "JP via a Command and Conquer na mão, assistia o adversário montar o próprio próximo turno e esperava."
+        },
+        {
+          "speaker": "Mateus",
+          "text": "Essa Command aí veio benzida."
+        },
+        {
+          "speaker": "Bruno",
+          "text": "Benzida nada. Isso aí é maldição."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Todo mundo riu. JP também."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "E porque todo mundo riu, a frase ficou leve. Virou piada."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Mais tarde, essa mesma frase ficaria presa na cabeça de JP feito música ruim."
+        }
+      ]
+    },
+    {
+      "id": "obsessao",
+      "bg": "assets/bg/loja.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        },
+        {
+          "id": "bruno",
+          "name": "Bruno"
+        },
+        {
+          "id": "camila",
+          "name": "Camila"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "Nas semanas seguintes, JP começou a mudar aos poucos."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Primeiro trocou os sleeves. Depois colocou inner sleeves. Depois comprou uma deck box melhor."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Depois começou a tirar a Command and Conquer do baralho quando chegava em casa."
+        },
+        {
+          "speaker": "Bruno",
+          "text": "Você tá usando a carta de colar?"
+        },
+        {
+          "speaker": "JP",
+          "text": "Não viaja."
+        },
+        {
+          "speaker": "Bruno",
+          "text": "Mano."
+        },
+        {
+          "speaker": "JP",
+          "text": "É só pra não deixar em casa."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A conversa morreu por alguns segundos. Só Camila continuou olhando para ele um pouco mais do que antes."
+        }
+      ]
+    },
+    {
+      "id": "cadeira",
+      "bg": "assets/bg/loja.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        },
+        {
+          "id": "rafael",
+          "name": "Rafael"
+        },
+        {
+          "id": "camila",
+          "name": "Camila"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "E então veio a noite da cadeira."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Era uma final casual na loja. Dessas que não valem quase nada, mas todo mundo joga como se fosse mundial."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "No fim do próprio turno anterior, JP repôs a mão. A Command and Conquer veio junto.",
+          "card": true
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Ele não mudou a expressão. Apenas passou o turno e ficou esperando."
+        },
+        {
+          "speaker": "Rafael",
+          "text": "Ataque pequeno."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Rafael não queria vencer naquele momento. Queria sobreviver, forçar uma defesa pequena e deixar o jogo pronto para acabar depois."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "JP defendeu pouco. Só o suficiente para continuar vivo. A Command and Conquer ficou na mão."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Rafael, sem saber, colocou sua carta no arsenal. Ajeitou os equipamentos. Passou."
+        },
+        {
+          "speaker": "JP",
+          "text": "Command and Conquer.",
+          "card": true
+        },
+        {
+          "speaker": "Rafael",
+          "text": "Lá vem essa desgraça."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Dessa vez Rafael bloqueou certo. A carta bateu contra uma defesa sólida e, pela primeira vez em muito tempo, não atravessou."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Por um segundo, pareceu que o encanto tinha acabado."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Então a cadeira de Rafael estalou.",
+          "effect": "shake"
+        },
+        {
+          "speaker": "Narrador",
+          "text": "O som foi seco, alto e ridículo. A cadeira abriu para trás e Rafael caiu no chão."
+        },
+        {
+          "speaker": "Mateus",
+          "text": "A Command quebrou o cara!"
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Todo mundo riu. Todo mundo, menos Camila."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Ela teve certeza de que a faixa de cor na borda inferior tinha ficado mais viva por uma fração de segundo."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Como se alguma coisa ali dentro tivesse se mexido.",
+          "effect": "glitch"
+        }
+      ]
+    },
+    {
+      "id": "marcos",
+      "bg": "assets/bg/celular.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "A nova coleção chegou algumas semanas depois. Dessa vez, o jogo mudou mesmo."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Tira essa Command do deck."
+        },
+        {
+          "speaker": "JP",
+          "text": "Não."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Ela ainda é boa. Mas agora tá ocupando slot."
+        },
+        {
+          "speaker": "JP",
+          "text": "Ela ganha jogo."
+        },
+        {
+          "speaker": "Diego",
+          "text": "Ganhava."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A palavra ficou na mesa. Ganhava."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Pouco tempo depois, saiu uma carta nova de premiação. Para comprar a nova, JP precisaria vender a antiga."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Ele decidiu falar com o vendedor original."
+        },
+        {
+          "speaker": "JP",
+          "text": "Opa, tudo bem? Você teria interesse em recomprar aquela Command?"
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Nada."
+        },
+        {
+          "speaker": "Lucas",
+          "text": "Você não soube?"
+        },
+        {
+          "speaker": "JP",
+          "text": "Soube do quê?"
+        },
+        {
+          "speaker": "Lucas",
+          "text": "Ele faleceu, cara."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Lucas disse que foi acidente. Saindo dos Correios."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Era o mesmo dia em que a carta tinha sido enviada.",
+          "effect": "glitch"
+        }
+      ]
+    },
+    {
+      "id": "casa",
+      "bg": "assets/bg/casa.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "Na manhã seguinte, JP deixou a carta em casa e foi trabalhar."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Por algumas horas, pareceu livre."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Quando voltou, encontrou a casa destruída."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Gavetas abertas. Objetos no chão. Cadeira virada. Copos quebrados na cozinha."
+        },
+        {
+          "speaker": "Policial",
+          "text": "O senhor tem animal?"
+        },
+        {
+          "speaker": "JP",
+          "text": "Não."
+        },
+        {
+          "speaker": "Policial",
+          "text": "Alguém tem chave da casa?"
+        },
+        {
+          "speaker": "JP",
+          "text": "Não."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "JP quase respondeu mal. Não respondeu porque viu a prateleira."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A Command and Conquer estava ali. Fora da deck box. Em pé. Intacta.",
+          "card": true
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Apoiada contra um livro, como se alguém tivesse colocado com cuidado."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Naquela noite, ele pensou em rasgar. Pensou em queimar. Pensou em jogar fora."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Mas era uma Command and Conquer primeira impressão, Rainbow Foil, misprint."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Ninguém joga fora uma carta dessas. Mesmo amaldiçoada. Principalmente amaldiçoada."
+        }
+      ]
+    },
+    {
+      "id": "retorno",
+      "bg": "assets/bg/loja.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        },
+        {
+          "id": "bruno",
+          "name": "Bruno"
+        },
+        {
+          "id": "camila",
+          "name": "Camila"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "JP parou de ir jogar. Inventou desculpas. Depois parou de responder."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Uma semana depois, comprou a carta nova de um jogador local e voltou para a loja."
+        },
+        {
+          "speaker": "Bruno",
+          "text": "Olha quem voltou dos mortos."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "JP abriu o deck para fazer a troca ali mesmo."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "E congelou."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "No meio das cartas de Runeblade, estava ela. Borda superior cortada. Faixa de cor inferior. Rainbow Foil. Perfeita.",
+          "card": true
+        },
+        {
+          "speaker": "Bruno",
+          "text": "Cara, tira logo esse troço daí."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A lata de energético escapou da mão de Bruno."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Bruno tossiu uma vez. Depois outra. O rosto ficou vermelho."
+        },
+        {
+          "speaker": "Camila",
+          "text": "Alguém chama ajuda!"
+        },
+        {
+          "speaker": "Narrador",
+          "text": "JP segurou Bruno no puro desespero."
+        },
+        {
+          "speaker": "JP",
+          "text": "Você não pode falar assim dela!",
+          "effect": "shake"
+        },
+        {
+          "speaker": "Narrador",
+          "text": "No mesmo instante, Bruno cuspiu o líquido e voltou a respirar."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "O silêncio que veio depois foi pior que o engasgo."
+        }
+      ]
+    },
+    {
+      "id": "rua",
+      "bg": "assets/bg/rua.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "JP saiu da loja sem dizer nada."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Foi até a rua com a carta na mão."
+        },
+        {
+          "speaker": "JP",
+          "text": "Acabou."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "E jogou a carta longe."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Ela girou no ar, refletindo a luz da rua em várias cores.",
+          "card": true
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Por um segundo, JP sentiu paz."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Depois veio o impacto.",
+          "effect": "black"
+        }
+      ]
+    },
+    {
+      "id": "hospital",
+      "bg": "assets/bg/hospital.svg",
+      "characters": [
+        {
+          "id": "jp",
+          "name": "JP"
+        },
+        {
+          "id": "bruno",
+          "name": "Bruno"
+        },
+        {
+          "id": "camila",
+          "name": "Camila"
+        }
+      ],
+      "lines": [
+        {
+          "speaker": "Narrador",
+          "text": "Quando acordou, estava no hospital."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A enfermeira disse que ele tinha sido atropelado. Que ficou alguns dias em coma. Que teve sorte."
+        },
+        {
+          "speaker": "Bruno",
+          "text": "Até que enfim, mano. Você deu um susto absurdo na gente."
+        },
+        {
+          "speaker": "Camila",
+          "text": "Como você tá?"
+        },
+        {
+          "speaker": "JP",
+          "text": "A carta..."
+        },
+        {
+          "speaker": "Bruno",
+          "text": "Eu imaginei que você ia querer isso de volta."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Bruno tirou a carta da mochila."
+        },
+        {
+          "speaker": "Bruno",
+          "text": "O carro passou por cima dela. A gente achou no meio da rua. Mas olha isso."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Ele colocou a carta sobre o lençol. Sem dobra. Sem risco. Sem marca. Perfeita.",
+          "card": true
+        },
+        {
+          "speaker": "JP",
+          "text": "Aquela carta é..."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "A frase continuou presa na garganta."
+        },
+        {
+          "speaker": "Bruno",
+          "text": "Você ama mesmo essa carta, né?"
+        },
+        {
+          "speaker": "Narrador",
+          "text": "JP pegou a Command and Conquer com as duas mãos e apertou contra o peito."
+        },
+        {
+          "speaker": "JP",
+          "text": "Obrigado."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Bruno sorriu, sem entender."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Só Camila não sorriu."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Porque, por um instante, teve certeza de que a cor presa na borda inferior da carta se moveu."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Não muito. Só o suficiente para parecer que havia alguma outra carta ali dentro."
+        },
+        {
+          "speaker": "Narrador",
+          "text": "Esperando.",
+          "effect": "glitch"
+        }
+      ]
+    }
+  ]
+}

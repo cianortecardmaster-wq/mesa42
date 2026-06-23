@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 260" role="img" aria-labelledby="title desc">
+  <title id="title">Mesa 42</title>
+  <desc id="desc">Logotipo textual Mesa 42</desc>
+  <defs>
+    <linearGradient id="red" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#ff0844"/><stop offset="0.55" stop-color="#b3002d"/><stop offset="1" stop-color="#550014"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="50%" cy="45%" r="70%">
+      <stop offset="0" stop-color="#ffde59" stop-opacity="0.5"/><stop offset="0.45" stop-color="#ff0844" stop-opacity="0.18"/><stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-20%" y="-30%" width="140%" height="160%">
+      <feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <rect width="900" height="260" rx="38" fill="#08060a"/>
+  <rect x="22" y="22" width="856" height="216" rx="28" fill="url(#halo)" stroke="#ffde59" stroke-width="4" stroke-opacity="0.88"/>
+  <path d="M70 190 L70 88 L118 88 L151 144 L184 88 L232 88 L232 190 L195 190 L195 139 L166 190 L137 190 L108 139 L108 190 Z" fill="#f8f9fa"/>
+  <text x="255" y="178" font-family="Impact, Arial Black, sans-serif" font-size="122" letter-spacing="8" fill="url(#red)" stroke="#ffde59" stroke-width="3" filter="url(#glow)">MESA 42</text>
+  <text x="266" y="218" font-family="Verdana, Arial, sans-serif" font-size="22" letter-spacing="7" fill="#f8f9fa" opacity="0.9">HISTÓRIAS ESTRANHAS DE CARD GAME</text>
+</svg>
