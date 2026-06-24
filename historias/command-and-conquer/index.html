@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="../../css/vn.css" />
 </head>
 <body class="vn-body">
-  <main class="vn-stage" id="vnStage" style="--scene-bg:url('../../assets/bg/quarto-jp.svg')">
+  <main class="vn-stage" id="vnStage" style="--scene-bg:url('../../assets/bg/quarto-jp-iluminado.webp')">
     <div class="vn-bg" id="vnBg" aria-hidden="true"></div>
     <div class="progress" aria-hidden="true"><span id="progressBar"></span></div>
 
@@ -19,22 +19,32 @@
       <button type="button" id="saveBtn">Salvar</button>
     </nav>
 
-    <section class="investigate-panel" id="investigatePanel" aria-label="Investigação da carta">
-      <div class="inspect-card">
-        <img src="../../assets/cards/command-and-conquer-misprint.svg" alt="Carta Command and Conquer misprint" />
-        <button class="hotspot hot-name" data-inspect="nome" aria-label="Investigar nome"></button>
-        <button class="hotspot hot-top" data-inspect="topo" aria-label="Investigar borda superior"></button>
-        <button class="hotspot hot-bottom" data-inspect="baixo" aria-label="Investigar borda inferior"></button>
-        <button class="hotspot hot-foil" data-inspect="foil" aria-label="Investigar brilho foil"></button>
+    <section class="vn-start" id="startScreen" aria-label="Abertura da história">
+      <div class="vn-start-card">
+        <span class="eyebrow">CC Master apresenta</span>
+        <h1>Mesa 42</h1>
+        <p>História #001 — Command and Conquer. Clique em iniciar e avance pelos pensamentos de JP como em uma visual novel.</p>
+        <button class="button" type="button" id="startStoryBtn">Iniciar história</button>
       </div>
     </section>
 
-    <section class="vn-scene" id="vnScene">
-      <h1 class="scene-title-card" id="sceneTitleCard" hidden></h1>
+    <section class="vn-scene" id="vnScene" aria-label="Cena da visual novel">
       <div class="characters" id="characters"></div>
-      <img class="card-focus" id="cardFocus" src="../../assets/cards/command-and-conquer-misprint.svg" alt="Command and Conquer misprint" hidden />
-      <div class="dialogue-box" id="dialogueBox" tabindex="0" role="button" aria-label="Avançar texto">
-        <span class="speaker" id="speaker">Narrador</span>
+
+      <div class="title-card" id="titleCard" hidden>
+        <div class="title-card-inner">
+          <h2 data-title></h2>
+          <p data-subtitle></p>
+        </div>
+      </div>
+
+      <img class="card-focus" id="cardFocus" src="../../assets/cards/command-and-conquer-misprint.svg" alt="Command and Conquer" hidden />
+
+      <div class="dialogue-box" id="dialogueBox" tabindex="0" role="button" aria-label="Avançar texto" hidden>
+        <div class="speaker-row">
+          <span class="speaker" id="speaker">JP</span>
+          <span class="speaker-mode" id="speakerMode" hidden></span>
+        </div>
         <p class="line" id="lineText">Carregando história...</p>
         <div class="choices" id="choices" hidden></div>
         <span class="next-hint" id="nextHint">Clique para avançar</span>

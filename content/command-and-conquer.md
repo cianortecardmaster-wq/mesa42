@@ -8,7 +8,7 @@ Ninguém vende uma *Command and Conquer* de primeira impressão, Rainbow Foil, p
 
 Faltava uma carta para fechar o deck. Uma só.
 
-O deck da Ira já estava pronto fazia semanas, mas JP sentia que ainda faltava alguma coisa. Faltava pressão. Faltava ameaça. Faltava aquela carta que faz o oponente olhar para a própria mão e pensar duas vezes antes de guardar qualquer coisa no arsenal.
+O deck de Ira já estava pronto fazia semanas, mas JP sentia que ainda faltava alguma coisa. Faltava pressão. Faltava ameaça. Faltava aquela carta que faz o oponente olhar para a própria mão e pensar duas vezes antes de guardar qualquer coisa no arsenal.
 
 Ele perguntou no grupo de WhatsApp da galera de Flesh and Blood.
 
@@ -79,7 +79,7 @@ JP sorriu.
 
 Aquilo deixava a carta melhor.
 
-Naquela mesma noite, ela entrou no deck da Ira.
+Naquela mesma noite, ela entrou no deck de Ira.
 
 No domingo, JP levou o baralho para jogar no Centro Cultural de Cianorte.
 
@@ -544,7 +544,7 @@ Pegou a carta nova, agradeceu, abriu o deck para fazer a troca ali mesmo.
 
 E congelou.
 
-No meio das cartas da Ira, estava ela.
+No meio das cartas de Ninja, estava ela.
 
 A *Command and Conquer*.
 
