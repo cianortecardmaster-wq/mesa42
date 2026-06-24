@@ -2,7 +2,7 @@
   "title": "História #001 — Command and Conquer",
   "slug": "command-and-conquer",
   "startScene": "abertura",
-  "defaultBg": "assets/bg/quarto-jp.svg",
+  "defaultBg": "assets/bg/quarto-jp-iluminado.webp",
   "inspect": {
     "nome": {
       "speaker": "JP",
@@ -24,76 +24,122 @@
   "scenes": [
     {
       "id": "abertura",
-      "bg": "assets/bg/centro-cultural.svg",
-      "lines": [
-        {
-          "speaker": "Narrador",
-          "text": "Todo grupo tem uma história dessas."
-        },
-        {
-          "speaker": "Narrador",
-          "text": "Uma história que começa como piada. Vira exagero. Depois vira aviso."
-        },
-        {
-          "speaker": "Narrador",
-          "text": "E no fim ninguém gosta muito de repetir em voz alta."
-        },
-        {
-          "speaker": "Narrador",
-          "text": "Mas, de vez em quando, no Centro Cultural, alguém ainda olha para uma cadeira vazia e lembra do JP."
-        },
-        {
-          "speaker": "Narrador",
-          "text": "Não sempre."
-        },
-        {
-          "speaker": "Narrador",
-          "text": "Só quando uma Command and Conquer acerta."
-        },
-        {
-          "speaker": "Narrador",
-          "text": "Ou quando não acerta.",
-          "effect": "glitch"
-        }
-      ]
-    },
-    {
-      "id": "quarto",
-      "bg": "assets/bg/quarto-jp.svg",
+      "bg": "assets/bg/quarto-jp-iluminado.webp",
+      "bgPosition": "center center",
+      "bgFilter": "saturate(.96) brightness(.82)",
+      "overlay": "radial-gradient(circle at 35% 35%, rgba(0,0,0,.02) 0, rgba(0,0,0,.26) 62%, rgba(0,0,0,.56) 100%), linear-gradient(to top, rgba(0,0,0,.72), rgba(0,0,0,.08) 56%)",
+      "titleCard": true,
+      "titleText": "História #001 — Command and Conquer",
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "opening"
         }
       ],
+      "next": "whatsapp",
       "lines": [
         {
-          "speaker": "Narrador",
-          "text": "JP tinha vinte e seis anos e a convicção irritante de quem ainda achava que perder era sempre culpa de alguma coisa corrigível."
+          "speaker": "JP",
+          "thought": true,
+          "text": "Não é que o deck esteja ruim."
         },
         {
           "speaker": "JP",
-          "text": "Uma carta errada. Uma escolha ruim. Uma linha mal feita."
-        },
-        {
-          "speaker": "Narrador",
-          "text": "O deck de Vynnset estava aberto sobre a mesa do quarto."
-        },
-        {
-          "speaker": "Narrador",
-          "text": "As cartas formavam pequenas pilhas organizadas. Ataques de um lado. Defesas do outro. Equipamentos separados."
+          "thought": true,
+          "text": "Isso seria mais fácil."
         },
         {
           "speaker": "JP",
-          "text": "A lista funciona. Mas falta peso."
+          "thought": true,
+          "text": "Deck ruim você arruma."
         },
         {
           "speaker": "JP",
-          "text": "Falta ameaça."
+          "thought": true,
+          "text": "Corta carta morta.\nTroca equipamento.\nMuda o plano contra os heróis que estão aparecendo mais."
         },
         {
           "speaker": "JP",
-          "text": "Falta uma Command and Conquer."
+          "thought": true,
+          "text": "Deck ruim pelo menos tem a decência de mostrar onde dói."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "O problema é quando a lista funciona.",
+          "action": "Pausa curta."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "Quando você olha para ela e sabe que faz sentido."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "Quando as contas fecham."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "E mesmo assim alguma coisa continua faltando.",
+          "action": "JP olha de leve para a mesa."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "A Ira tá pronta."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "Quase pronta."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "Essa palavra é uma desgraça.",
+          "action": "Pausa."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "“Quase”."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "Quase ganha.\nQuase segura.\nQuase vira.\nQuase fecha o jogo."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "Quase é só outro nome para perder sabendo exatamente o que teria salvado você."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "E eu sei o que falta.",
+          "action": "Pausa maior."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "Não quero admitir."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "Mas sei."
+        },
+        {
+          "speaker": "JP",
+          "thought": true,
+          "text": "Command and Conquer.",
+          "action": "JP encara a mesa em silêncio."
         }
       ]
     },
@@ -195,11 +241,14 @@
     },
     {
       "id": "chegada",
-      "bg": "assets/bg/quarto-jp.svg",
+      "bg": "assets/bg/quarto-jp-iluminado.webp",
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         }
       ],
       "lines": [
@@ -256,7 +305,9 @@
           "speaker": "JP",
           "text": "Mais minha."
         }
-      ]
+      ],
+      "bgPosition": "center center",
+      "bgFilter": "saturate(.96) brightness(.78)"
     },
     {
       "id": "sonho",
@@ -264,7 +315,7 @@
       "lines": [
         {
           "speaker": "Narrador",
-          "text": "Naquela noite, a Command and Conquer entrou no deck de Vynnset."
+          "text": "Naquela noite, a Command and Conquer entrou no deck da Ira."
         },
         {
           "speaker": "Narrador",
@@ -295,7 +346,10 @@
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         },
         {
           "id": "bruno",
@@ -339,7 +393,10 @@
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         },
         {
           "id": "rafael",
@@ -417,7 +474,10 @@
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         },
         {
           "id": "mateus",
@@ -469,7 +529,10 @@
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         },
         {
           "id": "bruno",
@@ -521,7 +584,10 @@
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         },
         {
           "id": "rafael",
@@ -617,7 +683,10 @@
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         }
       ],
       "lines": [
@@ -694,7 +763,10 @@
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         }
       ],
       "lines": [
@@ -763,7 +835,10 @@
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         },
         {
           "id": "bruno",
@@ -797,7 +872,7 @@
         },
         {
           "speaker": "Narrador",
-          "text": "No meio das cartas de Runeblade, estava ela. Borda superior cortada. Faixa de cor inferior. Rainbow Foil. Perfeita.",
+          "text": "No meio das cartas da Ira, estava ela. Borda superior cortada. Faixa de cor inferior. Rainbow Foil. Perfeita.",
           "card": true
         },
         {
@@ -841,7 +916,10 @@
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         }
       ],
       "lines": [
@@ -883,7 +961,10 @@
       "characters": [
         {
           "id": "jp",
-          "name": "JP"
+          "name": "JP",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "size": "default"
         },
         {
           "id": "bruno",

@@ -8,7 +8,7 @@ Ninguém vende uma *Command and Conquer* de primeira impressão, Rainbow Foil, p
 
 Faltava uma carta para fechar o deck. Uma só.
 
-O deck de Vynnset já estava pronto fazia semanas, mas JP sentia que ainda faltava alguma coisa. Faltava pressão. Faltava ameaça. Faltava aquela carta que faz o oponente olhar para a própria mão e pensar duas vezes antes de guardar qualquer coisa no arsenal.
+O deck da Ira já estava pronto fazia semanas, mas JP sentia que ainda faltava alguma coisa. Faltava pressão. Faltava ameaça. Faltava aquela carta que faz o oponente olhar para a própria mão e pensar duas vezes antes de guardar qualquer coisa no arsenal.
 
 Ele perguntou no grupo de WhatsApp da galera de Flesh and Blood.
 
@@ -79,7 +79,7 @@ JP sorriu.
 
 Aquilo deixava a carta melhor.
 
-Naquela mesma noite, ela entrou no deck de Vynnset.
+Naquela mesma noite, ela entrou no deck da Ira.
 
 No domingo, JP levou o baralho para jogar no Centro Cultural de Cianorte.
 
@@ -208,7 +208,7 @@ As vitórias continuaram.
 
 Até a noite da cadeira.
 
-Foi numa final casual na loja, daquelas que não valem quase nada, mas que todo mundo joga como se fosse mundial. JP estava de Vynnset. O jogo estava apertado.
+Foi numa final casual na loja, daquelas que não valem quase nada, mas que todo mundo joga como se fosse mundial. JP estava de Ira. O jogo estava apertado.
 
 No fim do próprio turno anterior, JP repôs a mão. A *Command and Conquer* veio junto. Ele sentiu antes de pensar. Não mudou a expressão. Apenas passou o turno e ficou esperando.
 
@@ -544,7 +544,7 @@ Pegou a carta nova, agradeceu, abriu o deck para fazer a troca ali mesmo.
 
 E congelou.
 
-No meio das cartas de Runeblade, estava ela.
+No meio das cartas da Ira, estava ela.
 
 A *Command and Conquer*.
 
