@@ -2,6 +2,14 @@
 
 # Command and Conquer
 
+## Tela 1 — Quarto do JP / Abertura
+
+Fundo: `assets/bg/quarto-jp-iluminado.webp`  
+Personagem: `assets/chars/jp-pensativo.png`  
+Título central: **História #001 — Command and Conquer**
+
+JP começa no quarto, com as luzes acesas e as cortinas fechadas. O clima ainda é normal, sem sobrenatural. A mesa com as cartas fica ao fundo, como um incômodo que JP tenta ignorar.
+
 A primeira coisa que JP pensou foi que o cara estava desesperado.
 
 Ninguém vende uma *Command and Conquer* de primeira impressão, Rainbow Foil, por aquele valor. Não daquele jeito. Não com aquela pressa.

@@ -11,6 +11,7 @@
     started:false,
     typing:false,
     typeTimer:null,
+    pauseTimer:null,
     fullText:''
   };
 
@@ -27,6 +28,11 @@
   function line(){
     const s = scene();
     return s?.lines?.[state.lineIndex];
+  }
+
+  function clearPause(){
+    clearTimeout(state.pauseTimer);
+    state.pauseTimer = null;
   }
 
   function setBg(bg){
@@ -125,13 +131,32 @@
     if(!titleCard) return;
 
     titleCard.hidden = false;
-    titleCard.querySelector('[data-title]').textContent = ln.title || state.story.title || '';
-    titleCard.querySelector('[data-subtitle]').textContent = ln.subtitle || '';
+    const titleEl = titleCard.querySelector('[data-title]');
+    const subtitleEl = titleCard.querySelector('[data-subtitle]');
+    if(titleEl) titleEl.textContent = ln.title || state.story.title || '';
+    if(subtitleEl){
+      subtitleEl.textContent = ln.subtitle || '';
+      subtitleEl.hidden = !ln.subtitle;
+    }
   }
 
   function hideTitleCard(){
     const titleCard = $('#titleCard');
     if(titleCard) titleCard.hidden = true;
+  }
+
+  function renderSceneAction(text){
+    const el = $('#sceneAction');
+    if(!el) return;
+
+    const content = interpolate(text || '');
+    el.textContent = content;
+    el.hidden = !content;
+  }
+
+  function hideSceneAction(){
+    const el = $('#sceneAction');
+    if(el) el.hidden = true;
   }
 
   function renderChoices(choices){
@@ -161,7 +186,20 @@
     });
   }
 
+  function scheduleAutoNext(ln){
+    clearPause();
+    const duration = Number(ln.duration || 0);
+    if(duration > 0){
+      state.pauseTimer = setTimeout(() => {
+        state.pauseTimer = null;
+        next();
+      }, duration);
+    }
+  }
+
   function render(){
+    clearPause();
+
     const s = scene();
     if(!s) return;
 
@@ -185,12 +223,32 @@
     }
 
     if(ln.type === 'title'){
+      hideSceneAction();
       renderTitleCard(ln);
       if(dialogueBox) dialogueBox.hidden = true;
+      renderChoices(null);
       return;
     }
 
     hideTitleCard();
+
+    if(ln.type === 'pause'){
+      hideSceneAction();
+      if(dialogueBox) dialogueBox.hidden = true;
+      renderChoices(null);
+      scheduleAutoNext(ln);
+      return;
+    }
+
+    if(ln.type === 'action'){
+      renderSceneAction(ln.text || ln.action || '');
+      if(dialogueBox) dialogueBox.hidden = true;
+      renderChoices(null);
+      scheduleAutoNext(ln);
+      return;
+    }
+
+    hideSceneAction();
 
     if(dialogueBox) dialogueBox.hidden = !!ln.hideDialogue;
     if(speaker) speaker.textContent = ln.speaker || 'Narrador';
@@ -203,6 +261,7 @@
   }
 
   function choose(choice){
+    clearPause();
     if(choice.set) Object.assign(state.flags, choice.set);
     if(choice.next){
       state.sceneId = choice.next;
@@ -214,6 +273,7 @@
   }
 
   function goNextScene(){
+    clearPause();
     const idx = state.story.scenes.findIndex(s => s.id === state.sceneId);
     const cur = scene();
 
@@ -232,6 +292,7 @@
     }
 
     hideTitleCard();
+    hideSceneAction();
     const dialogueBox = $('#dialogueBox');
     if(dialogueBox) dialogueBox.hidden = false;
     $('#speaker').textContent = 'Mesa 42';
@@ -252,6 +313,7 @@
     const ln = line();
     if(ln?.choices?.length) return;
 
+    clearPause();
     const s = scene();
     if(state.lineIndex < (s.lines.length - 1)){
       state.lineIndex++;

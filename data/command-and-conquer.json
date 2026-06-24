@@ -30,8 +30,8 @@
       "lines": [
         {
           "type": "title",
-          "title": "História #001",
-          "subtitle": "Command and Conquer",
+          "title": "História #001 — Command and Conquer",
+          "subtitle": "",
           "hideDialogue": true
         },
         {
@@ -60,9 +60,8 @@
           "text": "Deck ruim pelo menos tem a decência de mostrar onde dói."
         },
         {
-          "speaker": "JP",
-          "mode": "pensamento",
-          "text": "..."
+          "type": "pause",
+          "duration": 650
         },
         {
           "speaker": "JP",
@@ -85,10 +84,14 @@
           "text": "E mesmo assim alguma coisa continua faltando."
         },
         {
+          "type": "action",
+          "text": "JP olha de leve para a mesa.",
+          "duration": 900
+        },
+        {
           "speaker": "JP",
           "mode": "pensamento",
-          "text": "A Ira tá pronta.",
-          "action": "JP olha de leve para a mesa."
+          "text": "A Ira tá pronta."
         },
         {
           "speaker": "JP",
@@ -96,9 +99,8 @@
           "text": "Quase pronta."
         },
         {
-          "speaker": "JP",
-          "mode": "pensamento",
-          "text": "..."
+          "type": "pause",
+          "duration": 750
         },
         {
           "speaker": "JP",
@@ -121,9 +123,8 @@
           "text": "Quase é só outro nome para perder sabendo exatamente o que teria salvado você."
         },
         {
-          "speaker": "JP",
-          "mode": "pensamento",
-          "text": "..."
+          "type": "pause",
+          "duration": 1100
         },
         {
           "speaker": "JP",
@@ -141,15 +142,15 @@
           "text": "Mas sei."
         },
         {
+          "type": "action",
+          "text": "JP encara a mesa em silêncio.",
+          "duration": 1000
+        },
+        {
           "speaker": "JP",
           "mode": "pensamento",
           "text": "Command and Conquer.",
           "effect": "focus"
-        },
-        {
-          "speaker": "Mesa 42",
-          "mode": "sistema",
-          "text": "Fim da Tela 1. A próxima cena pode cortar para a mesa com o deck aberto."
         }
       ]
     }
