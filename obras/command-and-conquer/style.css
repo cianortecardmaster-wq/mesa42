@@ -883,3 +883,138 @@ button {
     font-size: 0.95rem !important;
   }
 }
+
+
+/* =========================================================
+   FIX MOBILE HORIZONTAL — Cena 01
+   - mantém só leitura horizontal no mobile
+   - JP lateral como no desktop
+   - caixa de texto visível no mobile
+   - logo inicial garantida
+   ========================================================= */
+
+.logo-overlay {
+  z-index: 120 !important;
+}
+
+.logo-overlay img {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.vn-controls,
+.orientation-toggle {
+  display: none !important;
+}
+
+.fullscreen-toggle {
+  z-index: 130 !important;
+}
+
+@media (max-width: 900px) {
+  .fullscreen-toggle {
+    display: block !important;
+    top: max(10px, env(safe-area-inset-top)) !important;
+    right: max(10px, env(safe-area-inset-right)) !important;
+    font-size: 0.64rem !important;
+    line-height: 1 !important;
+    padding: 6px 9px !important;
+    border-radius: 999px !important;
+  }
+
+  body.mobile-landscape-mode .background-layer {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  body.mobile-landscape-mode .character {
+    height: 82dvh !important;
+    max-height: 82dvh !important;
+    width: auto !important;
+    max-width: none !important;
+    bottom: 0 !important;
+  }
+
+  body.mobile-landscape-mode .character.left {
+    left: clamp(10px, 4.5vw, 44px) !important;
+    right: auto !important;
+    transform: translateY(18px) !important;
+  }
+
+  body.mobile-landscape-mode .character.left.visible {
+    transform: translateY(0) !important;
+  }
+
+  body.mobile-landscape-mode .dialog-box {
+    left: 8% !important;
+    right: 8% !important;
+    bottom: max(4%, calc(env(safe-area-inset-bottom) + 8px)) !important;
+
+    height: clamp(88px, 23dvh, 132px) !important;
+    min-height: 88px !important;
+    max-height: 132px !important;
+
+    padding: 25px 28px 30px !important;
+    clip-path: polygon(2% 0, 100% 0, 100% 80%, 97% 100%, 0 100%, 0 18%) !important;
+    overflow: visible !important;
+  }
+
+  body.mobile-landscape-mode .speaker-name {
+    top: 7px !important;
+    left: 22px !important;
+    min-width: 62px !important;
+    max-width: 130px !important;
+    padding: 3px 10px !important;
+    font-size: 0.68rem !important;
+    line-height: 1.05 !important;
+    opacity: 1 !important;
+  }
+
+  body.mobile-landscape-mode .speaker-name.empty {
+    opacity: 0 !important;
+  }
+
+  body.mobile-landscape-mode .dialog-text {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+
+    font-size: clamp(0.78rem, 2vw, 0.98rem) !important;
+    line-height: 1.24 !important;
+    min-height: 0 !important;
+    height: auto !important;
+    max-height: calc(100% - 26px) !important;
+
+    overflow-y: auto !important;
+    padding: 0 4px 0 0 !important;
+    margin: 0 !important;
+  }
+
+  body.mobile-landscape-mode .dialog-nav {
+    right: 16px !important;
+    bottom: 8px !important;
+    gap: 8px !important;
+  }
+
+  body.mobile-landscape-mode .dialog-nav-btn {
+    font-size: 0.66rem !important;
+    line-height: 1 !important;
+    padding: 4px 8px !important;
+  }
+
+  body.mobile-landscape-mode .rotate-overlay.hidden {
+    display: none !important;
+  }
+
+  body.mobile-landscape-mode .logo-overlay img {
+    width: min(620px, 78vw) !important;
+    max-height: 58vh !important;
+  }
+}
+
+/* Em celular em pé, bloqueia a leitura e pede rotação. */
+@media (max-width: 900px) and (orientation: portrait) {
+  body.mobile-landscape-mode .rotate-overlay:not(.hidden) {
+    display: flex !important;
+  }
+}

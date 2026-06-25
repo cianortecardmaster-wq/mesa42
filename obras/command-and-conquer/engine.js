@@ -1,17 +1,13 @@
 const STORAGE_KEYS = {
-  progress: "ccn-progress-scene-01",
-  layout: "ccn-layout-mode"
+  progress: "ccn-progress-scene-01"
 };
 
 let currentStep = 0;
 let activeBackground = "";
 let activeCharacters = {};
 let activeObjects = {};
-let activeCamera = "center";
 let isTyping = false;
 let typingTimer = null;
-let autoMode = false;
-let autoAdvanceTimer = null;
 let visibleText = "";
 
 const stage = document.getElementById("stage");
@@ -25,13 +21,6 @@ const dialogText = document.getElementById("dialogText");
 const prevTextBtn = document.getElementById("prevTextBtn");
 const nextTextBtn = document.getElementById("nextTextBtn");
 
-const historyBtn = document.getElementById("historyBtn");
-const autoBtn = document.getElementById("autoBtn");
-const skipBtn = document.getElementById("skipBtn");
-const saveBtn = document.getElementById("saveBtn");
-const loadBtn = document.getElementById("loadBtn");
-const restartBtn = document.getElementById("restartBtn");
-
 const historyPanel = document.getElementById("historyPanel");
 const historyContent = document.getElementById("historyContent");
 const toast = document.getElementById("toast");
@@ -39,12 +28,8 @@ const toast = document.getElementById("toast");
 const logoOverlay = document.getElementById("logoOverlay");
 const introLogo = document.getElementById("introLogo");
 
-const orientationToggle = document.getElementById("orientationToggle");
 const fullscreenBtn = document.getElementById("fullscreenBtn");
 const rotateOverlay = document.getElementById("rotateOverlay");
-const usePortraitBtn = document.getElementById("usePortraitBtn");
-
-let mobileLayoutMode = "landscape";
 
 function isMobileViewport() {
   return window.matchMedia("(max-width: 900px)").matches;
@@ -55,14 +40,13 @@ function isPortraitViewport() {
 }
 
 function applyMobileLayoutMode() {
-  document.body.classList.remove("mobile-landscape-mode", "mobile-portrait-mode");
+  document.body.classList.remove("mobile-portrait-mode");
+  document.body.classList.add("mobile-landscape-mode");
 
   if (!isMobileViewport()) {
     rotateOverlay?.classList.add("hidden");
     return;
   }
-
-  document.body.classList.add("mobile-landscape-mode");
 
   if (isPortraitViewport()) {
     rotateOverlay?.classList.remove("hidden");
@@ -71,24 +55,53 @@ function applyMobileLayoutMode() {
   }
 }
 
-function toggleMobileLayoutMode() {
-  applyMobileLayoutMode();
-}
-
 function showToast(message) {
+  if (!toast) return;
+
   toast.textContent = message;
   toast.classList.remove("hidden");
+
   clearTimeout(showToast.timer);
   showToast.timer = setTimeout(() => {
     toast.classList.add("hidden");
   }, 1800);
 }
 
+function updateFullscreenButton() {
+  if (!fullscreenBtn) return;
+
+  if (!isMobileViewport()) {
+    fullscreenBtn.style.display = "none";
+    return;
+  }
+
+  fullscreenBtn.style.display = "block";
+  fullscreenBtn.textContent = document.fullscreenElement ? "Sair" : "Tela cheia";
+}
+
+async function toggleFullscreen() {
+  if (!document.fullscreenEnabled || !document.documentElement.requestFullscreen) {
+    showToast("Tela cheia indisponível neste navegador.");
+    return;
+  }
+
+  try {
+    if (!document.fullscreenElement) {
+      await document.documentElement.requestFullscreen();
+    } else {
+      await document.exitFullscreen();
+    }
+  } catch (error) {
+    showToast("Toque novamente ou use o menu do navegador.");
+  }
+
+  updateFullscreenButton();
+  applyMobileLayoutMode();
+}
+
 function clearTimers() {
   clearTimeout(typingTimer);
-  clearTimeout(autoAdvanceTimer);
   typingTimer = null;
-  autoAdvanceTimer = null;
   isTyping = false;
 }
 
@@ -96,9 +109,9 @@ function resetVisualState() {
   activeBackground = "";
   activeCharacters = {};
   activeObjects = {};
-  activeCamera = "center";
 
   backgroundLayer.style.backgroundImage = "";
+
   stage.classList.remove("camera-center", "camera-desk");
   stage.classList.add("camera-center");
 
@@ -108,7 +121,9 @@ function resetVisualState() {
 
 function renderStep(index, options = {}) {
   const { forceFullText = false } = options;
+
   currentStep = Math.max(0, Math.min(index, story.length - 1));
+
   clearTimers();
   resetVisualState();
 
@@ -135,8 +150,10 @@ function applyVisualState(step, isCurrentStep) {
 }
 
 function setLogo(step, isCurrentStep) {
+  if (!logoOverlay || !introLogo) return;
+
   if (step.type === "logo" && isCurrentStep) {
-    introLogo.src = step.logo;
+    introLogo.src = step.logo || "assets/ui/logo-command-and-conquer.png";
     logoOverlay.classList.remove("hidden");
   } else {
     logoOverlay.classList.add("hidden");
@@ -145,6 +162,7 @@ function setLogo(step, isCurrentStep) {
 
 function setBackground(step) {
   if (!step.bg) return;
+
   if (step.bg !== activeBackground) {
     backgroundLayer.style.backgroundImage = `url("${step.bg}")`;
     activeBackground = step.bg;
@@ -153,19 +171,21 @@ function setBackground(step) {
 
 function setCamera(step) {
   if (!step.camera) return;
-  activeCamera = step.camera;
+
   stage.classList.remove("camera-center", "camera-desk");
-  stage.classList.add(`camera-${activeCamera}`);
+  stage.classList.add(`camera-${step.camera}`);
 }
 
 function clearCharacters(step) {
   if (!step.clearCharacters) return;
+
   characterLayer.innerHTML = "";
   activeCharacters = {};
 }
 
 function setCharacter(step) {
   if (!step.character) return;
+
   const data = step.character;
   let characterEl = activeCharacters[data.id];
 
@@ -173,23 +193,25 @@ function setCharacter(step) {
     characterEl = document.createElement("img");
     characterEl.classList.add("character");
     characterEl.dataset.id = data.id;
+    characterEl.alt = data.id || "";
     characterLayer.appendChild(characterEl);
     activeCharacters[data.id] = characterEl;
   }
 
   characterEl.src = data.src;
-  characterEl.className = `character ${data.position || "left"}`;
-  characterEl.classList.add("visible");
+  characterEl.className = `character ${data.position || "left"} visible`;
 }
 
 function clearObjects(step) {
   if (!step.clearObjects) return;
+
   objectLayer.innerHTML = "";
   activeObjects = {};
 }
 
 function setObjects(step) {
   if (!step.objects) return;
+
   step.objects.forEach(obj => {
     let objEl = activeObjects[obj.id];
 
@@ -197,6 +219,7 @@ function setObjects(step) {
       objEl = document.createElement("img");
       objEl.classList.add("vn-object");
       objEl.dataset.id = obj.id;
+      objEl.alt = obj.id || "";
       objectLayer.appendChild(objEl);
       activeObjects[obj.id] = objEl;
     }
@@ -211,6 +234,7 @@ function setObjects(step) {
 
 function hideObjects(step) {
   if (!step.hideObjects) return;
+
   step.hideObjects.forEach(id => {
     const objEl = activeObjects[id];
     if (objEl) objEl.classList.remove("visible");
@@ -229,7 +253,6 @@ function renderDialog(step, forceFullText = false) {
     dialogBox.classList.add("hidden");
     speakerName.textContent = "";
     dialogText.textContent = "";
-    scheduleAutoAdvanceForVisual();
     return;
   }
 
@@ -265,12 +288,11 @@ function typeText(text) {
 
   if (!text) {
     isTyping = false;
-    scheduleAutoAdvance();
     return;
   }
 
   let index = 0;
-  const speed = 24;
+  const speed = 22;
   isTyping = true;
 
   function tick() {
@@ -283,7 +305,6 @@ function typeText(text) {
     } else {
       isTyping = false;
       typingTimer = null;
-      scheduleAutoAdvance();
     }
   }
 
@@ -292,39 +313,18 @@ function typeText(text) {
 
 function finishTyping() {
   const step = story[currentStep];
+
   clearTimeout(typingTimer);
   typingTimer = null;
   isTyping = false;
+
   dialogText.textContent = step.text || "";
   visibleText = step.text || "";
-  scheduleAutoAdvance();
-}
-
-function scheduleAutoAdvance() {
-  clearTimeout(autoAdvanceTimer);
-  if (!autoMode) return;
-  autoAdvanceTimer = setTimeout(() => {
-    next();
-  }, 1200);
-}
-
-function scheduleAutoAdvanceForVisual() {
-  clearTimeout(autoAdvanceTimer);
-  if (!autoMode) return;
-  autoAdvanceTimer = setTimeout(() => {
-    next();
-  }, 650);
-}
-
-function openPanel(panel) {
-  panel.classList.remove("hidden");
-}
-
-function closePanel(panel) {
-  panel.classList.add("hidden");
 }
 
 function updateHistory() {
+  if (!historyContent) return;
+
   const entries = story
     .slice(0, currentStep + 1)
     .filter(step => !shouldHideDialog(step) && step.text)
@@ -342,34 +342,8 @@ function updateHistory() {
 }
 
 function updateNavButtons() {
-  prevTextBtn.disabled = currentStep <= 0;
-  nextTextBtn.disabled = currentStep >= story.length - 1;
-  autoBtn?.classList.toggle("active", autoMode);
-}
-
-function saveProgress() {
-  localStorage.setItem(STORAGE_KEYS.progress, String(currentStep));
-  showToast("Progresso salvo.");
-}
-
-function loadProgress() {
-  const saved = localStorage.getItem(STORAGE_KEYS.progress);
-  if (saved === null) {
-    showToast("Nenhum progresso salvo.");
-    return;
-  }
-  const index = Number(saved);
-  if (Number.isNaN(index)) {
-    showToast("Progresso salvo inválido.");
-    return;
-  }
-  renderStep(index, { forceFullText: true });
-  showToast("Progresso carregado.");
-}
-
-function restartStory() {
-  renderStep(0, { forceFullText: true });
-  showToast("História reiniciada.");
+  if (prevTextBtn) prevTextBtn.disabled = currentStep <= 0;
+  if (nextTextBtn) nextTextBtn.disabled = currentStep >= story.length - 1;
 }
 
 function next() {
@@ -387,14 +361,9 @@ function next() {
 
 function prev() {
   if (historyPanel && !historyPanel.classList.contains("hidden")) return;
+
   if (currentStep > 0) {
     renderStep(currentStep - 1, { forceFullText: true });
-  }
-}
-
-function skipForward() {
-  if (currentStep < story.length - 1) {
-    renderStep(Math.min(currentStep + 3, story.length - 1), { forceFullText: true });
   }
 }
 
@@ -412,55 +381,29 @@ stage.addEventListener("click", event => {
   next();
 });
 
-prevTextBtn.addEventListener("click", event => {
+prevTextBtn?.addEventListener("click", event => {
   event.stopPropagation();
   prev();
 });
 
-nextTextBtn.addEventListener("click", event => {
+nextTextBtn?.addEventListener("click", event => {
   event.stopPropagation();
   next();
 });
 
-historyBtn?.addEventListener("click", event => {
+fullscreenBtn?.addEventListener("click", event => {
   event.stopPropagation();
-  updateHistory();
-  openPanel(historyPanel);
+  toggleFullscreen();
 });
 
-autoBtn?.addEventListener("click", event => {
+rotateOverlay?.addEventListener("click", event => {
   event.stopPropagation();
-  autoMode = !autoMode;
-  updateNavButtons();
-  if (!autoMode) {
-    clearTimeout(autoAdvanceTimer);
-  } else if (!isTyping) {
-    if (shouldHideDialog(story[currentStep])) {
-      scheduleAutoAdvanceForVisual();
-    } else {
-      scheduleAutoAdvance();
-    }
+});
+
+historyPanel?.addEventListener("click", event => {
+  if (event.target === historyPanel) {
+    historyPanel.classList.add("hidden");
   }
-});
-
-skipBtn?.addEventListener("click", event => {
-  event.stopPropagation();
-  skipForward();
-});
-
-saveBtn?.addEventListener("click", event => {
-  event.stopPropagation();
-  saveProgress();
-});
-
-loadBtn?.addEventListener("click", event => {
-  event.stopPropagation();
-  loadProgress();
-});
-
-restartBtn?.addEventListener("click", event => {
-  event.stopPropagation();
-  restartStory();
 });
 
 document.querySelectorAll("[data-close-panel]").forEach(button => {
@@ -468,40 +411,27 @@ document.querySelectorAll("[data-close-panel]").forEach(button => {
     event.stopPropagation();
     const panelId = button.getAttribute("data-close-panel");
     const panel = document.getElementById(panelId);
-    if (panel) closePanel(panel);
+    if (panel) panel.classList.add("hidden");
   });
 });
 
-historyPanel.addEventListener("click", event => {
-  if (event.target === historyPanel) closePanel(historyPanel);
-});
-
-orientationToggle?.addEventListener("click", event => {
-  event.stopPropagation();
-  toggleMobileLayoutMode();
-});
-
-fullscreenBtn.addEventListener("click", event => {
-  event.stopPropagation();
-  toggleFullscreen();
-});
-
-usePortraitBtn?.addEventListener("click", event => {
-  event.stopPropagation();
+window.addEventListener("resize", () => {
   applyMobileLayoutMode();
+  updateFullscreenButton();
 });
 
-rotateOverlay.addEventListener("click", event => {
-  event.stopPropagation();
+window.addEventListener("orientationchange", () => {
+  setTimeout(() => {
+    applyMobileLayoutMode();
+    updateFullscreenButton();
+  }, 250);
 });
 
-window.addEventListener("resize", applyMobileLayoutMode);
-window.addEventListener("orientationchange", applyMobileLayoutMode);
 document.addEventListener("fullscreenchange", updateFullscreenButton);
 
 document.addEventListener("keydown", event => {
-  if (event.key === "Escape" && !historyPanel.classList.contains("hidden")) {
-    closePanel(historyPanel);
+  if (event.key === "Escape" && historyPanel && !historyPanel.classList.contains("hidden")) {
+    historyPanel.classList.add("hidden");
     return;
   }
 
@@ -514,8 +444,6 @@ document.addEventListener("keydown", event => {
     event.preventDefault();
     prev();
   }
-
-  /* Histórico removido dos controles inferiores. */
 });
 
 applyMobileLayoutMode();
