@@ -6,6 +6,7 @@ let currentStep = 0;
 let activeBackground = "";
 let activeCharacters = {};
 let activeObjects = {};
+let activePhone = null;
 let isTyping = false;
 let typingTimer = null;
 let visibleText = "";
@@ -14,6 +15,7 @@ const stage = document.getElementById("stage");
 const backgroundLayer = document.getElementById("backgroundLayer");
 const objectLayer = document.getElementById("objectLayer");
 const characterLayer = document.getElementById("characterLayer");
+const effectLayer = document.getElementById("effectLayer");
 
 const dialogBox = document.getElementById("dialogBox");
 const speakerName = document.getElementById("speakerName");
@@ -109,6 +111,7 @@ function resetVisualState() {
   activeBackground = "";
   activeCharacters = {};
   activeObjects = {};
+  activePhone = null;
 
   backgroundLayer.style.backgroundImage = "";
 
@@ -117,6 +120,10 @@ function resetVisualState() {
 
   characterLayer.innerHTML = "";
   objectLayer.innerHTML = "";
+
+  if (effectLayer) {
+    effectLayer.innerHTML = "";
+  }
 }
 
 function renderStep(index, options = {}) {
@@ -145,7 +152,9 @@ function applyVisualState(step, isCurrentStep) {
   clearCharacters(step);
   setCharacter(step);
   clearObjects(step);
+  clearEffects(step);
   setObjects(step);
+  setPhone(step);
   hideObjects(step);
 }
 
@@ -209,6 +218,13 @@ function clearObjects(step) {
   activeObjects = {};
 }
 
+function clearEffects(step) {
+  if (!step.clearEffects || !effectLayer) return;
+
+  effectLayer.innerHTML = "";
+  activePhone = null;
+}
+
 function setObjects(step) {
   if (!step.objects) return;
 
@@ -230,6 +246,50 @@ function setObjects(step) {
     objEl.style.width = `${obj.w}%`;
     objEl.classList.add("visible");
   });
+}
+
+function setPhone(step) {
+  if (!step.phone || !effectLayer) return;
+
+  let phoneEl = activePhone;
+
+  if (!phoneEl) {
+    phoneEl = document.createElement("div");
+    phoneEl.className = "phone-overlay";
+    phoneEl.innerHTML = `
+      <img class="phone-frame" alt="Celular com conversa" />
+      <div class="phone-chat-layer"></div>
+    `;
+    effectLayer.appendChild(phoneEl);
+    activePhone = phoneEl;
+  }
+
+  const frame = phoneEl.querySelector(".phone-frame");
+  const chatLayer = phoneEl.querySelector(".phone-chat-layer");
+
+  frame.src = step.phone.src;
+  chatLayer.innerHTML = "";
+
+  const messages = step.phone.messages || [];
+
+  messages.forEach(message => {
+    const bubble = document.createElement("div");
+    bubble.className = `phone-message ${message.side === "me" ? "phone-message-me" : "phone-message-other"}`;
+
+    const from = document.createElement("div");
+    from.className = "phone-message-from";
+    from.textContent = message.from || "";
+
+    const text = document.createElement("div");
+    text.className = "phone-message-text";
+    text.textContent = message.text || "";
+
+    bubble.appendChild(from);
+    bubble.appendChild(text);
+    chatLayer.appendChild(bubble);
+  });
+
+  phoneEl.classList.add("visible");
 }
 
 function hideObjects(step) {

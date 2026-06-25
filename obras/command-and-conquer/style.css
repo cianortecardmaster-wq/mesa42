@@ -1163,3 +1163,112 @@ button {
     padding: 5px 8px !important;
   }
 }
+
+
+/* =========================================================
+   Cena 02/03 — Mesa, celular e conversa HTML
+   ========================================================= */
+
+.effect-layer {
+  z-index: 26;
+  pointer-events: none;
+}
+
+.phone-overlay {
+  position: absolute;
+  right: clamp(90px, 12vw, 220px);
+  bottom: 14dvh;
+  height: min(78dvh, 760px);
+  aspect-ratio: 607 / 1080;
+  opacity: 0;
+  transform: translateY(7vh) scale(0.98);
+  transition:
+    opacity 0.45s ease,
+    transform 0.45s ease;
+  z-index: 26;
+}
+
+.phone-overlay.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.phone-frame {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 24px 30px rgba(0, 0, 0, 0.48));
+}
+
+.phone-chat-layer {
+  position: absolute;
+  left: 30%;
+  right: 11%;
+  top: 14%;
+  bottom: 27%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 7px;
+  overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.phone-message {
+  max-width: 84%;
+  padding: 6px 8px 7px;
+  border-radius: 10px;
+  font-size: clamp(0.62rem, 0.9vw, 0.82rem);
+  line-height: 1.15;
+  box-shadow: 0 2px 7px rgba(0, 0, 0, 0.22);
+}
+
+.phone-message-from {
+  margin-bottom: 2px;
+  font-size: 0.7em;
+  opacity: 0.78;
+  font-weight: 700;
+}
+
+.phone-message-me {
+  align-self: flex-end;
+  background: #075e54;
+  color: #f0fff6;
+  border-bottom-right-radius: 4px;
+}
+
+.phone-message-other {
+  align-self: flex-start;
+  background: #202c33;
+  color: #e9edef;
+  border-bottom-left-radius: 4px;
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .phone-overlay {
+    right: clamp(40px, 6vw, 96px) !important;
+    bottom: 12dvh !important;
+    height: 82dvh !important;
+  }
+
+  body.mobile-landscape-mode .phone-chat-layer {
+    left: 30% !important;
+    right: 11% !important;
+    top: 14% !important;
+    bottom: 27% !important;
+    gap: 4px !important;
+  }
+
+  body.mobile-landscape-mode .phone-message {
+    padding: 4px 6px !important;
+    border-radius: 8px !important;
+    font-size: clamp(0.48rem, 1.25vw, 0.68rem) !important;
+    line-height: 1.08 !important;
+  }
+
+  body.mobile-landscape-mode .phone-message-from {
+    margin-bottom: 1px !important;
+  }
+}

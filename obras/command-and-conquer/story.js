@@ -170,4 +170,246 @@ const story = [
     text: "Command and Conquer.",
     emphasis: true
   }
+  ,
+  {
+    id: "scene-02-table-entry",
+    type: "visual",
+    bg: "assets/bg/mesa-deck-01.webp",
+    camera: "center",
+    clearCharacters: true,
+    clearObjects: true,
+    clearEffects: true,
+    hideDialog: true
+  },
+  {
+    id: "scene-02-01",
+    type: "thought",
+    speaker: "JP",
+    text: "Ataque tem.",
+    bg: "assets/bg/mesa-deck-01.webp",
+    clearCharacters: true
+  },
+  {
+    id: "scene-02-02",
+    type: "thought",
+    speaker: "JP",
+    text: "Defesa tem."
+  },
+  {
+    id: "scene-02-03",
+    type: "thought",
+    speaker: "JP",
+    text: "Equipamento tem."
+  },
+  {
+    id: "scene-02-04",
+    type: "thought",
+    speaker: "JP",
+    text: "Plano de jogo também."
+  },
+  {
+    id: "scene-02-05",
+    type: "thought",
+    speaker: "JP",
+    text: "Mas ainda falta peso."
+  },
+  {
+    id: "scene-02-06",
+    type: "thought",
+    speaker: "JP",
+    text: "Falta a carta que faz o outro lado respeitar a mesa."
+  },
+  {
+    id: "scene-03-phone-entry",
+    type: "visual",
+    bg: "assets/bg/mesa-deck-01.webp",
+    hideDialog: true,
+    phone: {
+      src: "assets/objects/whatsapp-cel.png",
+      messages: []
+    }
+  },
+  {
+    id: "scene-03-phone-jp-message",
+    type: "visual",
+    bg: "assets/bg/mesa-deck-01.webp",
+    hideDialog: true,
+    phone: {
+      src: "assets/objects/whatsapp-cel.png",
+      messages: [
+        {
+          from: "JP",
+          text: "Alguém tem Command and Conquer pra vender?",
+          side: "me"
+        }
+      ]
+    }
+  },
+  {
+    id: "scene-03-phone-reply-01",
+    type: "visual",
+    bg: "assets/bg/mesa-deck-01.webp",
+    hideDialog: true,
+    phone: {
+      src: "assets/objects/whatsapp-cel.png",
+      messages: [
+        {
+          from: "JP",
+          text: "Alguém tem Command and Conquer pra vender?",
+          side: "me"
+        },
+        {
+          from: "Grupo",
+          text: "Boa sorte.",
+          side: "other"
+        }
+      ]
+    }
+  },
+  {
+    id: "scene-03-phone-reply-02",
+    type: "visual",
+    bg: "assets/bg/mesa-deck-01.webp",
+    hideDialog: true,
+    phone: {
+      src: "assets/objects/whatsapp-cel.png",
+      messages: [
+        {
+          from: "JP",
+          text: "Alguém tem Command and Conquer pra vender?",
+          side: "me"
+        },
+        {
+          from: "Grupo",
+          text: "Boa sorte.",
+          side: "other"
+        },
+        {
+          from: "Grupo",
+          text: "Se achar duas, me avisa.",
+          side: "other"
+        }
+      ]
+    }
+  },
+  {
+    id: "scene-03-phone-reply-03",
+    type: "visual",
+    bg: "assets/bg/mesa-deck-01.webp",
+    hideDialog: true,
+    phone: {
+      src: "assets/objects/whatsapp-cel.png",
+      messages: [
+        {
+          from: "JP",
+          text: "Alguém tem Command and Conquer pra vender?",
+          side: "me"
+        },
+        {
+          from: "Grupo",
+          text: "Boa sorte.",
+          side: "other"
+        },
+        {
+          from: "Grupo",
+          text: "Se achar duas, me avisa.",
+          side: "other"
+        },
+        {
+          from: "Grupo",
+          text: "Essa aí sumiu do mapa.",
+          side: "other"
+        }
+      ]
+    }
+  },
+  {
+    id: "scene-03-phone-reply-04",
+    type: "visual",
+    bg: "assets/bg/mesa-deck-01.webp",
+    hideDialog: true,
+    phone: {
+      src: "assets/objects/whatsapp-cel.png",
+      messages: [
+        {
+          from: "JP",
+          text: "Alguém tem Command and Conquer pra vender?",
+          side: "me"
+        },
+        {
+          from: "Grupo",
+          text: "Boa sorte.",
+          side: "other"
+        },
+        {
+          from: "Grupo",
+          text: "Se achar duas, me avisa.",
+          side: "other"
+        },
+        {
+          from: "Grupo",
+          text: "Essa aí sumiu do mapa.",
+          side: "other"
+        },
+        {
+          from: "Grupo",
+          text: "Quem tem não vende.",
+          side: "other"
+        }
+      ]
+    }
+  },
+  {
+    id: "scene-03-phone-reply-05",
+    type: "visual",
+    bg: "assets/bg/mesa-deck-01.webp",
+    hideDialog: true,
+    phone: {
+      src: "assets/objects/whatsapp-cel.png",
+      messages: [
+        {
+          from: "JP",
+          text: "Alguém tem Command and Conquer pra vender?",
+          side: "me"
+        },
+        {
+          from: "Grupo",
+          text: "Boa sorte.",
+          side: "other"
+        },
+        {
+          from: "Grupo",
+          text: "Se achar duas, me avisa.",
+          side: "other"
+        },
+        {
+          from: "Grupo",
+          text: "Essa aí sumiu do mapa.",
+          side: "other"
+        },
+        {
+          from: "Grupo",
+          text: "Quem tem não vende.",
+          side: "other"
+        },
+        {
+          from: "Grupo",
+          text: "Quem vende pede um rim.",
+          side: "other"
+        }
+      ]
+    }
+  },
+  {
+    id: "scene-03-01",
+    type: "thought",
+    speaker: "JP",
+    text: "Engraçadões."
+  },
+  {
+    id: "scene-03-02",
+    type: "thought",
+    speaker: "JP",
+    text: "Mas ninguém falou que tinha."
+  }
 ];
