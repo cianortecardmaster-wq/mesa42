@@ -1,0 +1,195 @@
+{
+  "title": "Visual Novel — Command and Conquer",
+  "label": "História #001 — Command and Conquer",
+  "slug": "command-and-conquer",
+  "steps": [
+    {
+      "id": "abertura-titulo",
+      "background": "black",
+      "titleCard": {
+        "eyebrow": "Mesa 42 apresenta",
+        "title": "Command and Conquer",
+        "subtitle": "História #001"
+      }
+    },
+    {
+      "id": "quarto-cenario",
+      "background": "assets/bg/quarto-jp-iluminado.webp",
+      "speaker": "JP",
+      "mode": "pensamento",
+      "text": "Não é que o deck esteja ruim."
+    },
+    {
+      "id": "jp-aparece",
+      "background": "assets/bg/quarto-jp-iluminado.webp",
+      "characters": [
+        {
+          "id": "jp",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "height": "70vh"
+        }
+      ],
+      "speaker": "JP",
+      "mode": "pensamento",
+      "text": "Isso seria mais fácil.\nDeck ruim você arruma."
+    },
+    {
+      "id": "jp-explica-deck",
+      "background": "assets/bg/quarto-jp-iluminado.webp",
+      "characters": [
+        {
+          "id": "jp",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "height": "70vh"
+        }
+      ],
+      "speaker": "JP",
+      "mode": "pensamento",
+      "text": "Corta carta morta.\nTroca equipamento.\nMuda o plano contra os heróis que estão aparecendo mais."
+    },
+    {
+      "id": "mesa-deck",
+      "background": "assets/bg/mesa-deck.svg",
+      "speaker": "JP",
+      "mode": "pensamento",
+      "text": "Deck ruim pelo menos tem a decência de mostrar onde dói."
+    },
+    {
+      "id": "quase-pronta",
+      "background": "assets/bg/mesa-deck.svg",
+      "speaker": "JP",
+      "mode": "pensamento",
+      "text": "A Ira tá pronta.\n\nQuase pronta."
+    },
+    {
+      "id": "quase",
+      "background": "assets/bg/mesa-deck.svg",
+      "effect": "focus",
+      "speaker": "JP",
+      "mode": "pensamento",
+      "text": "Essa palavra é uma desgraça.\n\nQuase."
+    },
+    {
+      "id": "celular-grupo",
+      "background": "assets/bg/quarto-jp-iluminado.webp",
+      "characters": [
+        {
+          "id": "jp",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "height": "68vh",
+          "active": false
+        }
+      ],
+      "objects": [
+        {
+          "id": "phone-group",
+          "type": "phone",
+          "position": "right",
+          "vertical": "bottom",
+          "html": "<div class='phone-header'>FAB Cianorte</div><div class='phone-msg me'>Alguém tem Command and Conquer pra vender?</div><div class='phone-msg'>Boa sorte.</div><div class='phone-msg'>Se achar duas, me avisa.</div><div class='phone-msg'>Essa aí sumiu.</div><div class='phone-msg'>Quem tem não vende.</div>"
+        }
+      ],
+      "speaker": "JP",
+      "mode": "pensamento",
+      "text": "As respostas vieram como sempre.\nAquele tipo de resposta que não ajuda, mas machuca com precisão."
+    },
+    {
+      "id": "privado",
+      "background": "assets/bg/quarto-jp-iluminado.webp",
+      "characters": [
+        {
+          "id": "jp",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "height": "68vh",
+          "active": false
+        }
+      ],
+      "objects": [
+        {
+          "id": "phone-private",
+          "type": "phone",
+          "position": "right",
+          "vertical": "bottom",
+          "html": "<div class='phone-header'>Número desconhecido</div><div class='phone-msg unknown'>Tenho uma.</div><div class='phone-msg unknown'>Preciso vender hoje.</div><div class='phone-msg unknown phone-photo'>foto enviada</div>"
+        }
+      ],
+      "speaker": "JP",
+      "mode": "pensamento",
+      "text": "JP já estava quase desistindo quando uma mensagem apareceu no privado.\nEra um número que ele não tinha salvo."
+    },
+    {
+      "id": "carta-foco",
+      "background": "assets/bg/mesa-deck.svg",
+      "objects": [
+        {
+          "id": "cnc",
+          "type": "image",
+          "kind": "card",
+          "src": "assets/cards/command-and-conquer-misprint.svg",
+          "position": "right",
+          "vertical": "bottom"
+        }
+      ],
+      "speaker": "JP",
+      "mode": "pensamento",
+      "text": "Era ela.\n\nCommand and Conquer.\n\nPrimeira impressão. Rainbow Foil. Misprint."
+    },
+    {
+      "id": "misprint",
+      "background": "assets/bg/mesa-deck.svg",
+      "effect": "flash",
+      "objects": [
+        {
+          "id": "cnc",
+          "type": "image",
+          "kind": "card",
+          "src": "assets/cards/command-and-conquer-misprint.svg",
+          "position": "right",
+          "vertical": "bottom"
+        }
+      ],
+      "speaker": "JP",
+      "mode": "pensamento",
+      "text": "A parte de cima parecia cortada.\nNa borda inferior, uma faixa de cor que não pertencia à carta.\n\nComo se outro pedaço de impressão tivesse ficado preso ali."
+    },
+    {
+      "id": "jp-command",
+      "background": "assets/bg/quarto-jp-iluminado.webp",
+      "characters": [
+        {
+          "id": "jp",
+          "src": "assets/chars/jp-pensativo.png",
+          "position": "left",
+          "height": "70vh"
+        }
+      ],
+      "objects": [
+        {
+          "id": "cnc",
+          "type": "image",
+          "kind": "card",
+          "src": "assets/cards/command-and-conquer-misprint.svg",
+          "position": "right",
+          "vertical": "bottom"
+        }
+      ],
+      "speaker": "JP",
+      "mode": "fala",
+      "text": "Command and Conquer."
+    },
+    {
+      "id": "fim-demo",
+      "background": "black",
+      "titleCard": {
+        "eyebrow": "Fim da estrutura inicial",
+        "title": "Continua",
+        "subtitle": "adicione novas etapas em data/command-and-conquer-vn.json"
+      },
+      "text": "Estrutura pronta: fundo, personagem, objeto, celular, fala, pensamento, avançar e voltar."
+    }
+  ]
+}

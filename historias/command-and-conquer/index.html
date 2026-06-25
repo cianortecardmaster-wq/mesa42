@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Visual Novel — Command and Conquer | Mesa 42</title>
+  <meta name="description" content="Visual Novel da História #001 do Mesa 42: Command and Conquer." />
+  <link rel="stylesheet" href="../../css/style.css" />
+  <link rel="stylesheet" href="../../css/vn.css" />
+</head>
+<body class="vn-body">
+  <main class="vn-app" id="vnApp" data-base-path="../../">
+    <div class="vn-background" id="vnBackground" aria-hidden="true"></div>
+    <div class="vn-vignette" aria-hidden="true"></div>
+
+    <header class="vn-hud">
+      <a href="../../postagens/001-command-and-conquer/" aria-label="Voltar para a postagem">← Postagem</a>
+      <strong id="vnStoryLabel">História #001 — Command and Conquer</strong>
+      <button type="button" id="orientationBtn" class="vn-orientation-toggle" aria-pressed="true">Vertical</button>
+      <button type="button" id="restartBtn">Reiniciar</button>
+    </header>
+
+    <div class="vn-progress" aria-hidden="true"><span id="progressBar"></span></div>
+
+    <section class="vn-stage" id="vnStage" aria-label="Cena da história">
+      <div class="vn-title-card" id="titleCard" hidden>
+        <p id="titleEyebrow"></p>
+        <h1 id="titleText"></h1>
+        <span id="titleSubtitle"></span>
+      </div>
+
+      <div class="vn-characters" id="charactersLayer" aria-hidden="true"></div>
+      <div class="vn-objects" id="objectsLayer" aria-hidden="true"></div>
+    </section>
+
+    <section class="vn-dialogue" id="dialogueBox" aria-live="polite" hidden>
+      <div class="vn-speaker-row">
+        <strong id="speakerName"></strong>
+        <span id="speakerMode"></span>
+      </div>
+      <p id="dialogueText"></p>
+      <div class="vn-controls">
+        <button type="button" id="prevBtn">← Voltar</button>
+        <span id="stepCounter"></span>
+        <button type="button" id="nextBtn">Avançar →</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="../../js/vn-engine.js"></script>
+  <script>
+    window.Mesa42VisualNovel.start({
+      dataUrl: '../../data/command-and-conquer-vn.json',
+      basePath: '../../',
+      storageKey: 'mesa42-command-and-conquer-progress'
+    });
+  </script>
+</body>
+</html>

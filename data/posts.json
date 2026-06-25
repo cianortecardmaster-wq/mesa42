@@ -1,0 +1,14 @@
+[
+  {
+    "date": "2026-06-25",
+    "number": "História #001",
+    "kind": "História",
+    "title": "Command and Conquer",
+    "format": "Visual Novel + Texto",
+    "status": "Em desenvolvimento",
+    "summary": "JP sabe que a Ira está quase pronta. O problema é descobrir quanto custa deixar de ser quase.",
+    "url": "postagens/001-command-and-conquer/",
+    "cover": "assets/bg/quarto-jp-iluminado.webp",
+    "tags": ["Flesh and Blood", "Ira", "Suspense"]
+  }
+]
