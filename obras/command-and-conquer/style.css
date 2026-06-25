@@ -1018,3 +1018,148 @@ button {
     display: flex !important;
   }
 }
+
+
+/* =========================================================
+   FIX MOBILE HORIZONTAL 02
+   - JP maior no celular horizontal
+   - texto forçado em posição absoluta para não ser cortado
+   - mantém desktop sem alteração
+   ========================================================= */
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .character {
+    height: 112dvh !important;
+    max-height: 112dvh !important;
+    width: auto !important;
+    max-width: none !important;
+    bottom: -15dvh !important;
+  }
+
+  body.mobile-landscape-mode .character.left {
+    left: clamp(6px, 5.5vw, 58px) !important;
+    right: auto !important;
+    transform: translateY(18px) !important;
+  }
+
+  body.mobile-landscape-mode .character.left.visible {
+    transform: translateY(0) !important;
+  }
+
+  body.mobile-landscape-mode .dialog-box {
+    left: 7% !important;
+    right: 7% !important;
+    bottom: max(3.5%, calc(env(safe-area-inset-bottom) + 7px)) !important;
+
+    height: clamp(118px, 27dvh, 170px) !important;
+    min-height: 118px !important;
+    max-height: 170px !important;
+
+    padding: 0 !important;
+    overflow: visible !important;
+    clip-path: polygon(2% 0, 100% 0, 100% 80%, 97% 100%, 0 100%, 0 18%) !important;
+  }
+
+  body.mobile-landscape-mode .speaker-name {
+    position: absolute !important;
+    top: 10px !important;
+    left: 34px !important;
+    z-index: 6 !important;
+
+    min-width: 70px !important;
+    max-width: 145px !important;
+    padding: 4px 12px !important;
+
+    font-size: 0.78rem !important;
+    line-height: 1.1 !important;
+    opacity: 1 !important;
+  }
+
+  body.mobile-landscape-mode .speaker-name.empty {
+    opacity: 0 !important;
+  }
+
+  body.mobile-landscape-mode .dialog-text {
+    position: absolute !important;
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    z-index: 5 !important;
+
+    left: 38px !important;
+    right: 190px !important;
+    top: 48px !important;
+    bottom: 28px !important;
+
+    width: auto !important;
+    height: auto !important;
+    min-height: 0 !important;
+    max-height: none !important;
+
+    overflow: visible !important;
+    padding: 0 !important;
+    margin: 0 !important;
+
+    font-size: clamp(0.92rem, 2.35vw, 1.12rem) !important;
+    line-height: 1.28 !important;
+    letter-spacing: 0.01em !important;
+    color: #f5edde !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.9) !important;
+  }
+
+  body.mobile-landscape-mode .dialog-box.mode-emphasis .dialog-text {
+    font-size: clamp(1rem, 2.65vw, 1.25rem) !important;
+  }
+
+  body.mobile-landscape-mode .dialog-nav {
+    position: absolute !important;
+    right: 24px !important;
+    bottom: 14px !important;
+    z-index: 7 !important;
+    gap: 8px !important;
+  }
+
+  body.mobile-landscape-mode .dialog-nav-btn {
+    font-size: 0.76rem !important;
+    line-height: 1 !important;
+    padding: 6px 10px !important;
+  }
+
+  body.mobile-landscape-mode .fullscreen-toggle {
+    font-size: 0.7rem !important;
+    padding: 7px 10px !important;
+  }
+}
+
+/* Celulares horizontais muito baixos */
+@media (max-width: 900px) and (orientation: landscape) and (max-height: 430px) {
+  body.mobile-landscape-mode .character {
+    height: 118dvh !important;
+    bottom: -20dvh !important;
+  }
+
+  body.mobile-landscape-mode .dialog-box {
+    height: 30dvh !important;
+    min-height: 108px !important;
+    max-height: 136px !important;
+  }
+
+  body.mobile-landscape-mode .dialog-text {
+    top: 42px !important;
+    right: 170px !important;
+    bottom: 24px !important;
+    font-size: clamp(0.82rem, 2.2vw, 1rem) !important;
+    line-height: 1.22 !important;
+  }
+
+  body.mobile-landscape-mode .speaker-name {
+    top: 8px !important;
+    left: 30px !important;
+    font-size: 0.7rem !important;
+  }
+
+  body.mobile-landscape-mode .dialog-nav-btn {
+    font-size: 0.68rem !important;
+    padding: 5px 8px !important;
+  }
+}
