@@ -373,7 +373,7 @@ function updateHistory() {
 function updateNavButtons() {
   prevTextBtn.disabled = currentStep <= 0;
   nextTextBtn.disabled = currentStep >= story.length - 1;
-  autoBtn.classList.toggle("active", autoMode);
+  autoBtn?.classList.toggle("active", autoMode);
 }
 
 function saveProgress() {
@@ -451,13 +451,13 @@ nextTextBtn.addEventListener("click", event => {
   next();
 });
 
-historyBtn.addEventListener("click", event => {
+historyBtn?.addEventListener("click", event => {
   event.stopPropagation();
   updateHistory();
   openPanel(historyPanel);
 });
 
-autoBtn.addEventListener("click", event => {
+autoBtn?.addEventListener("click", event => {
   event.stopPropagation();
   autoMode = !autoMode;
   updateNavButtons();
@@ -472,22 +472,22 @@ autoBtn.addEventListener("click", event => {
   }
 });
 
-skipBtn.addEventListener("click", event => {
+skipBtn?.addEventListener("click", event => {
   event.stopPropagation();
   skipForward();
 });
 
-saveBtn.addEventListener("click", event => {
+saveBtn?.addEventListener("click", event => {
   event.stopPropagation();
   saveProgress();
 });
 
-loadBtn.addEventListener("click", event => {
+loadBtn?.addEventListener("click", event => {
   event.stopPropagation();
   loadProgress();
 });
 
-restartBtn.addEventListener("click", event => {
+restartBtn?.addEventListener("click", event => {
   event.stopPropagation();
   restartStory();
 });
@@ -546,11 +546,7 @@ document.addEventListener("keydown", event => {
     prev();
   }
 
-  if (event.key.toLowerCase() === "h") {
-    event.preventDefault();
-    updateHistory();
-    openPanel(historyPanel);
-  }
+  /* Histórico removido dos controles inferiores. */
 });
 
 applyMobileLayoutMode();

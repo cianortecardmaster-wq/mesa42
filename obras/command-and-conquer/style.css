@@ -714,3 +714,66 @@ button {
     overflow-y: auto !important;
   }
 }
+
+
+/* =========================================================
+   Correção Cena 01 — nome do personagem dentro da caixa
+   e remoção dos controles inferiores
+   ========================================================= */
+
+.vn-controls {
+  display: none !important;
+}
+
+.dialog-box {
+  overflow: visible !important;
+}
+
+.speaker-name {
+  top: 12px !important;
+  left: 34px !important;
+  z-index: 4 !important;
+  min-width: 92px !important;
+  max-width: 190px !important;
+  padding: 5px 18px !important;
+  font-size: 1rem !important;
+  line-height: 1.1 !important;
+  opacity: 1;
+}
+
+.speaker-name.empty {
+  opacity: 0 !important;
+}
+
+@media (min-width: 901px) {
+  .dialog-box {
+    padding-top: 58px !important;
+  }
+
+  .dialog-text {
+    min-height: 3.7em !important;
+  }
+}
+
+@media (max-width: 900px) {
+  body.mobile-landscape-mode .dialog-box,
+  body.mobile-portrait-mode .dialog-box {
+    padding-top: 30px !important;
+  }
+
+  body.mobile-landscape-mode .speaker-name,
+  body.mobile-portrait-mode .speaker-name {
+    top: 6px !important;
+    left: 18px !important;
+    min-width: 64px !important;
+    max-width: 130px !important;
+    padding: 3px 10px !important;
+    font-size: 0.68rem !important;
+    line-height: 1.05 !important;
+  }
+
+  body.mobile-landscape-mode .dialog-text,
+  body.mobile-portrait-mode .dialog-text {
+    max-height: calc(20dvh - 62px) !important;
+  }
+}
