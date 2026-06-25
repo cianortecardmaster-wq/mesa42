@@ -1371,3 +1371,99 @@ button {
     max-height: 110dvh !important;
   }
 }
+
+
+/* =========================================================
+   Ajuste Cena 03 — celular maior, mas mais baixo
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .phone-overlay {
+    left: 50% !important;
+    right: auto !important;
+    top: 48% !important;
+    bottom: auto !important;
+
+    height: min(104dvh, 980px) !important;
+    max-height: 104dvh !important;
+
+    transform: translate(-50%, -50%) translateY(7vh) scale(0.98) !important;
+    transform-origin: center center !important;
+    z-index: 28 !important;
+  }
+
+  .phone-overlay.visible {
+    transform: translate(-50%, -50%) translateY(0) scale(1) !important;
+  }
+}
+
+/* Em telas desktop mais baixas: continua grande, mas abaixa para esconder o braço atrás da caixa */
+@media (min-width: 901px) and (max-height: 900px) {
+  .phone-overlay {
+    top: 50% !important;
+    height: min(106dvh, 940px) !important;
+    max-height: 106dvh !important;
+  }
+}
+
+
+/* =========================================================
+   Ajuste Cena 03 — celular com largura de 50% da tela
+   A imagem fica atrás da caixa; o corte inferior não importa.
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .phone-overlay {
+    left: 50% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: 12dvh !important;
+
+    width: 50vw !important;
+    max-width: 920px !important;
+    min-width: 720px !important;
+
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: 607 / 1080 !important;
+
+    transform: translateX(-50%) translateY(7vh) scale(0.98) !important;
+    transform-origin: center bottom !important;
+    z-index: 28 !important;
+  }
+
+  .phone-overlay.visible {
+    transform: translateX(-50%) translateY(0) scale(1) !important;
+  }
+
+  .phone-frame {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+  }
+
+  .phone-chat-layer {
+    left: 30% !important;
+    right: 11% !important;
+    top: 14% !important;
+    bottom: 27% !important;
+  }
+
+  .phone-message {
+    font-size: clamp(0.9rem, 1.05vw, 1.12rem) !important;
+  }
+}
+
+/* Em telas desktop menores, mantém a proporção de 50vw,
+   mas permite um mínimo um pouco menor para não esmagar a leitura. */
+@media (min-width: 901px) and (max-width: 1400px) {
+  .phone-overlay {
+    width: 50vw !important;
+    min-width: 620px !important;
+    bottom: 11dvh !important;
+  }
+
+  .phone-message {
+    font-size: clamp(0.76rem, 1.05vw, 0.98rem) !important;
+  }
+}
