@@ -1272,3 +1272,52 @@ button {
     margin-bottom: 1px !important;
   }
 }
+
+
+/* =========================================================
+   Ajuste Cena 03 — celular centralizado e maior no desktop
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .phone-overlay {
+    left: 50% !important;
+    right: auto !important;
+    top: 46% !important;
+    bottom: auto !important;
+
+    height: min(92dvh, 860px) !important;
+    max-height: 92dvh !important;
+
+    transform: translate(-50%, -50%) translateY(6vh) scale(0.98) !important;
+    transform-origin: center center !important;
+    z-index: 28 !important;
+  }
+
+  .phone-overlay.visible {
+    transform: translate(-50%, -50%) translateY(0) scale(1) !important;
+  }
+
+  .phone-frame {
+    object-fit: contain !important;
+  }
+
+  .phone-chat-layer {
+    left: 30% !important;
+    right: 11% !important;
+    top: 14% !important;
+    bottom: 27% !important;
+  }
+
+  .phone-message {
+    font-size: clamp(0.7rem, 0.82vw, 0.9rem) !important;
+  }
+}
+
+/* Em telas desktop mais baixas, sobe um pouco para esconder o corte inferior atrás da caixa. */
+@media (min-width: 901px) and (max-height: 820px) {
+  .phone-overlay {
+    top: 43% !important;
+    height: min(95dvh, 820px) !important;
+    max-height: 95dvh !important;
+  }
+}
