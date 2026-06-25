@@ -44,7 +44,7 @@ const fullscreenBtn = document.getElementById("fullscreenBtn");
 const rotateOverlay = document.getElementById("rotateOverlay");
 const usePortraitBtn = document.getElementById("usePortraitBtn");
 
-let mobileLayoutMode = localStorage.getItem(STORAGE_KEYS.layout) || "landscape";
+let mobileLayoutMode = "landscape";
 
 function isMobileViewport() {
   return window.matchMedia("(max-width: 900px)").matches;
@@ -58,50 +58,21 @@ function applyMobileLayoutMode() {
   document.body.classList.remove("mobile-landscape-mode", "mobile-portrait-mode");
 
   if (!isMobileViewport()) {
-    rotateOverlay.classList.add("hidden");
-    return;
-  }
-
-  if (mobileLayoutMode === "portrait") {
-    document.body.classList.add("mobile-portrait-mode");
-    rotateOverlay.classList.add("hidden");
-    orientationToggle.textContent = "Horizontal";
+    rotateOverlay?.classList.add("hidden");
     return;
   }
 
   document.body.classList.add("mobile-landscape-mode");
-  orientationToggle.textContent = "Vertical";
 
   if (isPortraitViewport()) {
-    rotateOverlay.classList.remove("hidden");
+    rotateOverlay?.classList.remove("hidden");
   } else {
-    rotateOverlay.classList.add("hidden");
+    rotateOverlay?.classList.add("hidden");
   }
 }
 
 function toggleMobileLayoutMode() {
-  mobileLayoutMode = mobileLayoutMode === "landscape" ? "portrait" : "landscape";
-  localStorage.setItem(STORAGE_KEYS.layout, mobileLayoutMode);
   applyMobileLayoutMode();
-}
-
-function updateFullscreenButton() {
-  if (!fullscreenBtn) return;
-  fullscreenBtn.textContent = document.fullscreenElement ? "Sair tela cheia" : "Tela cheia";
-}
-
-async function toggleFullscreen() {
-  try {
-    if (!document.fullscreenElement) {
-      await document.documentElement.requestFullscreen();
-    } else {
-      await document.exitFullscreen();
-    }
-  } catch (error) {
-    showToast("Use o modo tela cheia do navegador.");
-  } finally {
-    updateFullscreenButton();
-  }
 }
 
 function showToast(message) {
@@ -505,7 +476,7 @@ historyPanel.addEventListener("click", event => {
   if (event.target === historyPanel) closePanel(historyPanel);
 });
 
-orientationToggle.addEventListener("click", event => {
+orientationToggle?.addEventListener("click", event => {
   event.stopPropagation();
   toggleMobileLayoutMode();
 });
@@ -515,10 +486,8 @@ fullscreenBtn.addEventListener("click", event => {
   toggleFullscreen();
 });
 
-usePortraitBtn.addEventListener("click", event => {
+usePortraitBtn?.addEventListener("click", event => {
   event.stopPropagation();
-  mobileLayoutMode = "portrait";
-  localStorage.setItem(STORAGE_KEYS.layout, mobileLayoutMode);
   applyMobileLayoutMode();
 });
 

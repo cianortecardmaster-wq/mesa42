@@ -777,3 +777,109 @@ button {
     max-height: calc(20dvh - 62px) !important;
   }
 }
+
+
+/* =========================================================
+   Mobile Cena 01 — somente horizontal
+   JP lateral, caixa como desktop, fonte menor
+   ========================================================= */
+
+@media (max-width: 900px) {
+  .orientation-toggle {
+    display: none !important;
+  }
+
+  .fullscreen-toggle {
+    display: block !important;
+    top: max(10px, env(safe-area-inset-top)) !important;
+    right: max(10px, env(safe-area-inset-right)) !important;
+    font-size: 0.66rem !important;
+    padding: 5px 9px !important;
+  }
+
+  body.mobile-landscape-mode .background-layer,
+  body.mobile-portrait-mode .background-layer {
+    background-size: cover !important;
+    background-position: center center !important;
+  }
+
+  body.mobile-landscape-mode .character,
+  body.mobile-portrait-mode .character {
+    height: 82dvh !important;
+    max-height: 82dvh !important;
+    width: auto !important;
+    max-width: none !important;
+    bottom: 0 !important;
+  }
+
+  body.mobile-landscape-mode .character.left,
+  body.mobile-portrait-mode .character.left {
+    left: clamp(14px, 5vw, 52px) !important;
+    right: auto !important;
+    transform: translateY(18px) !important;
+  }
+
+  body.mobile-landscape-mode .character.left.visible,
+  body.mobile-portrait-mode .character.left.visible {
+    transform: translateY(0) !important;
+  }
+
+  body.mobile-landscape-mode .dialog-box,
+  body.mobile-portrait-mode .dialog-box {
+    left: 8% !important;
+    right: 8% !important;
+    bottom: max(4.5%, calc(env(safe-area-inset-bottom) + 8px)) !important;
+    height: 22dvh !important;
+    max-height: 22dvh !important;
+    min-height: 0 !important;
+    padding: 34px 34px 36px !important;
+    clip-path: polygon(2% 0, 100% 0, 100% 80%, 97% 100%, 0 100%, 0 18%) !important;
+  }
+
+  body.mobile-landscape-mode .speaker-name,
+  body.mobile-portrait-mode .speaker-name {
+    top: 8px !important;
+    left: 24px !important;
+    min-width: 72px !important;
+    max-width: 150px !important;
+    padding: 4px 14px !important;
+    font-size: 0.72rem !important;
+    line-height: 1.05 !important;
+  }
+
+  body.mobile-landscape-mode .dialog-text,
+  body.mobile-portrait-mode .dialog-text {
+    font-size: clamp(0.78rem, 2.05vw, 0.98rem) !important;
+    line-height: 1.25 !important;
+    min-height: 0 !important;
+    max-height: calc(22dvh - 70px) !important;
+    overflow-y: auto !important;
+    padding-right: 4px !important;
+  }
+
+  body.mobile-landscape-mode .dialog-nav,
+  body.mobile-portrait-mode .dialog-nav {
+    right: 18px !important;
+    bottom: 10px !important;
+    gap: 8px !important;
+  }
+
+  body.mobile-landscape-mode .dialog-nav-btn,
+  body.mobile-portrait-mode .dialog-nav-btn {
+    font-size: 0.68rem !important;
+    padding: 4px 8px !important;
+  }
+
+  .rotate-card {
+    width: min(360px, 88vw) !important;
+    padding: 24px 20px !important;
+  }
+
+  .rotate-card h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .rotate-card p {
+    font-size: 0.95rem !important;
+  }
+}
