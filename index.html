@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mesa 42 | Cianorte Card Masters</title>
+  <meta name="description" content="Mesa 42 é o espaço narrativo do Cianorte Card Masters: visual novels, fanfics, HQs e histórias fictícias sobre card games." />
+  <meta name="theme-color" content="#06120d" />
+
+  <meta property="og:title" content="Mesa 42" />
+  <meta property="og:description" content="A mesa onde tudo pode acontecer. Visual novels, fanfics, HQs e histórias fictícias sobre card games." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/logo-mesa-42.png" />
+
+  <link rel="icon" type="image/png" href="assets/icon-mesa42.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800&family=Bangers&family=Fugaz+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="js/obras.js" defer></script>
+</head>
+<body>
+  <div class="site-bg" aria-hidden="true"></div>
+
+  <header class="hero">
+    <nav class="topbar" aria-label="Navegação principal">
+      <a class="brand-cc" href="https://cianortecardmasters.com.br" aria-label="Voltar para Cianorte Card Masters">
+        <img src="assets/logo-cc-masters.png" alt="Logo Cianorte Card Masters" />
+        <span>Cianorte Card Masters apresenta</span>
+      </a>
+      <a class="ghost-link" href="https://cianortecardmasters.com.br">Voltar ao CC Masters</a>
+    </nav>
+
+    <section class="hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">Arquivo narrativo da comunidade</p>
+        <h1>Mesa 42</h1>
+        <p class="tagline">A mesa onde tudo pode acontecer.</p>
+        <p class="intro">
+          Visual novels, graphic novels, fanfics, HQs, imagens e histórias fictícias
+          inspiradas por card games, blefes, derrotas, obsessões e pequenas lendas locais.
+        </p>
+        <div class="hero-actions">
+          <a class="primary-button" href="#obras">Ver obras</a>
+          <a class="secondary-button" href="https://cianortecardmasters.com.br">Conhecer a comunidade</a>
+        </div>
+      </div>
+
+      <div class="hero-emblem" aria-label="Logo Mesa 42">
+        <img src="assets/logo-mesa-42.png" alt="Mesa 42" />
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="manifesto" aria-label="Sobre o projeto Mesa 42">
+      <div class="manifesto-card">
+        <img src="assets/icon-mesa42.png" alt="Ícone Mesa 42" />
+        <div>
+          <h2>Nem toda partida termina quando os pontos de vida acabam.</h2>
+          <p>
+            Algumas histórias nascem entre uma rodada e outra. Aqui, uma carta pode ser pista,
+            maldição, piada interna ou o começo de uma queda muito estranha.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="library" id="obras" aria-labelledby="obras-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Escolha uma cadeira</p>
+          <h2 id="obras-title">Obras publicadas</h2>
+        </div>
+        <p>
+          Cada obra abre em uma página própria, com arquivos e layout independentes.
+        </p>
+      </div>
+
+      <div class="filters" aria-label="Filtros de obras">
+        <button class="filter-button active" type="button" data-filter="todas">Todas</button>
+        <button class="filter-button" type="button" data-filter="Visual Novel">Visual Novels</button>
+        <button class="filter-button" type="button" data-filter="Fanfic">Fanfics</button>
+        <button class="filter-button" type="button" data-filter="HQ">HQs</button>
+        <button class="filter-button" type="button" data-filter="Em breve">Em breve</button>
+      </div>
+
+      <div class="works-grid" id="obras-grid" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div>
+      <strong>Mesa 42</strong>
+      <p>Projeto fictício e narrativo do Cianorte Card Masters.</p>
+    </div>
+    <a href="https://cianortecardmasters.com.br">cianortecardmasters.com.br</a>
+  </footer>
+</body>
+</html>
