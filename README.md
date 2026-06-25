@@ -27,3 +27,10 @@ No mobile, a Visual Novel abre em modo horizontal por padrão. Há um botão no 
 3. Adicione a nova história na lista da Home (`index.html`).
 
 A Home deve continuar apenas listando e direcionando para as histórias.
+
+
+## Identidade visual
+
+- A Home usa o lockup com **CC Masters apresenta Mesa 42**.
+- O favicon do site usa o ícone do Mesa 42.
+- A História #001 usa a logo oficial **Command and Conquer** tanto na Home quanto na abertura da Visual Novel.

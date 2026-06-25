@@ -246,3 +246,7 @@
   .vn-objects{inset:54px 0 124px}.vn-object.phone{width:min(300px,36vw);padding:14px 11px 17px;border-width:5px;border-radius:26px}.phone-screen{min-height:200px;max-height:calc(100svh - 150px)}.phone-msg{font-size:.76rem;padding:7px 9px;margin:6px 0}.phone-photo{height:58px;font-size:.62rem}.vn-object.card{width:min(155px,20vw)}
   .vn-dialogue{bottom:9px;width:min(980px,calc(100vw - 26px));min-height:108px;padding:20px 22px 11px;border-radius:16px}.vn-speaker-row{margin-top:-43px;margin-bottom:8px;min-height:34px}.vn-speaker-row strong{min-width:96px;padding:8px 14px;font-size:.72rem}.vn-speaker-row span{font-size:.66rem}#dialogueText{font-size:clamp(.92rem,2.55vw,1.16rem);line-height:1.38}.vn-controls{grid-template-columns:auto 1fr auto;margin-top:9px;gap:10px}.vn-controls span{grid-column:auto;grid-row:auto;font-size:.68rem}.vn-controls button{font-size:.68rem;padding:8px 12px}
 }
+
+
+.vn-title-image{display:block;width:min(92vw,860px);max-height:34vh;margin:0 auto 18px;object-fit:contain;filter:drop-shadow(0 16px 34px rgba(0,0,0,.55));}
+.vn-title-card p:empty,.vn-title-card h1:empty,.vn-title-card span:empty{display:none;}

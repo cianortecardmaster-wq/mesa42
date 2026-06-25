@@ -7,9 +7,10 @@
       "id": "abertura-titulo",
       "background": "black",
       "titleCard": {
-        "eyebrow": "Mesa 42 apresenta",
+        "eyebrow": "CC Masters apresenta Mesa 42",
         "title": "Command and Conquer",
-        "subtitle": "História #001"
+        "subtitle": "História #001",
+        "image": "assets/logos/command-and-conquer-logo.png"
       }
     },
     {

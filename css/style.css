@@ -317,3 +317,48 @@ body.home-clean{
   .story-item{grid-template-columns:1fr;gap:14px;padding:20px;border-radius:20px}
   .story-button{width:100%}
 }
+
+
+/* Ajustes da home com logos reais */
+.home-brand{display:inline-flex;align-items:center;gap:10px}
+.home-brand img{width:26px;height:26px;object-fit:contain;filter:drop-shadow(0 4px 10px rgba(0,0,0,.35))}
+.home-title-block{padding:clamp(22px,4vw,34px)}
+.home-brand-strip{
+  display:grid;
+  grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);
+  gap:20px;
+  align-items:center;
+}
+.home-strip-logo{display:block;width:100%;height:auto;object-fit:contain}
+.home-strip-logo.cc{max-width:420px}
+.home-strip-logo.mesa{max-width:500px;justify-self:end}
+.home-presents{
+  color:var(--gold);
+  font-family:Georgia,serif;
+  font-style:italic;
+  font-size:clamp(1rem,2vw,1.25rem);
+  white-space:nowrap;
+}
+.story-list-heading.compact{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08)}
+.story-list-heading.compact h1{
+  margin:6px 0 0;
+  font-size:clamp(1.45rem,4vw,2.4rem);
+  line-height:1;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+}
+.story-item-featured{grid-template-columns:150px minmax(0,1fr) auto}
+.story-logo{
+  display:block;
+  width:min(100%, 560px);
+  height:auto;
+  margin:4px 0 12px;
+  filter:drop-shadow(0 10px 26px rgba(0,0,0,.45));
+}
+@media (max-width:820px){
+  .home-brand-strip{grid-template-columns:1fr;gap:14px;justify-items:center;text-align:center}
+  .home-strip-logo.cc,.home-strip-logo.mesa{max-width:min(100%,320px);justify-self:center}
+  .home-presents{font-size:1rem}
+  .story-item-featured{grid-template-columns:1fr}
+  .story-logo{width:min(100%,460px)}
+}

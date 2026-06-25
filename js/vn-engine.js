@@ -50,6 +50,17 @@
       return;
     }
     els.titleCard.hidden = false;
+    if(els.titleImage){
+      if(title.image){
+        els.titleImage.hidden = false;
+        els.titleImage.src = asset(title.image);
+        els.titleImage.alt = title.title || 'Título da história';
+      }else{
+        els.titleImage.hidden = true;
+        els.titleImage.removeAttribute('src');
+        els.titleImage.alt = '';
+      }
+    }
     els.titleEyebrow.textContent = title.eyebrow || '';
     els.titleText.textContent = title.title || '';
     els.titleSubtitle.textContent = title.subtitle || '';
@@ -190,6 +201,7 @@
     els.app = $('#vnApp');
     els.stage = $('#vnStage');
     els.titleCard = $('#titleCard');
+    els.titleImage = $('#titleImage');
     els.titleEyebrow = $('#titleEyebrow');
     els.titleText = $('#titleText');
     els.titleSubtitle = $('#titleSubtitle');

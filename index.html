@@ -5,31 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mesa 42 — Histórias</title>
   <meta name="description" content="Mesa 42: histórias de ficção sobre card games, comunidade local e acontecimentos estranhos da mesa." />
+  <link rel="icon" type="image/png" href="assets/logos/mesa42-icon.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body class="home-clean">
   <header class="home-topbar" aria-label="Topo Mesa 42">
-    <a class="home-brand" href="./" aria-label="Mesa 42 — Home">Mesa 42</a>
+    <a class="home-brand" href="./" aria-label="Mesa 42 — Home">
+      <img src="assets/logos/mesa42-icon.png" alt="" />
+      <span>Mesa 42</span>
+    </a>
   </header>
 
   <main class="home-page" id="conteudo">
     <section class="home-title-block" aria-labelledby="home-title">
-      <p class="eyebrow">CC Master apresenta</p>
-      <h1 id="home-title">Mesa 42</h1>
-      <p class="home-subtitle">Histórias</p>
+      <div class="home-brand-strip" aria-label="CC Masters apresenta Mesa 42">
+        <img class="home-strip-logo cc" src="assets/logos/cc-masters-logo.png" alt="Cianorte Card Masters" />
+        <span class="home-presents">apresenta</span>
+        <img class="home-strip-logo mesa" src="assets/logos/mesa42-logo.png" alt="Mesa 42" />
+      </div>
+      <div class="story-list-heading compact">
+        <p class="eyebrow">Lista de histórias</p>
+        <h1 id="home-title">Arquivo Mesa 42</h1>
+      </div>
     </section>
 
     <section class="story-list" aria-labelledby="story-list-title">
-      <div class="story-list-heading">
-        <p class="eyebrow">Lista de histórias</p>
-        <h2 id="story-list-title">Arquivo</h2>
-      </div>
+      <h2 id="story-list-title" class="sr-only">Histórias publicadas</h2>
 
-      <article class="story-item">
+      <article class="story-item story-item-featured">
         <div class="story-number">História #001</div>
         <div class="story-main">
           <p class="story-date">25/06/2026</p>
-          <h3>Command and Conquer</h3>
+          <img class="story-logo" src="assets/logos/command-and-conquer-logo.png" alt="Command and Conquer — História #001" />
           <p>JP sabe que a Ira está quase pronta. O problema é descobrir quanto custa deixar de ser quase.</p>
           <div class="story-tags" aria-label="Formatos e temas">
             <span>Visual Novel</span>
