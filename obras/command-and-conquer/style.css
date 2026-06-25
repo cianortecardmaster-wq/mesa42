@@ -1467,3 +1467,43 @@ button {
     font-size: clamp(0.76rem, 1.05vw, 0.98rem) !important;
   }
 }
+
+
+/* =========================================================
+   Ajuste Cena 03 — reposicionamento do celular no desktop
+   Mantém width 50vw, mas abaixa para mostrar o topo do aparelho
+   com uma folga visível.
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .phone-overlay {
+    left: 50% !important;
+    right: auto !important;
+    top: 2.5dvh !important;
+    bottom: auto !important;
+
+    width: 50vw !important;
+    max-width: 920px !important;
+    min-width: 720px !important;
+
+    height: auto !important;
+    max-height: none !important;
+    aspect-ratio: 607 / 1080 !important;
+
+    transform: translateX(-50%) translateY(0) scale(1) !important;
+    transform-origin: center top !important;
+    z-index: 28 !important;
+  }
+
+  .phone-overlay.visible {
+    transform: translateX(-50%) translateY(0) scale(1) !important;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1400px) {
+  .phone-overlay {
+    width: 50vw !important;
+    min-width: 620px !important;
+    top: 2dvh !important;
+  }
+}
