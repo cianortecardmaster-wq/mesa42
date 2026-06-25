@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mesa 42 | Cianorte Card Masters</title>
-  <meta name="description" content="Mesa 42 é o espaço narrativo do Cianorte Card Masters: visual novels, fanfics, HQs e histórias fictícias sobre card games." />
+  <meta name="description" content="Mesa 42 é o arquivo narrativo do Cianorte Card Masters: visual novels, fanfics, HQs e histórias fictícias sobre card games." />
   <meta name="theme-color" content="#06120d" />
 
   <meta property="og:title" content="Mesa 42" />
@@ -17,7 +17,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800&family=Bangers&family=Fugaz+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/obras.js" defer></script>
 </head>
 <body>
   <div class="site-bg" aria-hidden="true"></div>
@@ -72,9 +71,7 @@
           <p class="eyebrow">Escolha uma cadeira</p>
           <h2 id="obras-title">Obras publicadas</h2>
         </div>
-        <p>
-          Cada obra abre em uma página própria, com arquivos e layout independentes.
-        </p>
+        <p>Cada obra abre em uma página própria, com arquivos e layout independentes.</p>
       </div>
 
       <div class="filters" aria-label="Filtros de obras">
@@ -82,10 +79,64 @@
         <button class="filter-button" type="button" data-filter="Visual Novel">Visual Novels</button>
         <button class="filter-button" type="button" data-filter="Fanfic">Fanfics</button>
         <button class="filter-button" type="button" data-filter="HQ">HQs</button>
-        <button class="filter-button" type="button" data-filter="Em breve">Em breve</button>
+        <button class="filter-button" type="button" data-filter="em-breve">Em breve</button>
       </div>
 
-      <div class="works-grid" id="obras-grid" aria-live="polite"></div>
+      <div class="works-grid">
+        <article class="work-card featured" data-tipo="Visual Novel" data-disponivel="sim">
+          <div class="work-media command-media">
+            <img src="assets/command-and-conquer-logo.png" alt="Command and Conquer — História #001" loading="lazy" />
+          </div>
+          <div class="work-body">
+            <div class="work-meta">
+              <span class="pill">História #001</span>
+              <span class="pill">Visual Novel</span>
+              <span class="pill status-disponivel">Disponível</span>
+            </div>
+            <h3 class="work-title">Command and Conquer</h3>
+            <p class="work-summary">
+              JP só precisava de uma carta para virar a partida. Mas algumas cartas parecem escolher o jogador de volta.
+            </p>
+            <a class="work-button" href="./obras/command-and-conquer/">Abrir obra</a>
+          </div>
+        </article>
+
+        <article class="work-card" data-tipo="Fanfic" data-disponivel="nao">
+          <div class="work-media">
+            <img src="assets/placeholders/obra-placeholder.svg" alt="Arquivo Secreto — em breve" loading="lazy" />
+          </div>
+          <div class="work-body">
+            <div class="work-meta">
+              <span class="pill">Em breve</span>
+              <span class="pill">Fanfic</span>
+              <span class="pill status-em-breve">Em desenvolvimento</span>
+            </div>
+            <h3 class="work-title">Arquivo Secreto</h3>
+            <p class="work-summary">
+              Um relato estranho encontrado depois de um torneio. Ninguém lembra quem escreveu. Todo mundo lembra da última rodada.
+            </p>
+            <span class="work-button disabled">Em breve</span>
+          </div>
+        </article>
+
+        <article class="work-card" data-tipo="HQ" data-disponivel="nao">
+          <div class="work-media">
+            <img src="assets/placeholders/obra-placeholder.svg" alt="Relato Perdido — em breve" loading="lazy" />
+          </div>
+          <div class="work-body">
+            <div class="work-meta">
+              <span class="pill">Em breve</span>
+              <span class="pill">HQ</span>
+              <span class="pill status-em-breve">Em breve</span>
+            </div>
+            <h3 class="work-title">Relato Perdido</h3>
+            <p class="work-summary">
+              Cartas na mesa, risadas fora de hora e uma história que provavelmente não deveria ter sido desenhada.
+            </p>
+            <span class="work-button disabled">Em breve</span>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
@@ -96,5 +147,7 @@
     </div>
     <a href="https://cianortecardmasters.com.br">cianortecardmasters.com.br</a>
   </footer>
+
+  <script src="js/obras.js"></script>
 </body>
 </html>

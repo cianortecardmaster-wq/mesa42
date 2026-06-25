@@ -1,10 +1,23 @@
-<svg width="900" height="520" viewBox="0 0 900 520" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="900" height="520" rx="34" fill="#06120D"/>
-  <rect x="22" y="22" width="856" height="476" rx="28" stroke="#CDA55A" stroke-opacity="0.42" stroke-width="3"/>
-  <circle cx="450" cy="250" r="122" fill="#0A1A13" stroke="#19D58A" stroke-opacity="0.42" stroke-width="3"/>
-  <path d="M450 96L520 250L450 404L380 250L450 96Z" fill="#07130F" stroke="#E1C47B" stroke-width="6"/>
-  <circle cx="450" cy="250" r="56" fill="#19D58A" fill-opacity="0.18" stroke="#F2EBD8" stroke-opacity="0.7" stroke-width="5"/>
-  <circle cx="450" cy="250" r="20" fill="#020504"/>
-  <path d="M220 382H680" stroke="#CDA55A" stroke-opacity="0.52" stroke-width="4" stroke-linecap="round"/>
-  <text x="450" y="438" text-anchor="middle" fill="#F2EBD8" font-family="Arial Black, Impact, sans-serif" font-size="54" letter-spacing="4">EM BREVE</text>
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500" role="img" aria-label="Obra em breve">
+  <defs>
+    <radialGradient id="g" cx="50%" cy="40%" r="70%">
+      <stop offset="0" stop-color="#123c2a"/>
+      <stop offset="0.55" stop-color="#07140f"/>
+      <stop offset="1" stop-color="#020403"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" x2="1">
+      <stop offset="0" stop-color="#9f7830"/>
+      <stop offset="0.5" stop-color="#f1d083"/>
+      <stop offset="1" stop-color="#9f7830"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="500" fill="url(#g)"/>
+  <rect x="40" y="40" width="820" height="420" rx="28" fill="none" stroke="url(#gold)" stroke-width="6" opacity=".8"/>
+  <g opacity=".18" fill="#fff">
+    <rect x="180" y="105" width="150" height="220" rx="14" transform="rotate(-12 255 215)"/>
+    <rect x="375" y="92" width="150" height="220" rx="14"/>
+    <rect x="570" y="105" width="150" height="220" rx="14" transform="rotate(12 645 215)"/>
+  </g>
+  <text x="450" y="360" fill="#f4e8c6" font-family="Georgia,serif" font-size="48" text-anchor="middle" font-weight="700">EM BREVE</text>
+  <text x="450" y="407" fill="#9fe7bd" font-family="Arial,sans-serif" font-size="22" text-anchor="middle" letter-spacing="4">MESA 42</text>
 </svg>

@@ -1,66 +1,39 @@
 # Mesa 42
 
-Home estática do projeto **Mesa 42**, área narrativa do Cianorte Card Masters.
+Home do projeto Mesa 42, área narrativa do Cianorte Card Masters.
 
-A home funciona como uma vitrine de obras. Cada card aponta para uma obra em pasta própria, com HTML, CSS, JS e assets independentes.
+## Como subir no GitHub Pages
 
-## Estrutura principal
+1. Extraia o ZIP.
+2. Envie o conteúdo da pasta para a raiz do repositório.
+3. No GitHub, vá em Settings > Pages.
+4. Configure a branch `main` e a pasta `/root`.
+
+## Link da visual novel
+
+Na home, o botão **Abrir obra** aponta para:
 
 ```txt
-/
+./obras/command-and-conquer/
+```
+
+A visual novel está em:
+
+```txt
+obras/command-and-conquer/index.html
+```
+
+Os arquivos dela são independentes da home:
+
+```txt
+obras/command-and-conquer/
 ├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── obras.js
-├── assets/
-│   ├── icon-mesa42.png
-│   ├── logo-mesa-42.png
-│   ├── logo-cc-masters.png
-│   ├── command-and-conquer-logo.png
-│   └── placeholders/
-└── obras/
-    └── command-and-conquer/
-        ├── index.html
-        ├── style.css
-        ├── story.js
-        ├── engine.js
-        └── assets/
+├── style.css
+├── story.js
+├── engine.js
+└── assets/
 ```
 
-## Obra já ligada na home
+## Adicionar novas obras
 
-- **História #001 — Command and Conquer**
-- Tipo: Visual Novel
-- Link da home: `obras/command-and-conquer/index.html`
-
-## Como adicionar nova obra
-
-1. Crie uma nova pasta dentro de `obras/`, por exemplo:
-
-```txt
-obras/nome-da-obra/index.html
-```
-
-2. Coloque os arquivos próprios da obra dentro dessa pasta.
-3. Abra `js/obras.js` e adicione um novo objeto no array `obras`.
-
-Exemplo:
-
-```js
-{
-  numero: "História #002",
-  titulo: "Nome da Obra",
-  tipo: "Fanfic",
-  status: "Disponível",
-  resumo: "Resumo curto da obra.",
-  imagem: "assets/placeholders/obra-placeholder.svg",
-  link: "obras/nome-da-obra/index.html",
-  disponivel: true,
-  destaque: false
-}
-```
-
-## GitHub Pages
-
-Suba todos os arquivos na raiz do repositório e ative o GitHub Pages usando a branch `main` e a pasta `/root`.
+Crie uma nova pasta dentro de `obras/` e adicione um novo card no `index.html` da home.
