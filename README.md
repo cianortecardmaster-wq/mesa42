@@ -1,25 +1,49 @@
 # Mesa 42
 
-Home estática para o projeto narrativo **Mesa 42**, do Cianorte Card Masters.
+Home estática do projeto **Mesa 42**, área narrativa do Cianorte Card Masters.
 
-## Estrutura
+A home funciona como uma vitrine de obras. Cada card aponta para uma obra em pasta própria, com HTML, CSS, JS e assets independentes.
+
+## Estrutura principal
 
 ```txt
 /
 ├── index.html
-├── css/style.css
-├── js/obras.js
+├── css/
+│   └── style.css
+├── js/
+│   └── obras.js
 ├── assets/
+│   ├── icon-mesa42.png
+│   ├── logo-mesa-42.png
+│   ├── logo-cc-masters.png
+│   ├── command-and-conquer-logo.png
+│   └── placeholders/
 └── obras/
     └── command-and-conquer/
-        └── index.html
+        ├── index.html
+        ├── style.css
+        ├── story.js
+        ├── engine.js
+        └── assets/
 ```
 
-## Como adicionar uma nova obra
+## Obra já ligada na home
 
-1. Crie uma pasta em `obras/nome-da-obra/`.
-2. Coloque o HTML, CSS, JS e assets próprios da obra nessa pasta.
-3. Adicione um novo item no array `obras` em `js/obras.js`.
+- **História #001 — Command and Conquer**
+- Tipo: Visual Novel
+- Link da home: `obras/command-and-conquer/index.html`
+
+## Como adicionar nova obra
+
+1. Crie uma nova pasta dentro de `obras/`, por exemplo:
+
+```txt
+obras/nome-da-obra/index.html
+```
+
+2. Coloque os arquivos próprios da obra dentro dessa pasta.
+3. Abra `js/obras.js` e adicione um novo objeto no array `obras`.
 
 Exemplo:
 
@@ -30,13 +54,13 @@ Exemplo:
   tipo: "Fanfic",
   status: "Disponível",
   resumo: "Resumo curto da obra.",
-  imagem: "assets/minha-logo.png",
+  imagem: "assets/placeholders/obra-placeholder.svg",
   link: "obras/nome-da-obra/index.html",
   disponivel: true,
   destaque: false
 }
 ```
 
-## Publicação no GitHub Pages
+## GitHub Pages
 
-Suba todos os arquivos da pasta para o repositório e ative o GitHub Pages usando a branch `main` e a pasta `/root`.
+Suba todos os arquivos na raiz do repositório e ative o GitHub Pages usando a branch `main` e a pasta `/root`.
