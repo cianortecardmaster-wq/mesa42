@@ -3,84 +3,43 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mesa 42 — Ficções da comunidade card game</title>
-  <meta name="description" content="CC Master apresenta Mesa 42: visual novels, textos, graphic novels e histórias de ficção sobre card games e a comunidade local de Cianorte." />
+  <title>Mesa 42 — Histórias</title>
+  <meta name="description" content="Mesa 42: histórias de ficção sobre card games, comunidade local e acontecimentos estranhos da mesa." />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
-  <header class="site-shell topbar">
-    <a class="topbar-brand" href="./" aria-label="Voltar para a Home Mesa 42">Mesa 42</a>
-    <nav class="topbar-nav" aria-label="Navegação principal">
-      <a href="#postagens">Postagens</a>
-      <a href="docs/estrutura.html">Estrutura</a>
-    </nav>
+<body class="home-clean">
+  <header class="home-topbar" aria-label="Topo Mesa 42">
+    <a class="home-brand" href="./" aria-label="Mesa 42 — Home">Mesa 42</a>
   </header>
 
-  <main class="site-shell">
-    <section class="hero" aria-labelledby="titulo-mesa42">
-      <div class="brand-lockup">
-        <img src="assets/logos/cc-master-logo.svg" alt="CC Master" />
-        <span class="presents">apresenta</span>
-        <img src="assets/logos/mesa42-logo.svg" alt="Mesa 42" />
-      </div>
-
-      <div class="hero-copy">
-        <p class="eyebrow">Ficção local • card games • humor sombrio</p>
-        <h1 id="titulo-mesa42">Mesa 42</h1>
-        <p>
-          Histórias da mesa, da loja, do Centro Cultural e daquele canto da comunidade onde uma carta rara pode virar obsessão,
-          piada interna ou problema sobrenatural.
-        </p>
-      </div>
+  <main class="home-page" id="conteudo">
+    <section class="home-title-block" aria-labelledby="home-title">
+      <p class="eyebrow">CC Master apresenta</p>
+      <h1 id="home-title">Mesa 42</h1>
+      <p class="home-subtitle">Histórias</p>
     </section>
 
-    <section class="home-intro" aria-label="Formatos do Mesa 42">
-      <article>
-        <strong>Visual Novel</strong>
-        <span>Cena em tela cheia, fundo dinâmico, personagens, objetos e texto por clique.</span>
-      </article>
-      <article>
-        <strong>Textos</strong>
-        <span>Contos, capítulos e versões literárias para leitura tradicional.</span>
-      </article>
-      <article>
-        <strong>Graphic Novels</strong>
-        <span>Páginas e capítulos em quadrinhos, independentes da home.</span>
-      </article>
-    </section>
-
-    <section id="postagens" class="posts-section" aria-labelledby="postagens-title">
-      <div class="section-heading">
-        <p class="eyebrow">Arquivo Mesa 42</p>
-        <h2 id="postagens-title">Postagens</h2>
-        <p>A Home apenas lista e direciona. O conteúdo de cada história fica separado em sua própria página.</p>
+    <section class="story-list" aria-labelledby="story-list-title">
+      <div class="story-list-heading">
+        <p class="eyebrow">Lista de histórias</p>
+        <h2 id="story-list-title">Arquivo</h2>
       </div>
 
-      <div class="posts-list" id="postsList" aria-live="polite">
-        <article class="post-card loading-card">
-          <p class="eyebrow">Carregando</p>
-          <h3>Buscando postagens...</h3>
-        </article>
-      </div>
-
-      <noscript>
-        <article class="post-card">
-          <div>
-            <span class="eyebrow">História #001 • 25/06/2026</span>
-            <h3>Command and Conquer</h3>
-            <p>Visual Novel, texto e estrutura para futuras versões em graphic novel.</p>
+      <article class="story-item">
+        <div class="story-number">História #001</div>
+        <div class="story-main">
+          <p class="story-date">25/06/2026</p>
+          <h3>Command and Conquer</h3>
+          <p>JP sabe que a Ira está quase pronta. O problema é descobrir quanto custa deixar de ser quase.</p>
+          <div class="story-tags" aria-label="Formatos e temas">
+            <span>Visual Novel</span>
+            <span>Flesh and Blood</span>
+            <span>Suspense</span>
           </div>
-          <a class="button" href="postagens/001-command-and-conquer/">Abrir postagem</a>
-        </article>
-      </noscript>
+        </div>
+        <a class="button story-button" href="historias/command-and-conquer/">Abrir história</a>
+      </article>
     </section>
   </main>
-
-  <footer class="site-shell footer">
-    <span>CC Master apresenta Mesa 42.</span>
-    <span>Site estático pronto para GitHub Pages.</span>
-  </footer>
-
-  <script src="js/home.js"></script>
 </body>
 </html>

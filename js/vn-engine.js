@@ -221,10 +221,9 @@
     if(!response.ok) throw new Error('Não foi possível carregar o roteiro da visual novel.');
     state.data = await response.json();
 
-    try{
-      const saved = Number(localStorage.getItem(state.storageKey));
-      if(Number.isFinite(saved) && saved >= 0 && saved < state.data.steps.length) state.index = saved;
-    }catch(e){}
+    // A história sempre abre do começo: fundo preto + título.
+    // A preferência horizontal/vertical continua salva separadamente.
+    state.index = 0;
 
     render();
   }
