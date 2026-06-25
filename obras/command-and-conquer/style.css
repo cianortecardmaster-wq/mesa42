@@ -1321,3 +1321,53 @@ button {
     max-height: 95dvh !important;
   }
 }
+
+
+/* =========================================================
+   Ajuste Cena 03 — celular maior e menos corte no desktop
+   ========================================================= */
+
+@media (min-width: 901px) {
+  .phone-overlay {
+    left: 50% !important;
+    right: auto !important;
+    top: 40% !important;
+    bottom: auto !important;
+
+    height: min(104dvh, 980px) !important;
+    max-height: 104dvh !important;
+
+    transform: translate(-50%, -50%) translateY(7vh) scale(0.98) !important;
+    transform-origin: center center !important;
+    z-index: 28 !important;
+  }
+
+  .phone-overlay.visible {
+    transform: translate(-50%, -50%) translateY(0) scale(1) !important;
+  }
+
+  .phone-frame {
+    object-fit: contain !important;
+  }
+
+  .phone-chat-layer {
+    left: 30% !important;
+    right: 11% !important;
+    top: 14% !important;
+    bottom: 27% !important;
+  }
+
+  .phone-message {
+    font-size: clamp(0.76rem, 0.9vw, 0.98rem) !important;
+  }
+}
+
+/* Ajuste extra para telas mais baixas:
+   sobe mais o celular e amplia, para esconder o corte inferior atrás da caixa */
+@media (min-width: 901px) and (max-height: 900px) {
+  .phone-overlay {
+    top: 37% !important;
+    height: min(110dvh, 940px) !important;
+    max-height: 110dvh !important;
+  }
+}
