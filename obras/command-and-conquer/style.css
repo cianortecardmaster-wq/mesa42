@@ -639,3 +639,78 @@ button {
     padding: 4px 7px;
   }
 }
+
+/* =========================================================
+   Correção Cena 01 — escala fixa de personagem e mobile
+   ========================================================= */
+@media (min-width: 901px) {
+  .character {
+    height: 86dvh !important;
+    max-height: 86dvh !important;
+    width: auto !important;
+    max-width: none !important;
+    bottom: 0 !important;
+  }
+
+  .character.left {
+    left: clamp(56px, 7.5vw, 140px) !important;
+  }
+
+  .dialog-box {
+    left: 9% !important;
+    right: 9% !important;
+    bottom: max(5.4%, calc(env(safe-area-inset-bottom) + 12px)) !important;
+    min-height: 21dvh !important;
+    max-height: 26dvh !important;
+    padding: 40px 52px 52px !important;
+  }
+
+  .dialog-text {
+    font-size: clamp(1.26rem, 1.55vw, 1.75rem) !important;
+    line-height: 1.42 !important;
+  }
+}
+
+@media (max-width: 900px) {
+  html,
+  body,
+  .vn-app,
+  .vn-stage {
+    min-height: 100svh;
+    height: 100dvh;
+  }
+
+  body.mobile-landscape-mode .character {
+    height: 76dvh !important;
+    max-height: 76dvh !important;
+    width: auto !important;
+    max-width: none !important;
+    bottom: 0 !important;
+  }
+
+  body.mobile-landscape-mode .dialog-box {
+    height: 20dvh !important;
+    max-height: 20dvh !important;
+    min-height: 0 !important;
+  }
+
+  body.mobile-landscape-mode .dialog-text {
+    font-size: clamp(0.78rem, 2.05vw, 0.96rem) !important;
+    line-height: 1.22 !important;
+    max-height: calc(20dvh - 54px) !important;
+    overflow-y: auto !important;
+  }
+
+  body.mobile-portrait-mode .dialog-box {
+    height: 20dvh !important;
+    max-height: 20dvh !important;
+    min-height: 0 !important;
+  }
+
+  body.mobile-portrait-mode .dialog-text {
+    font-size: 0.82rem !important;
+    line-height: 1.2 !important;
+    max-height: calc(20dvh - 56px) !important;
+    overflow-y: auto !important;
+  }
+}
