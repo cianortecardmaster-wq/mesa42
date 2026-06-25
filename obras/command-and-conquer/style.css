@@ -99,7 +99,9 @@ button {
 .character {
   position: absolute;
   bottom: 0;
-  max-height: 78%;
+  height: 82%;
+  width: auto;
+  max-height: none;
   opacity: 0;
   transform: translateY(18px);
   transition: opacity 0.45s ease, transform 0.45s ease, filter 0.45s ease;
@@ -166,7 +168,8 @@ button {
   filter: drop-shadow(0 0 18px rgba(0, 0, 0, 0.9));
 }
 
-.orientation-toggle {
+.orientation-toggle,
+.fullscreen-toggle {
   position: absolute;
   top: max(14px, env(safe-area-inset-top));
   right: max(14px, env(safe-area-inset-right));
@@ -182,7 +185,12 @@ button {
   z-index: 100;
 }
 
-.orientation-toggle:hover {
+.fullscreen-toggle {
+  top: max(54px, calc(env(safe-area-inset-top) + 54px));
+}
+
+.orientation-toggle:hover,
+.fullscreen-toggle:hover {
   background: rgba(84, 16, 31, 0.9);
 }
 
@@ -457,29 +465,80 @@ button {
 }
 
 @media (max-width: 900px) {
-  .orientation-toggle {
+  .orientation-toggle,
+  .fullscreen-toggle {
     display: block;
   }
 
-  body.mobile-landscape-mode .dialog-box {
-    left: 8%;
-    right: 8%;
-    bottom: max(5%, calc(env(safe-area-inset-bottom) + 10px));
-    min-height: 23%;
-    padding: 32px 40px 48px;
-  }
-
   body.mobile-landscape-mode .character {
-    max-height: 82%;
+    height: 78%;
+    max-height: none;
   }
 
   body.mobile-landscape-mode .character.left {
-    left: 5%;
+    left: 4%;
+  }
+
+  body.mobile-landscape-mode .dialog-box {
+    left: 6%;
+    right: 6%;
+    bottom: max(3.2%, calc(env(safe-area-inset-bottom) + 8px));
+    height: 20dvh;
+    max-height: 20dvh;
+    min-height: 0;
+    padding: 22px 34px 34px;
+  }
+
+  body.mobile-landscape-mode .speaker-name {
+    top: -24px;
+    left: 18px;
+    min-width: 132px;
+    font-size: 0.94rem;
+    padding: 6px 15px;
+  }
+
+  body.mobile-landscape-mode .dialog-text {
+    font-size: clamp(0.84rem, 2.25vw, 1rem);
+    line-height: 1.28;
+    min-height: 0;
+    max-height: calc(20dvh - 56px);
+    overflow-y: auto;
+    padding-right: 4px;
+  }
+
+  body.mobile-landscape-mode .dialog-nav {
+    right: 18px;
+    bottom: 9px;
+    gap: 8px;
+  }
+
+  body.mobile-landscape-mode .dialog-nav-btn {
+    font-size: 0.68rem;
+    padding: 4px 8px;
+  }
+
+  body.mobile-landscape-mode .vn-controls {
+    top: max(10px, env(safe-area-inset-top));
+    left: max(10px, env(safe-area-inset-left));
+    bottom: auto;
+    transform: none;
+    width: auto;
+    justify-content: flex-start;
+    gap: 6px;
+    padding: 0;
+  }
+
+  body.mobile-landscape-mode .vn-controls button {
+    font-size: 0.66rem;
+    padding: 3px 5px;
+    background: rgba(7, 6, 5, 0.38);
+    border-radius: 4px;
   }
 
   body.mobile-portrait-mode .character {
-    max-height: 58%;
-    bottom: 20%;
+    height: 60%;
+    max-height: none;
+    bottom: 21%;
   }
 
   body.mobile-portrait-mode .character.left,
@@ -499,9 +558,11 @@ button {
   body.mobile-portrait-mode .dialog-box {
     left: 4%;
     right: 4%;
-    bottom: max(7%, calc(env(safe-area-inset-bottom) + 10px));
-    min-height: 26%;
-    padding: 34px 20px 48px;
+    bottom: max(4%, calc(env(safe-area-inset-bottom) + 8px));
+    height: 20dvh;
+    max-height: 20dvh;
+    min-height: 0;
+    padding: 28px 18px 38px;
     clip-path: polygon(4% 0, 100% 0, 100% 84%, 94% 100%, 0 100%, 0 15%);
   }
 
@@ -514,22 +575,31 @@ button {
   }
 
   body.mobile-portrait-mode .dialog-text {
-    font-size: 1.08rem;
-    min-height: 5.2em;
+    font-size: 0.88rem;
+    line-height: 1.25;
+    min-height: 0;
+    max-height: calc(20dvh - 58px);
+    overflow-y: auto;
     padding-right: 0;
   }
 
   body.mobile-portrait-mode .vn-controls {
-    width: 100%;
-    gap: 8px;
-    bottom: max(0.6%, env(safe-area-inset-bottom));
-    justify-content: center;
+    top: max(10px, env(safe-area-inset-top));
+    left: max(10px, env(safe-area-inset-left));
+    bottom: auto;
+    transform: none;
+    width: min(62vw, 360px);
+    gap: 6px;
+    justify-content: flex-start;
     flex-wrap: wrap;
-    padding: 0 10px;
+    padding: 0;
   }
 
   body.mobile-portrait-mode .vn-controls button {
-    font-size: 0.72rem;
+    font-size: 0.64rem;
+    padding: 3px 5px;
+    background: rgba(7, 6, 5, 0.38);
+    border-radius: 4px;
   }
 
   body.mobile-portrait-mode .dialog-nav {
@@ -539,50 +609,33 @@ button {
   }
 
   body.mobile-portrait-mode .dialog-nav-btn {
-    font-size: 0.76rem;
-    padding: 5px 9px;
+    font-size: 0.68rem;
+    padding: 4px 8px;
   }
 }
 
 @media (max-width: 680px) {
-  .vn-controls {
-    gap: 8px;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content: center;
-    padding: 0 10px;
-  }
-
-  .vn-controls button {
-    font-size: 0.76rem;
-  }
-
   .dialog-box {
     left: 4%;
     right: 4%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-
-  .dialog-text {
-    font-size: 1.06rem;
-    min-height: 5em;
+    padding-left: 18px;
+    padding-right: 18px;
   }
 
   .speaker-name {
-    font-size: 1rem;
-    min-width: 125px;
-    padding: 8px 16px;
+    font-size: 0.88rem;
+    min-width: 118px;
+    padding: 6px 13px;
   }
 
   .dialog-nav {
-    right: 16px;
-    bottom: 12px;
-    gap: 8px;
+    right: 14px;
+    bottom: 9px;
+    gap: 7px;
   }
 
   .dialog-nav-btn {
-    font-size: 0.76rem;
-    padding: 5px 9px;
+    font-size: 0.66rem;
+    padding: 4px 7px;
   }
 }

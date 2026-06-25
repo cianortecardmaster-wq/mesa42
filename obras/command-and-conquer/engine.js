@@ -40,6 +40,7 @@ const logoOverlay = document.getElementById("logoOverlay");
 const introLogo = document.getElementById("introLogo");
 
 const orientationToggle = document.getElementById("orientationToggle");
+const fullscreenBtn = document.getElementById("fullscreenBtn");
 const rotateOverlay = document.getElementById("rotateOverlay");
 const usePortraitBtn = document.getElementById("usePortraitBtn");
 
@@ -82,6 +83,25 @@ function toggleMobileLayoutMode() {
   mobileLayoutMode = mobileLayoutMode === "landscape" ? "portrait" : "landscape";
   localStorage.setItem(STORAGE_KEYS.layout, mobileLayoutMode);
   applyMobileLayoutMode();
+}
+
+function updateFullscreenButton() {
+  if (!fullscreenBtn) return;
+  fullscreenBtn.textContent = document.fullscreenElement ? "Sair tela cheia" : "Tela cheia";
+}
+
+async function toggleFullscreen() {
+  try {
+    if (!document.fullscreenElement) {
+      await document.documentElement.requestFullscreen();
+    } else {
+      await document.exitFullscreen();
+    }
+  } catch (error) {
+    showToast("Use o modo tela cheia do navegador.");
+  } finally {
+    updateFullscreenButton();
+  }
 }
 
 function showToast(message) {
@@ -490,6 +510,11 @@ orientationToggle.addEventListener("click", event => {
   toggleMobileLayoutMode();
 });
 
+fullscreenBtn.addEventListener("click", event => {
+  event.stopPropagation();
+  toggleFullscreen();
+});
+
 usePortraitBtn.addEventListener("click", event => {
   event.stopPropagation();
   mobileLayoutMode = "portrait";
@@ -503,6 +528,7 @@ rotateOverlay.addEventListener("click", event => {
 
 window.addEventListener("resize", applyMobileLayoutMode);
 window.addEventListener("orientationchange", applyMobileLayoutMode);
+document.addEventListener("fullscreenchange", updateFullscreenButton);
 
 document.addEventListener("keydown", event => {
   if (event.key === "Escape" && !historyPanel.classList.contains("hidden")) {
@@ -528,4 +554,5 @@ document.addEventListener("keydown", event => {
 });
 
 applyMobileLayoutMode();
+updateFullscreenButton();
 renderStep(0);
