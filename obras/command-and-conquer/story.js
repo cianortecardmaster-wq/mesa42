@@ -412,4 +412,385 @@ const story = [
     speaker: "JP",
     text: "Mas ninguém falou que tinha."
   }
+  ,
+  {
+    id: "scene-04-room-return",
+    type: "visual",
+    bg: "assets/bg/quarto-01.webp",
+    camera: "center",
+    clearObjects: true,
+    clearEffects: true,
+    clearCharacters: true,
+    character: {
+      id: "jp",
+      src: "assets/characters/jp-pensativo.png",
+      position: "left"
+    },
+    hideDialog: true
+  },
+  {
+    id: "scene-04-01",
+    type: "thought",
+    speaker: "JP",
+    text: "Todo mundo sabe o valor dela.",
+    bg: "assets/bg/quarto-01.webp",
+    character: {
+      id: "jp",
+      src: "assets/characters/jp-pensativo.png",
+      position: "left"
+    }
+  },
+  {
+    id: "scene-04-02",
+    type: "thought",
+    speaker: "JP",
+    text: "Por isso ninguém larga."
+  },
+  {
+    id: "scene-04-pause-01",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-03",
+    type: "thought",
+    speaker: "JP",
+    text: "Não é só porque é cara."
+  },
+  {
+    id: "scene-04-04",
+    type: "thought",
+    speaker: "JP",
+    text: "Carta cara aparece."
+  },
+  {
+    id: "scene-04-05",
+    type: "thought",
+    speaker: "JP",
+    text: "Sempre tem alguém vendendo coleção. Alguém parando de jogar. Alguém precisando levantar dinheiro rápido."
+  },
+  {
+    id: "scene-04-pause-02",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-06",
+    type: "thought",
+    speaker: "JP",
+    text: "Mas Command and Conquer é diferente."
+  },
+  {
+    id: "scene-04-07",
+    type: "thought",
+    speaker: "JP",
+    text: "Quem tem, guarda."
+  },
+  {
+    id: "scene-04-08",
+    type: "thought",
+    speaker: "JP",
+    text: "Quem não tem, fica fazendo conta."
+  },
+  {
+    id: "scene-04-09",
+    type: "thought",
+    speaker: "JP",
+    text: "E quem quer comprar escuta piada."
+  },
+  {
+    id: "scene-04-look-table-01",
+    type: "visual",
+    camera: "desk",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-10",
+    type: "thought",
+    speaker: "JP",
+    text: "O pior é que eu entendo."
+  },
+  {
+    id: "scene-04-11",
+    type: "thought",
+    speaker: "JP",
+    text: "Se eu tivesse uma, também não venderia."
+  },
+  {
+    id: "scene-04-pause-03",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-12",
+    type: "thought",
+    speaker: "JP",
+    text: "Talvez seja isso que irrita."
+  },
+  {
+    id: "scene-04-13",
+    type: "thought",
+    speaker: "JP",
+    text: "Não tem vilão."
+  },
+  {
+    id: "scene-04-14",
+    type: "thought",
+    speaker: "JP",
+    text: "Não tem injustiça."
+  },
+  {
+    id: "scene-04-15",
+    type: "thought",
+    speaker: "JP",
+    text: "Só tem eu, meu deck quase pronto…"
+  },
+  {
+    id: "scene-04-16",
+    type: "thought",
+    speaker: "JP",
+    text: "E uma carta que todo mundo sabe que falta."
+  },
+  {
+    id: "scene-04-pause-04",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-17",
+    type: "dialogue",
+    speaker: "JP",
+    text: "Droga…"
+  },
+  {
+    id: "scene-04-silence-01",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-18",
+    type: "thought",
+    speaker: "JP",
+    text: "Eu não preciso dela."
+  },
+  {
+    id: "scene-04-pause-05",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-19",
+    type: "thought",
+    speaker: "JP",
+    text: "Essa é a parte racional."
+  },
+  {
+    id: "scene-04-20",
+    type: "thought",
+    speaker: "JP",
+    text: "A parte que sabe que deck nenhum deveria depender de uma carta só."
+  },
+  {
+    id: "scene-04-21",
+    type: "thought",
+    speaker: "JP",
+    text: "A parte que fala que consistência vale mais que teimosia."
+  },
+  {
+    id: "scene-04-pause-06",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-22",
+    type: "thought",
+    speaker: "JP",
+    text: "Mas eu também sei quando estou mentindo."
+  },
+  {
+    id: "scene-04-look-phone-01",
+    type: "visual",
+    camera: "desk",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-23",
+    type: "thought",
+    speaker: "JP",
+    text: "Se eu tivesse uma Command and Conquer, esse deck mudava de nível."
+  },
+  {
+    id: "scene-04-24",
+    type: "thought",
+    speaker: "JP",
+    text: "Não porque ela resolve tudo."
+  },
+  {
+    id: "scene-04-25",
+    type: "thought",
+    speaker: "JP",
+    text: "Nada resolve tudo."
+  },
+  {
+    id: "scene-04-26",
+    type: "thought",
+    speaker: "JP",
+    text: "Mas ela obriga o outro lado a respeitar a mesa."
+  },
+  {
+    id: "scene-04-pause-07",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-27",
+    type: "thought",
+    speaker: "JP",
+    text: "Pune arsenal."
+  },
+  {
+    id: "scene-04-28",
+    type: "thought",
+    speaker: "JP",
+    text: "Pune conforto."
+  },
+  {
+    id: "scene-04-29",
+    type: "thought",
+    speaker: "JP",
+    text: "Pune aquele turno em que o cara acha que conseguiu respirar."
+  },
+  {
+    id: "scene-04-pause-08",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-30",
+    type: "thought",
+    speaker: "JP",
+    text: "Ira não precisa de muito."
+  },
+  {
+    id: "scene-04-31",
+    type: "thought",
+    speaker: "JP",
+    text: "Ela só precisa de uma abertura."
+  },
+  {
+    id: "scene-04-32",
+    type: "thought",
+    speaker: "JP",
+    text: "Uma rachadura."
+  },
+  {
+    id: "scene-04-33",
+    type: "thought",
+    speaker: "JP",
+    text: "Uma hesitação."
+  },
+  {
+    id: "scene-04-pause-09",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-34",
+    type: "thought",
+    speaker: "JP",
+    text: "Command and Conquer cria isso."
+  },
+  {
+    id: "scene-04-35",
+    type: "thought",
+    speaker: "JP",
+    text: "Ela faz o oponente escolher o que vai perder."
+  },
+  {
+    id: "scene-04-breathe-01",
+    type: "visual",
+    camera: "center",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-36",
+    type: "thought",
+    speaker: "JP",
+    text: "Não precisava nem ser perfeita."
+  },
+  {
+    id: "scene-04-37",
+    type: "thought",
+    speaker: "JP",
+    text: "Não precisava ser bonita."
+  },
+  {
+    id: "scene-04-38",
+    type: "thought",
+    speaker: "JP",
+    text: "Não precisava vir de pasta de colecionador, sleeve novo, anúncio cheio de frescura."
+  },
+  {
+    id: "scene-04-pause-10",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-39",
+    type: "thought",
+    speaker: "JP",
+    text: "Podia ter marca."
+  },
+  {
+    id: "scene-04-40",
+    type: "thought",
+    speaker: "JP",
+    text: "Podia ter detalhe."
+  },
+  {
+    id: "scene-04-41",
+    type: "thought",
+    speaker: "JP",
+    text: "Podia ser daquelas cartas que colecionador olha torto…"
+  },
+  {
+    id: "scene-04-42",
+    type: "thought",
+    speaker: "JP",
+    text: "e jogador coloca no deck sem pensar duas vezes."
+  },
+  {
+    id: "scene-04-pause-11",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-43",
+    type: "thought",
+    speaker: "JP",
+    text: "Só precisava ser real."
+  },
+  {
+    id: "scene-04-look-phone-02",
+    type: "visual",
+    camera: "desk",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-44",
+    type: "thought",
+    speaker: "JP",
+    text: "Real e minha."
+  },
+  {
+    id: "scene-04-pause-12",
+    type: "visual",
+    hideDialog: true
+  },
+  {
+    id: "scene-04-phone-vibrates",
+    type: "visual",
+    camera: "desk",
+    hideDialog: true
+  }
 ];
