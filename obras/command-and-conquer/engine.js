@@ -249,6 +249,42 @@ function setScreenText(step) {
   effectLayer.appendChild(screenTextEl);
 }
 
+
+function syncObjectOverlay(targetEl, overlayEl) {
+  if (!targetEl || !overlayEl || !objectLayer) return;
+
+  const layerRect = objectLayer.getBoundingClientRect();
+  const rect = targetEl.getBoundingClientRect();
+
+  overlayEl.style.left = `${rect.left - layerRect.left}px`;
+  overlayEl.style.top = `${rect.top - layerRect.top}px`;
+  overlayEl.style.width = `${rect.width}px`;
+  overlayEl.style.height = `${rect.height}px`;
+}
+
+function ensureObjectOverlay(obj, targetEl) {
+  if (!obj.overlayEffect || !objectLayer) return;
+
+  let overlayEl = activeObjectOverlays[obj.id];
+
+  if (!overlayEl) {
+    overlayEl = document.createElement("div");
+    overlayEl.className = "vn-object-overlay";
+    overlayEl.dataset.id = obj.id;
+    objectLayer.appendChild(overlayEl);
+    activeObjectOverlays[obj.id] = overlayEl;
+  }
+
+  overlayEl.className = `vn-object-overlay ${obj.overlayEffect}`.trim();
+
+  const updateOverlay = () => syncObjectOverlay(targetEl, overlayEl);
+  requestAnimationFrame(updateOverlay);
+
+  if (!targetEl.complete) {
+    targetEl.addEventListener("load", updateOverlay, { once: true });
+  }
+}
+
 function setObjects(step) {
   if (!step.objects) return;
 
@@ -272,6 +308,13 @@ function setObjects(step) {
 
     if (obj.effect) {
       obj.effect.split(" ").forEach(className => objEl.classList.add(className));
+    }
+
+    if (obj.overlayEffect) {
+      ensureObjectOverlay(obj, objEl);
+    } else if (activeObjectOverlays[obj.id]) {
+      activeObjectOverlays[obj.id].remove();
+      delete activeObjectOverlays[obj.id];
     }
   });
 }

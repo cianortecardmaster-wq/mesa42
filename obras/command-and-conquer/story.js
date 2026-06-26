@@ -4155,7 +4155,8 @@ const story = [
       "x": 40,
       "y": 18,
       "w": 18,
-      "effect": "card-featured card-reveal-shine"
+      "effect": "card-featured",
+      "overlayEffect": "card-bottom-sweep"
     }
   ],
   "hideDialog": true
