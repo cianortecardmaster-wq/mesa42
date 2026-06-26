@@ -792,5 +792,523 @@ const story = [
     type: "visual",
     camera: "desk",
     hideDialog: true
+  },
+{
+  "id": "scene-06-room-phone-entry",
+  "type": "visual",
+  "bg": "assets/bg/quarto-01.webp",
+  "camera": "center",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-desconfiado.png",
+    "position": "left",
+    "effect": "phone-side"
+  },
+  "hideDialog": true
+},
+{
+  "id": "scene-06-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "…",
+  "bg": "assets/bg/quarto-01.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-desconfiado.png",
+    "position": "left",
+    "effect": "phone-side"
   }
+},
+{
+  "id": "scene-06-phone-light",
+  "type": "visual",
+  "bg": "assets/bg/quarto-01.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-desconfiado.png",
+    "position": "left",
+    "effect": "phone-side phone-glow"
+  },
+  "hideDialog": true
+},
+{
+  "id": "scene-06-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mensagem privada?",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-desconfiado.png",
+    "position": "left",
+    "effect": "phone-side"
+  }
+},
+{
+  "id": "scene-06-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-06-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Depois daquilo no grupo?"
+},
+{
+  "id": "scene-06-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Ou é alguém zoando…"
+},
+{
+  "id": "scene-06-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "…ou alguém resolveu falar sério."
+},
+{
+  "id": "scene-06-lift-phone",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-06-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Se for piada, eu ignoro."
+},
+{
+  "id": "scene-06-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-06-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Se não for…"
+},
+{
+  "id": "scene-06-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Então vamos ver."
+},
+{
+  "id": "scene-07-private-chat-entry",
+  "type": "visual",
+  "bg": "assets/bg/mesa-deck-01.webp",
+  "camera": "center",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "Desconhecido",
+        "text": "Tenho uma.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-07-private-chat-02",
+  "type": "visual",
+  "bg": "assets/bg/mesa-deck-01.webp",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "Desconhecido",
+        "text": "Tenho uma.",
+        "side": "other"
+      },
+      {
+        "from": "Desconhecido",
+        "text": "Preciso vender hoje.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-07-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Hoje?"
+},
+{
+  "id": "scene-07-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Rápido assim?"
+},
+{
+  "id": "scene-07-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-07-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Ou o cara tá desesperado…"
+},
+{
+  "id": "scene-07-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "…ou isso é golpe."
+},
+{
+  "id": "scene-07-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-07-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Curto demais."
+},
+{
+  "id": "scene-07-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Direto demais."
+},
+{
+  "id": "scene-07-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Como se ele soubesse exatamente o que eu queria ler."
+},
+{
+  "id": "scene-07-pause-03",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-07-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "E sabe."
+},
+{
+  "id": "scene-07-jp-typing",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "Desconhecido",
+        "text": "Tenho uma.",
+        "side": "other"
+      },
+      {
+        "from": "Desconhecido",
+        "text": "Preciso vender hoje.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Quem é?",
+        "side": "me"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-07-pause-04",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-07-marcos-01",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "Desconhecido",
+        "text": "Tenho uma.",
+        "side": "other"
+      },
+      {
+        "from": "Desconhecido",
+        "text": "Preciso vender hoje.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Quem é?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Marcos.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-07-marcos-02",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "Desconhecido",
+        "text": "Tenho uma.",
+        "side": "other"
+      },
+      {
+        "from": "Desconhecido",
+        "text": "Preciso vender hoje.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Quem é?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Marcos.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Joguei uns eventos aí um tempo atrás.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-07-09",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Marcos."
+},
+{
+  "id": "scene-07-10",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Nome comum demais."
+},
+{
+  "id": "scene-07-11",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Ajuda pouco."
+},
+{
+  "id": "scene-07-12",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Podia ser verdade."
+},
+{
+  "id": "scene-07-13",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Podia ser inventado em dez segundos."
+},
+{
+  "id": "scene-08-room-return",
+  "type": "visual",
+  "bg": "assets/bg/quarto-01.webp",
+  "camera": "center",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-desconfiado.png",
+    "position": "left",
+    "effect": "phone-side"
+  },
+  "hideDialog": true
+},
+{
+  "id": "scene-08-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Marcos…",
+  "bg": "assets/bg/quarto-01.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-desconfiado.png",
+    "position": "left",
+    "effect": "phone-side"
+  }
+},
+{
+  "id": "scene-08-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Marcos, Marcos…"
+},
+{
+  "id": "scene-08-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-08-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Eu lembro desse nome?"
+},
+{
+  "id": "scene-08-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Ou só quero lembrar?"
+},
+{
+  "id": "scene-08-memory",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-08-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Todo grupo tem uns três Marcos."
+},
+{
+  "id": "scene-08-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Dois aparecem em evento."
+},
+{
+  "id": "scene-08-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Um some por meses."
+},
+{
+  "id": "scene-08-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "E sempre tem aquele cara que você já viu de longe…"
+},
+{
+  "id": "scene-08-09",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "…mas não conhece o suficiente pra confiar."
+},
+{
+  "id": "scene-08-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-08-10",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Talvez eu já tenha visto esse nome em lista de evento."
+},
+{
+  "id": "scene-08-11",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Talvez ele tenha jogado no Centro Cultural."
+},
+{
+  "id": "scene-08-12",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Talvez eu esteja completando o resto sozinho."
+},
+{
+  "id": "scene-08-pause-03",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-08-13",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Se for golpe, tá bem montado."
+},
+{
+  "id": "scene-08-14",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não veio com exagero."
+},
+{
+  "id": "scene-08-15",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não prometeu milagre."
+},
+{
+  "id": "scene-08-16",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não tentou empurrar um monte de coisa."
+},
+{
+  "id": "scene-08-17",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Só falou o suficiente."
+},
+{
+  "id": "scene-08-pause-04",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-08-18",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Suficiente pra me fazer pensar duas vezes."
+},
+{
+  "id": "scene-08-phone-grip",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-08-19",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Calma."
+},
+{
+  "id": "scene-08-20",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Primeiro confirma se esse cara existe."
+},
+{
+  "id": "scene-08-21",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Se ele jogou por aqui…"
+},
+{
+  "id": "scene-08-22",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "…alguém vai lembrar."
+}
 ];

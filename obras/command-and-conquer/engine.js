@@ -209,6 +209,10 @@ function setCharacter(step) {
 
   characterEl.src = data.src;
   characterEl.className = `character ${data.position || "left"} visible`;
+
+  if (data.effect) {
+    data.effect.split(" ").forEach(className => characterEl.classList.add(className));
+  }
 }
 
 function clearObjects(step) {

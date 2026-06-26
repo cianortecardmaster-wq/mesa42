@@ -1922,3 +1922,44 @@ button {
     margin-right: auto !important;
   }
 }
+
+
+/* =========================================================
+   Cena 06/08 — JP segurando o celular + brilho da tela
+   ========================================================= */
+
+.character.phone-glow {
+  animation: jpPhoneGlow 1.15s ease-in-out 1;
+}
+
+@keyframes jpPhoneGlow {
+  0% {
+    filter:
+      drop-shadow(0 14px 22px rgba(0, 0, 0, 0.48))
+      brightness(1);
+  }
+  35% {
+    filter:
+      drop-shadow(0 14px 22px rgba(0, 0, 0, 0.48))
+      drop-shadow(0 0 24px rgba(135, 210, 255, 0.58))
+      brightness(1.24);
+  }
+  100% {
+    filter:
+      drop-shadow(0 14px 22px rgba(0, 0, 0, 0.48))
+      brightness(1);
+  }
+}
+
+.character.phone-side {
+  height: 88dvh !important;
+  max-height: 88dvh !important;
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .character.phone-side {
+    height: 92dvh !important;
+    max-height: 92dvh !important;
+    bottom: -5dvh !important;
+  }
+}
