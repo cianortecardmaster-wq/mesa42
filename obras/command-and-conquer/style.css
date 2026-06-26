@@ -1842,3 +1842,83 @@ button {
     align-self: center !important;
   }
 }
+
+
+/* =========================================================
+   Ajuste final — mensagens alinhadas como chat
+   JP à direita, respostas à esquerda
+   ========================================================= */
+
+.phone-messages-overlay {
+  align-items: stretch !important;
+}
+
+.phone-messages-overlay .phone-message {
+  width: fit-content !important;
+  max-width: 100% !important;
+}
+
+.phone-messages-overlay .phone-message-me {
+  align-self: flex-end !important;
+  text-align: left !important;
+}
+
+.phone-messages-overlay .phone-message-other {
+  align-self: flex-start !important;
+  text-align: left !important;
+}
+
+.phone-messages-overlay .phone-message-from,
+.phone-messages-overlay .phone-message-text {
+  text-align: left !important;
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+  .phone-messages-overlay {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    bottom: 23.5dvh !important;
+    width: min(340px, 20vw) !important;
+    min-width: 250px !important;
+    max-width: 340px !important;
+    align-items: stretch !important;
+    gap: 7px !important;
+  }
+
+  .phone-messages-overlay .phone-message-me {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+
+  .phone-messages-overlay .phone-message-other {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}
+
+/* Mobile horizontal */
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .phone-messages-overlay {
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    bottom: 23vh !important;
+    width: min(220px, 30vw) !important;
+    min-width: 150px !important;
+    max-width: 220px !important;
+    align-items: stretch !important;
+    gap: 4px !important;
+  }
+
+  body.mobile-landscape-mode .phone-messages-overlay .phone-message-me {
+    margin-left: auto !important;
+    margin-right: 0 !important;
+  }
+
+  body.mobile-landscape-mode .phone-messages-overlay .phone-message-other {
+    margin-left: 0 !important;
+    margin-right: auto !important;
+  }
+}

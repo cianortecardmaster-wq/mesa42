@@ -259,7 +259,7 @@ const story = [
           side: "me"
         },
         {
-          from: "Grupo",
+          from: "Lucas",
           text: "Boa sorte.",
           side: "other"
         }
@@ -280,12 +280,12 @@ const story = [
           side: "me"
         },
         {
-          from: "Grupo",
+          from: "Lucas",
           text: "Boa sorte.",
           side: "other"
         },
         {
-          from: "Grupo",
+          from: "Hermes",
           text: "Se achar duas, me avisa.",
           side: "other"
         }
@@ -306,17 +306,17 @@ const story = [
           side: "me"
         },
         {
-          from: "Grupo",
+          from: "Lucas",
           text: "Boa sorte.",
           side: "other"
         },
         {
-          from: "Grupo",
+          from: "Hermes",
           text: "Se achar duas, me avisa.",
           side: "other"
         },
         {
-          from: "Grupo",
+          from: "Marcelo",
           text: "Essa aí sumiu do mapa.",
           side: "other"
         }
@@ -337,22 +337,22 @@ const story = [
           side: "me"
         },
         {
-          from: "Grupo",
+          from: "Lucas",
           text: "Boa sorte.",
           side: "other"
         },
         {
-          from: "Grupo",
+          from: "Hermes",
           text: "Se achar duas, me avisa.",
           side: "other"
         },
         {
-          from: "Grupo",
+          from: "Marcelo",
           text: "Essa aí sumiu do mapa.",
           side: "other"
         },
         {
-          from: "Grupo",
+          from: "Rafael",
           text: "Quem tem não vende.",
           side: "other"
         }
@@ -373,27 +373,27 @@ const story = [
           side: "me"
         },
         {
-          from: "Grupo",
+          from: "Lucas",
           text: "Boa sorte.",
           side: "other"
         },
         {
-          from: "Grupo",
+          from: "Hermes",
           text: "Se achar duas, me avisa.",
           side: "other"
         },
         {
-          from: "Grupo",
+          from: "Marcelo",
           text: "Essa aí sumiu do mapa.",
           side: "other"
         },
         {
-          from: "Grupo",
+          from: "Rafael",
           text: "Quem tem não vende.",
           side: "other"
         },
         {
-          from: "Grupo",
+          from: "Yuri",
           text: "Quem vende pede um rim.",
           side: "other"
         }
