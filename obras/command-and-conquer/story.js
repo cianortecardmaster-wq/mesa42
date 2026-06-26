@@ -4165,7 +4165,25 @@ const story = [
   "id": "scene-card-01",
   "type": "thought",
   "speaker": "JP",
-  "text": "É ela mesmo."
+  "text": "É ela mesmo.",
+  "objects": [
+    {
+      "id": "pacote-aberto-fundo",
+      "src": "assets/objects/pacote-aberto.png",
+      "x": 38,
+      "y": 25,
+      "w": 24,
+      "effect": "package-open-small"
+    },
+    {
+      "id": "carta-cnc",
+      "src": "assets/objects/command-and-conquer-carta.png",
+      "x": 40,
+      "y": 18,
+      "w": 18,
+      "effect": "card-featured"
+    }
+  ]
 },
 {
   "id": "scene-card-02",
