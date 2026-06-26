@@ -251,24 +251,26 @@ function setObjects(step) {
 function setPhone(step) {
   if (!step.phone || !effectLayer) return;
 
-  let phoneEl = activePhone;
+  let phoneEl = effectLayer.querySelector(".phone-overlay");
+  let messagesEl = effectLayer.querySelector(".phone-messages-overlay");
 
   if (!phoneEl) {
     phoneEl = document.createElement("div");
     phoneEl.className = "phone-overlay";
-    phoneEl.innerHTML = `
-      <img class="phone-frame" alt="Celular com conversa" />
-      <div class="phone-chat-layer"></div>
-    `;
+    phoneEl.innerHTML = `<img class="phone-frame" alt="Celular com conversa" />`;
     effectLayer.appendChild(phoneEl);
-    activePhone = phoneEl;
+  }
+
+  if (!messagesEl) {
+    messagesEl = document.createElement("div");
+    messagesEl.className = "phone-messages-overlay";
+    effectLayer.appendChild(messagesEl);
   }
 
   const frame = phoneEl.querySelector(".phone-frame");
-  const chatLayer = phoneEl.querySelector(".phone-chat-layer");
-
   frame.src = step.phone.src;
-  chatLayer.innerHTML = "";
+
+  messagesEl.innerHTML = "";
 
   const messages = step.phone.messages || [];
 
@@ -286,10 +288,11 @@ function setPhone(step) {
 
     bubble.appendChild(from);
     bubble.appendChild(text);
-    chatLayer.appendChild(bubble);
+    messagesEl.appendChild(bubble);
   });
 
   phoneEl.classList.add("visible");
+  messagesEl.classList.add("visible");
 }
 
 function hideObjects(step) {
