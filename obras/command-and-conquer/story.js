@@ -3140,20 +3140,72 @@ const story = [
   "hideDialog": true
 },
 {
+  "id": "scene-next-black",
+  "type": "visual",
+  "bg": "assets/bg/preto.webp",
+  "camera": "center",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "hideDialog": true
+},
+{
   "id": "scene-next-timeskip",
   "type": "thought",
   "speaker": "",
   "text": "Alguns dias depois.",
-  "mode": "timeskip"
+  "mode": "timeskip",
+  "bg": "assets/bg/preto.webp"
 },
 {
-  "id": "scene-delivery-entry",
+  "id": "scene-next-black-pause",
+  "type": "visual",
+  "bg": "assets/bg/preto.webp",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "hideDialog": true
+},
+{
+  "id": "scene-delivery-house-open",
   "type": "visual",
   "bg": "assets/bg/casa-jp-frente-entardecer.webp",
   "camera": "center",
   "clearObjects": true,
   "clearEffects": true,
   "clearCharacters": true,
+  "hideDialog": true
+},
+{
+  "id": "scene-delivery-valdir-entry",
+  "type": "visual",
+  "bg": "assets/bg/casa-jp-frente-entardecer.webp",
+  "clearCharacters": true,
+  "character": {
+    "id": "valdir",
+    "src": "assets/characters/valdir-correio.png",
+    "position": "right",
+    "effect": "mailman"
+  },
+  "hideDialog": true
+},
+{
+  "id": "scene-delivery-01",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Bom dia, JP.",
+  "bg": "assets/bg/casa-jp-frente-entardecer.webp",
+  "character": {
+    "id": "valdir",
+    "src": "assets/characters/valdir-correio.png",
+    "position": "right",
+    "effect": "mailman"
+  }
+},
+{
+  "id": "scene-delivery-jp-entry",
+  "type": "visual",
+  "bg": "assets/bg/casa-jp-frente-entardecer.webp",
   "characters": [
     {
       "id": "jp",
@@ -3169,27 +3221,6 @@ const story = [
     }
   ],
   "hideDialog": true
-},
-{
-  "id": "scene-delivery-01",
-  "type": "dialogue",
-  "speaker": "Valdir",
-  "text": "Bom dia, JP.",
-  "bg": "assets/bg/casa-jp-frente-entardecer.webp",
-  "characters": [
-    {
-      "id": "jp",
-      "src": "assets/characters/jp-descontraido.png",
-      "position": "left",
-      "effect": "delivery-jp"
-    },
-    {
-      "id": "valdir",
-      "src": "assets/characters/valdir-correio.png",
-      "position": "right",
-      "effect": "mailman"
-    }
-  ]
 },
 {
   "id": "scene-delivery-02",

@@ -2104,3 +2104,22 @@ button {
     right: 5% !important;
   }
 }
+
+
+/* =========================================================
+   Ajuste — timeskip preto e tamanho do Valdir igual ao JP
+   ========================================================= */
+
+.character.mailman {
+  height: 86dvh !important;
+  max-height: 86dvh !important;
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .character.mailman {
+    height: 92dvh !important;
+    max-height: 92dvh !important;
+    bottom: -6dvh !important;
+    right: 5% !important;
+  }
+}
