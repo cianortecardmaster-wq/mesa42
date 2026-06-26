@@ -1572,3 +1572,95 @@ button {
     font-size: clamp(0.56rem, 1.1vw, 0.72rem) !important;
   }
 }
+
+
+/* =========================================================
+   Fix — mensagens do celular sempre visíveis acima da caixa
+   ========================================================= */
+
+.phone-chat-layer {
+  position: fixed !important;
+  z-index: 80 !important;
+  overflow: visible !important;
+  pointer-events: none !important;
+}
+
+/* Desktop */
+@media (min-width: 901px) {
+  .phone-chat-layer {
+    left: 50% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: 22vh !important;
+    transform: translateX(-50%) !important;
+
+    width: min(420px, 28vw) !important;
+    min-width: 320px !important;
+    max-width: 420px !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+  }
+
+  .phone-message {
+    display: block !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    font-size: clamp(0.84rem, 0.95vw, 1rem) !important;
+    line-height: 1.16 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  .phone-message-me {
+    align-self: flex-end !important;
+  }
+
+  .phone-message-other {
+    align-self: flex-start !important;
+  }
+}
+
+/* Mobile horizontal */
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .phone-chat-layer {
+    left: 50% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: 24vh !important;
+    transform: translateX(-50%) !important;
+
+    width: min(270px, 34vw) !important;
+    min-width: 180px !important;
+    max-width: 270px !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    align-items: stretch !important;
+    gap: 5px !important;
+  }
+
+  body.mobile-landscape-mode .phone-message {
+    display: block !important;
+    width: fit-content !important;
+    max-width: 100% !important;
+    font-size: clamp(0.56rem, 1.05vw, 0.72rem) !important;
+    line-height: 1.08 !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+
+  body.mobile-landscape-mode .phone-message-me {
+    align-self: flex-end !important;
+  }
+
+  body.mobile-landscape-mode .phone-message-other {
+    align-self: flex-start !important;
+  }
+}
