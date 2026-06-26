@@ -155,6 +155,7 @@ function applyVisualState(step, isCurrentStep) {
   setCharacters(step);
   clearObjects(step);
   clearEffects(step);
+  setScreenText(step);
   setObjects(step);
   setPhone(step);
   hideObjects(step);
@@ -239,6 +240,15 @@ function clearEffects(step) {
   activePhone = null;
 }
 
+function setScreenText(step) {
+  if (!step.screenText || !effectLayer) return;
+
+  const screenTextEl = document.createElement("div");
+  screenTextEl.className = `screen-text-overlay ${step.screenTextClass || ""}`.trim();
+  screenTextEl.textContent = step.screenText;
+  effectLayer.appendChild(screenTextEl);
+}
+
 function setObjects(step) {
   if (!step.objects) return;
 
@@ -258,7 +268,11 @@ function setObjects(step) {
     objEl.style.left = `${obj.x}%`;
     objEl.style.top = `${obj.y}%`;
     objEl.style.width = `${obj.w}%`;
-    objEl.classList.add("visible");
+    objEl.className = "vn-object visible";
+
+    if (obj.effect) {
+      obj.effect.split(" ").forEach(className => objEl.classList.add(className));
+    }
   });
 }
 

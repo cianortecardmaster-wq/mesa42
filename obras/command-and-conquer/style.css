@@ -2152,3 +2152,111 @@ button {
     left: 6% !important;
   }
 }
+
+
+/* =========================================================
+   Correções — timeskip sem caixa, pacote menor e brilho da carta
+   ========================================================= */
+
+.screen-text-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 95;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8vw;
+  color: #f5edde;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.35rem, 3.2vw, 3.2rem);
+  font-style: italic;
+  letter-spacing: 0.08em;
+  text-align: center;
+  text-shadow: 0 0 18px rgba(255, 230, 180, 0.35), 0 2px 8px rgba(0, 0, 0, 0.92);
+  pointer-events: none;
+  animation: screenTextFadeIn 0.9s ease both;
+}
+
+@keyframes screenTextFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.character.delivery-jp-laugh {
+  height: 86dvh !important;
+  max-height: 86dvh !important;
+}
+
+.character.left.delivery-jp-laugh {
+  left: 8% !important;
+}
+
+.vn-object.package-small {
+  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.35));
+}
+
+.vn-object.package-open-small {
+  filter: drop-shadow(0 16px 18px rgba(0, 0, 0, 0.35));
+}
+
+.vn-object.card-featured {
+  filter: drop-shadow(0 18px 22px rgba(0, 0, 0, 0.48));
+}
+
+.vn-object.card-reveal-shine {
+  animation: cardMisprintShine 1.45s ease-out 1;
+  filter:
+    brightness(1.08)
+    drop-shadow(0 18px 22px rgba(0, 0, 0, 0.48))
+    drop-shadow(0 32px 18px rgba(255, 225, 120, 0.72))
+    drop-shadow(0 38px 8px rgba(255, 80, 40, 0.42));
+}
+
+@keyframes cardMisprintShine {
+  0% {
+    opacity: 0;
+    transform: translateY(12px) scale(0.96);
+    filter:
+      brightness(0.85)
+      drop-shadow(0 18px 22px rgba(0, 0, 0, 0.48));
+  }
+
+  28% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter:
+      brightness(1.75)
+      contrast(1.18)
+      drop-shadow(0 18px 22px rgba(0, 0, 0, 0.48))
+      drop-shadow(0 30px 26px rgba(255, 245, 170, 0.98))
+      drop-shadow(0 40px 12px rgba(255, 80, 40, 0.72));
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter:
+      brightness(1.08)
+      drop-shadow(0 18px 22px rgba(0, 0, 0, 0.48))
+      drop-shadow(0 32px 18px rgba(255, 225, 120, 0.36));
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .screen-text-overlay {
+    font-size: clamp(1rem, 3vw, 1.6rem);
+  }
+
+  body.mobile-landscape-mode .character.delivery-jp-laugh {
+    height: 92dvh !important;
+    max-height: 92dvh !important;
+    bottom: -6dvh !important;
+    left: 6% !important;
+  }
+}

@@ -3151,11 +3151,10 @@ const story = [
 },
 {
   "id": "scene-next-timeskip",
-  "type": "thought",
-  "speaker": "",
-  "text": "Alguns dias depois.",
-  "mode": "timeskip",
-  "bg": "assets/bg/preto.webp"
+  "type": "visual",
+  "bg": "assets/bg/preto.webp",
+  "screenText": "Alguns dias depois.",
+  "hideDialog": true
 },
 {
   "id": "scene-next-black-pause",
@@ -3330,9 +3329,9 @@ const story = [
   "characters": [
     {
       "id": "jp",
-      "src": "assets/characters/jp-descontraido-falando.png",
+      "src": "assets/characters/jp-rindo.png",
       "position": "left",
-      "effect": "delivery-jp-talk"
+      "effect": "delivery-jp-laugh"
     },
     {
       "id": "valdir",
@@ -3818,15 +3817,6 @@ const story = [
     "position": "left",
     "effect": "kitchen-jp-talk"
   },
-  "objects": [
-    {
-      "id": "pacote-mao",
-      "src": "assets/objects/pacote-amassado.png",
-      "x": 31,
-      "y": 60,
-      "w": 22
-    }
-  ],
   "hideDialog": true
 },
 {
@@ -3874,15 +3864,6 @@ const story = [
     "position": "left",
     "effect": "kitchen-jp"
   },
-  "objects": [
-    {
-      "id": "pacote-mao",
-      "src": "assets/objects/pacote-amassado.png",
-      "x": 31,
-      "y": 60,
-      "w": 22
-    }
-  ],
   "hideDialog": true
 },
 {
@@ -3943,9 +3924,10 @@ const story = [
     {
       "id": "pacote-centro",
       "src": "assets/objects/pacote-amassado.png",
-      "x": 31,
-      "y": 24,
-      "w": 38
+      "x": 43,
+      "y": 35,
+      "w": 14,
+      "effect": "package-small"
     }
   ],
   "hideDialog": true
@@ -3995,9 +3977,10 @@ const story = [
     {
       "id": "pacote-aberto",
       "src": "assets/objects/pacote-aberto.png",
-      "x": 24,
-      "y": 11,
-      "w": 52
+      "x": 38,
+      "y": 25,
+      "w": 24,
+      "effect": "package-open-small"
     }
   ],
   "hideDialog": true
@@ -4145,16 +4128,34 @@ const story = [
     {
       "id": "pacote-aberto-fundo",
       "src": "assets/objects/pacote-aberto.png",
-      "x": 32,
-      "y": 8,
-      "w": 36
+      "x": 38,
+      "y": 25,
+      "w": 24,
+      "effect": "package-open-small"
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-card-reveal",
+  "type": "visual",
+  "bg": "assets/bg/mesa-cozinha-topo.webp",
+  "objects": [
+    {
+      "id": "pacote-aberto-fundo",
+      "src": "assets/objects/pacote-aberto.png",
+      "x": 38,
+      "y": 25,
+      "w": 24,
+      "effect": "package-open-small"
     },
     {
       "id": "carta-cnc",
       "src": "assets/objects/command-and-conquer-carta.png",
-      "x": 38,
+      "x": 40,
       "y": 18,
-      "w": 23
+      "w": 18,
+      "effect": "card-featured card-reveal-shine"
     }
   ],
   "hideDialog": true
