@@ -1507,3 +1507,68 @@ button {
     top: 2dvh !important;
   }
 }
+
+
+/* =========================================================
+   Ajuste Cena 03 — mensagens sempre acima da caixa de diálogo
+   ========================================================= */
+
+.phone-overlay {
+  overflow: visible !important;
+}
+
+.phone-chat-layer {
+  overflow: visible !important;
+}
+
+@media (min-width: 901px) {
+  .phone-chat-layer {
+    left: 58% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: 24dvh !important;
+
+    width: 22vw !important;
+    min-width: 300px !important;
+    max-width: 420px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    align-items: stretch !important;
+    gap: 8px !important;
+    overflow: visible !important;
+    z-index: 40 !important;
+    pointer-events: none !important;
+  }
+
+  .phone-message {
+    max-width: 100% !important;
+    font-size: clamp(0.82rem, 0.95vw, 1rem) !important;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .phone-chat-layer {
+    left: 56% !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: 23dvh !important;
+
+    width: 28vw !important;
+    min-width: 170px !important;
+    max-width: 260px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    gap: 5px !important;
+    overflow: visible !important;
+    z-index: 40 !important;
+  }
+
+  body.mobile-landscape-mode .phone-message {
+    max-width: 100% !important;
+    font-size: clamp(0.56rem, 1.1vw, 0.72rem) !important;
+  }
+}
