@@ -2123,3 +2123,32 @@ button {
     right: 5% !important;
   }
 }
+
+
+/* =========================================================
+   Cozinha / pacote / carta
+   ========================================================= */
+
+.character.kitchen-jp,
+.character.kitchen-jp-talk,
+.character.kitchen-jp-laugh {
+  height: 86dvh !important;
+  max-height: 86dvh !important;
+}
+
+.character.left.kitchen-jp,
+.character.left.kitchen-jp-talk,
+.character.left.kitchen-jp-laugh {
+  left: 8% !important;
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .character.kitchen-jp,
+  body.mobile-landscape-mode .character.kitchen-jp-talk,
+  body.mobile-landscape-mode .character.kitchen-jp-laugh {
+    height: 92dvh !important;
+    max-height: 92dvh !important;
+    bottom: -6dvh !important;
+    left: 6% !important;
+  }
+}

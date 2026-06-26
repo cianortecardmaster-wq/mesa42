@@ -3805,4 +3805,424 @@ const story = [
     "effect": "delivery-jp-talk"
   }
 }
+,
+{
+  "id": "scene-kitchen-01-open",
+  "type": "visual",
+  "bg": "assets/bg/cozinha-entardecer.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  },
+  "objects": [
+    {
+      "id": "pacote-mao",
+      "src": "assets/objects/pacote-amassado.png",
+      "x": 31,
+      "y": 60,
+      "w": 22
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-kitchen-01",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Nossa senhora...",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  }
+},
+{
+  "id": "scene-kitchen-02",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Tá bem amassado isso aqui.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  }
+},
+{
+  "id": "scene-kitchen-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Tomara que não tenha danificado a carta.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left",
+    "effect": "kitchen-jp"
+  }
+},
+{
+  "id": "scene-kitchen-04-pause",
+  "type": "visual",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left",
+    "effect": "kitchen-jp"
+  },
+  "objects": [
+    {
+      "id": "pacote-mao",
+      "src": "assets/objects/pacote-amassado.png",
+      "x": 31,
+      "y": 60,
+      "w": 22
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-kitchen-04",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Pô... será que capotou o caminhão dos Correios?",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left",
+    "effect": "kitchen-jp-laugh"
+  }
+},
+{
+  "id": "scene-kitchen-05",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Tá só o bagaço essa embalagem.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left",
+    "effect": "kitchen-jp-laugh"
+  }
+},
+{
+  "id": "scene-kitchen-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "O duro de pegar assim, sem ser de loja, é que pode acontecer isso.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left",
+    "effect": "kitchen-jp"
+  }
+},
+{
+  "id": "scene-kitchen-07",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Beleza. Vamos ver.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  }
+},
+{
+  "id": "scene-table-pack-01-open",
+  "type": "visual",
+  "bg": "assets/bg/mesa-cozinha-topo.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "objects": [
+    {
+      "id": "pacote-centro",
+      "src": "assets/objects/pacote-amassado.png",
+      "x": 31,
+      "y": 24,
+      "w": 38
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-table-pack-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Vamos com calma."
+},
+{
+  "id": "scene-table-pack-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Se a carta veio inteira, já tá ótimo."
+},
+{
+  "id": "scene-table-pack-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Nossa... papelão dos dois lados."
+},
+{
+  "id": "scene-table-pack-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Plástico-bolha."
+},
+{
+  "id": "scene-table-pack-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mais sleeve."
+},
+{
+  "id": "scene-table-pack-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mais fita."
+},
+{
+  "id": "scene-table-open-01",
+  "type": "visual",
+  "bg": "assets/bg/mesa-cozinha-topo.webp",
+  "clearObjects": true,
+  "objects": [
+    {
+      "id": "pacote-aberto",
+      "src": "assets/objects/pacote-aberto.png",
+      "x": 24,
+      "y": 11,
+      "w": 52
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-table-open-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Bom..."
+},
+{
+  "id": "scene-table-open-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Ele tentou proteger a carta."
+},
+{
+  "id": "scene-table-open-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Tentou bastante, aliás."
+},
+{
+  "id": "scene-table-open-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Parece que ela tá bem protegida mesmo."
+},
+{
+  "id": "scene-kitchen-08-open",
+  "type": "visual",
+  "bg": "assets/bg/cozinha-entardecer.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  },
+  "hideDialog": true
+},
+{
+  "id": "scene-kitchen-08",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Meu Deus do céu...",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  }
+},
+{
+  "id": "scene-kitchen-09",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Quanto durex, cara.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  }
+},
+{
+  "id": "scene-kitchen-10",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Tá querendo guardar ouro aqui dentro?",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left",
+    "effect": "kitchen-jp-laugh"
+  }
+},
+{
+  "id": "scene-kitchen-11",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Mais um pouco e eu precisava de ferramenta pra abrir isso.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  }
+},
+{
+  "id": "scene-kitchen-12",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Tá... calma.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left",
+    "effect": "kitchen-jp"
+  }
+},
+{
+  "id": "scene-kitchen-13",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Se veio tudo isso de proteção, é porque a carta deve estar bem.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left",
+    "effect": "kitchen-jp"
+  }
+},
+{
+  "id": "scene-kitchen-14-pause",
+  "type": "visual",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left",
+    "effect": "kitchen-jp"
+  },
+  "hideDialog": true
+},
+{
+  "id": "scene-kitchen-14",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "...caramba.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left",
+    "effect": "kitchen-jp"
+  }
+},
+{
+  "id": "scene-card-table-open",
+  "type": "visual",
+  "bg": "assets/bg/mesa-cozinha-topo.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "objects": [
+    {
+      "id": "pacote-aberto-fundo",
+      "src": "assets/objects/pacote-aberto.png",
+      "x": 32,
+      "y": 8,
+      "w": 36
+    },
+    {
+      "id": "carta-cnc",
+      "src": "assets/objects/command-and-conquer-carta.png",
+      "x": 38,
+      "y": 18,
+      "w": 23
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-card-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "É ela mesmo."
+},
+{
+  "id": "scene-card-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Command and Conquer."
+},
+{
+  "id": "scene-card-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Primeira impressão."
+},
+{
+  "id": "scene-card-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Rainbow Foil..."
+},
+{
+  "id": "scene-card-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Ao vivo ela é ainda melhor."
+},
+{
+  "id": "scene-card-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "A borda de cima veio cortada mesmo."
+},
+{
+  "id": "scene-card-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "E essa faixa aqui embaixo..."
+},
+{
+  "id": "scene-card-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Estranho."
+},
+{
+  "id": "scene-card-09",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mas não estraga."
+},
+{
+  "id": "scene-card-10",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não."
+},
+{
+  "id": "scene-card-11",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Se bobear, isso deixa ela ainda melhor."
+}
 ];
