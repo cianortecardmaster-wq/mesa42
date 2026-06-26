@@ -6,6 +6,7 @@ let currentStep = 0;
 let activeBackground = "";
 let activeCharacters = {};
 let activeObjects = {};
+let activeObjectOverlays = {};
 let activePhone = null;
 let isTyping = false;
 let typingTimer = null;
@@ -120,6 +121,7 @@ function resetVisualState() {
   stage.classList.add("camera-center");
 
   characterLayer.innerHTML = "";
+  clearObjectOverlays();
   objectLayer.innerHTML = "";
 
   if (effectLayer) {
@@ -226,9 +228,17 @@ function setCharacters(step) {
   });
 }
 
+function clearObjectOverlays() {
+  Object.values(activeObjectOverlays || {}).forEach(el => {
+    if (el && el.remove) el.remove();
+  });
+  activeObjectOverlays = {};
+}
+
 function clearObjects(step) {
   if (!step.clearObjects) return;
 
+  clearObjectOverlays();
   objectLayer.innerHTML = "";
   activeObjects = {};
 }
