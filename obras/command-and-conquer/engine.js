@@ -31,6 +31,7 @@ const logoOverlay = document.getElementById("logoOverlay");
 const introLogo = document.getElementById("introLogo");
 
 const fullscreenBtn = document.getElementById("fullscreenBtn");
+const jumpEndBtn = document.getElementById("jumpEndBtn");
 const rotateOverlay = document.getElementById("rotateOverlay");
 
 function isMobileViewport() {
@@ -458,6 +459,11 @@ nextTextBtn?.addEventListener("click", event => {
   next();
 });
 
+jumpEndBtn?.addEventListener("click", event => {
+  event.stopPropagation();
+  renderStep(story.length - 1, { forceFullText: true });
+});
+
 fullscreenBtn?.addEventListener("click", event => {
   event.stopPropagation();
   toggleFullscreen();
@@ -510,6 +516,11 @@ document.addEventListener("keydown", event => {
   if (["ArrowLeft", "Backspace"].includes(event.key)) {
     event.preventDefault();
     prev();
+  }
+
+  if (event.key === "End") {
+    event.preventDefault();
+    renderStep(story.length - 1, { forceFullText: true });
   }
 });
 

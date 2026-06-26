@@ -1963,3 +1963,40 @@ button {
     bottom: -5dvh !important;
   }
 }
+
+
+/* =========================================================
+   Botão temporário de teste — ir para o final da história
+   Remover depois: #jumpEndBtn e estas regras.
+   ========================================================= */
+
+.jump-end-toggle {
+  position: absolute;
+  top: max(54px, calc(env(safe-area-inset-top) + 54px));
+  right: max(14px, env(safe-area-inset-right));
+  z-index: 130;
+  border: 1px solid rgba(214, 179, 117, 0.65);
+  background: rgba(84, 16, 31, 0.86);
+  color: #f4ead8;
+  font-size: 0.82rem;
+  line-height: 1;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  backdrop-filter: blur(6px);
+}
+
+.jump-end-toggle:hover {
+  background: rgba(118, 24, 43, 0.95);
+  color: #fff;
+}
+
+@media (max-width: 900px) {
+  .jump-end-toggle {
+    display: block !important;
+    top: max(46px, calc(env(safe-area-inset-top) + 46px)) !important;
+    right: max(10px, env(safe-area-inset-right)) !important;
+    font-size: 0.64rem !important;
+    padding: 6px 9px !important;
+  }
+}
