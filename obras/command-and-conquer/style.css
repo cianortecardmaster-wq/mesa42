@@ -2000,3 +2000,21 @@ button {
     padding: 6px 9px !important;
   }
 }
+
+
+/* =========================================================
+   Cena 09-14 — JP animado / celular na mão
+   ========================================================= */
+
+.character.phone-excited {
+  height: 90dvh !important;
+  max-height: 90dvh !important;
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .character.phone-excited {
+    height: 94dvh !important;
+    max-height: 94dvh !important;
+    bottom: -5dvh !important;
+  }
+}

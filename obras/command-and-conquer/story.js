@@ -1310,5 +1310,1333 @@ const story = [
   "type": "thought",
   "speaker": "JP",
   "text": "…alguém vai lembrar."
+},
+{
+  "id": "scene-09-room-check-entry",
+  "type": "visual",
+  "hideDialog": true,
+  "bg": "assets/bg/quarto-01.webp",
+  "camera": "center",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-desconfiado.png",
+    "position": "left",
+    "effect": "phone-side"
+  }
+},
+{
+  "id": "scene-09-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Marcos…",
+  "bg": "assets/bg/quarto-01.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-desconfiado.png",
+    "position": "left",
+    "effect": "phone-side"
+  }
+},
+{
+  "id": "scene-09-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não vou fechar nada só com um nome."
+},
+{
+  "id": "scene-09-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-09-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Melhor perguntar pra quem estava nos últimos eventos."
+},
+{
+  "id": "scene-09-bruno-chat",
+  "type": "visual",
+  "hideDialog": true,
+  "bg": "assets/bg/quarto-01.webp",
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Bruno, você lembra de um Marcos que jogou Flesh por aqui?",
+        "side": "me"
+      },
+      {
+        "from": "Bruno",
+        "text": "Marcos?",
+        "side": "other"
+      },
+      {
+        "from": "Bruno",
+        "text": "Acho que não.",
+        "side": "other"
+      },
+      {
+        "from": "Bruno",
+        "text": "Se jogou comigo, não lembro.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-09-rafael-chat",
+  "type": "visual",
+  "hideDialog": true,
+  "bg": "assets/bg/quarto-01.webp",
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Rafael, você conhece um Marcos que apareceu nos eventos?",
+        "side": "me"
+      },
+      {
+        "from": "Rafael",
+        "text": "Conhecer, não conheço.",
+        "side": "other"
+      },
+      {
+        "from": "Rafael",
+        "text": "Mas esse nome não me é estranho.",
+        "side": "other"
+      },
+      {
+        "from": "Rafael",
+        "text": "Pergunta pra Camila. Ela costuma lembrar dessas coisas.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-09-camila-chat",
+  "type": "visual",
+  "hideDialog": true,
+  "bg": "assets/bg/quarto-01.webp",
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Camila, você lembra de um Marcos que jogou uns eventos aqui?",
+        "side": "me"
+      },
+      {
+        "from": "Camila",
+        "text": "Lembro sim.",
+        "side": "other"
+      },
+      {
+        "from": "Camila",
+        "text": "Ele veio jogar o último torneio.",
+        "side": "other"
+      },
+      {
+        "from": "Camila",
+        "text": "Não ficou entre os finalistas, mas jogou umas rodadas.",
+        "side": "other"
+      },
+      {
+        "from": "Camila",
+        "text": "Depois ficou trocando carta com o pessoal.",
+        "side": "other"
+      },
+      {
+        "from": "Camila",
+        "text": "Inclusive fez umas trocas comigo.",
+        "side": "other"
+      },
+      {
+        "from": "Camila",
+        "text": "Ele jogava Magic também, se não me engano.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-09-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Tá."
+},
+{
+  "id": "scene-09-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-09-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Então ele existe."
+},
+{
+  "id": "scene-09-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Veio no torneio."
+},
+{
+  "id": "scene-09-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Jogou."
+},
+{
+  "id": "scene-09-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Fez troca."
+},
+{
+  "id": "scene-09-09",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Camila lembra dele."
+},
+{
+  "id": "scene-09-pause-03",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-09-10",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Isso não prova que a carta é real."
+},
+{
+  "id": "scene-09-11",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mas prova que ele não saiu do nada."
+},
+{
+  "id": "scene-09-pause-04",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-09-look-phone",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-09-12",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Verdadeiro o suficiente."
+},
+{
+  "id": "scene-09-pause-05",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-09-13",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Agora falta ver a carta."
+},
+{
+  "id": "scene-10-photo-chat-entry",
+  "type": "visual",
+  "hideDialog": true,
+  "bg": "assets/bg/mesa-deck-01.webp",
+  "camera": "center",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Consegue mandar foto?",
+        "side": "me"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-10-photo-chat-02",
+  "type": "visual",
+  "hideDialog": true,
+  "bg": "assets/bg/mesa-deck-01.webp",
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Consegue mandar foto?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Mando.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-10-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-10-photo-chat-03",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Consegue mandar foto?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Mando.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Pera.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-10-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-10-photo-chat-04",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Consegue mandar foto?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Mando.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Pera.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Tá aqui.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "[foto enviada]",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-10-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Vamos ver."
+},
+{
+  "id": "scene-10-pause-03",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-10-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Sem empolgar."
+},
+{
+  "id": "scene-10-pause-04",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-10-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Só olha."
+},
+{
+  "id": "scene-11-room-card-entry",
+  "type": "visual",
+  "hideDialog": true,
+  "bg": "assets/bg/quarto-01.webp",
+  "camera": "center",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-desconfiado.png",
+    "position": "left",
+    "effect": "phone-side"
+  }
+},
+{
+  "id": "scene-11-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "É ela.",
+  "bg": "assets/bg/quarto-01.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-desconfiado.png",
+    "position": "left",
+    "effect": "phone-side"
+  }
+},
+{
+  "id": "scene-11-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-11-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Command and Conquer."
+},
+{
+  "id": "scene-11-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Primeira impressão."
+},
+{
+  "id": "scene-11-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Rainbow Foil."
+},
+{
+  "id": "scene-11-pause-05",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-11-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "A foto é ruim."
+},
+{
+  "id": "scene-11-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Claro que é ruim."
+},
+{
+  "id": "scene-11-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mesa escura, luz estourada, câmera tremida…"
+},
+{
+  "id": "scene-11-pause-08",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-11-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mas mesmo assim dá pra ver."
+},
+{
+  "id": "scene-11-09",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "A carta brilha diferente."
+},
+{
+  "id": "scene-11-10",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não bonito."
+},
+{
+  "id": "scene-11-11",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Forte."
+},
+{
+  "id": "scene-11-pause-12",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-11-12",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Bonita demais."
+},
+{
+  "id": "scene-11-13",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Quase absurda demais pra cair no meu colo assim."
+},
+{
+  "id": "scene-11-pause-14",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-11-phone-close",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-11-14",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "E tem erro."
+},
+{
+  "id": "scene-11-15",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "A borda de cima tá levemente cortada."
+},
+{
+  "id": "scene-11-16",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não muito."
+},
+{
+  "id": "scene-11-17",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Só o suficiente pra incomodar."
+},
+{
+  "id": "scene-11-pause-18",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-11-18",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "E embaixo…"
+},
+{
+  "id": "scene-11-19",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "tem uma faixa de cor que não devia estar ali."
+},
+{
+  "id": "scene-11-20",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Um pedaço de outra impressão."
+},
+{
+  "id": "scene-11-21",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Como se a carta tivesse puxado alguma coisa junto."
+},
+{
+  "id": "scene-11-pause-22",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-11-22",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Misprint."
+},
+{
+  "id": "scene-11-23",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Estranha."
+},
+{
+  "id": "scene-11-pause-24",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-11-24",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mas real."
+},
+{
+  "id": "scene-12-video-chat-entry",
+  "type": "visual",
+  "hideDialog": true,
+  "bg": "assets/bg/mesa-deck-01.webp",
+  "camera": "center",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Ela é misprint?",
+        "side": "me"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-12-video-chat-02",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Ela é misprint?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Sim.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Faço mais barato.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-12-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-12-video-chat-03",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Ela é misprint?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Sim.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Faço mais barato.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Manda vídeo?",
+        "side": "me"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-12-video-chat-04",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Ela é misprint?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Sim.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Faço mais barato.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Manda vídeo?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Mando.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-12-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-12-video-chat-05",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Ela é misprint?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Sim.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Faço mais barato.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Manda vídeo?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Mando.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Só um minuto.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "[vídeo enviado]",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-12-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Vídeo é melhor."
+},
+{
+  "id": "scene-12-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Foto mente fácil."
+},
+{
+  "id": "scene-12-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Ângulo mente."
+},
+{
+  "id": "scene-12-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Luz mente."
+},
+{
+  "id": "scene-12-pause-05",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-12-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mas vídeo entrega."
+},
+{
+  "id": "scene-12-pause-06",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-12-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Frente."
+},
+{
+  "id": "scene-12-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Verso."
+},
+{
+  "id": "scene-12-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Foil."
+},
+{
+  "id": "scene-12-09",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Textura."
+},
+{
+  "id": "scene-12-10",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Borda."
+},
+{
+  "id": "scene-12-pause-11",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-12-11",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Se o vídeo bater, a carta existe."
+},
+{
+  "id": "scene-12-12",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Se a carta existe…"
+},
+{
+  "id": "scene-12-pause-13",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-12-13",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "o resto eu resolvo."
+},
+{
+  "id": "scene-13-price-entry",
+  "type": "visual",
+  "hideDialog": true,
+  "bg": "assets/bg/quarto-01.webp",
+  "camera": "center",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-animado.png",
+    "position": "left",
+    "effect": "phone-excited"
+  }
+},
+{
+  "id": "scene-13-marcos-price",
+  "type": "dialogue",
+  "speaker": "Marcos",
+  "text": "Faço por [preço baixo].",
+  "bg": "assets/bg/quarto-01.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-animado.png",
+    "position": "left",
+    "effect": "phone-excited"
+  }
+},
+{
+  "id": "scene-13-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "…quê?"
+},
+{
+  "id": "scene-13-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-13-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não."
+},
+{
+  "id": "scene-13-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Esse preço tá errado."
+},
+{
+  "id": "scene-13-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Muito baixo."
+},
+{
+  "id": "scene-13-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Baixo demais pra ser normal."
+},
+{
+  "id": "scene-13-pause-06",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-13-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não é preço de amigo."
+},
+{
+  "id": "scene-13-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não é preço de quem tá parando."
+},
+{
+  "id": "scene-13-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não é “preciso pagar um boleto até amanhã”."
+},
+{
+  "id": "scene-13-09",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "É preço de quem quer se livrar logo."
+},
+{
+  "id": "scene-13-pause-10",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-13-10",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Isso devia me afastar."
+},
+{
+  "id": "scene-13-11",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Devia ser o momento em que eu agradeço, invento uma desculpa e deixo pra lá."
+},
+{
+  "id": "scene-13-pause-12",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-13-look-table",
+  "type": "visual",
+  "hideDialog": true,
+  "camera": "desk"
+},
+{
+  "id": "scene-13-12",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mas a carta tá certa."
+},
+{
+  "id": "scene-13-13",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "A foto tá certa."
+},
+{
+  "id": "scene-13-14",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "O vídeo tá certo."
+},
+{
+  "id": "scene-13-15",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "O erro tá certo."
+},
+{
+  "id": "scene-13-pause-16",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-13-16",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "E o preço…"
+},
+{
+  "id": "scene-13-pause-17",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-13-17",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "O preço é a parte errada que eu mais quero aceitar."
+},
+{
+  "id": "scene-13-pause-18",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-13-breathe",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-13-18",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "O cara precisa de dinheiro."
+},
+{
+  "id": "scene-13-19",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Simples."
+},
+{
+  "id": "scene-13-20",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Humano."
+},
+{
+  "id": "scene-13-21",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Acontece."
+},
+{
+  "id": "scene-13-pause-22",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-13-22",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Essa explicação serve."
+},
+{
+  "id": "scene-14-deal-chat-entry",
+  "type": "visual",
+  "hideDialog": true,
+  "bg": "assets/bg/mesa-deck-01.webp",
+  "camera": "center",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Tá inteira mesmo?",
+        "side": "me"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-14-deal-chat-02",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Tá inteira mesmo?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Tá.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-14-deal-chat-03",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Tá inteira mesmo?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Tá.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Sem dobra? Sem marca forte?",
+        "side": "me"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-14-deal-chat-04",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Tá inteira mesmo?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Tá.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Sem dobra? Sem marca forte?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Sem.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Só o misprint mesmo.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-14-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-14-deal-chat-05",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Tá inteira mesmo?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Tá.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Sem dobra? Sem marca forte?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Sem.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Só o misprint mesmo.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Fecho.",
+        "side": "me"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-14-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-14-deal-chat-06",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Tá inteira mesmo?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Tá.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Sem dobra? Sem marca forte?",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Sem.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Só o misprint mesmo.",
+        "side": "other"
+      },
+      {
+        "from": "JP",
+        "text": "Fecho.",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Obrigado.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-14-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "“Obrigado”?"
+},
+{
+  "id": "scene-14-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-14-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não “fechou”."
+},
+{
+  "id": "scene-14-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não “manda o Pix”."
+},
+{
+  "id": "scene-14-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não “vou separar aqui”."
+},
+{
+  "id": "scene-14-pause-05",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-14-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Obrigado."
+},
+{
+  "id": "scene-14-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Como se eu tivesse feito um favor."
+},
+{
+  "id": "scene-14-pause-07",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-14-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Como se eu tivesse aceitado ficar com alguma coisa…"
+},
+{
+  "id": "scene-14-pause-08",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-14-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "que ele queria longe."
 }
 ];
