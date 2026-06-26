@@ -2018,3 +2018,36 @@ button {
     bottom: -5dvh !important;
   }
 }
+
+
+/* =========================================================
+   Cena 15-17 — JP satisfeito / fechamento da cena
+   ========================================================= */
+
+.character.phone-satisfied {
+  height: 90dvh !important;
+  max-height: 90dvh !important;
+}
+
+.character.close-satisfied {
+  height: 96dvh !important;
+  max-height: 96dvh !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .character.phone-satisfied {
+    height: 94dvh !important;
+    max-height: 94dvh !important;
+    bottom: -5dvh !important;
+  }
+
+  body.mobile-landscape-mode .character.close-satisfied {
+    height: 98dvh !important;
+    max-height: 98dvh !important;
+    left: 52% !important;
+    bottom: -6dvh !important;
+    transform: translateX(-50%) !important;
+  }
+}

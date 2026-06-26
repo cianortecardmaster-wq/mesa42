@@ -2638,5 +2638,505 @@ const story = [
   "type": "thought",
   "speaker": "JP",
   "text": "que ele queria longe."
+},
+{
+  "id": "scene-15-room-entry",
+  "type": "visual",
+  "bg": "assets/bg/quarto-01.webp",
+  "camera": "center",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-satisfeito.png",
+    "position": "left",
+    "effect": "phone-satisfied"
+  },
+  "hideDialog": true
+},
+{
+  "id": "scene-15-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "…que ele queria longe.",
+  "bg": "assets/bg/quarto-01.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-satisfeito.png",
+    "position": "left",
+    "effect": "phone-satisfied"
+  }
+},
+{
+  "id": "scene-15-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-15-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Besteira."
+},
+{
+  "id": "scene-15-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "É só impressão minha."
+},
+{
+  "id": "scene-15-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mensagem escrita não tem tom."
+},
+{
+  "id": "scene-15-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Cada um responde do seu jeito."
+},
+{
+  "id": "scene-15-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-15-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "E, no fim das contas, o que importa é simples."
+},
+{
+  "id": "scene-15-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "A carta existe."
+},
+{
+  "id": "scene-15-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "A carta é dele."
+},
+{
+  "id": "scene-15-09",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Ele quer vender."
+},
+{
+  "id": "scene-15-10",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Eu quero comprar."
+},
+{
+  "id": "scene-15-pause-03",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-15-11",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Pronto."
+},
+{
+  "id": "scene-15-12",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Sem mistério."
+},
+{
+  "id": "scene-15-13",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Sem viagem."
+},
+{
+  "id": "scene-15-chat-01",
+  "type": "visual",
+  "bg": "assets/bg/quarto-01.webp",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Vou fazer o Pix.",
+        "side": "me"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-15-chat-02",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Vou fazer o Pix.",
+        "side": "me"
+      },
+      {
+        "from": "JP",
+        "text": "Te mando meus dados de correspondência.",
+        "side": "me"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-15-chat-03",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Vou fazer o Pix.",
+        "side": "me"
+      },
+      {
+        "from": "JP",
+        "text": "Te mando meus dados de correspondência.",
+        "side": "me"
+      },
+      {
+        "from": "JP",
+        "text": "Quando enviar, me passa o código de rastreio.",
+        "side": "me"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-15-pause-04",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-15-chat-04",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Vou fazer o Pix.",
+        "side": "me"
+      },
+      {
+        "from": "JP",
+        "text": "Te mando meus dados de correspondência.",
+        "side": "me"
+      },
+      {
+        "from": "JP",
+        "text": "Quando enviar, me passa o código de rastreio.",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Passo sim.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-15-chat-05",
+  "type": "visual",
+  "hideDialog": true,
+  "phone": {
+    "src": "assets/objects/whatsapp-cel.png",
+    "messages": [
+      {
+        "from": "JP",
+        "text": "Vou fazer o Pix.",
+        "side": "me"
+      },
+      {
+        "from": "JP",
+        "text": "Te mando meus dados de correspondência.",
+        "side": "me"
+      },
+      {
+        "from": "JP",
+        "text": "Quando enviar, me passa o código de rastreio.",
+        "side": "me"
+      },
+      {
+        "from": "Marcos",
+        "text": "Passo sim.",
+        "side": "other"
+      },
+      {
+        "from": "Marcos",
+        "text": "Assim que postar.",
+        "side": "other"
+      }
+    ]
+  }
+},
+{
+  "id": "scene-15-pause-05",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-15-14",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Normal."
+},
+{
+  "id": "scene-15-15",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Tudo normal."
+},
+{
+  "id": "scene-15-pause-06",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-15-16",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Compra de carta."
+},
+{
+  "id": "scene-15-17",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Só isso."
+},
+{
+  "id": "scene-15-pause-07",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-15-18",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Pronto."
+},
+{
+  "id": "scene-15-19",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Negócio fechado."
+},
+{
+  "id": "scene-16-desk-entry",
+  "type": "visual",
+  "bg": "assets/bg/mesa-deck-01.webp",
+  "camera": "desk",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "hideDialog": true
+},
+{
+  "id": "scene-16-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Agora vai.",
+  "bg": "assets/bg/mesa-deck-01.webp"
+},
+{
+  "id": "scene-16-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-16-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Agora esse deck fecha."
+},
+{
+  "id": "scene-16-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não hoje."
+},
+{
+  "id": "scene-16-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Não nessa mesa."
+},
+{
+  "id": "scene-16-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Mas fecha."
+},
+{
+  "id": "scene-16-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-16-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Ataque, defesa, equipamento…"
+},
+{
+  "id": "scene-16-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "E agora a peça que faltava."
+},
+{
+  "id": "scene-16-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "A peça que faz diferença."
+},
+{
+  "id": "scene-16-09",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "A peça que pesa."
+},
+{
+  "id": "scene-16-pause-03",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-16-10",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Engraçado."
+},
+{
+  "id": "scene-16-11",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Faz meia hora isso aqui era um buraco."
+},
+{
+  "id": "scene-16-12",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Agora já parece espaço reservado."
+},
+{
+  "id": "scene-16-pause-04",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-16-13",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Como se o deck soubesse."
+},
+{
+  "id": "scene-17-close-entry",
+  "type": "visual",
+  "bg": "assets/bg/quarto-01.webp",
+  "camera": "center",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-satisfeito.png",
+    "position": "left",
+    "effect": "close-satisfied"
+  },
+  "hideDialog": true
+},
+{
+  "id": "scene-17-01",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Agora sim.",
+  "bg": "assets/bg/quarto-01.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-celular-satisfeito.png",
+    "position": "left",
+    "effect": "close-satisfied"
+  }
+},
+{
+  "id": "scene-17-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-17-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Agora o deck tá completo."
+},
+{
+  "id": "scene-17-pause-02",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-17-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Só falta chegar."
+},
+{
+  "id": "scene-17-pause-03",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-17-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "E, chegando, acabou."
+},
+{
+  "id": "scene-17-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Aí não tem mais “quase”."
+},
+{
+  "id": "scene-17-pause-04",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-17-breathe",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-17-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Finalmente."
+},
+{
+  "id": "scene-17-fadeout",
+  "type": "visual",
+  "bg": "assets/bg/quarto-01.webp",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "hideDialog": true
 }
 ];
