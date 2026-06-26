@@ -2051,3 +2051,56 @@ button {
     transform: translateX(-50%) !important;
   }
 }
+
+
+/* =========================================================
+   Próxima parte — frente da casa / Valdir
+   ========================================================= */
+
+.dialog-box.mode-timeskip .speaker-name {
+  display: none !important;
+}
+
+.dialog-box.mode-timeskip .dialog-text {
+  text-align: center !important;
+  font-style: italic !important;
+  letter-spacing: 0.08em !important;
+  color: #f5edde !important;
+}
+
+.character.delivery-jp,
+.character.delivery-jp-talk {
+  height: 86dvh !important;
+  max-height: 86dvh !important;
+}
+
+.character.mailman {
+  height: 88dvh !important;
+  max-height: 88dvh !important;
+}
+
+.character.left.delivery-jp,
+.character.left.delivery-jp-talk {
+  left: 8% !important;
+}
+
+.character.right.mailman {
+  right: 8% !important;
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .character.delivery-jp,
+  body.mobile-landscape-mode .character.delivery-jp-talk {
+    height: 92dvh !important;
+    max-height: 92dvh !important;
+    bottom: -6dvh !important;
+    left: 6% !important;
+  }
+
+  body.mobile-landscape-mode .character.mailman {
+    height: 92dvh !important;
+    max-height: 92dvh !important;
+    bottom: -6dvh !important;
+    right: 5% !important;
+  }
+}

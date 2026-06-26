@@ -152,6 +152,7 @@ function applyVisualState(step, isCurrentStep) {
   setCamera(step);
   clearCharacters(step);
   setCharacter(step);
+  setCharacters(step);
   clearObjects(step);
   clearEffects(step);
   setObjects(step);
@@ -214,6 +215,14 @@ function setCharacter(step) {
   if (data.effect) {
     data.effect.split(" ").forEach(className => characterEl.classList.add(className));
   }
+}
+
+function setCharacters(step) {
+  if (!step.characters) return;
+
+  step.characters.forEach(character => {
+    setCharacter({ character });
+  });
 }
 
 function clearObjects(step) {
@@ -315,6 +324,10 @@ function shouldHideDialog(step) {
 
 function renderDialog(step, forceFullText = false) {
   dialogBox.className = "dialog-box";
+
+  if (step.mode) {
+    dialogBox.classList.add(`mode-${step.mode}`);
+  }
   visibleText = "";
 
   if (shouldHideDialog(step)) {

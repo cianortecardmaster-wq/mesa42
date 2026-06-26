@@ -3138,5 +3138,640 @@ const story = [
   "clearEffects": true,
   "clearCharacters": true,
   "hideDialog": true
+},
+{
+  "id": "scene-next-timeskip",
+  "type": "thought",
+  "speaker": "",
+  "text": "Alguns dias depois.",
+  "mode": "timeskip"
+},
+{
+  "id": "scene-delivery-entry",
+  "type": "visual",
+  "bg": "assets/bg/casa-jp-frente-entardecer.webp",
+  "camera": "center",
+  "clearObjects": true,
+  "clearEffects": true,
+  "clearCharacters": true,
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-delivery-01",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Bom dia, JP.",
+  "bg": "assets/bg/casa-jp-frente-entardecer.webp",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-02",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Opa, Valdir. Bom dia.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-03",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Mais carta, cara?",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-04",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Ah, mas agora eu vou demorar um pouco.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-05",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Meu deck ficou pronto.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-06",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Ah, duvido.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-07",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Pô, Valdir. Tá me zoando também?",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-08",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Eu só entrego. Quem compra toda semana é você.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-09",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Toda semana é exagero.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-10",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "É nada.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-11",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Já tô quase aprendendo esse jogo só de trazer envelope pra você.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-12",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Também não precisava entregar o pacote todo amassado, né, cara?",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-13",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Ah, já veio assim.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-14",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Você sabe que eu cuido bem das suas encomendas.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-delivery-15",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Sei, sei.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-16",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Tô brincando.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-17",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Assina aqui pra mim.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-18",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Pronto.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-19",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Valeu.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-20",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Valeu, Valdir.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-21",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "Boa sorte aí com o deck pronto.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-22",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Agora vai.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-23",
+  "type": "dialogue",
+  "speaker": "Valdir",
+  "text": "É o que você falou da outra vez.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "delivery-jp"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-24",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Vai trabalhar, Valdir.",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "delivery-jp-talk"
+    },
+    {
+      "id": "valdir",
+      "src": "assets/characters/valdir-correio.png",
+      "position": "right",
+      "effect": "mailman"
+    }
+  ]
+},
+{
+  "id": "scene-delivery-alone-entry",
+  "type": "visual",
+  "bg": "assets/bg/casa-jp-frente-entardecer.webp",
+  "clearCharacters": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left",
+    "effect": "delivery-jp"
+  },
+  "hideDialog": true
+},
+{
+  "id": "scene-delivery-alone-01",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Quase duas semanas.",
+  "bg": "assets/bg/casa-jp-frente-entardecer.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left",
+    "effect": "delivery-jp"
+  }
+},
+{
+  "id": "scene-delivery-alone-02",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Duas semanas olhando rastreio."
+},
+{
+  "id": "scene-delivery-alone-03",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Duas semanas abrindo o celular como idiota."
+},
+{
+  "id": "scene-delivery-alone-look-pack",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-delivery-alone-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "E agora ela tá aqui."
+},
+{
+  "id": "scene-delivery-alone-05",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Amassada."
+},
+{
+  "id": "scene-delivery-alone-06",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Claro."
+},
+{
+  "id": "scene-delivery-alone-envelope",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-delivery-alone-07",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Calma."
+},
+{
+  "id": "scene-delivery-alone-08",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Toploader segura."
+},
+{
+  "id": "scene-delivery-alone-09",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Sleeve segura."
+},
+{
+  "id": "scene-delivery-alone-10",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "O cara parecia cuidadoso."
+},
+{
+  "id": "scene-delivery-alone-pause-01",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-delivery-alone-11",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "Cuidadoso até demais."
+},
+{
+  "id": "scene-delivery-alone-cut-thought",
+  "type": "visual",
+  "hideDialog": true
+},
+{
+  "id": "scene-delivery-alone-12",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Melhor abrir lá dentro.",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "delivery-jp-talk"
+  }
 }
 ];
