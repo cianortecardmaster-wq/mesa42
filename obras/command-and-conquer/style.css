@@ -2285,3 +2285,49 @@ button {
     opacity: 0;
   }
 }
+
+
+/* Centro Cultural - ajuste de profundidade */
+.character.cc-jp-front-left {
+  left: 2% !important;
+  z-index: 88 !important;
+  transform: translateY(18px) scale(1.02);
+}
+.character.cc-jp-front-left.visible {
+  transform: translateY(0) scale(1.02);
+}
+.character.cc-jp-front {
+  left: 3% !important;
+  z-index: 88 !important;
+  transform: translateY(18px) scale(1.02);
+}
+.character.cc-jp-front.visible {
+  transform: translateY(0) scale(1.02);
+}
+.character.center.cc-bruno-back {
+  left: 54% !important;
+  z-index: 72 !important;
+  height: 75% !important;
+  transform: translateX(-50%) translateY(22px) scale(0.94);
+}
+.character.center.cc-bruno-back.visible {
+  transform: translateX(-50%) translateY(0) scale(0.94);
+}
+.character.right.cc-bruno-back {
+  right: 2% !important;
+  z-index: 72 !important;
+  height: 75% !important;
+  transform: translateY(22px) scale(0.94);
+}
+.character.right.cc-bruno-back.visible {
+  transform: translateY(0) scale(0.94);
+}
+.character.right.cc-rafael-back {
+  right: -1% !important;
+  z-index: 70 !important;
+  height: 75% !important;
+  transform: translateY(22px) scale(0.94);
+}
+.character.right.cc-rafael-back.visible {
+  transform: translateY(0) scale(0.94);
+}

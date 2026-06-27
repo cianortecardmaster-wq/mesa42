@@ -4343,7 +4343,8 @@ const story = [
     {
       "id": "jp",
       "src": "assets/characters/jp-descontraido.png",
-      "position": "left"
+      "position": "left",
+      "effect": "cc-jp-front-left"
     },
     {
       "id": "bruno",
@@ -4363,7 +4364,8 @@ const story = [
     {
       "id": "jp",
       "src": "assets/characters/jp-descontraido.png",
-      "position": "left"
+      "position": "left",
+      "effect": "cc-jp-front-left"
     },
     {
       "id": "bruno",
@@ -4381,7 +4383,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front-left"
   }
 },
 {
@@ -4417,7 +4420,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front-left"
   }
 },
 {
@@ -4429,7 +4433,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front-left"
   }
 },
 {
@@ -4465,7 +4470,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front-left"
   }
 },
 {
@@ -4513,7 +4519,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front-left"
   }
 },
 {
@@ -4524,17 +4531,20 @@ const story = [
     {
       "id": "jp",
       "src": "assets/characters/jp-descontraido.png",
-      "position": "left"
+      "position": "left",
+      "effect": "cc-jp-front"
     },
     {
       "id": "bruno",
       "src": "assets/characters/bruno.png",
-      "position": "center"
+      "position": "center",
+      "effect": "cc-bruno-back"
     },
     {
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
-      "position": "right"
+      "position": "right",
+      "effect": "cc-rafael-back"
     }
   ],
   "hideDialog": true
@@ -4548,7 +4558,8 @@ const story = [
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -4560,7 +4571,8 @@ const story = [
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -4572,7 +4584,8 @@ const story = [
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -4584,7 +4597,8 @@ const story = [
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -4596,7 +4610,8 @@ const story = [
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -4608,7 +4623,8 @@ const story = [
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -4620,7 +4636,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-rindo.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -4632,7 +4649,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -4644,7 +4662,8 @@ const story = [
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -4656,7 +4675,8 @@ const story = [
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -4668,7 +4688,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -4680,7 +4701,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -4692,7 +4714,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -4704,7 +4727,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -4716,7 +4740,8 @@ const story = [
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-rindo.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -4728,7 +4753,8 @@ const story = [
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -4740,7 +4766,8 @@ const story = [
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -4911,19 +4938,75 @@ const story = [
   "hideDialog": true
 },
 {
-  "id": "scene-cc-fps-entry",
+  "id": "scene-cc-occupied-entry",
   "type": "visual",
   "bg": "assets/bg/centro-cultural-partida-bruno.webp",
   "clearCharacters": true,
   "clearObjects": true,
   "clearEffects": true,
-  "objects": [
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-occupied-01",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Cara… que jogo difícil.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-occupied-02",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Mas ainda não achei a carta nova.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-occupied-03",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Vou fazer um arsenal.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-occupied-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "…",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-occupied-05",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "É, mas não se anima não.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-occupied-06",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Ainda tô no jogo.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-jogadores-entry",
+  "type": "visual",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "characters": [
     {
-      "id": "carta-cnc-parcial",
-      "src": "assets/objects/command-and-conquer-carta.png",
-      "x": 73,
-      "y": 59,
-      "w": 13
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "cc-jp-front"
+    },
+    {
+      "id": "bruno",
+      "src": "assets/characters/bruno-incredulo.png",
+      "position": "right",
+      "effect": "cc-bruno-back"
     }
   ],
   "hideDialog": true
@@ -4933,39 +5016,25 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Não sei não.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
-},
-{
-  "id": "scene-cc-occupied-entry",
-  "type": "visual",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
-  "clearCharacters": true,
-  "clearObjects": true,
-  "clearEffects": true,
-  "characters": [
-    {
-      "id": "jp",
-      "src": "assets/characters/jp-normal.png",
-      "position": "left"
-    },
-    {
-      "id": "bruno",
-      "src": "assets/characters/bruno-incredulo.png",
-      "position": "right"
-    }
-  ],
-  "hideDialog": true
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-pensativo.png",
+    "position": "left",
+    "effect": "cc-jp-front"
+  }
 },
 {
   "id": "scene-cc-fps-02",
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Manda ver, então.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -4973,11 +5042,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Kodachi pra 1.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -4985,11 +5055,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "No blocks.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -4997,11 +5068,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Sem reações.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5009,11 +5081,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Sem reaction.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5021,11 +5094,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Vou pra 5 de vida.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5033,11 +5107,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Cut Through pra 4, go again.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5045,11 +5120,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Deckzinho safado esse, hein.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5057,11 +5133,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Quantas cartas na mão ainda?",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5069,11 +5146,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Uma.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5081,11 +5159,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "E dois recursos.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5093,11 +5172,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Que droga.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5105,11 +5185,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "E ainda tem momentum.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5117,11 +5198,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Beleza, bloco 3.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5129,11 +5211,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Sem reaction.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5141,11 +5224,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Sem reaction.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5153,11 +5237,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Vou pra 4 de vida.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5165,11 +5250,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Vai lá.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5177,17 +5263,18 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Ou vai, ou racha.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
   "id": "scene-cc-cnc-entry",
   "type": "visual",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "clearCharacters": true,
   "clearObjects": true,
   "clearEffects": true,
@@ -5195,12 +5282,14 @@ const story = [
     {
       "id": "jp",
       "src": "assets/characters/jp-descontraido.png",
-      "position": "left"
+      "position": "left",
+      "effect": "cc-jp-front"
     },
     {
       "id": "bruno",
       "src": "assets/characters/bruno-incredulo.png",
-      "position": "right"
+      "position": "right",
+      "effect": "cc-bruno-back"
     }
   ],
   "objects": [
@@ -5221,11 +5310,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Command and Conquer pra 6.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   },
   "objects": [
     {
@@ -5243,11 +5333,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Não pode usar defense reaction nessa chain link.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5255,11 +5346,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "E se hitar, perde o arsenal.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5267,11 +5359,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Ahhh, mano.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5279,11 +5372,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Sério que essa era a carta?",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5291,11 +5385,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Vai se f%#$&.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5303,11 +5398,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Não tenho nem como blocar direito.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5315,11 +5411,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Eu guardei a reaction pra evitar o terceiro hit.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5327,11 +5424,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Bloco 4 usando 1 do peito.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5339,11 +5437,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Perco o arsenal.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5351,11 +5450,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "E eu compro uma carta.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5363,11 +5463,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Faço arsenal.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5375,11 +5476,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Sua vez.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5387,11 +5489,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Reponho a mão…",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5399,11 +5502,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "…e passo o turno.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5411,11 +5515,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Acho que levei essa.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-rindo.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5423,11 +5528,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Levou.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5435,11 +5541,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Você manda Kodachi pra 1, eu levo.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5447,11 +5554,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "E ainda tem quatro cartas pra bater.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5459,17 +5567,18 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Já era.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-bruno-back"
   }
 },
 {
   "id": "scene-cc-postplay-entry",
   "type": "visual",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "clearCharacters": true,
   "clearObjects": true,
   "clearEffects": true,
@@ -5477,17 +5586,20 @@ const story = [
     {
       "id": "jp",
       "src": "assets/characters/jp-rindo.png",
-      "position": "left"
+      "position": "left",
+      "effect": "cc-jp-front"
     },
     {
       "id": "bruno",
       "src": "assets/characters/bruno-incredulo.png",
-      "position": "center"
+      "position": "center",
+      "effect": "cc-bruno-back"
     },
     {
       "id": "rafael",
       "src": "assets/characters/rafael.png",
-      "position": "right"
+      "position": "right",
+      "effect": "cc-rafael-back"
     }
   ],
   "hideDialog": true
@@ -5497,11 +5609,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Aí sim.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-rindo.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5509,11 +5622,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Agora encaixou.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5521,11 +5635,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Encaixou nada.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5533,11 +5648,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Isso aí foi maldade.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5545,11 +5661,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Eu tava segurando a reaction certinha.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5557,11 +5674,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Rafael",
   "text": "Pior que ele montou o turno bonito.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -5569,11 +5687,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Bonito pra ele, né?",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5581,11 +5700,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Pra mim foi um atropelo.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5593,11 +5713,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Você que deixou arsenal.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5605,11 +5726,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Ah, claro.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5617,11 +5739,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Agora a culpa é minha.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5629,11 +5752,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Tecnicamente…",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-rindo.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5641,11 +5765,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Tecnicamente você vai se ferrar.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5653,11 +5778,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Rafael",
   "text": "Admito.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -5665,11 +5791,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Rafael",
   "text": "Foi uma jogada boa.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -5677,11 +5804,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Foi.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5689,17 +5817,18 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Mas eu vou reclamar mesmo assim.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
   "id": "scene-cc-end-entry",
   "type": "visual",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "clearCharacters": true,
   "clearObjects": true,
   "clearEffects": true,
@@ -5707,17 +5836,20 @@ const story = [
     {
       "id": "jp",
       "src": "assets/characters/jp-descontraido.png",
-      "position": "left"
+      "position": "left",
+      "effect": "cc-jp-front"
     },
     {
       "id": "bruno",
       "src": "assets/characters/bruno.png",
-      "position": "center"
+      "position": "center",
+      "effect": "cc-bruno-back"
     },
     {
       "id": "rafael",
       "src": "assets/characters/rafael.png",
-      "position": "right"
+      "position": "right",
+      "effect": "cc-rafael-back"
     }
   ],
   "hideDialog": true
@@ -5727,11 +5859,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "É, levou.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5739,11 +5872,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Se eu não perco aquele arsenal, talvez dava jogo.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5751,11 +5885,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Talvez.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5763,11 +5898,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Nossa, que humildade.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5775,11 +5911,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Tô sendo realista.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5787,11 +5924,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Rafael",
   "text": "Realista nada.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -5799,11 +5937,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Rafael",
   "text": "Tá se achando.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
@@ -5811,11 +5950,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Um pouco.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-rindo.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5823,11 +5963,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Também, ganhou com estilo.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5835,11 +5976,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Fazia tempo que o deck não rodava assim.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5847,17 +5989,18 @@ const story = [
   "type": "dialogue",
   "speaker": "Rafael",
   "text": "Então era isso que faltava?",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "rafael",
     "src": "assets/characters/rafael-falando.png",
-    "position": "right"
+    "position": "right",
+    "effect": "cc-rafael-back"
   }
 },
 {
   "id": "scene-cc-end-card-glance",
   "type": "visual",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "clearObjects": true,
   "objects": [
     {
@@ -5875,11 +6018,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Acho que era.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5887,11 +6031,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Ih.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-incredulo.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5899,11 +6044,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Começou.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5911,11 +6057,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Começou o quê?",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-descontraido-falando.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 },
 {
@@ -5923,11 +6070,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Nada não.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5935,11 +6083,12 @@ const story = [
   "type": "dialogue",
   "speaker": "Bruno",
   "text": "Só tô vendo nascer um relacionamento tóxico.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "bruno",
     "src": "assets/characters/bruno-falando.png",
-    "position": "center"
+    "position": "center",
+    "effect": "cc-bruno-back"
   }
 },
 {
@@ -5947,11 +6096,12 @@ const story = [
   "type": "dialogue",
   "speaker": "JP",
   "text": "Vai embaralhar logo.",
-  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "bg": "assets/bg/centro-cultural-jogadores.webp",
   "character": {
     "id": "jp",
     "src": "assets/characters/jp-rindo.png",
-    "position": "left"
+    "position": "left",
+    "effect": "cc-jp-front"
   }
 }
 ];
