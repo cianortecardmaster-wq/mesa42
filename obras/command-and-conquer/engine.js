@@ -158,7 +158,7 @@ function applyVisualState(step, isCurrentStep) {
   clearObjects(step);
   clearEffects(step);
   setScreenText(step);
-  setObjects(step);
+  setObjects(step, isCurrentStep);
   setPhone(step);
   hideObjects(step);
 }
@@ -272,8 +272,8 @@ function syncObjectOverlay(targetEl, overlayEl) {
   overlayEl.style.height = `${rect.height}px`;
 }
 
-function ensureObjectOverlay(obj, targetEl) {
-  if (!obj.overlayEffect || !objectLayer) return;
+function ensureObjectOverlay(obj, targetEl, isCurrentStep = false) {
+  if (!obj.overlayEffect || !objectLayer || !isCurrentStep) return;
 
   let overlayEl = activeObjectOverlays[obj.id];
 
@@ -295,7 +295,7 @@ function ensureObjectOverlay(obj, targetEl) {
   }
 }
 
-function setObjects(step) {
+function setObjects(step, isCurrentStep = false) {
   if (!step.objects) return;
 
   step.objects.forEach(obj => {
@@ -321,7 +321,7 @@ function setObjects(step) {
     }
 
     if (obj.overlayEffect) {
-      ensureObjectOverlay(obj, objEl);
+      ensureObjectOverlay(obj, objEl, isCurrentStep);
     } else if (activeObjectOverlays[obj.id]) {
       activeObjectOverlays[obj.id].remove();
       delete activeObjectOverlays[obj.id];
