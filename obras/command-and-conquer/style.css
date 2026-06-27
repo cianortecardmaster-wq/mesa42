@@ -2291,6 +2291,7 @@ button {
 .character.cc-jp-front-left {
   left: -1.5% !important;
   z-index: 88 !important;
+  height: 82% !important;
   transform: translateY(18px) scale(1.02);
 }
 .character.cc-jp-front-left.visible {
@@ -2299,37 +2300,38 @@ button {
 .character.cc-jp-front {
   left: 3% !important;
   z-index: 88 !important;
+  height: 82% !important;
   transform: translateY(18px) scale(1.02);
 }
 .character.cc-jp-front.visible {
   transform: translateY(0) scale(1.02);
 }
 .character.center.cc-bruno-back {
-  left: 54% !important;
+  left: 48% !important;
   z-index: 72 !important;
-  height: 75% !important;
-  transform: translateX(-50%) translateY(22px) scale(0.94);
+  height: 82% !important;
+  transform: translateX(-50%) translateY(18px) scale(1.02);
 }
 .character.center.cc-bruno-back.visible {
-  transform: translateX(-50%) translateY(0) scale(0.94);
+  transform: translateX(-50%) translateY(0) scale(1.02);
 }
 .character.right.cc-bruno-back {
-  right: 2% !important;
+  right: 12% !important;
   z-index: 72 !important;
-  height: 75% !important;
-  transform: translateY(22px) scale(0.94);
+  height: 82% !important;
+  transform: translateY(18px) scale(1.02);
 }
 .character.right.cc-bruno-back.visible {
-  transform: translateY(0) scale(0.94);
+  transform: translateY(0) scale(1.02);
 }
 .character.right.cc-rafael-back {
-  right: -1% !important;
+  right: 11% !important;
   z-index: 70 !important;
-  height: 75% !important;
-  transform: translateY(22px) scale(0.94);
+  height: 82% !important;
+  transform: translateY(18px) scale(1.02);
 }
 .character.right.cc-rafael-back.visible {
-  transform: translateY(0) scale(0.94);
+  transform: translateY(0) scale(1.02);
 }
 
 
@@ -2338,13 +2340,16 @@ button {
   body.mobile-landscape-mode .character.cc-jp-front-left {
     left: -0.5% !important;
     z-index: 88 !important;
+    height: 82% !important;
   }
 
   body.mobile-landscape-mode .character.center.cc-bruno-back {
-    left: 55% !important;
+    left: 48% !important;
+    height: 82% !important;
   }
 
   body.mobile-landscape-mode .character.right.cc-rafael-back {
-    right: -2% !important;
+    right: 9% !important;
+    height: 82% !important;
   }
 }
