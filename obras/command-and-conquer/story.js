@@ -5009,12 +5009,13 @@ const story = [
   "bg": "assets/bg/centro-cultural-partida-bruno.webp",
   "clearCharacters": true,
   "clearObjects": true,
+  "clearEffects": true,
   "objects": [
     {
       "id": "carta-cnc-parcial",
       "src": "assets/objects/command-and-conquer-carta.png",
       "x": 73,
-      "y": 58,
+      "y": 59,
       "w": 13
     }
   ],
@@ -5068,6 +5069,856 @@ const story = [
   "speaker": "Bruno",
   "text": "Vou pra 5 de vida.",
   "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-08",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Cut Through pra 4, go again.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-09",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Deckzinho safado esse, hein.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-10",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Quantas cartas na mão ainda?",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-11",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Uma.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-12",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "E dois recursos.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-13",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Que droga.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-14",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "E ainda tem momentum.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-15",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Beleza, bloco 3.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-16",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Sem reaction.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-17",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Sem reaction.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-18",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Vou pra 4 de vida.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-19",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Vai lá.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-20",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Ou vai, ou racha.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-cnc-entry",
+  "type": "visual",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left"
+    },
+    {
+      "id": "bruno",
+      "src": "assets/characters/bruno-incredulo.png",
+      "position": "right"
+    }
+  ],
+  "objects": [
+    {
+      "id": "carta-cnc-destaque",
+      "src": "assets/objects/command-and-conquer-carta.png",
+      "x": 50,
+      "y": 53,
+      "w": 18,
+      "effect": "card-featured",
+      "overlayEffect": "card-bottom-sweep"
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-cnc-01",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Command and Conquer pra 6.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-cnc-02",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Não pode usar defense reaction nessa chain link.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-cnc-03",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "E se hitar, perde o arsenal.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-cnc-04",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Ahhh, mano.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-05",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Sério que essa era a carta?",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-06",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Vai se f%#$&.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-07",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Não tenho nem como blocar direito.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-08",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Eu guardei a reaction pra evitar o terceiro hit.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-09",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Bloco 4 usando 1 do peito.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-10",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Perco o arsenal.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-11",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "E eu compro uma carta.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-cnc-12",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Faço arsenal.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-cnc-13",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Sua vez.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-cnc-14",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Reponho a mão…",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-15",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "…e passo o turno.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-16",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Acho que levei essa.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-cnc-17",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Levou.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-18",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Você manda Kodachi pra 1, eu levo.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-19",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "E ainda tem quatro cartas pra bater.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-cnc-20",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Já era.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-postplay-entry",
+  "type": "visual",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left"
+    },
+    {
+      "id": "bruno",
+      "src": "assets/characters/bruno-incredulo.png",
+      "position": "center"
+    },
+    {
+      "id": "rafael",
+      "src": "assets/characters/rafael.png",
+      "position": "right"
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-postplay-01",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Aí sim.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-postplay-02",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Agora encaixou.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-postplay-03",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Encaixou nada.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-postplay-04",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Isso aí foi maldade.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-postplay-05",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Eu tava segurando a reaction certinha.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-postplay-06",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Pior que ele montou o turno bonito.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-postplay-07",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Bonito pra ele, né?",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-postplay-08",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Pra mim foi um atropelo.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-postplay-09",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Você que deixou arsenal.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-postplay-10",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Ah, claro.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-postplay-11",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Agora a culpa é minha.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-postplay-12",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Tecnicamente…",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-postplay-13",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Tecnicamente você vai se ferrar.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-postplay-14",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Admito.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-postplay-15",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Foi uma jogada boa.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-postplay-16",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Foi.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-postplay-17",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Mas eu vou reclamar mesmo assim.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-end-entry",
+  "type": "visual",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left"
+    },
+    {
+      "id": "bruno",
+      "src": "assets/characters/bruno.png",
+      "position": "center"
+    },
+    {
+      "id": "rafael",
+      "src": "assets/characters/rafael.png",
+      "position": "right"
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-end-01",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "É, levou.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-end-02",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Se eu não perco aquele arsenal, talvez dava jogo.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-end-03",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Talvez.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-end-04",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Nossa, que humildade.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-end-05",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Tô sendo realista.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-end-06",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Realista nada.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-end-07",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Tá se achando.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-end-08",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Um pouco.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-end-09",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Também, ganhou com estilo.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-end-10",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Fazia tempo que o deck não rodava assim.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-end-11",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Então era isso que faltava?",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-end-card-glance",
+  "type": "visual",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "clearObjects": true,
+  "objects": [
+    {
+      "id": "carta-cnc-final",
+      "src": "assets/objects/command-and-conquer-carta.png",
+      "x": 82,
+      "y": 63,
+      "w": 11
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-end-12",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Acho que era.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-end-13",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Ih.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-end-14",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Começou.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-end-15",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Começou o quê?",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-end-16",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Nada não.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-end-17",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Só tô vendo nascer um relacionamento tóxico.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-end-18",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Vai embaralhar logo.",
+  "bg": "assets/bg/centro-cultural-ocupado.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left"
+  }
 }
-
 ];
