@@ -2289,7 +2289,7 @@ button {
 
 /* Centro Cultural - ajuste de profundidade */
 .character.cc-jp-front-left {
-  left: 2% !important;
+  left: -1.5% !important;
   z-index: 88 !important;
   transform: translateY(18px) scale(1.02);
 }
@@ -2330,4 +2330,21 @@ button {
 }
 .character.right.cc-rafael-back.visible {
   transform: translateY(0) scale(0.94);
+}
+
+
+/* Centro Cultural - ajuste mobile específico */
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .character.cc-jp-front-left {
+    left: -0.5% !important;
+    z-index: 88 !important;
+  }
+
+  body.mobile-landscape-mode .character.center.cc-bruno-back {
+    left: 55% !important;
+  }
+
+  body.mobile-landscape-mode .character.right.cc-rafael-back {
+    right: -2% !important;
+  }
 }
