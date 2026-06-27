@@ -4165,25 +4165,7 @@ const story = [
   "id": "scene-card-01",
   "type": "thought",
   "speaker": "JP",
-  "text": "É ela mesmo.",
-  "objects": [
-    {
-      "id": "pacote-aberto-fundo",
-      "src": "assets/objects/pacote-aberto.png",
-      "x": 38,
-      "y": 25,
-      "w": 24,
-      "effect": "package-open-small"
-    },
-    {
-      "id": "carta-cnc",
-      "src": "assets/objects/command-and-conquer-carta.png",
-      "x": 40,
-      "y": 18,
-      "w": 18,
-      "effect": "card-featured"
-    }
-  ]
+  "text": "É ela mesmo."
 },
 {
   "id": "scene-card-02",
@@ -4245,4 +4227,847 @@ const story = [
   "speaker": "JP",
   "text": "Se bobear, isso deixa ela ainda melhor."
 }
+
+,
+{
+  "id": "scene-kitchen-postcard-entry",
+  "type": "visual",
+  "bg": "assets/bg/cozinha-entardecer.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left",
+    "effect": "kitchen-jp-laugh"
+  },
+  "hideDialog": true
+},
+{
+  "id": "scene-kitchen-postcard-01",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Agora sim.",
+  "bg": "assets/bg/cozinha-entardecer.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left",
+    "effect": "kitchen-jp-laugh"
+  }
+},
+{
+  "id": "scene-kitchen-postcard-02",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Vou sleevar a carta.",
+  "bg": "assets/bg/cozinha-entardecer.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  }
+},
+{
+  "id": "scene-kitchen-postcard-03",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Logo mais chegam as outras duas pra fechar a trinca.",
+  "bg": "assets/bg/cozinha-entardecer.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  }
+},
+{
+  "id": "scene-kitchen-postcard-04",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Mas essa aqui parece especial.",
+  "bg": "assets/bg/cozinha-entardecer.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left",
+    "effect": "kitchen-jp"
+  }
+},
+{
+  "id": "scene-kitchen-postcard-05",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Não vejo a hora de testar no Centro Cultural.",
+  "bg": "assets/bg/cozinha-entardecer.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left",
+    "effect": "kitchen-jp-talk"
+  }
+},
+{
+  "id": "scene-kitchen-postcard-06",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Amanhã ela já vê jogo.",
+  "bg": "assets/bg/cozinha-entardecer.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left",
+    "effect": "kitchen-jp-laugh"
+  }
+},
+{
+  "id": "scene-cc-title",
+  "type": "visual",
+  "bg": "assets/bg/preto.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "screenText": "Domingo 13:30 — Centro Cultural",
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-front-entry",
+  "type": "visual",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left"
+    },
+    {
+      "id": "bruno",
+      "src": "assets/characters/bruno-falando.png",
+      "position": "right"
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-front-01",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "E aí, bora jogar uma partida hoje?",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left"
+    },
+    {
+      "id": "bruno",
+      "src": "assets/characters/bruno-falando.png",
+      "position": "right"
+    }
+  ]
+},
+{
+  "id": "scene-cc-front-02",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Com certeza.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-03",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Ah, você parece mais animado que o comum.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-04",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Chegou sua carta?",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-05",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Ah, cara… chegou.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-06",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Numa caixa toda estourada, mas chegou.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-07",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Puts, os Correios tão foda, hein.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-08",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Ainda bem que não extraviaram.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-09",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Ah, nunca perderam encomenda minha.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-10",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Que sorte.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-11",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Já perderam uma minha.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-12",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Mas carta, ainda não.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-13",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "É foda.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-rafael-entry",
+  "type": "visual",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left"
+    },
+    {
+      "id": "bruno",
+      "src": "assets/characters/bruno.png",
+      "position": "center"
+    },
+    {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right"
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-front-14",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "E aí, do que os viciados tão falando?",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-15",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Chegou a carta secreta do JP.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-front-16",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Ah, quero ver.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-17",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Mas não é a carta que muda o jogo.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-18",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Tem que escutar o coração do deck.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-19",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Hehe.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-front-20",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "A lá.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-21",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "O jogador de Yu-Gi-Oh.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-22",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Mas é verdade.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-front-23",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Você tem que entender seu deck.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-front-24",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Mas eu entendi.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-25",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Só estava faltando uma carta.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-26",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "E agora ela chegou.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-27",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Na verdade, faltava o set.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-28",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Mas essa aqui vai dar conta.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-rindo.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-front-29",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Bora conferir, então.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-front-30",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Bora.",
+  "bg": "assets/bg/centro-cultural-frente.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-entry",
+  "type": "visual",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left"
+    },
+    {
+      "id": "bruno",
+      "src": "assets/characters/bruno.png",
+      "position": "center"
+    },
+    {
+      "id": "rafael",
+      "src": "assets/characters/rafael.png",
+      "position": "right"
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-hall-empty-01",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Cara, chegamos cedo.",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-02",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Pois é.",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-normal.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-03",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Eu tava animado.",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-04",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Mas estamos no horário.",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-05",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Olha o cara, Rafael.",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-06",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Tá tirando o deck como se fosse o Um Anel.",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-07",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Kkkkk.",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-08",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Que cuidado.",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-09",
+  "type": "dialogue",
+  "speaker": "Rafael",
+  "text": "Agora eu tô ansioso pra descobrir qual é a carta.",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "rafael",
+    "src": "assets/characters/rafael-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-10",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Bora jogar já?",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "center"
+  }
+},
+{
+  "id": "scene-cc-hall-empty-11",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Bora.",
+  "bg": "assets/bg/centro-cultural-vazio.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-descontraido-falando.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-timeskip",
+  "type": "visual",
+  "bg": "assets/bg/preto.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "screenText": "Algumas partidas depois...",
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-occupied-entry",
+  "type": "visual",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "clearEffects": true,
+  "characters": [
+    {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left"
+    },
+    {
+      "id": "bruno",
+      "src": "assets/characters/bruno-incredulo.png",
+      "position": "right"
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-occupied-01",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Cara… que jogo difícil.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-incredulo.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-occupied-02",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Mas ainda não achei a carta nova.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-occupied-03",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Vou fazer um arsenal.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-occupied-04",
+  "type": "thought",
+  "speaker": "JP",
+  "text": "…",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "jp",
+    "src": "assets/characters/jp-pensativo.png",
+    "position": "left"
+  }
+},
+{
+  "id": "scene-cc-occupied-05",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "É, mas não se anima não.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-occupied-06",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Ainda tô no jogo.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "character": {
+    "id": "bruno",
+    "src": "assets/characters/bruno-falando.png",
+    "position": "right"
+  }
+},
+{
+  "id": "scene-cc-fps-entry",
+  "type": "visual",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp",
+  "clearCharacters": true,
+  "clearObjects": true,
+  "objects": [
+    {
+      "id": "carta-cnc-parcial",
+      "src": "assets/objects/command-and-conquer-carta.png",
+      "x": 73,
+      "y": 58,
+      "w": 13
+    }
+  ],
+  "hideDialog": true
+},
+{
+  "id": "scene-cc-fps-01",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Não sei não.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-02",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Manda ver, então.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-03",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Kodachi pra 1.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-04",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "No blocks.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-05",
+  "type": "dialogue",
+  "speaker": "JP",
+  "text": "Sem reações.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-06",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Sem reaction.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+},
+{
+  "id": "scene-cc-fps-07",
+  "type": "dialogue",
+  "speaker": "Bruno",
+  "text": "Vou pra 5 de vida.",
+  "bg": "assets/bg/centro-cultural-partida-bruno.webp"
+}
+
 ];
