@@ -5985,5 +5985,671 @@ const story = [
       "position": "left",
       "effect": "cc-jp-front-left"
     }
+  },
+
+  {
+    "id": "scene-06-command-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Command and Conquer.",
+    "bg": "assets/bg/cena-06-command-01.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "mode": "emphasis"
+  },
+  {
+    "id": "scene-06-command-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Command and Conquer.",
+    "bg": "assets/bg/cena-06-command-02.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "mode": "emphasis"
+  },
+  {
+    "id": "scene-06-command-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Command and Conquer.",
+    "bg": "assets/bg/cena-06-command-03.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "mode": "emphasis"
+  },
+  {
+    "id": "scene-06-hall-empty-entry",
+    "type": "visual",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-descontraido.png",
+        "position": "left",
+        "effect": "cc-jp-front-left"
+      },
+      {
+        "id": "bruno",
+        "src": "assets/characters/bruno.png",
+        "position": "center",
+        "effect": "cc-bruno-back"
+      },
+      {
+        "id": "rafael",
+        "src": "assets/characters/rafael.png",
+        "position": "right",
+        "effect": "cc-rafael-back"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "scene-06-aftertalk-01",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "É, realmente essa carta fez a diferença.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-02",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Até acho que você tá escondendo essa carta na mão pra usar na hora certa.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ah, impressionante… ela realmente apareceu nos momentos certos.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-04",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Eu me senti enganada. Achei que ia vencer.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Eu sabia que ia ganhar. :)",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-06",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Ah, pelo amor, hein...",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-07",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Pior que eu vi a mão dele e ele sabia mesmo.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-08",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Vocês são uns sacanas.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-09",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Eu nem tenho reaction pra sofrer, mas parece que ele esperou eu vir com três itens na mão pra jogar ela.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-10",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Ah, sempre essa desculpa.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-11",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "“Ah, só veio item…”",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-12",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "A pessoa coloca metade do deck de item que explode e manda o oponente pra lua, e depois reclama que tem muito item.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-13",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Mas é isso, é tudo ou nada.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-14",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Item não bloca. Jogar de Mecha é isso.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-15",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Eu quero ver tudo pegar fogo e explorar os recursos depois.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-16",
+    "type": "dialogue",
+    "speaker": "Bruno",
+    "text": "risos",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "bruno",
+      "src": "assets/characters/bruno-falando.png",
+      "position": "center",
+      "effect": "cc-bruno-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-17",
+    "type": "dialogue",
+    "speaker": "Bruno",
+    "text": "Terrorista do futuro.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "bruno",
+      "src": "assets/characters/bruno-falando.png",
+      "position": "center",
+      "effect": "cc-bruno-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-18",
+    "type": "dialogue",
+    "speaker": "Bruno",
+    "text": "A classe tem o Ultron, o Doutor Destino e um ladrão de banco.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "bruno",
+      "src": "assets/characters/bruno-falando.png",
+      "position": "center",
+      "effect": "cc-bruno-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-19",
+    "type": "dialogue",
+    "speaker": "Bruno",
+    "text": "A pirata é a mais correta.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "bruno",
+      "src": "assets/characters/bruno-falando.png",
+      "position": "center",
+      "effect": "cc-bruno-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-20",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Minha Dash é a queridinha de Metrix.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-21",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Metrix é um lixão em Rathe.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-22",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "O cara joga com esqueletos podres e tá falando de lixão.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-23",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Não vamos perder o foco.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-24",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "A conversa é sobre o deck safado da Ira.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-25",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "É, essa carta deu um up.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-26",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Quando chegarem as outras duas, vai ser um pé no saco.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-27",
+    "type": "dialogue",
+    "speaker": "Bruno",
+    "text": "Nem me fale.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "bruno",
+      "src": "assets/characters/bruno-falando.png",
+      "position": "center",
+      "effect": "cc-bruno-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-28",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "O chato dela é ver que ela é defeituosa ainda.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-29",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Pô, isso é um charme.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-30",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Command and Conquer Rainbow Foil misprint. Legal demais.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-31",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Pior que deve ter um comércio legal de misprint.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-32",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Só não deve ser fácil passar no valor certo.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-33",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Pois é.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-34",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Deve ser por isso que o cara vendeu 50% abaixo do valor de mercado.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-35",
+    "type": "dialogue",
+    "speaker": "Todos",
+    "text": "O QUÊEEEE!!!!!",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-36",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Sim.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-37",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "O cara tava se livrando dela.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-38",
+    "type": "dialogue",
+    "speaker": "Bruno",
+    "text": "Doideira.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "bruno",
+      "src": "assets/characters/bruno-incredulo.png",
+      "position": "center",
+      "effect": "cc-bruno-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-39",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Galera, tô indo nessa.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-40",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Colo na loja na quarta.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-41",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Fechou.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-42",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Quarta tem Armory, e eu quero manter minha liderança.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-43",
+    "type": "dialogue",
+    "speaker": "Bruno",
+    "text": "Sei não...",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "bruno",
+      "src": "assets/characters/bruno-falando.png",
+      "position": "center",
+      "effect": "cc-bruno-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-44",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Vou explodir esse velho podre aí.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-45",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Pô, nem sou tão velho.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-46",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Ah—",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-47",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Tô falando do Gravy!",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-48",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Tô te zoando.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-49",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Eu sei que não sou velho.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "cc-rafael-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-50",
+    "type": "dialogue",
+    "speaker": "Bruno",
+    "text": "Não é porque você não fede que a gente não sente sua alma podre.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "bruno",
+      "src": "assets/characters/bruno-falando.png",
+      "position": "center",
+      "effect": "cc-bruno-back"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-51",
+    "type": "dialogue",
+    "speaker": "",
+    "text": "[Todos riem.]",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-52",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Ah, eu não entro nessa zoeira não.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-53",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Vocês são maus.",
+    "bg": "assets/bg/centro-cultural-vazio.webp"
+  },
+  {
+    "id": "scene-06-aftertalk-54",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "risos",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-55",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "O papo tá bom, mas eu tenho que ir.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
+  },
+  {
+    "id": "scene-06-aftertalk-56",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Até quarta.",
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "cc-jp-front-left"
+    }
   }
+
 ];
