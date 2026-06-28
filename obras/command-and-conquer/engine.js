@@ -35,6 +35,125 @@ const fullscreenBtn = document.getElementById("fullscreenBtn");
 const jumpEndBtn = document.getElementById("jumpEndBtn");
 const rotateOverlay = document.getElementById("rotateOverlay");
 
+
+const dialogueStyles = {
+  JP: { color: "#d6a84f" },
+  Rafael: { color: "#2fa66a" },
+  Bruno: { color: "#e58a35" },
+  Mateus: { color: "#6fa8dc" },
+  Camila: { color: "#b35adf" },
+  thought: { color: "#9aa0a6" },
+  unknown: { color: "#7f7f7f" }
+};
+
+const speakerCharacterMap = {
+  JP: "jp",
+  Rafael: "rafael",
+  Bruno: "bruno",
+  Mateus: "mateus",
+  Camila: "camila"
+};
+
+function normalizeSpeakerName(speaker = "") {
+  return String(speaker)
+    .replace(/\s*\([^)]*\)\s*/g, "")
+    .trim();
+}
+
+function getDialogueStyleKey(step = {}) {
+  if (step.type === "thought") return "thought";
+
+  const speaker = normalizeSpeakerName(step.speaker);
+  if (speaker && dialogueStyles[speaker]) return speaker;
+
+  return "unknown";
+}
+
+function getDialogueStyle(step = {}) {
+  return dialogueStyles[getDialogueStyleKey(step)] || dialogueStyles.unknown;
+}
+
+function getDisplayedSpeaker(step = {}) {
+  const speaker = normalizeSpeakerName(step.speaker);
+
+  if (step.type === "thought") {
+    return speaker ? `${speaker} (pensamento)` : "Pensamento";
+  }
+
+  if (!speaker) return "";
+
+  if (dialogueStyles[speaker]) return speaker;
+
+  if (["???", "desconhecido", "unknown"].includes(speaker.toLowerCase())) {
+    return "???";
+  }
+
+  return speaker;
+}
+
+function getActiveCharacterId(step = {}) {
+  if (!step || shouldHideDialog(step)) return null;
+
+  const styleKey = getDialogueStyleKey(step);
+  const speaker = normalizeSpeakerName(step.speaker);
+
+  if (styleKey === "unknown") return null;
+  if (step.character && step.character.id) return step.character.id;
+  if (speakerCharacterMap[speaker]) return speakerCharacterMap[speaker];
+
+  return null;
+}
+
+function resetDialogueVisuals() {
+  if (dialogBox) {
+    dialogBox.classList.remove(
+      "dialogue-style-character",
+      "dialogue-style-thought",
+      "dialogue-style-unknown"
+    );
+    dialogBox.style.removeProperty("--dialog-accent");
+  }
+
+  Object.values(activeCharacters || {}).forEach(characterEl => {
+    characterEl.classList.remove("dialogue-active", "dialogue-inactive", "dialogue-neutral");
+  });
+}
+
+function applyDialogueVisuals(step = {}) {
+  resetDialogueVisuals();
+
+  if (!dialogBox || shouldHideDialog(step)) return;
+
+  const styleKey = getDialogueStyleKey(step);
+  const style = getDialogueStyle(step);
+  const activeCharacterId = getActiveCharacterId(step);
+
+  dialogBox.style.setProperty("--dialog-accent", style.color);
+
+  if (styleKey === "thought") {
+    dialogBox.classList.add("dialogue-style-thought");
+  } else if (styleKey === "unknown") {
+    dialogBox.classList.add("dialogue-style-unknown");
+  } else {
+    dialogBox.classList.add("dialogue-style-character");
+  }
+
+  Object.values(activeCharacters || {}).forEach(characterEl => {
+    const isActive = activeCharacterId && characterEl.dataset.id === activeCharacterId;
+
+    if (isActive) {
+      characterEl.classList.add("dialogue-active");
+      return;
+    }
+
+    if (activeCharacterId) {
+      characterEl.classList.add("dialogue-inactive");
+    } else if (styleKey === "unknown") {
+      characterEl.classList.add("dialogue-neutral");
+    }
+  });
+}
+
 function isMobileViewport() {
   return window.matchMedia("(max-width: 900px)").matches;
 }
@@ -391,6 +510,7 @@ function shouldHideDialog(step) {
 
 function renderDialog(step, forceFullText = false) {
   dialogBox.className = "dialog-box";
+  resetDialogueVisuals();
 
   if (step.mode) {
     dialogBox.classList.add(`mode-${step.mode}`);
@@ -401,6 +521,7 @@ function renderDialog(step, forceFullText = false) {
     dialogBox.classList.add("hidden");
     speakerName.textContent = "";
     dialogText.textContent = "";
+    applyDialogueVisuals(step);
     return;
   }
 
@@ -418,8 +539,10 @@ function renderDialog(step, forceFullText = false) {
     dialogBox.classList.add("mode-emphasis");
   }
 
-  speakerName.textContent = step.speaker || "";
-  speakerName.classList.toggle("empty", !step.speaker);
+  const displayedSpeaker = getDisplayedSpeaker(step);
+  speakerName.textContent = displayedSpeaker;
+  speakerName.classList.toggle("empty", !displayedSpeaker);
+  applyDialogueVisuals(step);
 
   if (forceFullText) {
     dialogText.textContent = step.text || "";
