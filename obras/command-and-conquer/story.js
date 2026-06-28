@@ -5987,6 +5987,16 @@ const story = [
     }
   },
   {
+    "id": "scene-06-timeskip-01",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "screenText": "Algumas partidas depois...",
+    "hideDialog": true
+  },
+  {
     "id": "scene-06-command-01",
     "type": "dialogue",
     "speaker": "JP",
@@ -5996,6 +6006,15 @@ const story = [
     "clearObjects": true,
     "clearEffects": true,
     "mode": "emphasis"
+  },
+  {
+    "id": "scene-06-timeskip-02",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
   },
   {
     "id": "scene-06-command-02",
@@ -6009,6 +6028,15 @@ const story = [
     "mode": "emphasis"
   },
   {
+    "id": "scene-06-timeskip-03",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
     "id": "scene-06-command-03",
     "type": "dialogue",
     "speaker": "JP",
@@ -6020,44 +6048,21 @@ const story = [
     "mode": "emphasis"
   },
   {
+    "id": "scene-06-timeskip-04",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
     "id": "scene-06-hall-empty-entry",
     "type": "visual",
     "bg": "assets/bg/centro-cultural-vazio.webp",
     "clearCharacters": true,
     "clearObjects": true,
     "clearEffects": true,
-    "characters": [
-      {
-        "id": "jp",
-        "src": "assets/characters/jp-descontraido.png",
-        "position": "left",
-        "effect": "cc-jp-front-left"
-      },
-      {
-        "id": "bruno",
-        "src": "assets/characters/bruno.png",
-        "position": "left",
-        "effect": "scene06-bruno"
-      },
-      {
-        "id": "camila",
-        "src": "assets/characters/camila.png",
-        "position": "center",
-        "effect": "scene06-camila"
-      },
-      {
-        "id": "rafael",
-        "src": "assets/characters/rafael.png",
-        "position": "right",
-        "effect": "scene06-rafael"
-      },
-      {
-        "id": "mateus",
-        "src": "assets/characters/mateus.png",
-        "position": "right",
-        "effect": "scene06-mateus"
-      }
-    ],
     "hideDialog": true
   },
   {
