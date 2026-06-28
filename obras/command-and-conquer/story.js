@@ -5986,7 +5986,6 @@ const story = [
       "effect": "cc-jp-front-left"
     }
   },
-
   {
     "id": "scene-06-command-01",
     "type": "dialogue",
@@ -6037,14 +6036,26 @@ const story = [
       {
         "id": "bruno",
         "src": "assets/characters/bruno.png",
+        "position": "left",
+        "effect": "scene06-bruno"
+      },
+      {
+        "id": "camila",
+        "src": "assets/characters/camila.png",
         "position": "center",
-        "effect": "cc-bruno-back"
+        "effect": "scene06-camila"
       },
       {
         "id": "rafael",
         "src": "assets/characters/rafael.png",
         "position": "right",
-        "effect": "cc-rafael-back"
+        "effect": "scene06-rafael"
+      },
+      {
+        "id": "mateus",
+        "src": "assets/characters/mateus.png",
+        "position": "right",
+        "effect": "scene06-mateus"
       }
     ],
     "hideDialog": true
@@ -6059,7 +6070,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6072,7 +6083,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6093,7 +6104,13 @@ const story = [
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Eu me senti enganada. Achei que ia vencer.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-05",
@@ -6113,28 +6130,52 @@ const story = [
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Ah, pelo amor, hein...",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-07",
     "type": "dialogue",
     "speaker": "Mateus",
     "text": "Pior que eu vi a mão dele e ele sabia mesmo.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus.png",
+      "position": "right",
+      "effect": "scene06-mateus"
+    }
   },
   {
     "id": "scene-06-aftertalk-08",
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Vocês são uns sacanas.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-09",
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Eu nem tenho reaction pra sofrer, mas parece que ele esperou eu vir com três itens na mão pra jogar ela.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-10",
@@ -6146,7 +6187,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6159,7 +6200,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6172,7 +6213,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6180,21 +6221,39 @@ const story = [
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Mas é isso, é tudo ou nada.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-14",
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Item não bloca. Jogar de Mecha é isso.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-15",
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Eu quero ver tudo pegar fogo e explorar os recursos depois.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-16",
@@ -6205,8 +6264,8 @@ const story = [
     "character": {
       "id": "bruno",
       "src": "assets/characters/bruno-falando.png",
-      "position": "center",
-      "effect": "cc-bruno-back"
+      "position": "left",
+      "effect": "scene06-bruno"
     }
   },
   {
@@ -6218,8 +6277,8 @@ const story = [
     "character": {
       "id": "bruno",
       "src": "assets/characters/bruno-falando.png",
-      "position": "center",
-      "effect": "cc-bruno-back"
+      "position": "left",
+      "effect": "scene06-bruno"
     }
   },
   {
@@ -6231,8 +6290,8 @@ const story = [
     "character": {
       "id": "bruno",
       "src": "assets/characters/bruno-falando.png",
-      "position": "center",
-      "effect": "cc-bruno-back"
+      "position": "left",
+      "effect": "scene06-bruno"
     }
   },
   {
@@ -6244,8 +6303,8 @@ const story = [
     "character": {
       "id": "bruno",
       "src": "assets/characters/bruno-falando.png",
-      "position": "center",
-      "effect": "cc-bruno-back"
+      "position": "left",
+      "effect": "scene06-bruno"
     }
   },
   {
@@ -6253,7 +6312,13 @@ const story = [
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Minha Dash é a queridinha de Metrix.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-21",
@@ -6265,7 +6330,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6286,14 +6351,26 @@ const story = [
     "type": "dialogue",
     "speaker": "Mateus",
     "text": "Não vamos perder o foco.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus.png",
+      "position": "right",
+      "effect": "scene06-mateus"
+    }
   },
   {
     "id": "scene-06-aftertalk-24",
     "type": "dialogue",
     "speaker": "Mateus",
     "text": "A conversa é sobre o deck safado da Ira.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus.png",
+      "position": "right",
+      "effect": "scene06-mateus"
+    }
   },
   {
     "id": "scene-06-aftertalk-25",
@@ -6305,7 +6382,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6318,7 +6395,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6330,8 +6407,8 @@ const story = [
     "character": {
       "id": "bruno",
       "src": "assets/characters/bruno-falando.png",
-      "position": "center",
-      "effect": "cc-bruno-back"
+      "position": "left",
+      "effect": "scene06-bruno"
     }
   },
   {
@@ -6339,7 +6416,13 @@ const story = [
     "type": "dialogue",
     "speaker": "Camila",
     "text": "O chato dela é ver que ela é defeituosa ainda.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-29",
@@ -6377,7 +6460,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6390,7 +6473,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6461,8 +6544,8 @@ const story = [
     "character": {
       "id": "bruno",
       "src": "assets/characters/bruno-incredulo.png",
-      "position": "center",
-      "effect": "cc-bruno-back"
+      "position": "left",
+      "effect": "scene06-bruno"
     }
   },
   {
@@ -6470,14 +6553,26 @@ const story = [
     "type": "dialogue",
     "speaker": "Mateus",
     "text": "Galera, tô indo nessa.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus.png",
+      "position": "right",
+      "effect": "scene06-mateus"
+    }
   },
   {
     "id": "scene-06-aftertalk-40",
     "type": "dialogue",
     "speaker": "Mateus",
     "text": "Colo na loja na quarta.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus.png",
+      "position": "right",
+      "effect": "scene06-mateus"
+    }
   },
   {
     "id": "scene-06-aftertalk-41",
@@ -6489,7 +6584,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6502,7 +6597,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6514,8 +6609,8 @@ const story = [
     "character": {
       "id": "bruno",
       "src": "assets/characters/bruno-falando.png",
-      "position": "center",
-      "effect": "cc-bruno-back"
+      "position": "left",
+      "effect": "scene06-bruno"
     }
   },
   {
@@ -6523,7 +6618,13 @@ const story = [
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Vou explodir esse velho podre aí.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-45",
@@ -6535,7 +6636,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6543,14 +6644,26 @@ const story = [
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Ah—",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-47",
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Tô falando do Gravy!",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-48",
@@ -6562,7 +6675,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6575,7 +6688,7 @@ const story = [
       "id": "rafael",
       "src": "assets/characters/rafael-falando.png",
       "position": "right",
-      "effect": "cc-rafael-back"
+      "effect": "scene06-rafael"
     }
   },
   {
@@ -6587,8 +6700,8 @@ const story = [
     "character": {
       "id": "bruno",
       "src": "assets/characters/bruno-falando.png",
-      "position": "center",
-      "effect": "cc-bruno-back"
+      "position": "left",
+      "effect": "scene06-bruno"
     }
   },
   {
@@ -6603,14 +6716,26 @@ const story = [
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Ah, eu não entro nessa zoeira não.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-53",
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Vocês são maus.",
-    "bg": "assets/bg/centro-cultural-vazio.webp"
+    "bg": "assets/bg/centro-cultural-vazio.webp",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "scene06-camila"
+    }
   },
   {
     "id": "scene-06-aftertalk-54",
@@ -6651,5 +6776,4 @@ const story = [
       "effect": "cc-jp-front-left"
     }
   }
-
 ];

@@ -2307,49 +2307,99 @@ button {
   transform: translateY(0) scale(1.02);
 }
 .character.center.cc-bruno-back {
-  left: 48% !important;
+  left: 53% !important;
   z-index: 72 !important;
   height: 82% !important;
-  transform: translateX(-50%) translateY(18px) scale(1.02);
+  transform: translateX(-50%) translateY(18px) scale(1);
 }
 .character.center.cc-bruno-back.visible {
-  transform: translateX(-50%) translateY(0) scale(1.02);
+  transform: translateX(-50%) translateY(0) scale(1);
 }
 .character.right.cc-bruno-back {
-  right: 12% !important;
+  right: 3% !important;
   z-index: 72 !important;
   height: 82% !important;
-  transform: translateY(18px) scale(1.02);
+  transform: translateY(18px) scale(1);
 }
 .character.right.cc-bruno-back.visible {
-  transform: translateY(0) scale(1.02);
+  transform: translateY(0) scale(1);
 }
 .character.right.cc-rafael-back {
-  right: 11% !important;
+  right: -1% !important;
   z-index: 70 !important;
   height: 82% !important;
-  transform: translateY(18px) scale(1.02);
+  transform: translateY(18px) scale(1);
 }
 .character.right.cc-rafael-back.visible {
-  transform: translateY(0) scale(1.02);
+  transform: translateY(0) scale(1);
 }
 
+/* Cena 6 - grupo no centro cultural vazio */
+.character.left.scene06-bruno {
+  left: 21% !important;
+  z-index: 74 !important;
+  height: 82% !important;
+  transform: translateY(18px) scale(0.98);
+}
+.character.left.scene06-bruno.visible {
+  transform: translateY(0) scale(0.98);
+}
+.character.center.scene06-camila {
+  left: 46.5% !important;
+  z-index: 84 !important;
+  height: 84% !important;
+  transform: translateX(-50%) translateY(12px) scale(1);
+}
+.character.center.scene06-camila.visible {
+  transform: translateX(-50%) translateY(0) scale(1);
+}
+.character.right.scene06-rafael {
+  right: 15% !important;
+  z-index: 73 !important;
+  height: 82% !important;
+  transform: translateY(18px) scale(0.98);
+}
+.character.right.scene06-rafael.visible {
+  transform: translateY(0) scale(0.98);
+}
+.character.right.scene06-mateus {
+  right: -2% !important;
+  z-index: 70 !important;
+  height: 82% !important;
+  transform: translateY(18px) scale(0.98);
+}
+.character.right.scene06-mateus.visible {
+  transform: translateY(0) scale(0.98);
+}
 
 /* Centro Cultural - ajuste mobile específico */
 @media (max-width: 900px) and (orientation: landscape) {
   body.mobile-landscape-mode .character.cc-jp-front-left {
     left: -0.5% !important;
     z-index: 88 !important;
-    height: 82% !important;
   }
 
   body.mobile-landscape-mode .character.center.cc-bruno-back {
-    left: 48% !important;
-    height: 82% !important;
+    left: 54% !important;
   }
 
   body.mobile-landscape-mode .character.right.cc-rafael-back {
-    right: 9% !important;
-    height: 82% !important;
+    right: -2% !important;
+  }
+
+  body.mobile-landscape-mode .character.left.scene06-bruno {
+    left: 15% !important;
+  }
+
+  body.mobile-landscape-mode .character.center.scene06-camila {
+    left: 46% !important;
+  }
+
+  body.mobile-landscape-mode .character.right.scene06-rafael {
+    right: 12% !important;
+  }
+
+  body.mobile-landscape-mode .character.right.scene06-mateus {
+    right: -6% !important;
   }
 }
