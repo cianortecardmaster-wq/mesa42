@@ -2177,6 +2177,15 @@ button {
   animation: screenTextFadeIn 0.9s ease both;
 }
 
+
+.screen-text-overlay.screen-text-stack {
+  white-space: pre-line;
+  font-style: normal;
+  letter-spacing: 0.16em;
+  line-height: 1.7;
+  text-transform: uppercase;
+}
+
 @keyframes screenTextFadeIn {
   from {
     opacity: 0;
@@ -2518,5 +2527,63 @@ button {
   body.mobile-landscape-mode .character.visible.dialogue-inactive,
   body.mobile-portrait-mode .character.visible.dialogue-inactive {
     opacity: 0.5 !important;
+  }
+}
+
+
+/* =========================================================
+   Cena 10/11 — Bazar do Weezing / Armory
+   ========================================================= */
+.character.left.armory-jp {
+  left: -1% !important;
+  z-index: 86 !important;
+  height: 82% !important;
+}
+
+.character.center.armory-camila {
+  left: 32% !important;
+  z-index: 80 !important;
+  height: 84% !important;
+  transform: translateX(-50%) translateY(18px) scale(0.98);
+}
+.character.center.armory-camila.visible {
+  transform: translateX(-50%) translateY(0) scale(0.98);
+}
+
+.character.right.armory-robert {
+  right: 20% !important;
+  z-index: 79 !important;
+  height: 84% !important;
+  transform: translateY(18px) scale(0.99);
+}
+.character.right.armory-robert.visible {
+  transform: translateY(0) scale(0.99);
+}
+
+.character.right.armory-mateus {
+  right: -2% !important;
+  z-index: 76 !important;
+  height: 82% !important;
+  transform: translateY(18px) scale(0.98);
+}
+.character.right.armory-mateus.visible {
+  transform: translateY(0) scale(0.98);
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .character.left.armory-jp {
+    left: -2% !important;
+  }
+
+  body.mobile-landscape-mode .character.center.armory-camila {
+    left: 31% !important;
+  }
+
+  body.mobile-landscape-mode .character.right.armory-robert {
+    right: 18% !important;
+  }
+
+  body.mobile-landscape-mode .character.right.armory-mateus {
+    right: -5% !important;
   }
 }

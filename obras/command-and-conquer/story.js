@@ -7118,5 +7118,559 @@ const story = [
     "speaker": "JP",
     "text": "Vamos ver se domingo foi só sorte.",
     "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "scene-10-timeskip-armory",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "screenText": "QUARTA-FEIRA\nBAZAR DO WEEZING\n19:30",
+    "screenTextClass": "screen-text-stack",
+    "hideDialog": true
+  },
+  {
+    "id": "scene-11-armory-front-entry",
+    "type": "visual",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "scene-11-armory-front-01",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "E aí, JP.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-11-armory-front-02",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Hoje sua Ira vai levar uma surra.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-11-armory-front-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ela é a ninja mais teimosa de Rathe.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-11-armory-front-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ela não desiste.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-11-armory-front-05",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Ah, tá.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-11-armory-front-06",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "A Dash tá abastecida hoje.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-11-armory-front-07",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Vai queimar combustível até o infinito.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-11-armory-front-08",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Deck roubado é isso aí.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-11-armory-front-09",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Olha quem fala.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-11-armory-front-10",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Meu deck é honesto.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-11-armory-front-11",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Honesto igual advogado de vilão.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-01",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "E aí, JP!",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "armory-robert"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-02",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "O Mateus já falou que hoje é pra jogar Pummel na tua cara.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "armory-robert"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Cai fora.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Tô bem de boas.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Meu deck tá normal.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-06",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Só mudou uma carta.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-07",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Uma carta.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-08",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "Uma carta que aparentemente faz o oponente perder a vontade de viver.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "armory-robert"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-09",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Meu Kayo também teve umas alterações.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "armory-mateus"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-10",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ah, sim.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-11",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Comprou um dado novo?",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-12",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Vai se ferrar.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "armory-mateus"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-13",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "E sim, comprei.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "armory-mateus"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-14",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "Dado novo dá mais dano psicológico.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "armory-robert"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-15",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Bora entrar.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-16",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Já vai começar.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-17",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Lá vem.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png"
+  },
+  {
+    "id": "scene-12-armory-front-18",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "A lata de Pokémon amassada foi aposentada?",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "armory-robert"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-19",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Foi promovida a item histórico.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-20",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Item histórico nada. Aquilo parecia que tinha sobrevivido a três pré-releases e um atropelamento.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "armory-mateus"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-21",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Respeita minha lata.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-22",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "A deck box nova é bonita.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-23",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Obrigado, Camila.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-24",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "Traição.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho.png",
+      "position": "right",
+      "effect": "armory-robert"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-25",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Eu tenho bom senso.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "armory-camila"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-26",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "Rodada um saiu.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png"
+  },
+  {
+    "id": "scene-12-armory-front-27",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Pô.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-28",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Caí contra o Mateus.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-29",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Bora jogar.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "armory-mateus"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-30",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Hoje eu levo.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "armory-mateus"
+    }
+  },
+  {
+    "id": "scene-12-armory-front-31",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Vai nessa.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
   }
 ];
