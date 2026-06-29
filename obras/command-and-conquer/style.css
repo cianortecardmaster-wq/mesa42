@@ -2587,3 +2587,75 @@ button {
     right: -5% !important;
   }
 }
+
+
+/* =========================================================
+   Loja interior / início do Armory
+   ========================================================= */
+.character.left.store-jp {
+  left: -1% !important;
+  z-index: 86 !important;
+  height: 82% !important;
+}
+
+.character.center.store-isa {
+  left: 50% !important;
+  z-index: 80 !important;
+  height: 84% !important;
+  transform: translateX(-50%) translateY(18px) scale(0.98);
+}
+.character.center.store-isa.visible {
+  transform: translateX(-50%) translateY(0) scale(0.98);
+}
+
+.character.center.store-camila {
+  left: 32% !important;
+  z-index: 80 !important;
+  height: 84% !important;
+  transform: translateX(-50%) translateY(18px) scale(0.98);
+}
+.character.center.store-camila.visible {
+  transform: translateX(-50%) translateY(0) scale(0.98);
+}
+
+.character.right.store-robert {
+  right: 20% !important;
+  z-index: 79 !important;
+  height: 84% !important;
+  transform: translateY(18px) scale(0.99);
+}
+.character.right.store-robert.visible {
+  transform: translateY(0) scale(0.99);
+}
+
+.character.right.store-mateus {
+  right: -2% !important;
+  z-index: 76 !important;
+  height: 82% !important;
+  transform: translateY(18px) scale(0.98);
+}
+.character.right.store-mateus.visible {
+  transform: translateY(0) scale(0.98);
+}
+
+@media (max-width: 900px) and (orientation: landscape) {
+  body.mobile-landscape-mode .character.left.store-jp {
+    left: -2% !important;
+  }
+
+  body.mobile-landscape-mode .character.center.store-isa {
+    left: 49% !important;
+  }
+
+  body.mobile-landscape-mode .character.center.store-camila {
+    left: 31% !important;
+  }
+
+  body.mobile-landscape-mode .character.right.store-robert {
+    right: 18% !important;
+  }
+
+  body.mobile-landscape-mode .character.right.store-mateus {
+    right: -5% !important;
+  }
+}

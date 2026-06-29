@@ -44,6 +44,9 @@ const dialogueStyles = {
   Camila: { color: "#b35adf" },
   Robertinho: { color: "#c98c3a" },
   Lucas: { color: "#7ba7b8" },
+  Isa: { color: "#c89dd8" },
+  Amanda: { color: "#d970a7" },
+  Gabriel: { color: "#d4873f" },
   thought: { color: "#9aa0a6" },
   unknown: { color: "#7f7f7f" }
 };
@@ -54,7 +57,10 @@ const speakerCharacterMap = {
   Bruno: "bruno",
   Mateus: "mateus",
   Camila: "camila",
-  Robertinho: "robertinho"
+  Robertinho: "robertinho",
+  Isa: "isa",
+  Amanda: "amanda",
+  Gabriel: "gabriel"
 };
 
 function normalizeSpeakerName(speaker = "") {

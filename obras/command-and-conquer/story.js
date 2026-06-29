@@ -7491,186 +7491,324 @@ const story = [
     }
   },
   {
-    "id": "scene-12-armory-front-17",
-    "type": "thought",
-    "speaker": "JP",
-    "text": "Lá vem.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png"
+    "id": "scene-13-store-interior-entry",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
   },
   {
-    "id": "scene-12-armory-front-18",
+    "id": "scene-13-store-interior-01",
+    "type": "dialogue",
+    "speaker": "Isa",
+    "text": "Boa noite, JP.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "isa",
+      "src": "assets/characters/isa.png",
+      "position": "center",
+      "effect": "store-isa"
+    }
+  },
+  {
+    "id": "scene-13-store-interior-02",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "A gente tava falando de você agora mesmo.",
+    "bg": "assets/bg/loja-interior-balcao.png"
+  },
+  {
+    "id": "scene-13-store-interior-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Isso nunca é bom sinal.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-13-store-interior-04",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "Relaxa.",
+    "bg": "assets/bg/loja-interior-balcao.png"
+  },
+  {
+    "id": "scene-13-store-interior-05",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "Só falei que já vou dar play no Armory.",
+    "bg": "assets/bg/loja-interior-balcao.png"
+  },
+  {
+    "id": "scene-13-store-interior-06",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Fechou.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-13-store-interior-07",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Já tô pronto.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-13-store-interior-08",
     "type": "dialogue",
     "speaker": "Robertinho",
-    "text": "A lata de Pokémon amassada foi aposentada?",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "text": "Pera.",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "robertinho",
       "src": "assets/characters/robertinho-falando.png",
       "position": "right",
-      "effect": "armory-robert"
+      "effect": "store-robert"
     }
   },
   {
-    "id": "scene-12-armory-front-19",
+    "id": "scene-13-store-interior-09",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "Pera aí.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "store-robert"
+    }
+  },
+  {
+    "id": "scene-13-store-interior-10",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "Até que enfim investiu numa deck box decente.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "store-robert"
+    }
+  },
+  {
+    "id": "scene-13-store-interior-11",
     "type": "dialogue",
     "speaker": "JP",
-    "text": "Foi promovida a item histórico.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "text": "Lá vem.",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "jp",
       "src": "assets/characters/jp-rindo.png",
       "position": "left",
-      "effect": "armory-jp"
+      "effect": "store-jp"
     }
   },
   {
-    "id": "scene-12-armory-front-20",
+    "id": "scene-13-store-interior-12",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "A lata de Pokémon amassada foi aposentada?",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "store-robert"
+    }
+  },
+  {
+    "id": "scene-13-store-interior-13",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Foi promovida a item histórico.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-13-store-interior-14",
     "type": "dialogue",
     "speaker": "Mateus",
     "text": "Item histórico nada. Aquilo parecia que tinha sobrevivido a três pré-releases e um atropelamento.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "mateus",
       "src": "assets/characters/mateus-falando.png",
       "position": "right",
-      "effect": "armory-mateus"
+      "effect": "store-mateus"
     }
   },
   {
-    "id": "scene-12-armory-front-21",
+    "id": "scene-13-store-interior-15",
     "type": "dialogue",
     "speaker": "JP",
     "text": "Respeita minha lata.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "jp",
       "src": "assets/characters/jp-descontraido-falando.png",
       "position": "left",
-      "effect": "armory-jp"
+      "effect": "store-jp"
     }
   },
   {
-    "id": "scene-12-armory-front-22",
+    "id": "scene-13-store-interior-16",
     "type": "dialogue",
     "speaker": "Camila",
     "text": "A deck box nova é bonita.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "camila",
       "src": "assets/characters/camila.png",
       "position": "center",
-      "effect": "armory-camila"
+      "effect": "store-camila"
     }
   },
   {
-    "id": "scene-12-armory-front-23",
+    "id": "scene-13-store-interior-17",
     "type": "dialogue",
     "speaker": "JP",
     "text": "Obrigado, Camila.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "jp",
       "src": "assets/characters/jp-rindo.png",
       "position": "left",
-      "effect": "armory-jp"
+      "effect": "store-jp"
     }
   },
   {
-    "id": "scene-12-armory-front-24",
+    "id": "scene-13-store-interior-18",
     "type": "dialogue",
     "speaker": "Robertinho",
     "text": "Traição.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "robertinho",
       "src": "assets/characters/robertinho.png",
       "position": "right",
-      "effect": "armory-robert"
+      "effect": "store-robert"
     }
   },
   {
-    "id": "scene-12-armory-front-25",
+    "id": "scene-13-store-interior-19",
     "type": "dialogue",
     "speaker": "Camila",
     "text": "Eu tenho bom senso.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "camila",
       "src": "assets/characters/camila.png",
       "position": "center",
-      "effect": "armory-camila"
+      "effect": "store-camila"
     }
   },
   {
-    "id": "scene-12-armory-front-26",
+    "id": "scene-13-store-interior-20",
     "type": "dialogue",
     "speaker": "Lucas",
     "text": "Rodada um saiu.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png"
+    "bg": "assets/bg/loja-interior-balcao.png"
   },
   {
-    "id": "scene-12-armory-front-27",
+    "id": "scene-13-store-interior-21",
     "type": "dialogue",
     "speaker": "JP",
     "text": "Pô.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "jp",
       "src": "assets/characters/jp-normal.png",
       "position": "left",
-      "effect": "armory-jp"
+      "effect": "store-jp"
     }
   },
   {
-    "id": "scene-12-armory-front-28",
+    "id": "scene-13-store-interior-22",
     "type": "dialogue",
     "speaker": "JP",
     "text": "Caí contra o Mateus.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "jp",
       "src": "assets/characters/jp-descontraido-falando.png",
       "position": "left",
-      "effect": "armory-jp"
+      "effect": "store-jp"
     }
   },
   {
-    "id": "scene-12-armory-front-29",
+    "id": "scene-13-store-interior-23",
     "type": "dialogue",
     "speaker": "Mateus",
     "text": "Bora jogar.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "mateus",
       "src": "assets/characters/mateus-falando.png",
       "position": "right",
-      "effect": "armory-mateus"
+      "effect": "store-mateus"
     }
   },
   {
-    "id": "scene-12-armory-front-30",
+    "id": "scene-13-store-interior-24",
     "type": "dialogue",
     "speaker": "Mateus",
     "text": "Hoje eu levo.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "mateus",
       "src": "assets/characters/mateus-falando.png",
       "position": "right",
-      "effect": "armory-mateus"
+      "effect": "store-mateus"
     }
   },
   {
-    "id": "scene-12-armory-front-31",
+    "id": "scene-13-store-interior-25",
     "type": "dialogue",
     "speaker": "JP",
     "text": "Vai nessa.",
-    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "bg": "assets/bg/loja-interior-balcao.png",
     "character": {
       "id": "jp",
       "src": "assets/characters/jp-rindo.png",
       "position": "left",
-      "effect": "armory-jp"
+      "effect": "store-jp"
     }
+  },
+  {
+    "id": "scene-14-round1-title",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "screenText": "RODADA 1",
+    "screenTextClass": "screen-text-stack",
+    "hideDialog": true
   }
 ];
