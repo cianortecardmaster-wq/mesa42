@@ -6780,5 +6780,343 @@ const story = [
       "position": "left",
       "effect": "cc-jp-front-left"
     }
+  },
+  {
+    "id": "scene-07-room-night-entry",
+    "type": "visual",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "scene-07-room-night-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Fiquei invicto no Centro Cultural domingo.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-07-room-night-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Invicto.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-07-room-night-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Amanhã eu tiro a liderança do Rafael no Armory.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-07-room-night-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Cadê ela?",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-07-room-night-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Tá aqui.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-07-card-highlight",
+    "type": "visual",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "objects": [
+      {
+        "id": "carta-cnc-scene07",
+        "src": "assets/objects/command-and-conquer-carta.png",
+        "x": 39,
+        "y": 18,
+        "w": 20,
+        "effect": "card-featured",
+        "overlayEffect": "card-bottom-sweep"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "scene-07-card-thought-01",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Rainbow Foil.",
+    "bg": "assets/bg/quarto-jp-noite.png"
+  },
+  {
+    "id": "scene-07-card-thought-02",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Misprint.",
+    "bg": "assets/bg/quarto-jp-noite.png"
+  },
+  {
+    "id": "scene-07-card-thought-03",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Borda superior cortada.",
+    "bg": "assets/bg/quarto-jp-noite.png"
+  },
+  {
+    "id": "scene-07-card-thought-04",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Faixa colorida embaixo.",
+    "bg": "assets/bg/quarto-jp-noite.png"
+  },
+  {
+    "id": "scene-07-card-thought-05",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Linda demais.",
+    "bg": "assets/bg/quarto-jp-noite.png"
+  },
+  {
+    "id": "scene-07-room-night-return",
+    "type": "visual",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-descontraido.png",
+        "position": "left"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "scene-07-room-night-06",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Agora sim.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-08-room-deckbox-entry",
+    "type": "visual",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-descontraido.png",
+        "position": "left"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "scene-08-room-deckbox-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Agora chegou a deck box novinha.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-08-room-deckbox-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ela é muito legal.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-08-deckbox-insert",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "scene-08-room-deckbox-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Devia ter comprado antes.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-08-room-deckbox-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "O Robertinho sempre me encheu o saco por eu usar minha lata de Pokémon amassada.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-08-room-deckbox-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Pô... ela tem um apego afetivo.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-08-room-deckbox-06",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Minha vó que me deu.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-08-room-deckbox-07",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Mas não vou falar isso, né?",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-08-room-deckbox-08",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Aí sim eu viro chacota na loja.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "scene-09-table-entry",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "scene-09-table-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Bom.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "scene-09-table-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Deck duplamente sleevado.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "scene-09-table-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Deck box nova.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "scene-09-table-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Pena que a Command and Conquer não pode usar mini snap.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "scene-09-table-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ia ficar um tijolo no deck.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "scene-09-table-06",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Mas protegida ela ia ficar.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "scene-09-table-thought-01",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Amanhã é Armory.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "scene-09-table-thought-02",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Vamos ver se domingo foi só sorte.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
   }
 ];
