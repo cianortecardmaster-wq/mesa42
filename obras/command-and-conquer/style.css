@@ -2628,6 +2628,16 @@ button {
   transform: translateY(0) scale(0.99);
 }
 
+.character.right.store-lucas {
+  right: 5% !important;
+  z-index: 82 !important;
+  height: 84% !important;
+  transform: translateY(18px) scale(0.98);
+}
+.character.right.store-lucas.visible {
+  transform: translateY(0) scale(0.98);
+}
+
 .character.right.store-mateus {
   right: -2% !important;
   z-index: 76 !important;
@@ -2653,6 +2663,10 @@ button {
 
   body.mobile-landscape-mode .character.right.store-robert {
     right: 18% !important;
+  }
+
+  body.mobile-landscape-mode .character.right.store-lucas {
+    right: 2% !important;
   }
 
   body.mobile-landscape-mode .character.right.store-mateus {

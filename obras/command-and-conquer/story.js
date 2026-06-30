@@ -7517,7 +7517,13 @@ const story = [
     "type": "dialogue",
     "speaker": "Lucas",
     "text": "A gente tava falando de você agora mesmo.",
-    "bg": "assets/bg/loja-interior-balcao.png"
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
   },
   {
     "id": "scene-13-store-interior-03",
@@ -7537,14 +7543,26 @@ const story = [
     "type": "dialogue",
     "speaker": "Lucas",
     "text": "Relaxa.",
-    "bg": "assets/bg/loja-interior-balcao.png"
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
   },
   {
     "id": "scene-13-store-interior-05",
     "type": "dialogue",
     "speaker": "Lucas",
     "text": "Só falei que já vou dar play no Armory.",
-    "bg": "assets/bg/loja-interior-balcao.png"
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
   },
   {
     "id": "scene-13-store-interior-06",
@@ -7733,7 +7751,13 @@ const story = [
     "type": "dialogue",
     "speaker": "Lucas",
     "text": "Rodada um saiu.",
-    "bg": "assets/bg/loja-interior-balcao.png"
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
   },
   {
     "id": "scene-13-store-interior-21",
