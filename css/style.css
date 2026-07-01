@@ -75,6 +75,33 @@ main,
   padding: 22px 0 40px;
 }
 
+.hero-banner {
+  position: relative;
+  overflow: hidden;
+  padding: 0 28px 24px;
+  border: 1px solid rgba(214, 173, 85, 0.28);
+  border-radius: 34px;
+  background:
+    linear-gradient(90deg, rgba(3, 7, 6, 0.94) 0%, rgba(3, 7, 6, 0.88) 36%, rgba(3, 7, 6, 0.72) 58%, rgba(3, 7, 6, 0.78) 100%),
+    url("../assets/hero-banner-bg.png") center right / cover no-repeat;
+  box-shadow: 0 28px 60px rgba(0,0,0,.42);
+}
+
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 74% 34%, rgba(24,217,133,.2), transparent 28%),
+    linear-gradient(180deg, rgba(255,255,255,.03), transparent 22%);
+  pointer-events: none;
+}
+
+.hero-banner > * {
+  position: relative;
+  z-index: 1;
+}
+
 .topbar {
   display: flex;
   justify-content: space-between;
@@ -145,7 +172,7 @@ main,
   align-items: center;
   gap: 34px;
   min-height: 560px;
-  padding: 34px 0 12px;
+  padding: 26px 0 6px;
 }
 
 .eyebrow {
@@ -210,7 +237,7 @@ h1 {
   width: min(88vw, 480px);
   aspect-ratio: 1;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(24,217,133,.22), transparent 67%);
+  background: radial-gradient(circle, rgba(24,217,133,.18), transparent 67%);
   filter: blur(10px);
 }
 
@@ -306,6 +333,7 @@ h1 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 20px;
+  align-items: stretch;
 }
 
 .work-card {
@@ -326,7 +354,6 @@ h1 {
 }
 
 .work-card.featured {
-  grid-column: span 2;
   border-color: rgba(245,220,155,.55);
   background:
     radial-gradient(circle at 20% 0%, rgba(24,217,133,.2), transparent 42%),
@@ -335,22 +362,31 @@ h1 {
 }
 
 .work-media {
+  position: relative;
   display: grid;
   place-items: center;
-  min-height: 220px;
-  padding: 22px;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
   background:
     radial-gradient(circle at 50% 45%, rgba(24,217,133,.16), transparent 58%),
     rgba(0,0,0,.22);
   border-bottom: 1px solid rgba(214,173,85,.18);
 }
 
+.work-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .command-media img {
-  width: min(620px, 100%);
-  filter: drop-shadow(0 20px 18px rgba(0,0,0,.6));
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .nosso-dinheiro-media {
+  padding: 22px;
   background:
     radial-gradient(circle at 50% 35%, rgba(214,173,85,.22), transparent 58%),
     radial-gradient(circle at 50% 70%, rgba(24,217,133,.15), transparent 54%),
@@ -358,7 +394,9 @@ h1 {
 }
 
 .nosso-dinheiro-media img {
-  width: min(420px, 94%);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
   filter: drop-shadow(0 18px 20px rgba(0,0,0,.58));
 }
 
@@ -452,6 +490,13 @@ h1 {
 }
 
 @media (max-width: 920px) {
+  .hero-banner {
+    padding: 0 22px 22px;
+    background:
+      linear-gradient(180deg, rgba(3, 7, 6, 0.88) 0%, rgba(3, 7, 6, 0.8) 38%, rgba(3, 7, 6, 0.76) 100%),
+      url("../assets/hero-banner-bg.png") center right / cover no-repeat;
+  }
+
   .topbar,
   .section-head,
   .footer {
@@ -470,7 +515,7 @@ h1 {
   }
 
   .works-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .work-card.featured {
@@ -486,11 +531,22 @@ h1 {
   }
 }
 
+@media (max-width: 680px) {
+  .works-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 560px) {
   .hero,
   main,
   .footer {
     width: min(100% - 20px, 1180px);
+  }
+
+  .hero-banner {
+    padding: 0 16px 18px;
+    border-radius: 26px;
   }
 
   .brand-cc span {
@@ -526,7 +582,10 @@ h1 {
   }
 
   .work-media {
-    min-height: 170px;
+    aspect-ratio: 16 / 10;
+  }
+
+  .nosso-dinheiro-media {
     padding: 16px;
   }
 }
