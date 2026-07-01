@@ -9,7 +9,9 @@ Home do projeto Mesa 42, área narrativa do Cianorte Card Masters.
 3. No GitHub, vá em Settings > Pages.
 4. Configure a branch `main` e a pasta `/root`.
 
-## Link da visual novel
+## Obras cadastradas
+
+### História #001 — Command and Conquer
 
 Na home, o botão **Abrir obra** aponta para:
 
@@ -21,6 +23,20 @@ A visual novel está em:
 
 ```txt
 obras/command-and-conquer/index.html
+```
+
+### História #002 — Financiamento coletivo para salvar todas as cartas colecionáveis existentes
+
+Na home, o botão **Abrir obra** aponta para:
+
+```txt
+./obras/financiamento-coletivo-cartas-nosso-dinheiro/
+```
+
+A página provisória da obra está em:
+
+```txt
+obras/financiamento-coletivo-cartas-nosso-dinheiro/index.html
 ```
 
 Os arquivos dela são independentes da home:
