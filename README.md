@@ -30,7 +30,7 @@ obras/command-and-conquer/index.html
 Na home, o botão **Abrir obra** aponta para:
 
 ```txt
-./obras/financiamento-coletivo-cartas-nosso-dinheiro/
+./obras/financiamento-coletivo-cartas-nosso-dinheiro/index.html
 ```
 
 A página provisória da obra está em:
