@@ -201,9 +201,7 @@ function setupStoryPart() {
   const part = STORY_PARTS[selectedPartId];
 
   if (!part) {
-    document.title = "História #001 — Command and Conquer";
-    partSelector?.classList.remove("part-selection-hidden");
-    vnApp?.classList.add("vn-app-hidden");
+    window.location.href = "index.html";
     return false;
   }
 
@@ -743,7 +741,7 @@ fullscreenBtn?.addEventListener("click", event => {
 
 partsBtn?.addEventListener("click", event => {
   event.stopPropagation();
-  window.location.href = window.location.pathname;
+  window.location.href = "index.html";
 });
 
 rotateOverlay?.addEventListener("click", event => {

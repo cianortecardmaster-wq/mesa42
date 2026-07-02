@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Command and Conquer — Leitura</title>
+  <meta name="theme-color" content="#0b0807" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <link rel="stylesheet" href="style.css?v=20260702-02" />
+</head>
+<body>
+  <main id="vnApp" class="vn-app vn-app-hidden">
+    <section id="stage" class="vn-stage camera-center">
+
+      <button id="fullscreenBtn" class="fullscreen-toggle" type="button" aria-label="Ativar tela cheia">
+        Tela cheia
+      </button>
+
+      <button id="jumpEndBtn" class="jump-end-toggle" type="button" aria-label="Ir para o final da parte">
+        Final
+      </button>
+
+      <button id="partsBtn" class="parts-toggle" type="button" aria-label="Voltar para seleção de partes">
+        Partes
+      </button>
+
+      <div id="rotateOverlay" class="rotate-overlay hidden">
+        <div class="rotate-card">
+          <div class="rotate-icon">↻</div>
+          <h2>Vire o celular</h2>
+          <p>Vire o celular para continuar lendo em modo horizontal.</p>
+        </div>
+      </div>
+
+      <div id="logoOverlay" class="logo-overlay">
+        <img id="introLogo" src="assets/ui/logo-command-and-conquer.png" alt="Logo Command and Conquer" />
+      </div>
+
+      <div id="backgroundLayer" class="layer background-layer"></div>
+      <div id="objectLayer" class="layer object-layer"></div>
+      <div id="characterLayer" class="layer character-layer"></div>
+      <div id="effectLayer" class="layer effect-layer"></div>
+
+      <div id="dialogBox" class="dialog-box hidden" aria-live="polite">
+        <div id="speakerName" class="speaker-name"></div>
+        <div id="dialogText" class="dialog-text"></div>
+
+        <div class="dialog-nav">
+          <button type="button" id="prevTextBtn" class="dialog-nav-btn">◀ Voltar</button>
+          <button type="button" id="nextTextBtn" class="dialog-nav-btn">Avançar ▶</button>
+        </div>
+      </div>
+
+      <div id="historyPanel" class="panel hidden" role="dialog" aria-modal="true" aria-labelledby="historyTitle">
+        <div class="panel-card">
+          <div class="panel-header">
+            <h2 id="historyTitle">Histórico</h2>
+            <button type="button" class="panel-close" data-close-panel="historyPanel">✕</button>
+          </div>
+          <div id="historyContent" class="history-content"></div>
+        </div>
+      </div>
+
+      <div id="toast" class="toast hidden" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script src="story.js?v=20260702-02"></script>
+  <script src="engine.js?v=20260702-02"></script>
+</body>
+</html>
