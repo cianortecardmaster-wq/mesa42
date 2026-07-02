@@ -3,14 +3,91 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>Command and Conquer — Leitura</title>
+  <title>História #001 — Command and Conquer</title>
   <meta name="theme-color" content="#0b0807" />
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <link rel="stylesheet" href="style.css?v=20260702-02" />
+  <link rel="stylesheet" href="style.css?v=20260702-01" />
 </head>
 <body>
+  <main id="partSelector" class="part-selection">
+    <section class="work-landing" aria-labelledby="work-title">
+      <header class="work-landing-hero">
+        <div class="work-landing-bg" aria-hidden="true"></div>
+        <div class="work-landing-overlay">
+          <p class="part-kicker">História #001 • Visual Novel</p>
+          <img class="work-title-image" src="assets/ui/logo-command-and-conquer.png" alt="Command and Conquer" />
+          <h1 id="work-title" class="sr-only">Command and Conquer</h1>
+          <p class="work-landing-tagline">Uma carta chega amassada. Um deck muda de ritmo. Uma semana comum de card game começa a parecer lenda local.</p>
+        </div>
+      </header>
+
+      <section class="work-description" aria-label="Descrição da obra">
+        <div>
+          <h2>Sobre a obra</h2>
+          <p>
+            <strong>Command and Conquer</strong> acompanha JP enquanto uma carta esperada demais atravessa Correios,
+            cozinha, Centro Cultural e Armory. É uma visual novel sobre partidas, zoeiras de loja, superstição com carta boa
+            e aquele tipo de confiança que só aparece quando o deck resolve colaborar.
+          </p>
+        </div>
+        <a class="part-back-link compact" href="../../">Voltar para Mesa 42</a>
+      </section>
+
+      <section class="chapters-section" aria-labelledby="chapters-title">
+        <div class="chapters-heading">
+          <p class="eyebrow-small">Escolha por onde continuar</p>
+          <h2 id="chapters-title">Capítulos</h2>
+        </div>
+
+        <nav class="part-list chapter-list" aria-label="Capítulos de Command and Conquer">
+          <a class="part-card chapter-card available" href="ler.html?parte=1">
+            <span class="part-number">Parte 1</span>
+            <strong>A carta chega</strong>
+            <small>Do quarto do JP até “Amanhã ela já vê jogo.”</small>
+            <span class="chapter-action">Ler parte 1</span>
+          </a>
+
+          <a class="part-card chapter-card available" href="ler.html?parte=2">
+            <span class="part-number">Parte 2</span>
+            <strong>Centro Cultural</strong>
+            <small>Domingo 13:30, partidas no Centro Cultural e a conversa depois dos jogos.</small>
+            <span class="chapter-action">Ler parte 2</span>
+          </a>
+
+          <a class="part-card chapter-card available" href="ler.html?parte=3">
+            <span class="part-number">Parte 3</span>
+            <strong>Armory no Bazar</strong>
+            <small>Quarto à noite, chegada ao Bazar do Weezing, rodadas do Armory e o pós-torneio.</small>
+            <span class="chapter-action">Ler parte 3</span>
+          </a>
+
+          <div class="part-card chapter-card upcoming" aria-disabled="true">
+            <span class="part-number">Parte 4</span>
+            <strong>Em breve</strong>
+            <small>Continuação em desenvolvimento.</small>
+            <span class="chapter-action disabled">Em breve</span>
+          </div>
+
+          <div class="part-card chapter-card upcoming" aria-disabled="true">
+            <span class="part-number">Parte 5</span>
+            <strong>Em breve</strong>
+            <small>Será liberada quando a próxima etapa da obra estiver pronta.</small>
+            <span class="chapter-action disabled">Em breve</span>
+          </div>
+
+          <div class="part-card chapter-card upcoming" aria-disabled="true">
+            <span class="part-number">Final</span>
+            <strong>Em breve</strong>
+            <small>Fechamento da história ainda não publicado.</small>
+            <span class="chapter-action disabled">Em breve</span>
+          </div>
+        </nav>
+      </section>
+    </section>
+  </main>
+
   <main id="vnApp" class="vn-app vn-app-hidden">
     <section id="stage" class="vn-stage camera-center">
 
@@ -67,7 +144,7 @@
     </section>
   </main>
 
-  <script src="story.js?v=20260702-02"></script>
-  <script src="engine.js?v=20260702-02"></script>
+  <script src="story.js?v=20260702-01"></script>
+  <script src="engine.js?v=20260702-01"></script>
 </body>
 </html>
