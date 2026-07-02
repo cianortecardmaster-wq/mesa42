@@ -9134,5 +9134,881 @@ const story = [
       "position": "center",
       "effect": "store-camila"
     }
+  },
+  {
+    "id": "scene-19-post-rounds-entry",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "scene-19-post-rounds-01",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "Oi, JP.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "center",
+      "effect": "store-amanda"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-02",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "Tudo bem?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "center",
+      "effect": "store-amanda"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Oi, Amanda.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Tudo sim.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "A Camila te fez montar a Puffin?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-06",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "Fez.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "center",
+      "effect": "store-amanda"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-07",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "Mas não foi muito difícil.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "center",
+      "effect": "store-amanda"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-08",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "Uma pirata, num navio voador?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "center",
+      "effect": "store-amanda"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-09",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "Pegue meu dinheiro, eu disse.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "center",
+      "effect": "store-amanda"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-10",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "É, faz sentido.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-11",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Até tem uma carta do One Piece, né?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-12",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "Tem.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "center",
+      "effect": "store-amanda"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-13",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "Mas ela não roda bem.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "center",
+      "effect": "store-amanda"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-14",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Diferente desse CnC do inferno aí.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-15",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Pô, que isso.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-16",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "A cartinha é bem de boas.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-17",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Vários decks usam ela.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-18",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Sim.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-19",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Mas nesse seu ela parece pior.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-20",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Sim.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-21",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Parece mesmo.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-22",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ela é abençoada.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-23",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Ah, deve ser mesmo.",
+    "bg": "assets/bg/loja-interior.png"
+  },
+  {
+    "id": "scene-19-post-rounds-24",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "A minha não faz isso.",
+    "bg": "assets/bg/loja-interior.png"
+  },
+  {
+    "id": "scene-19-post-rounds-25",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Viu?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-26",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Vocês falam como se eu tivesse feito pacto com papelão.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-19-post-rounds-27",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "Ainda não descartamos essa hipótese.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "store-robert"
+    }
+  },
+  {
+    "id": "scene-20-result-entry",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "scene-20-result-01",
+    "type": "dialogue",
+    "speaker": "Isa",
+    "text": "Ó, saiu o resultado aqui.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "isa",
+      "src": "assets/characters/isa.png",
+      "position": "center",
+      "effect": "store-isa"
+    }
+  },
+  {
+    "id": "scene-20-result-02",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "JP sorri, satisfeito.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
+  },
+  {
+    "id": "scene-20-result-03",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "hideDialog": true,
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-rindo.png",
+        "position": "left",
+        "effect": "store-jp"
+      }
+    ]
+  },
+  {
+    "id": "scene-20-result-04",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Levou mesmo.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-20-result-05",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Esse deck safado aí.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-20-result-06",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Falou o cara que tava há três semanas na liderança com um pirata que fica revivendo a tripulação.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-20-result-07",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Deixa o Gravy em paz.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-20-result-08",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Ele já tem os problemas dele.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-20-result-09",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Ah, tá.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-20-result-10",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Que problema ele tem?",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-20-result-11",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Além de estar morto?",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-20-result-12",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "O maninha.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-20-result-13",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Eu vou passar no lanche com o Robertinho.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-20-result-14",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Não preciso de carona hoje.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-20-result-15",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Tranquilo, maninho.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-20-result-16",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Vou dormir no Rafa hoje.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-20-result-17",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Beleza.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-20-result-18",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Falou pra vocês.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-20-result-19",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "Partiu lanche.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "store-robert"
+    }
+  },
+  {
+    "id": "scene-20-result-20",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "Campeão paga batata?",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "store-robert"
+    }
+  },
+  {
+    "id": "scene-20-result-21",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Campeão já gastou em carta.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-20-result-22",
+    "type": "dialogue",
+    "speaker": "Robertinho",
+    "text": "Resposta triste e realista.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "robertinho",
+      "src": "assets/characters/robertinho-falando.png",
+      "position": "right",
+      "effect": "store-robert"
+    }
+  },
+  {
+    "id": "scene-20-result-23",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Bora então, Camila?",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-20-result-24",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Acho que a gente consegue ver uma série antes.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-20-result-25",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Bora.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-20-result-26",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "JP, até quarta.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "center",
+      "effect": "store-amanda"
+    }
+  },
+  {
+    "id": "scene-20-result-27",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Até quarta.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-20-result-28",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Na próxima jogamos juntos.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-20-result-29",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "Fechou.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "center",
+      "effect": "store-amanda"
+    }
+  },
+  {
+    "id": "scene-20-result-30",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "hideDialog": true,
+    "characters": [
+      {
+        "id": "amanda",
+        "src": "assets/characters/amanda.png",
+        "position": "center",
+        "effect": "store-amanda"
+      }
+    ]
+  },
+  {
+    "id": "scene-21-front-alone-entry",
+    "type": "visual",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "scene-21-front-alone-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "“Na próxima jogamos juntos.”",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-21-front-alone-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Pô...",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-21-front-alone-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Que mané.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-21-front-alone-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Que raiva.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-21-front-alone-05",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Ganhei o Armory.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png"
+  },
+  {
+    "id": "scene-21-front-alone-06",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Tirei a liderança do Rafael.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png"
+  },
+  {
+    "id": "scene-21-front-alone-07",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "A carta veio de novo.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png"
+  },
+  {
+    "id": "scene-21-front-alone-08",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "E eu tô pensando nisso?",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png"
+  },
+  {
+    "id": "scene-21-front-alone-09",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Idiota.",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left",
+      "effect": "armory-jp"
+    }
+  },
+  {
+    "id": "scene-21-front-alone-10",
+    "type": "visual",
+    "bg": "assets/bg/bazar-weezing-frente-noite.png",
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true,
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-normal.png",
+        "position": "left",
+        "effect": "armory-jp"
+      }
+    ]
+  },
+  {
+    "id": "scene-21-front-alone-11",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
   }
 ];

@@ -2746,6 +2746,16 @@ button {
   transform: translateX(-50%) translateY(0) scale(0.98);
 }
 
+.character.center.store-amanda {
+  left: 50% !important;
+  z-index: 81 !important;
+  height: 84% !important;
+  transform: translateX(-50%) translateY(18px) scale(0.98);
+}
+.character.center.store-amanda.visible {
+  transform: translateX(-50%) translateY(0) scale(0.98);
+}
+
 .character.right.store-robert {
   right: 20% !important;
   z-index: 79 !important;
@@ -2807,6 +2817,10 @@ button {
 
   body.mobile-landscape-mode .character.center.store-camila {
     left: 31% !important;
+  }
+
+  body.mobile-landscape-mode .character.center.store-amanda {
+    left: 50% !important;
   }
 
   body.mobile-landscape-mode .character.right.store-robert {
