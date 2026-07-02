@@ -2648,6 +2648,26 @@ button {
   transform: translateY(0) scale(0.98);
 }
 
+.character.right.store-gabriel {
+  right: 2% !important;
+  z-index: 82 !important;
+  height: 84% !important;
+  transform: translateY(18px) scale(0.98);
+}
+.character.right.store-gabriel.visible {
+  transform: translateY(0) scale(0.98);
+}
+
+.character.right.store-rafael {
+  right: 2% !important;
+  z-index: 82 !important;
+  height: 84% !important;
+  transform: translateY(18px) scale(0.98);
+}
+.character.right.store-rafael.visible {
+  transform: translateY(0) scale(0.98);
+}
+
 @media (max-width: 900px) and (orientation: landscape) {
   body.mobile-landscape-mode .character.left.store-jp {
     left: -2% !important;
@@ -2671,5 +2691,13 @@ button {
 
   body.mobile-landscape-mode .character.right.store-mateus {
     right: -5% !important;
+  }
+
+  body.mobile-landscape-mode .character.right.store-gabriel {
+    right: -2% !important;
+  }
+
+  body.mobile-landscape-mode .character.right.store-rafael {
+    right: -2% !important;
   }
 }

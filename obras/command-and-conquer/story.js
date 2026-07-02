@@ -7834,5 +7834,1305 @@ const story = [
     "screenText": "RODADA 1",
     "screenTextClass": "screen-text-stack",
     "hideDialog": true
+  },
+  {
+    "id": "scene-14-round1-table-entry",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true,
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-normal.png",
+        "position": "left",
+        "effect": "store-jp"
+      },
+      {
+        "id": "mateus",
+        "src": "assets/characters/mateus.png",
+        "position": "right",
+        "effect": "store-mateus"
+      }
+    ]
+  },
+  {
+    "id": "scene-14-round1-01",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Ah, que pé no saco.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-14-round1-02",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Hoje não veio nada bom.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-14-round1-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Eu dei sorte.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-14-round1-04",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Sorte nada.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-14-round1-05",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Na verdade teve só uma vez que veio mão boa.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-14-round1-06",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Sim.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-14-round1-07",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Eu vi você sofrendo pra não perder o arsenal.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-14-round1-08",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Muito chato isso.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-14-round1-09",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "A Camila falou que meu Maxx ia sofrer.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-14-round1-10",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Contra Ira é difícil fazer o robô.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-14-round1-11",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Eu nem tento.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-14-round1-12",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Então você joga de Maxx pra quê?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-14-round1-13",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Pra sonhar.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-14-round1-14",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Justo.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-14-round1-15",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "O problema é que seu deck não respeita o sonho dos outros.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-14-round1-16",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ira é disciplina.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-14-round1-17",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Ira é bullying de ninja.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-entry",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true,
+    "characters": [
+      {
+        "id": "isa",
+        "src": "assets/characters/isa.png",
+        "position": "center",
+        "effect": "store-isa"
+      },
+      {
+        "id": "lucas",
+        "src": "assets/characters/lucas.png",
+        "position": "right",
+        "effect": "store-lucas"
+      }
+    ]
+  },
+  {
+    "id": "scene-15-between-rounds-01",
+    "type": "dialogue",
+    "speaker": "Isa",
+    "text": "Galera, rodada dois!",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "isa",
+      "src": "assets/characters/isa.png",
+      "position": "center",
+      "effect": "store-isa"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-02",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "Confiram o pareamento.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Que droga.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Caí com o Gabriel.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-05",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "E aí, JP.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-06",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Bora jogar?",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-07",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Bora.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-08",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Mas já aviso.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-09",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Se essa Command vier no momento perfeito, eu vou reclamar.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-10",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Você sempre reclama.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-11",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Sim.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-15-between-rounds-12",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Mas hoje vai ser com fundamento.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-title",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true,
+    "screenText": "RODADA 2",
+    "screenTextClass": "screen-text-stack"
+  },
+  {
+    "id": "scene-16-round2-table-entry",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true,
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-normal.png",
+        "position": "left",
+        "effect": "store-jp"
+      },
+      {
+        "id": "gabriel",
+        "src": "assets/characters/gabriel.png",
+        "position": "right",
+        "effect": "store-gabriel"
+      }
+    ]
+  },
+  {
+    "id": "scene-16-round2-01",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Já era chato lidar com Censor.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-02",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Agora mais essa.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Você fala como se a Hala fosse tranquila.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-16-round2-04",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Ela é uma guerreira de boas.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Sim.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-16-round2-06",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Só a tutora da Dorinthea.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-16-round2-07",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Mas não é a Dori.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-08",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Se fosse a Dori, era outro jogo.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-09",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Toda vez que um warrior fala isso, alguém perde metade da vida do nada.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-16-round2-10",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Isso é preconceito contra guerreiras disciplinadas.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-11",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Disciplinadas?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-16-round2-12",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Vocês jogam carta, compram carta, batem de novo e ainda acham que foram honestos.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-16-round2-13",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "E você joga ninja com Command and Conquer.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-14",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Sua moral está em recurso flutuante.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-15",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Tá, essa foi boa.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-16-round2-16",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Mas falando sério...",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-17",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Essa carta veio de novo?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-18",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Veio.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-16-round2-19",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Claro que veio.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-16-round2-20",
+    "type": "dialogue",
+    "speaker": "Gabriel",
+    "text": "Ela gosta de palco.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "gabriel",
+      "src": "assets/characters/gabriel-falando.png",
+      "position": "right",
+      "effect": "store-gabriel"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-entry",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true,
+    "characters": [
+      {
+        "id": "isa",
+        "src": "assets/characters/isa.png",
+        "position": "center",
+        "effect": "store-isa"
+      },
+      {
+        "id": "lucas",
+        "src": "assets/characters/lucas.png",
+        "position": "right",
+        "effect": "store-lucas"
+      }
+    ]
+  },
+  {
+    "id": "scene-17-final-pairing-01",
+    "type": "dialogue",
+    "speaker": "Isa",
+    "text": "Galera, deu o tempo.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "isa",
+      "src": "assets/characters/isa.png",
+      "position": "center",
+      "effect": "store-isa"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-02",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "Rodada três!",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "É.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Caí contra o Rafael.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Sabia.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-06",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Bora, JP.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-07",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Hoje minha horda de defunto vai afogar você.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-08",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Só se conseguir acordar eles.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-09",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Tá abusadinho.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-10",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Rafa, por favor, ganha dele.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-11",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Nossa.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-12",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Que apoio bonito.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-13",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Eu gosto de equilíbrio no ambiente.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-14",
+    "type": "dialogue",
+    "speaker": "Mateus",
+    "text": "Tradução: ela não quer ouvir o JP falando de Ira invicta a semana inteira.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "mateus",
+      "src": "assets/characters/mateus-falando.png",
+      "position": "right",
+      "effect": "store-mateus"
+    }
+  },
+  {
+    "id": "scene-17-final-pairing-15",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Exatamente.",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-18-round3-title",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true,
+    "screenText": "RODADA 3",
+    "screenTextClass": "screen-text-stack"
+  },
+  {
+    "id": "scene-18-round3-table-entry",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true,
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-normal.png",
+        "position": "left",
+        "effect": "store-jp"
+      },
+      {
+        "id": "rafael",
+        "src": "assets/characters/rafael.png",
+        "position": "right",
+        "effect": "store-rafael"
+      },
+      {
+        "id": "camila",
+        "src": "assets/characters/camila.png",
+        "position": "center",
+        "effect": "store-camila"
+      }
+    ]
+  },
+  {
+    "id": "scene-18-round3-01",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Que deckzinho safado esse.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ah, o maluco só blocando querendo me fadigar, e a Ira que é safada?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-03",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Cara, não sei.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-04",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Essa porcaria de carta vem muito na hora certa pra você.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Concordo.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-06",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Vem mesmo.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-07",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Essa semana chegam as outras duas.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-08",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Puxa.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-09",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Achou as outras?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-10",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Sim.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-11",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Paguei valor de mercado.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-12",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Mas acho que vai valer a pena.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-13",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Vou trombar com o Valdir e falar pra entregar essa encomenda em casa.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-14",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Cai fora.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-15",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Tinha que ensinar o Valdir a jogar.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-16",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Nada.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-17",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Se ensinar, aí sim as cartas vão se perder nos Correios.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-18",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Pior que ele ia ser o tipo de jogador que reclama do deck e compra carta escondido.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-19",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Então ele já é do grupo.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-20",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "E aí, Rafa?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-18-round3-21",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Conseguiu derrotar a ninja sombria?",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "scene-18-round3-22",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Que nada.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-23",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Esse deck tá osso.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "scene-18-round3-24",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "A ninja sombria agradece.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "scene-18-round3-25",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Eu não agradeço.",
+    "bg": "assets/bg/loja-interior.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
   }
 ];
