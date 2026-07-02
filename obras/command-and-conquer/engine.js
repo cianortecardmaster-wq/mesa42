@@ -74,6 +74,9 @@ const dialogueStyles = {
   Isa: { color: "#c89dd8" },
   Amanda: { color: "#d970a7" },
   Gabriel: { color: "#d4873f" },
+  Valdir: { color: "#c9a56a" },
+  Marcos: { color: "#78c2ad" },
+  Robert: { color: "#c98c3a" },
   thought: { color: "#9aa0a6" },
   unknown: { color: "#7f7f7f" }
 };
@@ -85,10 +88,17 @@ const speakerCharacterMap = {
   Mateus: "mateus",
   Camila: "camila",
   Robertinho: "robertinho",
+  Robert: "robertinho",
   Isa: "isa",
   Amanda: "amanda",
-  Gabriel: "gabriel"
+  Gabriel: "gabriel",
+  Valdir: "valdir"
 };
+
+const characterSpeakerMap = Object.entries(speakerCharacterMap).reduce((map, [speaker, characterId]) => {
+  if (!map[characterId]) map[characterId] = speaker;
+  return map;
+}, {});
 
 function normalizeSpeakerName(speaker = "") {
   return String(speaker)
@@ -134,10 +144,64 @@ function getActiveCharacterId(step = {}) {
   const speaker = normalizeSpeakerName(step.speaker);
 
   if (styleKey === "unknown") return null;
-  if (step.character && step.character.id) return step.character.id;
   if (speakerCharacterMap[speaker]) return speakerCharacterMap[speaker];
 
   return null;
+}
+
+function stepSpeaksAsCharacter(step = {}, characterId = "") {
+  if (!step || shouldHideDialog(step) || !characterId) return false;
+
+  const speaker = normalizeSpeakerName(step.speaker);
+  return speakerCharacterMap[speaker] === characterId;
+}
+
+function isFutureSceneBoundary(step = {}, currentBackground = "") {
+  if (!step) return false;
+  if (step.clearCharacters) return true;
+  if (step.bg && currentBackground && step.bg !== currentBackground) return true;
+
+  return false;
+}
+
+function hasFutureLineInCurrentScene(characterId, fromIndex) {
+  if (!characterId) return false;
+
+  const currentStepData = story[fromIndex];
+  const currentActiveCharacterId = getActiveCharacterId(currentStepData);
+
+  if (currentActiveCharacterId === characterId) return true;
+
+  for (let i = fromIndex + 1; i <= partEndIndex; i += 1) {
+    const futureStep = story[i];
+
+    if (isFutureSceneBoundary(futureStep, activeBackground)) return false;
+    if (stepSpeaksAsCharacter(futureStep, characterId)) return true;
+  }
+
+  return false;
+}
+
+function removeCharacter(characterId) {
+  const characterEl = activeCharacters[characterId];
+  if (!characterEl) return;
+
+  characterEl.remove();
+  delete activeCharacters[characterId];
+}
+
+function pruneCharactersWithoutFutureLines(fromIndex) {
+  const step = story[fromIndex];
+
+  if (!step || shouldHideDialog(step)) return;
+
+  Object.keys(activeCharacters || {}).forEach(characterId => {
+    if (!characterSpeakerMap[characterId]) return;
+
+    if (!hasFutureLineInCurrentScene(characterId, fromIndex)) {
+      removeCharacter(characterId);
+    }
+  });
 }
 
 function resetDialogueVisuals() {
@@ -202,6 +266,8 @@ function setupStoryPart() {
 
   if (!part) {
     document.title = "História #001 — Command and Conquer";
+    document.documentElement.classList.add("chapters-document");
+    document.body.classList.add("chapters-page");
     partSelector?.classList.remove("part-selection-hidden");
     vnApp?.classList.add("vn-app-hidden");
     return false;
@@ -217,6 +283,8 @@ function setupStoryPart() {
 
   currentStep = partStartIndex;
   document.title = `${part.title} — Command and Conquer`;
+  document.documentElement.classList.remove("chapters-document");
+  document.body.classList.remove("chapters-page");
   partSelector?.classList.add("part-selection-hidden");
   vnApp?.classList.remove("vn-app-hidden");
   jumpEndBtn?.setAttribute("aria-label", `Ir para o final de ${part.title}`);
@@ -329,6 +397,7 @@ function renderStep(index, options = {}) {
     applyVisualState(story[i], i === currentStep);
   }
 
+  pruneCharactersWithoutFutureLines(currentStep);
   renderDialog(story[currentStep], forceFullText);
   updateHistory();
   updateNavButtons();

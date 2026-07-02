@@ -3125,3 +3125,29 @@ a.part-card:hover {
     padding: 6px 9px !important;
   }
 }
+
+
+/* Ajustes finais da página de partes e do destaque de fala */
+html.chapters-document,
+body.chapters-page {
+  height: auto !important;
+  min-height: 100% !important;
+  overflow-x: hidden !important;
+  overflow-y: auto !important;
+}
+
+body.chapters-page .part-selection {
+  width: 100% !important;
+  min-height: 100dvh !important;
+  height: auto !important;
+  align-items: flex-start !important;
+  overflow: visible !important;
+}
+
+.character.visible.dialogue-active {
+  z-index: 999 !important;
+}
+
+.character.visible.dialogue-inactive {
+  z-index: 20 !important;
+}
