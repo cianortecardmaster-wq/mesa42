@@ -2,6 +2,30 @@ const STORAGE_KEYS = {
   progress: "ccn-progress-scene-01"
 };
 
+const STORY_PARTS = {
+  "1": {
+    title: "Parte 1 — A carta chega",
+    startId: "intro-logo",
+    endId: "scene-kitchen-postcard-06"
+  },
+  "2": {
+    title: "Parte 2 — Centro Cultural",
+    startId: "scene-cc-title",
+    endId: "scene-06-aftertalk-56"
+  },
+  "3": {
+    title: "Parte 3 — Armory no Bazar",
+    startId: "scene-07-room-night-entry",
+    endId: null
+  }
+};
+
+const urlParams = new URLSearchParams(window.location.search);
+const selectedPartId = urlParams.get("parte");
+let activePart = null;
+let partStartIndex = 0;
+let partEndIndex = 0;
+
 let currentStep = 0;
 let activeBackground = "";
 let activeCharacters = {};
@@ -34,6 +58,9 @@ const introLogo = document.getElementById("introLogo");
 const fullscreenBtn = document.getElementById("fullscreenBtn");
 const jumpEndBtn = document.getElementById("jumpEndBtn");
 const rotateOverlay = document.getElementById("rotateOverlay");
+const partSelector = document.getElementById("partSelector");
+const vnApp = document.getElementById("vnApp");
+const partsBtn = document.getElementById("partsBtn");
 
 
 const dialogueStyles = {
@@ -163,6 +190,39 @@ function applyDialogueVisuals(step = {}) {
   });
 }
 
+function findStoryIndexById(id, fallback = 0) {
+  if (!id) return fallback;
+
+  const index = story.findIndex(step => step.id === id);
+  return index >= 0 ? index : fallback;
+}
+
+function setupStoryPart() {
+  const part = STORY_PARTS[selectedPartId];
+
+  if (!part) {
+    document.title = "História #001 — Command and Conquer";
+    partSelector?.classList.remove("part-selection-hidden");
+    vnApp?.classList.add("vn-app-hidden");
+    return false;
+  }
+
+  activePart = part;
+  partStartIndex = findStoryIndexById(part.startId, 0);
+  partEndIndex = part.endId ? findStoryIndexById(part.endId, story.length - 1) : story.length - 1;
+
+  if (partEndIndex < partStartIndex) {
+    partEndIndex = story.length - 1;
+  }
+
+  currentStep = partStartIndex;
+  document.title = `${part.title} — Command and Conquer`;
+  partSelector?.classList.add("part-selection-hidden");
+  vnApp?.classList.remove("vn-app-hidden");
+  jumpEndBtn?.setAttribute("aria-label", `Ir para o final de ${part.title}`);
+  return true;
+}
+
 function isMobileViewport() {
   return window.matchMedia("(max-width: 900px)").matches;
 }
@@ -260,12 +320,12 @@ function resetVisualState() {
 function renderStep(index, options = {}) {
   const { forceFullText = false } = options;
 
-  currentStep = Math.max(0, Math.min(index, story.length - 1));
+  currentStep = Math.max(partStartIndex, Math.min(index, partEndIndex));
 
   clearTimers();
   resetVisualState();
 
-  for (let i = 0; i <= currentStep; i += 1) {
+  for (let i = partStartIndex; i <= currentStep; i += 1) {
     applyVisualState(story[i], i === currentStep);
   }
 
@@ -606,7 +666,7 @@ function updateHistory() {
   if (!historyContent) return;
 
   const entries = story
-    .slice(0, currentStep + 1)
+    .slice(partStartIndex, currentStep + 1)
     .filter(step => !shouldHideDialog(step) && step.text)
     .map(step => ({
       speaker: step.speaker || "",
@@ -622,8 +682,8 @@ function updateHistory() {
 }
 
 function updateNavButtons() {
-  if (prevTextBtn) prevTextBtn.disabled = currentStep <= 0;
-  if (nextTextBtn) nextTextBtn.disabled = currentStep >= story.length - 1;
+  if (prevTextBtn) prevTextBtn.disabled = currentStep <= partStartIndex;
+  if (nextTextBtn) nextTextBtn.disabled = currentStep >= partEndIndex;
 }
 
 function next() {
@@ -634,7 +694,7 @@ function next() {
     return;
   }
 
-  if (currentStep < story.length - 1) {
+  if (currentStep < partEndIndex) {
     renderStep(currentStep + 1);
   }
 }
@@ -642,7 +702,7 @@ function next() {
 function prev() {
   if (historyPanel && !historyPanel.classList.contains("hidden")) return;
 
-  if (currentStep > 0) {
+  if (currentStep > partStartIndex) {
     renderStep(currentStep - 1, { forceFullText: true });
   }
 }
@@ -673,12 +733,17 @@ nextTextBtn?.addEventListener("click", event => {
 
 jumpEndBtn?.addEventListener("click", event => {
   event.stopPropagation();
-  renderStep(story.length - 1, { forceFullText: true });
+  renderStep(partEndIndex, { forceFullText: true });
 });
 
 fullscreenBtn?.addEventListener("click", event => {
   event.stopPropagation();
   toggleFullscreen();
+});
+
+partsBtn?.addEventListener("click", event => {
+  event.stopPropagation();
+  window.location.href = window.location.pathname;
 });
 
 rotateOverlay?.addEventListener("click", event => {
@@ -732,10 +797,12 @@ document.addEventListener("keydown", event => {
 
   if (event.key === "End") {
     event.preventDefault();
-    renderStep(story.length - 1, { forceFullText: true });
+    renderStep(partEndIndex, { forceFullText: true });
   }
 });
 
-applyMobileLayoutMode();
-updateFullscreenButton();
-renderStep(0);
+if (setupStoryPart()) {
+  applyMobileLayoutMode();
+  updateFullscreenButton();
+  renderStep(partStartIndex);
+}

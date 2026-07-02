@@ -8,18 +8,52 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-  <link rel="stylesheet" href="style.css?v=20260629-05" />
+  <link rel="stylesheet" href="style.css?v=20260630-01" />
 </head>
 <body>
-  <main class="vn-app">
+  <main id="partSelector" class="part-selection">
+    <section class="part-selection-card">
+      <p class="part-kicker">História #001</p>
+      <h1>Command and Conquer</h1>
+      <p class="part-intro">Escolha uma parte para continuar a leitura.</p>
+
+      <nav class="part-list" aria-label="Partes da obra">
+        <a class="part-card" href="?parte=1">
+          <span class="part-number">Parte 1</span>
+          <strong>A carta chega</strong>
+          <small>Do quarto do JP até “Amanhã ela já vê jogo.”</small>
+        </a>
+
+        <a class="part-card" href="?parte=2">
+          <span class="part-number">Parte 2</span>
+          <strong>Centro Cultural</strong>
+          <small>Domingo 13:30 até “Até quarta.”</small>
+        </a>
+
+        <a class="part-card" href="?parte=3">
+          <span class="part-number">Parte 3</span>
+          <strong>Armory no Bazar</strong>
+          <small>Quarto à noite, chegada ao Armory e rodadas atuais.</small>
+        </a>
+      </nav>
+
+      <a class="part-back-link" href="../../">Voltar para Mesa 42</a>
+    </section>
+  </main>
+
+  <main id="vnApp" class="vn-app vn-app-hidden">
     <section id="stage" class="vn-stage camera-center">
 
       <button id="fullscreenBtn" class="fullscreen-toggle" type="button" aria-label="Ativar tela cheia">
         Tela cheia
       </button>
 
-      <button id="jumpEndBtn" class="jump-end-toggle" type="button" aria-label="Ir para o final da história">
+      <button id="jumpEndBtn" class="jump-end-toggle" type="button" aria-label="Ir para o final da parte">
         Final
+      </button>
+
+      <button id="partsBtn" class="parts-toggle" type="button" aria-label="Voltar para seleção de partes">
+        Partes
       </button>
 
       <div id="rotateOverlay" class="rotate-overlay hidden">
@@ -63,7 +97,7 @@
     </section>
   </main>
 
-  <script src="story.js?v=20260629-05"></script>
-  <script src="engine.js?v=20260629-05"></script>
+  <script src="story.js?v=20260630-01"></script>
+  <script src="engine.js?v=20260630-01"></script>
 </body>
 </html>
