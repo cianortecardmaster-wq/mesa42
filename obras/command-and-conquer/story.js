@@ -10010,5 +10010,682 @@ const story = [
     "clearObjects": true,
     "clearEffects": true,
     "hideDialog": true
+  },
+
+  {
+    "id": "part4-title",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "screenText": "QUARTA PARTE\nA CARTA VIRA POSSE",
+    "screenTextClass": "screen-text-stack",
+    "hideDialog": true
+  },
+  {
+    "id": "part4-scene07-title",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "screenText": "CENA 07\nQUARTO DO JP\nMAIS UMA VITÓRIA",
+    "screenTextClass": "screen-text-stack",
+    "hideDialog": true
+  },
+  {
+    "id": "part4-room-night-entry",
+    "type": "visual",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "camera": "center",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido.png",
+      "position": "left"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-room-win-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Invicto novamente.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "part4-room-win-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Nada mal.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "part4-deckbox-entry",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "camera": "center",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "part4-card-check-entry",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "objects": [
+      {
+        "id": "part4-cnc-card",
+        "src": "assets/objects/command-and-conquer-carta.png",
+        "x": 39,
+        "y": 18,
+        "w": 20,
+        "effect": "card-featured"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "part4-card-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Essa carta é sensacional.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "part4-card-light",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "objects": [
+      {
+        "id": "part4-cnc-card",
+        "src": "assets/objects/command-and-conquer-carta.png",
+        "x": 39,
+        "y": 18,
+        "w": 20,
+        "effect": "card-featured",
+        "overlayEffect": "card-bottom-sweep"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "part4-card-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "É linda.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "part4-card-pause-01",
+    "type": "visual",
+    "hideDialog": true
+  },
+  {
+    "id": "part4-card-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "O único problema é que só tem um sleeve protegendo ela.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "part4-card-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Isso é quase uma irresponsabilidade.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "part4-robert-phone-entry",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": []
+    }
+  },
+  {
+    "id": "part4-robert-phone-01",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Robertinho",
+          "text": "Você só levou essa porque não caiu contra mim.",
+          "side": "other"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-jp-smile-phone",
+    "type": "visual",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "clearObjects": true,
+    "clearCharacters": true,
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-satisfeito.png",
+      "position": "left",
+      "effect": "phone-side"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-robert-phone-02",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearCharacters": true,
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Robertinho",
+          "text": "Você só levou essa porque não caiu contra mim.",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "Larga essa. Você perdeu pra Camila.",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-robert-phone-03",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Robertinho",
+          "text": "Você só levou essa porque não caiu contra mim.",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "Larga essa. Você perdeu pra Camila.",
+          "side": "me"
+        },
+        {
+          "from": "Robertinho",
+          "text": "Ela teve sorte.",
+          "side": "other"
+        },
+        {
+          "from": "Robertinho",
+          "text": "A mão dela não brickou.",
+          "side": "other"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-robert-phone-04",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Robertinho",
+          "text": "Você só levou essa porque não caiu contra mim.",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "Larga essa. Você perdeu pra Camila.",
+          "side": "me"
+        },
+        {
+          "from": "Robertinho",
+          "text": "Ela teve sorte.",
+          "side": "other"
+        },
+        {
+          "from": "Robertinho",
+          "text": "A mão dela não brickou.",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "A minha também não brickaria. rsrs",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-robert-phone-05",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "JP",
+          "text": "Larga essa. Você perdeu pra Camila.",
+          "side": "me"
+        },
+        {
+          "from": "Robertinho",
+          "text": "Ela teve sorte.",
+          "side": "other"
+        },
+        {
+          "from": "Robertinho",
+          "text": "A mão dela não brickou.",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "A minha também não brickaria. rsrs",
+          "side": "me"
+        },
+        {
+          "from": "Robertinho",
+          "text": "Coloca mais duas dessas aí no deck e bora jogar quarta.",
+          "side": "other"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-look-card-again",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearEffects": true,
+    "objects": [
+      {
+        "id": "part4-cnc-card",
+        "src": "assets/objects/command-and-conquer-carta.png",
+        "x": 39,
+        "y": 18,
+        "w": 20,
+        "effect": "card-featured"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "part4-robert-phone-06",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearObjects": true,
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Robertinho",
+          "text": "Coloca mais duas dessas aí no deck e bora jogar quarta.",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "Até quarta chegam as outras.",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Tô pensando em pegar três normais e deixar essa guardada.",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-robert-phone-07",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Robertinho",
+          "text": "Coloca mais duas dessas aí no deck e bora jogar quarta.",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "Até quarta chegam as outras.",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Tô pensando em pegar três normais e deixar essa guardada.",
+          "side": "me"
+        },
+        {
+          "from": "Robertinho",
+          "text": "É uma boa.",
+          "side": "other"
+        },
+        {
+          "from": "Robertinho",
+          "text": "Acho que deve ter um mercado legal de missprint.",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "Vou averiguar.",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-jp-thinks-marcos-entry",
+    "type": "visual",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "camera": "center",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-desconfiado.png",
+      "position": "left",
+      "effect": "phone-side"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-jp-thinks-marcos-01",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "Mercado de missprint...",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-desconfiado.png",
+      "position": "left",
+      "effect": "phone-side"
+    }
+  },
+  {
+    "id": "part4-marcos-card-look",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearCharacters": true,
+    "objects": [
+      {
+        "id": "part4-cnc-card",
+        "src": "assets/objects/command-and-conquer-carta.png",
+        "x": 39,
+        "y": 18,
+        "w": 20,
+        "effect": "card-featured"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "part4-jp-thinks-marcos-02",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "O Marcos devia saber alguma coisa.",
+    "bg": "assets/bg/mesa-deckbox-noite.png"
+  },
+  {
+    "id": "part4-marcos-phone-entry",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "JP",
+          "text": "Valeu mesmo pela carta. Salvou meu deck.",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-marcos-phone-typing-01",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "JP",
+          "text": "Valeu mesmo pela carta. Salvou meu deck.",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Tudo bem?",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-marcos-phone-typing-02",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "JP",
+          "text": "Valeu mesmo pela carta. Salvou meu deck.",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Tudo bem?",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Cara, você tem mais missprint?",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-marcos-phone-typing-03",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "JP",
+          "text": "Valeu mesmo pela carta. Salvou meu deck.",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Tudo bem?",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Cara, você tem mais missprint?",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Sabe se tem mais colecionadores?",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-marcos-wait",
+    "type": "visual",
+    "hideDialog": true
+  },
+  {
+    "id": "part4-jp-impatient-entry",
+    "type": "visual",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "camera": "center",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-desconfiado.png",
+      "position": "left",
+      "effect": "phone-side"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-jp-impatient-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ele ainda nem visualizou a outra mensagem.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-desconfiado.png",
+      "position": "left",
+      "effect": "phone-side"
+    }
+  },
+  {
+    "id": "part4-jp-impatient-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Que cuzão.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "part4-phone-on-table",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearCharacters": true,
+    "hideDialog": true
+  },
+  {
+    "id": "part4-jp-impatient-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Deve ter parado de jogar.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "part4-card-last-look",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearCharacters": true,
+    "objects": [
+      {
+        "id": "part4-cnc-card",
+        "src": "assets/objects/command-and-conquer-carta.png",
+        "x": 39,
+        "y": 18,
+        "w": 20,
+        "effect": "card-featured"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "part4-jp-food-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Vou pegar um rango.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "part4-deckbox-safe-01",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "part4-deckbox-safe-pause",
+    "type": "visual",
+    "hideDialog": true
+  },
+  {
+    "id": "part4-jp-safe-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Melhor.",
+    "bg": "assets/bg/quarto-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "part4-deckbox-final-focus",
+    "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "part4-scene07-transition-black",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
   }
+
 ];

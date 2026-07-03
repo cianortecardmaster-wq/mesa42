@@ -16,7 +16,12 @@ const STORY_PARTS = {
   "3": {
     title: "Parte 3 — Armory no Bazar",
     startId: "scene-07-room-night-entry",
-    endId: null
+    endId: "scene-21-front-alone-11"
+  },
+  "4": {
+    title: "Parte 4 — A carta vira posse",
+    startId: "part4-title",
+    endId: "part4-scene07-transition-black"
   }
 };
 
