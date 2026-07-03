@@ -21,7 +21,7 @@ const STORY_PARTS = {
   "4": {
     title: "Parte 4 — A carta vira posse",
     startId: "part4-title",
-    endId: "part4-scene07-transition-black"
+    endId: "part4-home-training-02"
   }
 };
 

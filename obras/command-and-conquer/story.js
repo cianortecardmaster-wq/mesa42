@@ -10030,7 +10030,7 @@ const story = [
     "clearCharacters": true,
     "clearObjects": true,
     "clearEffects": true,
-    "screenText": "CENA 07\nQUARTO DO JP\nMAIS UMA VITÓRIA",
+    "screenText": "CENA 07\nQUARTO DO JP",
     "screenTextClass": "screen-text-stack",
     "hideDialog": true
   },
@@ -10053,7 +10053,7 @@ const story = [
     "id": "part4-room-win-01",
     "type": "dialogue",
     "speaker": "JP",
-    "text": "Invicto novamente.",
+    "text": "invcto novamente",
     "bg": "assets/bg/quarto-jp-noite.png",
     "character": {
       "id": "jp",
@@ -10065,7 +10065,7 @@ const story = [
     "id": "part4-room-win-02",
     "type": "dialogue",
     "speaker": "JP",
-    "text": "Nada mal.",
+    "text": "Nada mal",
     "bg": "assets/bg/quarto-jp-noite.png",
     "character": {
       "id": "jp",
@@ -10074,19 +10074,13 @@ const story = [
     }
   },
   {
-    "id": "part4-deckbox-entry",
+    "id": "part4-card-check-entry",
     "type": "visual",
     "bg": "assets/bg/mesa-deckbox-noite.png",
     "camera": "center",
     "clearCharacters": true,
     "clearObjects": true,
     "clearEffects": true,
-    "hideDialog": true
-  },
-  {
-    "id": "part4-card-check-entry",
-    "type": "visual",
-    "bg": "assets/bg/mesa-deckbox-noite.png",
     "objects": [
       {
         "id": "part4-cnc-card",
@@ -10103,7 +10097,7 @@ const story = [
     "id": "part4-card-01",
     "type": "dialogue",
     "speaker": "JP",
-    "text": "Essa carta é sensacional.",
+    "text": "essa carta é sensacional",
     "bg": "assets/bg/mesa-deckbox-noite.png"
   },
   {
@@ -10127,26 +10121,30 @@ const story = [
     "id": "part4-card-02",
     "type": "dialogue",
     "speaker": "JP",
-    "text": "É linda.",
+    "text": "é linda",
     "bg": "assets/bg/mesa-deckbox-noite.png"
   },
   {
     "id": "part4-card-pause-01",
     "type": "visual",
+    "bg": "assets/bg/mesa-deckbox-noite.png",
+    "objects": [
+      {
+        "id": "part4-cnc-card",
+        "src": "assets/objects/command-and-conquer-carta.png",
+        "x": 39,
+        "y": 18,
+        "w": 20,
+        "effect": "card-featured"
+      }
+    ],
     "hideDialog": true
   },
   {
     "id": "part4-card-03",
     "type": "dialogue",
     "speaker": "JP",
-    "text": "O único problema é que só tem um sleeve protegendo ela.",
-    "bg": "assets/bg/mesa-deckbox-noite.png"
-  },
-  {
-    "id": "part4-card-04",
-    "type": "dialogue",
-    "speaker": "JP",
-    "text": "Isso é quase uma irresponsabilidade.",
+    "text": "O unico problema é que só tem um sleeve protegendo ela",
     "bg": "assets/bg/mesa-deckbox-noite.png"
   },
   {
@@ -10171,7 +10169,7 @@ const story = [
       "messages": [
         {
           "from": "Robertinho",
-          "text": "Você só levou essa porque não caiu contra mim.",
+          "text": "voce só levou essa por que não caiu contra mim",
           "side": "other"
         }
       ]
@@ -10183,6 +10181,7 @@ const story = [
     "bg": "assets/bg/quarto-jp-noite.png",
     "clearObjects": true,
     "clearCharacters": true,
+    "clearEffects": true,
     "character": {
       "id": "jp",
       "src": "assets/characters/jp-celular-satisfeito.png",
@@ -10195,23 +10194,23 @@ const story = [
     "id": "part4-robert-phone-02",
     "type": "visual",
     "bg": "assets/bg/mesa-deckbox-noite.png",
-    "clearCharacters": true,
     "hideDialog": true,
     "phone": {
       "src": "assets/objects/whatsapp-cel.png",
       "messages": [
         {
           "from": "Robertinho",
-          "text": "Você só levou essa porque não caiu contra mim.",
+          "text": "voce só levou essa por que não caiu contra mim",
           "side": "other"
         },
         {
           "from": "JP",
-          "text": "Larga essa. Você perdeu pra Camila.",
+          "text": "larga essa, voce perdeu para Camila",
           "side": "me"
         }
       ]
-    }
+    },
+    "clearCharacters": true
   },
   {
     "id": "part4-robert-phone-03",
@@ -10223,22 +10222,17 @@ const story = [
       "messages": [
         {
           "from": "Robertinho",
-          "text": "Você só levou essa porque não caiu contra mim.",
+          "text": "voce só levou essa por que não caiu contra mim",
           "side": "other"
         },
         {
           "from": "JP",
-          "text": "Larga essa. Você perdeu pra Camila.",
+          "text": "larga essa, voce perdeu para Camila",
           "side": "me"
         },
         {
           "from": "Robertinho",
-          "text": "Ela teve sorte.",
-          "side": "other"
-        },
-        {
-          "from": "Robertinho",
-          "text": "A mão dela não brickou.",
+          "text": "ela teve sorte, a mão dela não bricou",
           "side": "other"
         }
       ]
@@ -10253,28 +10247,18 @@ const story = [
       "src": "assets/objects/whatsapp-cel.png",
       "messages": [
         {
-          "from": "Robertinho",
-          "text": "Você só levou essa porque não caiu contra mim.",
-          "side": "other"
-        },
-        {
           "from": "JP",
-          "text": "Larga essa. Você perdeu pra Camila.",
+          "text": "larga essa, voce perdeu para Camila",
           "side": "me"
         },
         {
           "from": "Robertinho",
-          "text": "Ela teve sorte.",
-          "side": "other"
-        },
-        {
-          "from": "Robertinho",
-          "text": "A mão dela não brickou.",
+          "text": "ela teve sorte, a mão dela não bricou",
           "side": "other"
         },
         {
           "from": "JP",
-          "text": "A minha também não brickaria. rsrs",
+          "text": "a minha também não bricaria, rsrs",
           "side": "me"
         }
       ]
@@ -10289,72 +10273,39 @@ const story = [
       "src": "assets/objects/whatsapp-cel.png",
       "messages": [
         {
-          "from": "JP",
-          "text": "Larga essa. Você perdeu pra Camila.",
-          "side": "me"
-        },
-        {
           "from": "Robertinho",
-          "text": "Ela teve sorte.",
-          "side": "other"
-        },
-        {
-          "from": "Robertinho",
-          "text": "A mão dela não brickou.",
+          "text": "ela teve sorte, a mão dela não bricou",
           "side": "other"
         },
         {
           "from": "JP",
-          "text": "A minha também não brickaria. rsrs",
+          "text": "a minha também não bricaria, rsrs",
           "side": "me"
         },
         {
           "from": "Robertinho",
-          "text": "Coloca mais duas dessas aí no deck e bora jogar quarta.",
+          "text": "coloca mais 2 dessas ai no deck e bora jogar quarta",
           "side": "other"
         }
       ]
     }
   },
   {
-    "id": "part4-look-card-again",
-    "type": "visual",
-    "bg": "assets/bg/mesa-deckbox-noite.png",
-    "clearEffects": true,
-    "objects": [
-      {
-        "id": "part4-cnc-card",
-        "src": "assets/objects/command-and-conquer-carta.png",
-        "x": 39,
-        "y": 18,
-        "w": 20,
-        "effect": "card-featured"
-      }
-    ],
-    "hideDialog": true
-  },
-  {
     "id": "part4-robert-phone-06",
     "type": "visual",
     "bg": "assets/bg/mesa-deckbox-noite.png",
-    "clearObjects": true,
     "hideDialog": true,
     "phone": {
       "src": "assets/objects/whatsapp-cel.png",
       "messages": [
         {
           "from": "Robertinho",
-          "text": "Coloca mais duas dessas aí no deck e bora jogar quarta.",
+          "text": "coloca mais 2 dessas ai no deck e bora jogar quarta",
           "side": "other"
         },
         {
           "from": "JP",
-          "text": "Até quarta chegam as outras.",
-          "side": "me"
-        },
-        {
-          "from": "JP",
-          "text": "Tô pensando em pegar três normais e deixar essa guardada.",
+          "text": "até quarta chega as outras, to pensando em pegar 3 para deixar essa guardada",
           "side": "me"
         }
       ]
@@ -10370,32 +10321,22 @@ const story = [
       "messages": [
         {
           "from": "Robertinho",
-          "text": "Coloca mais duas dessas aí no deck e bora jogar quarta.",
+          "text": "coloca mais 2 dessas ai no deck e bora jogar quarta",
           "side": "other"
         },
         {
           "from": "JP",
-          "text": "Até quarta chegam as outras.",
-          "side": "me"
-        },
-        {
-          "from": "JP",
-          "text": "Tô pensando em pegar três normais e deixar essa guardada.",
+          "text": "até quarta chega as outras, to pensando em pegar 3 para deixar essa guardada",
           "side": "me"
         },
         {
           "from": "Robertinho",
-          "text": "É uma boa.",
-          "side": "other"
-        },
-        {
-          "from": "Robertinho",
-          "text": "Acho que deve ter um mercado legal de missprint.",
+          "text": "é uma boa, acho que deve ter um mercado legal de missprint",
           "side": "other"
         },
         {
           "from": "JP",
-          "text": "Vou averiguar.",
+          "text": "vou averiguar",
           "side": "me"
         }
       ]
@@ -10421,55 +10362,13 @@ const story = [
     "id": "part4-jp-thinks-marcos-01",
     "type": "thought",
     "speaker": "JP",
-    "text": "Mercado de missprint...",
+    "text": "vou falar com o antigo dono",
     "bg": "assets/bg/quarto-jp-noite.png",
     "character": {
       "id": "jp",
       "src": "assets/characters/jp-celular-desconfiado.png",
       "position": "left",
       "effect": "phone-side"
-    }
-  },
-  {
-    "id": "part4-marcos-card-look",
-    "type": "visual",
-    "bg": "assets/bg/mesa-deckbox-noite.png",
-    "clearCharacters": true,
-    "objects": [
-      {
-        "id": "part4-cnc-card",
-        "src": "assets/objects/command-and-conquer-carta.png",
-        "x": 39,
-        "y": 18,
-        "w": 20,
-        "effect": "card-featured"
-      }
-    ],
-    "hideDialog": true
-  },
-  {
-    "id": "part4-jp-thinks-marcos-02",
-    "type": "thought",
-    "speaker": "JP",
-    "text": "O Marcos devia saber alguma coisa.",
-    "bg": "assets/bg/mesa-deckbox-noite.png"
-  },
-  {
-    "id": "part4-marcos-phone-entry",
-    "type": "visual",
-    "bg": "assets/bg/mesa-deckbox-noite.png",
-    "clearObjects": true,
-    "clearEffects": true,
-    "hideDialog": true,
-    "phone": {
-      "src": "assets/objects/whatsapp-cel.png",
-      "messages": [
-        {
-          "from": "JP",
-          "text": "Valeu mesmo pela carta. Salvou meu deck.",
-          "side": "me"
-        }
-      ]
     }
   },
   {
@@ -10482,16 +10381,14 @@ const story = [
       "messages": [
         {
           "from": "JP",
-          "text": "Valeu mesmo pela carta. Salvou meu deck.",
-          "side": "me"
-        },
-        {
-          "from": "JP",
-          "text": "Tudo bem?",
+          "text": "tudo bem?",
           "side": "me"
         }
       ]
-    }
+    },
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true
   },
   {
     "id": "part4-marcos-phone-typing-02",
@@ -10503,57 +10400,16 @@ const story = [
       "messages": [
         {
           "from": "JP",
-          "text": "Valeu mesmo pela carta. Salvou meu deck.",
+          "text": "tudo bem?",
           "side": "me"
         },
         {
           "from": "JP",
-          "text": "Tudo bem?",
-          "side": "me"
-        },
-        {
-          "from": "JP",
-          "text": "Cara, você tem mais missprint?",
+          "text": "Cara voce tem mais missprint? sabe se tem mais colecionadores?",
           "side": "me"
         }
       ]
     }
-  },
-  {
-    "id": "part4-marcos-phone-typing-03",
-    "type": "visual",
-    "bg": "assets/bg/mesa-deckbox-noite.png",
-    "hideDialog": true,
-    "phone": {
-      "src": "assets/objects/whatsapp-cel.png",
-      "messages": [
-        {
-          "from": "JP",
-          "text": "Valeu mesmo pela carta. Salvou meu deck.",
-          "side": "me"
-        },
-        {
-          "from": "JP",
-          "text": "Tudo bem?",
-          "side": "me"
-        },
-        {
-          "from": "JP",
-          "text": "Cara, você tem mais missprint?",
-          "side": "me"
-        },
-        {
-          "from": "JP",
-          "text": "Sabe se tem mais colecionadores?",
-          "side": "me"
-        }
-      ]
-    }
-  },
-  {
-    "id": "part4-marcos-wait",
-    "type": "visual",
-    "hideDialog": true
   },
   {
     "id": "part4-jp-impatient-entry",
@@ -10575,7 +10431,7 @@ const story = [
     "id": "part4-jp-impatient-01",
     "type": "dialogue",
     "speaker": "JP",
-    "text": "Ele ainda nem visualizou a outra mensagem.",
+    "text": "ele ainda nem visulizaou a outra msg que cuzão",
     "bg": "assets/bg/quarto-jp-noite.png",
     "character": {
       "id": "jp",
@@ -10588,95 +10444,25 @@ const story = [
     "id": "part4-jp-impatient-02",
     "type": "dialogue",
     "speaker": "JP",
-    "text": "Que cuzão.",
+    "text": "deve ter parado de jogar",
     "bg": "assets/bg/quarto-jp-noite.png",
     "character": {
       "id": "jp",
       "src": "assets/characters/jp-pensativo.png",
       "position": "left"
     }
-  },
-  {
-    "id": "part4-phone-on-table",
-    "type": "visual",
-    "bg": "assets/bg/mesa-deckbox-noite.png",
-    "clearCharacters": true,
-    "hideDialog": true
-  },
-  {
-    "id": "part4-jp-impatient-03",
-    "type": "dialogue",
-    "speaker": "JP",
-    "text": "Deve ter parado de jogar.",
-    "bg": "assets/bg/quarto-jp-noite.png",
-    "character": {
-      "id": "jp",
-      "src": "assets/characters/jp-pensativo.png",
-      "position": "left"
-    }
-  },
-  {
-    "id": "part4-card-last-look",
-    "type": "visual",
-    "bg": "assets/bg/mesa-deckbox-noite.png",
-    "clearCharacters": true,
-    "objects": [
-      {
-        "id": "part4-cnc-card",
-        "src": "assets/objects/command-and-conquer-carta.png",
-        "x": 39,
-        "y": 18,
-        "w": 20,
-        "effect": "card-featured"
-      }
-    ],
-    "hideDialog": true
   },
   {
     "id": "part4-jp-food-01",
     "type": "dialogue",
     "speaker": "JP",
-    "text": "Vou pegar um rango.",
+    "text": "vou pegar um rango",
     "bg": "assets/bg/quarto-jp-noite.png",
     "character": {
       "id": "jp",
       "src": "assets/characters/jp-normal.png",
       "position": "left"
     }
-  },
-  {
-    "id": "part4-deckbox-safe-01",
-    "type": "visual",
-    "bg": "assets/bg/mesa-deckbox-noite.png",
-    "clearCharacters": true,
-    "clearObjects": true,
-    "hideDialog": true
-  },
-  {
-    "id": "part4-deckbox-safe-pause",
-    "type": "visual",
-    "hideDialog": true
-  },
-  {
-    "id": "part4-jp-safe-01",
-    "type": "dialogue",
-    "speaker": "JP",
-    "text": "Melhor.",
-    "bg": "assets/bg/quarto-jp-noite.png",
-    "character": {
-      "id": "jp",
-      "src": "assets/characters/jp-normal.png",
-      "position": "left"
-    }
-  },
-  {
-    "id": "part4-deckbox-final-focus",
-    "type": "visual",
-    "bg": "assets/bg/mesa-deckbox-noite.png",
-    "clearCharacters": true,
-    "clearObjects": true,
-    "clearEffects": true,
-    "hideDialog": true
   },
   {
     "id": "part4-scene07-transition-black",
@@ -10686,6 +10472,1384 @@ const story = [
     "clearObjects": true,
     "clearEffects": true,
     "hideDialog": true
+  },
+  {
+    "id": "part4-scene08-title",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "screenText": "CENA 08\nCOZINHA DO JP",
+    "screenTextClass": "screen-text-stack",
+    "hideDialog": true
+  },
+  {
+    "id": "part4-kitchen-night-entry",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "camera": "center",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "kitchen-jp"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-kitchen-phone-vibrate",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "clearEffects": true,
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-animado.png",
+      "position": "left",
+      "effect": "phone-side phone-glow"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-amanda-notification-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Amanda, o que sera que ela quer?",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-animado.png",
+      "position": "left",
+      "effect": "phone-side phone-glow"
+    }
+  },
+  {
+    "id": "part4-amanda-phone-01",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Amanda",
+          "text": "Oi JP, tudo bem?",
+          "side": "other"
+        }
+      ]
+    },
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true
+  },
+  {
+    "id": "part4-amanda-phone-02",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Amanda",
+          "text": "Oi JP, tudo bem?",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "oi amanha, tudo sim",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Ta precisando de alguma coisa",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-amanda-phone-03",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "JP",
+          "text": "oi amanha, tudo sim",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Ta precisando de alguma coisa",
+          "side": "me"
+        },
+        {
+          "from": "Amanda",
+          "text": "preciso de ajuda para jogar",
+          "side": "other"
+        },
+        {
+          "from": "Amanda",
+          "text": "to penando com a Puffin",
+          "side": "other"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-jp-thinks-amanda-entry",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "camera": "center",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-animado.png",
+      "position": "left",
+      "effect": "phone-side phone-glow"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-jp-thinks-amanda-01",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "não seja mané, não seja mané, ela quer algo a mais",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-animado.png",
+      "position": "left",
+      "effect": "phone-side phone-glow"
+    }
+  },
+  {
+    "id": "part4-jp-thinks-amanda-02",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "a amiga dela é especialista em Mechanologist e ela ta falando com voce",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-animado.png",
+      "position": "left",
+      "effect": "phone-side phone-glow"
+    }
+  },
+  {
+    "id": "part4-amanda-phone-04",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Amanda",
+          "text": "a Cami não sabe explicar direito",
+          "side": "other"
+        },
+        {
+          "from": "Amanda",
+          "text": "a Puffin não roda como a Dash",
+          "side": "other"
+        },
+        {
+          "from": "Amanda",
+          "text": "Sabe, eu acho que preciso blocar",
+          "side": "other"
+        }
+      ]
+    },
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true
+  },
+  {
+    "id": "part4-jp-puff-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "puff, é, não viaja",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left"
+    },
+    "clearEffects": true
+  },
+  {
+    "id": "part4-amanda-phone-05",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "JP",
+          "text": "claro que posso te ajudar sim",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "Quer treinar no Talishar?",
+          "side": "me"
+        }
+      ]
+    },
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true
+  },
+  {
+    "id": "part4-amanda-phone-06",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "JP",
+          "text": "Quer treinar no Talishar?",
+          "side": "me"
+        },
+        {
+          "from": "Amanda",
+          "text": "ah o talishar é meio estranho, não sei se é a melhor forma de aprender",
+          "side": "other"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-amanda-phone-07",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Amanda",
+          "text": "ah o talishar é meio estranho, não sei se é a melhor forma de aprender",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "agente pode jogar aqui em casa entao",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "tipo",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-jp-burro-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "seu burro",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-desconfiado.png",
+      "position": "left",
+      "effect": "phone-side"
+    },
+    "clearEffects": true
+  },
+  {
+    "id": "part4-amanda-phone-08",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "JP",
+          "text": "tipo, tem mesa aqui na cozinha e sexta anoite eu iria ver um filme, mas podemos jogar e treinar",
+          "side": "me"
+        },
+        {
+          "from": "JP",
+          "text": "vai servir de treino para mim tbm",
+          "side": "me"
+        }
+      ]
+    },
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true
+  },
+  {
+    "id": "part4-jp-merda-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "ai cara que merda, quer merda, bosta,",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-desconfiado.png",
+      "position": "left",
+      "effect": "phone-side"
+    },
+    "clearEffects": true
+  },
+  {
+    "id": "part4-amanda-phone-09",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Amanda",
+          "text": "pode ser",
+          "side": "other"
+        }
+      ]
+    },
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true
+  },
+  {
+    "id": "part4-jp-recompose-entry",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-animado.png",
+      "position": "left",
+      "effect": "phone-side phone-glow"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-amanda-phone-10",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "JP",
+          "text": "então beleza sexta feira, sabe onde moro?",
+          "side": "me"
+        }
+      ]
+    },
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true
+  },
+  {
+    "id": "part4-jp-sabe-casa-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "claro que sabe ela veio com a camila e o rafael me buscar no dia da festa",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-celular-desconfiado.png",
+      "position": "left",
+      "effect": "phone-side"
+    },
+    "clearEffects": true
+  },
+  {
+    "id": "part4-amanda-phone-11",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Amanda",
+          "text": "sei sim",
+          "side": "other"
+        }
+      ]
+    },
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true
+  },
+  {
+    "id": "part4-amanda-phone-12",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "hideDialog": true,
+    "phone": {
+      "src": "assets/objects/whatsapp-cel.png",
+      "messages": [
+        {
+          "from": "Amanda",
+          "text": "sei sim",
+          "side": "other"
+        },
+        {
+          "from": "JP",
+          "text": "então fica combinado",
+          "side": "me"
+        }
+      ]
+    }
+  },
+  {
+    "id": "part4-kitchen-look-around",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "camera": "center",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-clean-house-01",
+    "type": "thought",
+    "speaker": "JP",
+    "text": "preciso urgentemente de uma diarista eu com certeza não estou vendo a sujeira que existe aqui e ela vai ver",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left"
+    }
+  },
+  {
+    "id": "part4-scene08-transition-black",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "part4-scene09-time",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "screenText": "Sexta-feira 19:00",
+    "screenTextClass": "screen-text-stack",
+    "hideDialog": true
+  },
+  {
+    "id": "part4-store-entry",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "camera": "center",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-normal.png",
+        "position": "left",
+        "effect": "store-jp"
+      },
+      {
+        "id": "lucas",
+        "src": "assets/characters/lucas.png",
+        "position": "right",
+        "effect": "store-lucas"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "part4-store-lucas-01",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "e ai JP vai jogar Magic também",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
+  },
+  {
+    "id": "part4-store-jp-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "não não, só vim pegar o protetor que voce falou que chegou",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "part4-store-lucas-02",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "aaah sim, chegou mesmo, deixa eu ver onde o Hermes deixou",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
+  },
+  {
+    "id": "part4-store-jp-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Beleza, e ai a proxima coleção parece que vai ser legal",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "part4-store-lucas-03",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "ah cara, ta todo mundo animado, mas sabe como são, os cara atrazam tudo",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
+  },
+  {
+    "id": "part4-store-jp-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "é foda",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "part4-store-camila-arrives",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-pensativo.png",
+        "position": "left",
+        "effect": "store-jp"
+      },
+      {
+        "id": "lucas",
+        "src": "assets/characters/lucas.png",
+        "position": "right",
+        "effect": "store-lucas"
+      },
+      {
+        "id": "camila",
+        "src": "assets/characters/camila.png",
+        "position": "center",
+        "effect": "store-camila"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "part4-store-camila-01",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "e ai Malandrão, até que enfim criou coragem",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-jp-red",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left",
+      "effect": "store-jp"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-store-jp-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "como assim?",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "part4-store-camila-02",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "ah fiquei sabendo que uma gatinha piratinha vai na tua casa hoje",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-jp-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "sim, sim vamos jogar",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "part4-store-camila-03",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "sim, uma pirata e uma ninja, é um amor lindo",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-jp-06",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "nem vem, ela só quer aprener a jogar, por que voce não sabe ensinar",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "part4-store-camila-04",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "EU, EU não sei explicar, sério? ou voce que ta sendo bobo?",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-jp-07",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Não me pilha",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "part4-store-camila-05",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "não seja lento, não é sempre que uma gatinha cai do ceu na frente de um feiozinho magrela igual a voce",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-jp-08",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Valeu pelo incentivo",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "part4-store-camila-06",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "só to avisando",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-rafael-arrives",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-pensativo.png",
+        "position": "left",
+        "effect": "store-jp"
+      },
+      {
+        "id": "camila",
+        "src": "assets/characters/camila.png",
+        "position": "center",
+        "effect": "store-camila"
+      },
+      {
+        "id": "rafael",
+        "src": "assets/characters/rafael-falando.png",
+        "position": "right",
+        "effect": "store-rafael"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "part4-store-rafael-01",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "e ai JP ja pegou a japa?",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "part4-store-camila-07",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Olha como voce fala da minha amiga",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-rafael-02",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "desculpa gatinha, só fiz uma pergunta",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "part4-store-camila-08",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "voce falou como se ela fosse uma raparigua qualquer",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-camila-09",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "ela é uma moça de classe",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-rafael-03",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "ah sim, ela é cheia de frescura, deve combinar com vc JP",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "part4-store-camila-10",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Olha não é por que vc é da geração que tinha que girar os numeros para ligar para alguem, que todos tem que ser bruto igual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-rafael-04",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "é mas voce gosta do bruto aqui",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "part4-store-jp-09",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "galera, informação demais, to indo nessa!",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "part4-store-jp-leaves",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "characters": [
+      {
+        "id": "camila",
+        "src": "assets/characters/camila.png",
+        "position": "center",
+        "effect": "store-camila"
+      },
+      {
+        "id": "rafael",
+        "src": "assets/characters/rafael-falando.png",
+        "position": "right",
+        "effect": "store-rafael"
+      },
+      {
+        "id": "lucas",
+        "src": "assets/characters/lucas.png",
+        "position": "right",
+        "effect": "store-lucas"
+      }
+    ],
+    "clearCharacters": true,
+    "hideDialog": true
+  },
+  {
+    "id": "part4-store-camila-11",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "Não seja lento",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-rafael-05",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "Pega ela de geito",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "part4-store-lucas-04",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "Seu protetor",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
+  },
+  {
+    "id": "part4-store-jp-returns",
+    "type": "visual",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-pensativo.png",
+        "position": "left",
+        "effect": "store-jp"
+      },
+      {
+        "id": "camila",
+        "src": "assets/characters/camila.png",
+        "position": "center",
+        "effect": "store-camila"
+      },
+      {
+        "id": "rafael",
+        "src": "assets/characters/rafael-falando.png",
+        "position": "right",
+        "effect": "store-rafael"
+      },
+      {
+        "id": "lucas",
+        "src": "assets/characters/lucas.png",
+        "position": "right",
+        "effect": "store-lucas"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "part4-store-jp-10",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "Ah valeu tava esquecendo",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-pensativo.png",
+      "position": "left",
+      "effect": "store-jp"
+    }
+  },
+  {
+    "id": "part4-store-lucas-05",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "sem probelas",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
+  },
+  {
+    "id": "part4-store-rafael-06",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "não tinha te visto ai lucas",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "part4-store-camila-12",
+    "type": "dialogue",
+    "speaker": "Camila",
+    "text": "é também não vi, voce tava escutando tudo",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "camila",
+      "src": "assets/characters/camila.png",
+      "position": "center",
+      "effect": "store-camila"
+    }
+  },
+  {
+    "id": "part4-store-lucas-06",
+    "type": "dialogue",
+    "speaker": "Lucas",
+    "text": "Não só as besteirinhas que falaram quando ele saiu",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "lucas",
+      "src": "assets/characters/lucas.png",
+      "position": "right",
+      "effect": "store-lucas"
+    }
+  },
+  {
+    "id": "part4-store-rafael-07",
+    "type": "dialogue",
+    "speaker": "Rafael",
+    "text": "cala boca",
+    "bg": "assets/bg/loja-interior-balcao.png",
+    "character": {
+      "id": "rafael",
+      "src": "assets/characters/rafael-falando.png",
+      "position": "right",
+      "effect": "store-rafael"
+    }
+  },
+  {
+    "id": "part4-scene09-transition-black",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "hideDialog": true
+  },
+  {
+    "id": "part4-scene10-title",
+    "type": "visual",
+    "bg": "assets/bg/preto.webp",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "screenText": "CENA 10\nCASA DO JP",
+    "screenTextClass": "screen-text-stack",
+    "hideDialog": true
+  },
+  {
+    "id": "part4-home-entry",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "camera": "center",
+    "clearCharacters": true,
+    "clearObjects": true,
+    "clearEffects": true,
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-normal.png",
+      "position": "left",
+      "effect": "kitchen-jp"
+    },
+    "hideDialog": true
+  },
+  {
+    "id": "part4-home-interfone-01",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "OI JP, to aqui an frente",
+    "bg": "assets/bg/cozinha-jp-noite.png"
+  },
+  {
+    "id": "part4-home-interfone-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "pode entrar",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "kitchen-jp-talk"
+    }
+  },
+  {
+    "id": "part4-home-interfone-03",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "er eu falei to aqui na frente, era meio obvio",
+    "bg": "assets/bg/cozinha-jp-noite.png"
+  },
+  {
+    "id": "part4-home-interfone-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "é comum, agente sempre faz esse tipo de coisa",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "kitchen-jp-talk"
+    }
+  },
+  {
+    "id": "part4-home-amanda-entry",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-normal.png",
+        "position": "left",
+        "effect": "kitchen-jp"
+      },
+      {
+        "id": "amanda",
+        "src": "assets/characters/amanda.png",
+        "position": "right",
+        "effect": "home-amanda"
+      }
+    ],
+    "clearCharacters": true,
+    "hideDialog": true
+  },
+  {
+    "id": "part4-home-amanda-01",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "sim, legal sua casa",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "right",
+      "effect": "home-amanda"
+    }
+  },
+  {
+    "id": "part4-home-jp-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "ah sim, é de boas",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "kitchen-jp-talk"
+    }
+  },
+  {
+    "id": "part4-home-amanda-02",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "bem organizada",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "right",
+      "effect": "home-amanda"
+    }
+  },
+  {
+    "id": "part4-home-jp-02",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "ah eu tento se não vira bagunça",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "kitchen-jp-talk"
+    }
+  },
+  {
+    "id": "part4-home-amanda-03",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "eu não consigo, dou bem desorganizada",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "right",
+      "effect": "home-amanda"
+    }
+  },
+  {
+    "id": "part4-home-jp-03",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "duvido",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "kitchen-jp-talk"
+    }
+  },
+  {
+    "id": "part4-home-amanda-04",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "nada, é cheio de coisas na sala, quando minha mãe me visita vive me enchendo",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "right",
+      "effect": "home-amanda"
+    }
+  },
+  {
+    "id": "part4-home-jp-04",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "mas isso toda mãe fala, a minha também fica me dando sermão",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "kitchen-jp-talk"
+    }
+  },
+  {
+    "id": "part4-home-amanda-05",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "duvido, voce é todo certinho",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "right",
+      "effect": "home-amanda"
+    }
+  },
+  {
+    "id": "part4-home-jp-05",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "que nada eu sou do crime, risos",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-rindo.png",
+      "position": "left",
+      "effect": "kitchen-jp-laugh"
+    }
+  },
+  {
+    "id": "part4-home-amanda-06",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "risos",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "right",
+      "effect": "home-amanda"
+    }
+  },
+  {
+    "id": "part4-home-training-entry",
+    "type": "visual",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "characters": [
+      {
+        "id": "jp",
+        "src": "assets/characters/jp-descontraido-falando.png",
+        "position": "left",
+        "effect": "kitchen-jp-talk"
+      },
+      {
+        "id": "amanda",
+        "src": "assets/characters/amanda-falando.png",
+        "position": "right",
+        "effect": "home-amanda"
+      }
+    ],
+    "hideDialog": true
+  },
+  {
+    "id": "part4-home-training-01",
+    "type": "dialogue",
+    "speaker": "JP",
+    "text": "bora jogar",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "jp",
+      "src": "assets/characters/jp-descontraido-falando.png",
+      "position": "left",
+      "effect": "kitchen-jp-talk"
+    }
+  },
+  {
+    "id": "part4-home-training-02",
+    "type": "dialogue",
+    "speaker": "Amanda",
+    "text": "vamos, jogar",
+    "bg": "assets/bg/cozinha-jp-noite.png",
+    "character": {
+      "id": "amanda",
+      "src": "assets/characters/amanda-falando.png",
+      "position": "right",
+      "effect": "home-amanda"
+    }
   }
 
 ];
