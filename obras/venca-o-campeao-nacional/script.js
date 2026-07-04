@@ -115,7 +115,7 @@ const CARDS = {
     id: 'cloud', name: 'Cloud Cover', image: A + 'cloud-cover.webp',
     type: 'Instant', color: 'red', cost: 0, pitch: 1, attack: '—', defense: '—',
     text: ['A próxima vez que você receberia dano neste turno, previna 3 daquele dano.'],
-    role: 'Carta descartada/colocada no graveyard durante a linha do Oscilio para habilitar a pressão de Echoflash.'
+    role: 'Carta descartada e colocada no graveyard durante a linha do Oscilio para habilitar a pressão de Echoflash.'
   },
   comet: {
     id: 'comet', name: 'Comet Collision', image: A + 'comet-collision.webp',
@@ -696,10 +696,10 @@ function renderOpponentStep() {
   }
   if (step === 4) {
     reveal('cloud');
-    addToZone(state.opponentArena, 'cloud');
+    addToZone(state.opponentGraveyard, 'cloud');
     state.opponentHand = 1;
     state.volzarTapped = true;
-    el.message.innerHTML = `<p>Depois de <strong>Echoflash</strong>, aparece <strong>Cloud Cover</strong>. Em seguida, <strong>Volzar, Meteor Storm</strong> gira 90 graus para indicar a ativação de <strong>Amp 1</strong>.</p><p>Oscilio termina a jogada com apenas <strong>1 carta na mão</strong>, ainda não revelada. Agora você precisa pagar <strong>2 recursos</strong> para sobreviver ao dano arcano final.</p>`;
+    el.message.innerHTML = `<p>Depois de <strong>Echoflash</strong>, <strong>Cloud Cover</strong> é descartada e colocada no <strong>Graveyard</strong> do Oscilio.</p><p>Em seguida, <strong>Volzar, Meteor Storm</strong> gira 90 graus para indicar a ativação de <strong>Amp 1</strong>.</p><p>Oscilio termina a jogada com apenas <strong>1 carta na mão</strong>, ainda não revelada. Agora você precisa pagar <strong>2 recursos</strong> para sobreviver ao dano arcano final.</p>`;
     el.actions.innerHTML = `<button class="primary-btn" data-final-damage>Responder ao dano final</button>`;
   }
 
@@ -715,7 +715,7 @@ function nextOpponentStep() {
   state.pending.step += 1;
   if (state.pending.step === 1) addLog('Oscilio descarta Blink com Constella Intelligence e compra uma carta sem revelá-la.');
   if (state.pending.step === 2) addLog('Oscilio joga Astral Bridge. Second Strike é revelada e colocada no Graveyard do Oscilio.');
-  if (state.pending.step === 4) addLog('Oscilio joga Cloud Cover, ativa Volzar e termina com 1 carta oculta na mão.');
+  if (state.pending.step === 4) addLog('Cloud Cover é descartada no Graveyard do Oscilio, Volzar é ativada e Oscilio termina com 1 carta oculta na mão.');
   render();
 }
 
@@ -753,7 +753,7 @@ function finalDamagePrompt() {
   state.phase = 'preventPayment';
   state.pending = {
     kind: 'prevent',
-    label: 'Echoflash + Cloud Cover + Volzar',
+    label: 'Echoflash + descarte Cloud Cover + Volzar',
     amount: 2,
     after: 'finish',
     allowShelter: false,
