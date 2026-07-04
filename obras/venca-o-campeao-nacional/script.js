@@ -87,13 +87,13 @@ const CARDS = {
     id: 'blink', name: 'Blink', image: A + 'blink.webp',
     type: 'Instant', color: 'blue', cost: 0, pitch: 3, attack: '—', defense: '—',
     text: ['Ganhe 1 action point.'],
-    role: 'Oscilio descarta Blink para ativar Constella Intelligence e comprar Echoflash.'
+    role: 'Oscilio descarta Blink para ativar Constella Intelligence e comprar uma carta. A compra fica oculta até a carta ser jogada ou descartada.'
   },
   echoflash: {
     id: 'echoflash', name: 'Echoflash', image: A + 'echoflash.webp',
     type: 'Instant', color: 'yellow', cost: 0, pitch: 2, attack: '—', defense: '—',
     text: ['Cause 1 dano arcano ao herói alvo.', 'Quando isso é colocado no seu graveyard vindo de qualquer lugar, seu herói causa 1 dano arcano ao herói alvo.'],
-    role: 'A carta comprada pelo Oscilio. Junto de Cloud Cover e Volzar, cria a pressão final.'
+    role: 'A carta comprada pelo Oscilio. Ela só é revelada quando entra na sequência, junto de Cloud Cover e Volzar, criando a pressão final.'
   },
   astral: {
     id: 'astral', name: 'Astral Bridge', image: A + 'astral-bridge.webp',
@@ -140,9 +140,15 @@ const state = {
   played: [],
   discarded: [],
   revealed: ['gone'],
+  opponentGraveyard: [],
+  opponentArena: [],
+  playerGraveyard: [],
+  volzarTapped: false,
+  earlyShelter: false,
   currentAttack: null,
   pending: null,
   selectedPitch: new Set(),
+  appliedEvents: new Set(),
   log: []
 };
 
@@ -195,9 +201,15 @@ function resetGame() {
   state.played = [];
   state.discarded = [];
   state.revealed = ['gone'];
+  state.opponentGraveyard = [];
+  state.opponentArena = [];
+  state.playerGraveyard = [];
+  state.volzarTapped = false;
+  state.earlyShelter = false;
   state.currentAttack = null;
   state.pending = null;
   state.selectedPitch = new Set();
+  state.appliedEvents = new Set();
   state.log = ['Jogo reiniciado. Você está de volta ao início do turno.'];
   render();
 }
@@ -207,12 +219,12 @@ function addLog(text) {
 }
 
 function render() {
+  renderPhase();
   renderStatus();
   renderTable();
   renderRevealed();
   renderHand();
   renderLog();
-  renderPhase();
 }
 
 function renderStatus() {
@@ -233,9 +245,9 @@ function pill(label, value) {
 function renderTable() {
   const items = [
     tableCard('oscilio', 45.5, 14.5, 'Oscilio'),
-    tableCard('volzar', 33.6, 14.5, 'Volzar'),
+    tableCard('volzar', 33.6, 14.5, 'Volzar', state.volzarTapped ? 'tapped-card volzar-used' : ''),
     tableCard('gone', 6.2, 3.2, 'Banished'),
-    tableBack(73, 3.2), tableBack(78, 3.2), tableBack(83, 3.2), tableBack(88, 3.2),
+    ...opponentHandBacks(),
     tableCard('crown', 5.7, 59.5, 'Head'),
     tableCard('gloves', 18.1, 73.5, 'Arms'),
     tableCard('boots', 5.7, 86.5, 'Legs'),
@@ -245,8 +257,20 @@ function renderTable() {
     goldToken(53.2, 86.6, 2)
   ];
 
+  state.opponentGraveyard.forEach((id, index) => {
+    items.push(tableCard(id, 6.2 + index * 5.6, 31.8, 'Graveyard', 'graveyard-card opponent-graveyard-card'));
+  });
+
+  state.opponentArena.forEach((id, index) => {
+    items.push(tableCard(id, 38.6 + index * 10.8, 33.8, 'Arena', 'opponent-spell active-spell'));
+  });
+
+  state.playerGraveyard.forEach((id, index) => {
+    items.push(tableCard(id, 85.8 - index * 5.6, 59.5, 'Descartada', 'graveyard-card turned-card discarded-card'));
+  });
+
   if (state.currentAttack) {
-    items.push(tableCard(state.currentAttack.id, 45.2, 47.2, 'Combat Chain'));
+    items.push(tableCard(state.currentAttack.id, 45.2, 47.2, 'Combat Chain', 'player-attack-card'));
   }
 
   el.table.innerHTML = items.join('');
@@ -258,16 +282,22 @@ function renderTable() {
   });
 }
 
-function tableCard(id, left, top, label) {
+function opponentHandBacks() {
+  const positions = [73, 78, 83, 88];
+  return positions.slice(0, Math.min(state.opponentHand, positions.length)).map((left, index) => tableBack(left, 3.2, index + 1));
+}
+
+function tableCard(id, left, top, label, extraClass = '') {
   const card = CARDS[id];
-  return `<button class="table-card" style="left:${left}%;top:${top}%" data-card-id="${id}" title="${card.name}">
+  const className = ['table-card', extraClass].filter(Boolean).join(' ');
+  return `<button class="${className}" style="left:${left}%;top:${top}%" data-card-id="${id}" title="${card.name}">
     <img src="${card.image}" alt="${card.name}">
     <span class="card-label">${label}</span>
   </button>`;
 }
 
-function tableBack(left, top) {
-  return `<button class="table-card back-card" style="left:${left}%;top:${top}%" title="Carta da mão do Oscilio">
+function tableBack(left, top, n) {
+  return `<button class="table-card back-card" style="left:${left}%;top:${top}%" title="Carta ${n} da mão do Oscilio, virada para baixo">
     <img src="${A}card-back.png" alt="Carta virada para baixo">
     <span class="card-label">Mão</span>
   </button>`;
@@ -330,7 +360,7 @@ function renderPhase() {
 
   if (state.phase === 'planning') {
     el.title.textContent = 'Planejamento';
-    el.message.innerHTML = `<p>Seu oponente acabou de repor a mão e tem <strong>4 cartas</strong>. Você está com <strong>1 de vida</strong>. Clique nas cartas para reler e escolha sua primeira ação.</p>`;
+    el.message.innerHTML = `<p>Seu oponente acabou de repor a mão e tem <strong>4 cartas ocultas</strong>. Você está com <strong>1 de vida</strong>.</p><ol class="mentor-list"><li>Clique em uma carta para reler custo, ataque, defesa e texto traduzido.</li><li>Escolha uma linha que ataque o Oscilio, mas preserve recursos para Nullrune.</li><li>Lembre: carta comprada pelo Oscilio só será mostrada quando for jogada ou descartada.</li></ol>`;
     renderPlanningActions();
     return;
   }
@@ -361,8 +391,8 @@ function renderPhase() {
   }
 
   if (state.phase === 'win') {
-    el.title.textContent = 'Vitória';
-    el.message.innerHTML = `<p><strong>Você sobreviveu.</strong> A resposta do Oscilio não foi suficiente. Como seu ataque ainda está ameaçando dano e o Oscilio está a 1 de vida, você vence a final.</p>`;
+    el.title.textContent = 'Parabéns';
+    el.message.innerHTML = `<div class="victory-message"><h3>Você encontrou a linha da final.</h3><p>Esta é uma simulação de uma final real entre <strong>Átila Lima</strong> (<strong>Victor</strong>) e <strong>Michel Luis</strong> (<strong>Oscilio</strong>) no Nacional Brasileiro de Flesh and Blood, em <strong>28 de junho de 2026</strong>.</p><p>Na partida real, <strong>Michel foi campeão</strong> com essa mesma jogada.</p></div>`;
     el.actions.innerHTML = `<button class="primary-btn" data-reset>Jogar novamente</button>`;
     el.actions.querySelector('[data-reset]').addEventListener('click', resetGame);
     return;
@@ -562,9 +592,10 @@ function renderShelterInfo() {
   el.actions.querySelector('[data-use-shelter-now]').addEventListener('click', () => {
     state.hand = state.hand.filter(id => id !== 'shelter');
     state.discarded.push('shelter');
+    moveCardToPlayerGraveyard('shelter');
     state.pending = null;
     state.phase = 'planning';
-    addLog('Você descartou Shelter from the Storm cedo demais. Ela não ameaça dano, mas a prevenção ficará marcada para o primeiro ponto de dano do exercício.');
+    addLog('Você descartou Shelter from the Storm cedo demais. Ela aparece virada no graveyard e a prevenção ficará marcada para o primeiro ponto de dano do exercício.');
     state.earlyShelter = true;
     render();
   });
@@ -578,21 +609,56 @@ function renderOpponentStep() {
     el.message.innerHTML = `<p>Você declara o ataque. Oscilio precisa responder antes do dano resolver.</p>`;
     el.actions.innerHTML = `<button class="primary-btn" data-next-step>Continuar</button>`;
   }
+
   if (step === 1) {
-    reveal('blink');
-    reveal('echoflash');
-    el.message.innerHTML = `<p>Oscilio usa <strong>Constella Intelligence</strong>: descarta <strong>Blink</strong> e compra uma carta.</p><p>A carta comprada é <strong>Echoflash</strong>.</p>`;
+    applyOnce('oscilio-discard-blink', () => {
+      moveCardToOpponentGraveyard('blink');
+      reveal('blink');
+      addLog('Oscilio descarta Blink com Constella Intelligence e compra uma carta oculta. A mão dele continua com 4 cartas.');
+    });
+    el.message.innerHTML = `<p>Oscilio usa <strong>Constella Intelligence</strong>: descarta <strong>Blink</strong> e compra uma carta.</p><p>A carta comprada fica <strong>oculta</strong>. Ela não é revelada para você neste momento.</p>`;
     el.actions.innerHTML = `<button class="primary-btn" data-next-step>Continuar</button>`;
   }
+
   if (step === 2) {
-    reveal('astral');
-    reveal('second');
-    el.message.innerHTML = `<p>Oscilio joga <strong>Astral Bridge</strong>. O topo do deck é <strong>Second Strike</strong>, que não é instant e vai para a zona revelada/banida do exercício.</p><p>Como um instant entrou no graveyard neste turno, <strong>Starfall</strong> ameaça <strong>1 dano arcano</strong>.</p>`;
+    applyOnce('oscilio-plays-astral', () => {
+      moveCardToOpponentArena('astral');
+      reveal('astral');
+      reveal('second');
+      state.opponentHand = Math.max(0, state.opponentHand - 1);
+      addLog('Oscilio joga Astral Bridge. A carta aparece na arena e Second Strike é revelada pelo efeito.');
+    });
+    el.message.innerHTML = `<p>Oscilio joga <strong>Astral Bridge</strong>, que aparece na arena.</p><p>O topo do deck é <strong>Second Strike</strong>. Como não é instant, ela vai para a zona revelada/banida do exercício.</p><p>Como um instant entrou no graveyard neste turno, <strong>Starfall</strong> ameaça <strong>1 dano arcano</strong>.</p>`;
     el.actions.innerHTML = `<button class="primary-btn" data-first-damage>Responder ao dano arcano</button>`;
   }
+
   if (step === 3) {
-    reveal('cloud');
-    el.message.innerHTML = `<p>Você sobreviveu ao primeiro ponto. Oscilio continua.</p><p>Ele joga <strong>Echoflash</strong>, coloca <strong>Cloud Cover</strong> no graveyard e ativa <strong>Volzar, Meteor Storm</strong> para <strong>Amp 1</strong>.</p><p>Agora você precisa pagar <strong>2 recursos</strong> para sobreviver ao dano arcano final.</p>`;
+    applyOnce('oscilio-plays-echoflash', () => {
+      moveCardToOpponentArena('echoflash');
+      reveal('echoflash');
+      state.opponentHand = Math.max(0, state.opponentHand - 1);
+      addLog('Oscilio joga Echoflash. Agora a carta comprada anteriormente é revelada porque foi jogada.');
+    });
+    el.message.innerHTML = `<p>Você sobreviveu ao primeiro ponto de dano. Oscilio continua a sequência.</p><p>Ele joga <strong>Echoflash</strong>. Agora a carta aparece na arena, porque foi jogada.</p>`;
+    el.actions.innerHTML = `<button class="primary-btn" data-next-step>Continuar</button>`;
+  }
+
+  if (step === 4) {
+    applyOnce('oscilio-cloud-cover-graveyard', () => {
+      moveCardToOpponentGraveyard('cloud');
+      reveal('cloud');
+      addLog('Cloud Cover é colocado no graveyard do Oscilio durante a sequência de Echoflash.');
+    });
+    el.message.innerHTML = `<p>Depois de <strong>Echoflash</strong>, <strong>Cloud Cover</strong> é colocado no graveyard do Oscilio.</p><p>Isso mantém a linha de instants ativa e prepara a última pressão arcana.</p>`;
+    el.actions.innerHTML = `<button class="primary-btn" data-next-step>Continuar</button>`;
+  }
+
+  if (step === 5) {
+    applyOnce('oscilio-volzar-rotates', () => {
+      state.volzarTapped = true;
+      addLog('Volzar, Meteor Storm gira 90 graus para Amp 1.');
+    });
+    el.message.innerHTML = `<p><strong>Volzar, Meteor Storm</strong> gira 90 graus e é ativada para <strong>Amp 1</strong>.</p><p>Agora você precisa pagar <strong>2 recursos</strong> com Nullrune para sobreviver ao dano arcano final.</p>`;
     el.actions.innerHTML = `<button class="primary-btn" data-final-damage>Responder ao dano final</button>`;
   }
 
@@ -606,7 +672,6 @@ function renderOpponentStep() {
 
 function nextOpponentStep() {
   state.pending.step += 1;
-  if (state.pending.step === 1) addLog('Oscilio descarta Blink com Constella Intelligence e compra Echoflash.');
   render();
 }
 
@@ -614,9 +679,27 @@ function reveal(id) {
   if (!state.revealed.includes(id)) state.revealed.push(id);
 }
 
+function applyOnce(key, callback) {
+  if (state.appliedEvents.has(key)) return;
+  callback();
+  state.appliedEvents.add(key);
+}
+
+function moveCardToOpponentGraveyard(id) {
+  if (!state.opponentGraveyard.includes(id)) state.opponentGraveyard.push(id);
+}
+
+function moveCardToOpponentArena(id) {
+  if (!state.opponentArena.includes(id)) state.opponentArena.push(id);
+}
+
+function moveCardToPlayerGraveyard(id) {
+  if (!state.playerGraveyard.includes(id)) state.playerGraveyard.push(id);
+}
+
 function firstDamagePrompt() {
   if (state.earlyShelter) {
-    addLog('A prevenção de Shelter descartada cedo cobre o primeiro dano de Astral Bridge.');
+    addLog('A prevenção de Shelter descartada cobre o primeiro dano de Astral Bridge.');
     state.pending = { step: 3 };
     state.phase = 'opponent';
     render();
@@ -687,7 +770,8 @@ function useShelterForFirstDamage() {
   if (!state.hand.includes('shelter')) return;
   state.hand = state.hand.filter(id => id !== 'shelter');
   state.discarded.push('shelter');
-  addLog('Você descartou Shelter from the Storm e preveniu o primeiro dano de Astral Bridge.');
+  moveCardToPlayerGraveyard('shelter');
+  addLog('Você descartou Shelter from the Storm, colocou a carta virada no graveyard e preveniu o primeiro dano de Astral Bridge.');
   state.selectedPitch = new Set();
   state.pending = { step: 3 };
   state.phase = 'opponent';
