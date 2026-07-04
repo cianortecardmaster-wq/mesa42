@@ -85,7 +85,7 @@ const CARDS = {
     id: 'shelter', name: 'Shelter from the Storm', image: A + 'shelter-from-the-storm.webp',
     type: 'Generic Defense Reaction', color: 'red', cost: 0, pitch: 1, attack: '—', defense: 4,
     text: ['<em>Instant</em> — Descarte isso: As próximas 3 vezes que você receberia dano neste turno, previna 1 daquele dano.'],
-    role: 'Carta defensiva. No exercício, ela pode salvar o primeiro ponto de dano de Astral Bridge, mas a pressão final ainda exige 2 recursos.'
+    role: 'Carta defensiva. Pode ser descartada como Instant para prevenir dano recebido neste turno.'
   },
   visit: {
     id: 'visit', name: 'Visit Goldmane Estate', image: A + 'visit-goldmane-estate.webp',
@@ -646,9 +646,9 @@ function backToPlanning() {
 
 function renderShelterInfo() {
   el.title.textContent = 'Shelter from the Storm';
-  el.message.innerHTML = `<p><strong>Shelter</strong> não é ataque. Ela deve ser usada quando o dano arcano aparecer.</p><p>Se você descartar agora, a carta aparece na arena virada e depois fica no Graveyard do Victor.</p>`;
+  el.message.innerHTML = `<p><strong>Shelter from the Storm</strong> é uma carta defensiva.</p><p><em>Instant</em> — descarte esta carta: as próximas 3 vezes que você receberia dano neste turno, previna 1 daquele dano.</p><p>Depois de usada, ela é colocada no <strong>Graveyard</strong>.</p>`;
   el.actions.innerHTML = `
-    <button class="secondary-btn" data-keep-shelter>Guardar Shelter para a resposta do Oscilio</button>
+    <button class="secondary-btn" data-keep-shelter>Voltar ao planejamento</button>
     <button class="danger-btn" data-use-shelter-now>Descartar agora</button>
   `;
   el.actions.querySelector('[data-keep-shelter]').addEventListener('click', backToPlanning);
@@ -657,7 +657,7 @@ function renderShelterInfo() {
     addToZone(state.discarded, 'shelter');
     state.pending = null;
     state.phase = 'planning';
-    addLog('Você descartou Shelter from the Storm cedo demais. Ela aparece virada no Graveyard do Victor. A prevenção ficará marcada para o primeiro ponto de dano do exercício.');
+    addLog('Você descartou Shelter from the Storm. Ela aparece virada na arena e depois fica no Graveyard do Victor.');
     state.earlyShelter = true;
     render();
   });
