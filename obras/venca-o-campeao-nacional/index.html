@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vença o campeão nacional | Mesa 42</title>
+  <meta name="description" content="Mini game tático do Mesa 42: encontre a linha correta com Victor Goldmane para vencer o campeão nacional de Oscilio." />
+  <link rel="icon" type="image/png" href="../../assets/icon-mesa42.png" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="mesa42-back" href="../../index.html" aria-label="Voltar para Mesa 42">← Mesa 42</a>
+  <main id="app" class="app">
+    <section id="introScreen" class="intro-screen">
+      <div class="intro-card">
+        <p class="eyebrow">Mesa 42 apresenta</p>
+        <h1>Vença o campeão nacional</h1>
+        <p>
+          Você está disputando a final do Nacional Brasileiro de <strong>Flesh and Blood</strong>. Do outro lado da mesa está o campeão nacional.
+          A partida foi cortada para o momento decisivo: os dois jogadores estão com <strong>1 de vida</strong>.
+        </p>
+        <p>
+          Seu oponente joga de <strong>Oscilio, Constella Intelligence</strong>, usa <strong>Volzar, Meteor Storm</strong>,
+          está sem equipamentos, acabou de repor a mão e tem 4 cartas.
+        </p>
+        <p>
+          Você joga de <strong>Victor Goldmane, High and Mighty</strong>. Você tem <strong>Crown of Dominion</strong>,
+          <strong>Nullrune Gloves</strong>, <strong>Nullrune Boots</strong>, <strong>Miller's Grindstone</strong> e <strong>2 Gold</strong>.
+        </p>
+        <p>
+          Sua mão é: <strong>Boulder Drop</strong>, <strong>The Golden Son</strong>, <strong>Clash of Might</strong> e
+          <strong>Shelter from the Storm</strong>. Encontre a linha correta para sobreviver à resposta do Oscilio e vencer.
+        </p>
+        <button id="startBtn" class="primary-btn">Começar turno</button>
+      </div>
+    </section>
+
+    <section id="gameScreen" class="game-screen hidden">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Exercício de final de partida</p>
+          <h1>Vença o campeão nacional</h1>
+        </div>
+        <div id="statusBar" class="status-bar"></div>
+      </header>
+
+      <section class="layout">
+        <section class="left-panel">
+          <div class="arena-wrap">
+            <img class="arena-bg" src="assets/arena-de-batalha.png" alt="Arena de batalha Flesh and Blood" />
+            <div id="tableLayer" class="table-layer" aria-label="Cartas na mesa"></div>
+          </div>
+          <div class="revealed-panel">
+            <h2>Cartas reveladas / usadas pelo Oscilio</h2>
+            <div id="revealedCards" class="revealed-cards"></div>
+          </div>
+        </section>
+
+        <aside class="right-panel">
+          <div class="narrative-box">
+            <h2 id="phaseTitle">Planejamento</h2>
+            <div id="messageBox" class="message-box"></div>
+          </div>
+
+          <div id="actionBox" class="action-box"></div>
+
+          <div class="log-box">
+            <h2>Histórico</h2>
+            <ol id="logList"></ol>
+          </div>
+        </aside>
+      </section>
+
+      <section class="hand-section">
+        <div class="hand-header">
+          <h2>Sua mão</h2>
+          <p>Clique em uma carta para ler. Use os botões da caixa de decisão para agir.</p>
+        </div>
+        <div id="playerHand" class="player-hand"></div>
+      </section>
+    </section>
+  </main>
+
+  <div id="cardModal" class="modal hidden" role="dialog" aria-modal="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <article class="modal-card">
+      <button class="close-btn" data-close-modal aria-label="Fechar">×</button>
+      <div class="modal-grid">
+        <img id="modalImage" src="" alt="" />
+        <div class="modal-info">
+          <p id="modalType" class="eyebrow"></p>
+          <h2 id="modalTitle"></h2>
+          <div id="modalStats" class="stats-grid"></div>
+          <div id="modalText" class="card-text"></div>
+          <div id="modalRole" class="card-role"></div>
+          <div id="modalButtons" class="modal-buttons"></div>
+        </div>
+      </div>
+    </article>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
