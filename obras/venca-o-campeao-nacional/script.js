@@ -101,9 +101,9 @@ const CARDS = {
   },
   echoflash: {
     id: 'echoflash', name: 'Echoflash', image: A + 'echoflash.webp',
-    type: 'Instant', color: 'yellow', cost: 0, pitch: 2, attack: '—', defense: '—',
+    type: 'Instant', color: 'yellow', cost: 1, pitch: 2, attack: '—', defense: '—',
     text: ['Cause 1 dano arcano ao herói alvo.', 'Quando isso é colocado no seu graveyard vindo de qualquer lugar, seu herói causa 1 dano arcano ao herói alvo.'],
-    role: 'Carta revelada quando Oscilio a joga. Junto de Cloud Cover e Volzar, cria a pressão final.'
+    role: 'Carta revelada quando Oscilio a joga. Cloud Cover é usada como pitch para pagar Echoflash, e Volzar aumenta a pressão final.'
   },
   astral: {
     id: 'astral', name: 'Astral Bridge', image: A + 'astral-bridge.webp',
@@ -115,7 +115,7 @@ const CARDS = {
     id: 'cloud', name: 'Cloud Cover', image: A + 'cloud-cover.webp',
     type: 'Instant', color: 'red', cost: 0, pitch: 1, attack: '—', defense: '—',
     text: ['A próxima vez que você receberia dano neste turno, previna 3 daquele dano.'],
-    role: 'Carta descartada e colocada no graveyard durante a linha do Oscilio para habilitar a pressão de Echoflash.'
+    role: 'Carta usada como pitch para pagar Echoflash. Ela vai para a zona de Pitch do Oscilio, não para o Graveyard.'
   },
   comet: {
     id: 'comet', name: 'Comet Collision', image: A + 'comet-collision.webp',
@@ -151,7 +151,9 @@ const state = {
   discarded: [],
   revealed: ['gone'],
   opponentArena: [],
+  opponentPitch: [],
   opponentGraveyard: [],
+  oscilioTapped: false,
   volzarTapped: false,
   earlyShelter: false,
   currentAttack: null,
@@ -210,7 +212,9 @@ function resetGame() {
   state.discarded = [];
   state.revealed = ['gone'];
   state.opponentArena = [];
+  state.opponentPitch = [];
   state.opponentGraveyard = [];
+  state.oscilioTapped = false;
   state.volzarTapped = false;
   state.earlyShelter = false;
   state.currentAttack = null;
@@ -250,11 +254,12 @@ function pill(label, value) {
 
 function renderTable() {
   const items = [
-    tableCard('oscilio', 45.5, 14.5, 'Oscilio'),
+    tableCard('oscilio', 45.5, 14.5, 'Oscilio', state.oscilioTapped ? 'tapped-card' : ''),
     tableCard('volzar', 33.6, 14.5, 'Volzar', state.volzarTapped ? 'tapped-card' : ''),
     tableCard('gone', 6.2, 3.2, 'Banished'),
     ...opponentHandBacks(),
     ...opponentArenaCards(),
+    ...opponentPitchCards(),
     ...opponentGraveyardCards(),
     tableCard('crown', 5.7, 59.5, 'Head'),
     tableCard('gloves', 18.1, 73.5, 'Arms'),
@@ -302,6 +307,10 @@ function opponentArenaCards() {
     const pos = positions[index] || positions[positions.length - 1];
     return tableCard(id, pos.left + Math.max(0, index - 2) * 3, pos.top, 'Oscilio', 'opponent-play-card');
   });
+}
+
+function opponentPitchCards() {
+  return state.opponentPitch.map((id, index) => tableCard(id, 18.4 + index * 2.4, 14.5 + index * 2.2, 'Pitch', 'opponent-play-card'));
 }
 
 function opponentGraveyardCards() {
@@ -673,9 +682,10 @@ function renderOpponentStep() {
   }
   if (step === 1) {
     reveal('blink');
+    state.oscilioTapped = true;
     addToZone(state.opponentGraveyard, 'blink');
     state.opponentHand = 4;
-    el.message.innerHTML = `<p>Oscilio usa <strong>Constella Intelligence</strong>: descarta <strong>Blink</strong>, que vai para o <strong>Graveyard</strong>, e compra uma carta.</p><p>A carta comprada fica oculta para você.</p>`;
+    el.message.innerHTML = `<p>Oscilio usa <strong>Constella Intelligence</strong>: o herói gira 90 graus, descarta <strong>Blink</strong>, que vai para o <strong>Graveyard</strong>, e compra uma carta.</p><p>A carta comprada fica oculta para você.</p>`;
     el.actions.innerHTML = `<button class="primary-btn" data-next-step>Continuar</button>`;
   }
   if (step === 2) {
@@ -696,10 +706,10 @@ function renderOpponentStep() {
   }
   if (step === 4) {
     reveal('cloud');
-    addToZone(state.opponentGraveyard, 'cloud');
+    addToZone(state.opponentPitch, 'cloud');
     state.opponentHand = 1;
     state.volzarTapped = true;
-    el.message.innerHTML = `<p>Depois de <strong>Echoflash</strong>, <strong>Cloud Cover</strong> é descartada e colocada no <strong>Graveyard</strong> do Oscilio.</p><p>Em seguida, <strong>Volzar, Meteor Storm</strong> gira 90 graus para indicar a ativação de <strong>Amp 1</strong>.</p><p>Oscilio termina a jogada com apenas <strong>1 carta na mão</strong>, ainda não revelada. Agora você precisa pagar <strong>2 recursos</strong> para sobreviver ao dano arcano final.</p>`;
+    el.message.innerHTML = `<p><strong>Cloud Cover</strong> é revelada e vai para a zona de <strong>Pitch</strong> do Oscilio, pois foi usada para pagar <strong>Echoflash</strong>.</p><p>Em seguida, <strong>Volzar, Meteor Storm</strong> gira 90 graus para indicar a ativação de <strong>Amp 1</strong>.</p><p>Oscilio termina a jogada com apenas <strong>1 carta na mão</strong>, ainda não revelada. Agora você precisa pagar <strong>2 recursos</strong> para sobreviver ao dano arcano final.</p>`;
     el.actions.innerHTML = `<button class="primary-btn" data-final-damage>Responder ao dano final</button>`;
   }
 
@@ -713,9 +723,9 @@ function renderOpponentStep() {
 
 function nextOpponentStep() {
   state.pending.step += 1;
-  if (state.pending.step === 1) addLog('Oscilio descarta Blink com Constella Intelligence e compra uma carta sem revelá-la.');
+  if (state.pending.step === 1) addLog('Oscilio gira o herói 90 graus, descarta Blink com Constella Intelligence e compra uma carta sem revelá-la.');
   if (state.pending.step === 2) addLog('Oscilio joga Astral Bridge. Second Strike é revelada e colocada no Graveyard do Oscilio.');
-  if (state.pending.step === 4) addLog('Cloud Cover é descartada no Graveyard do Oscilio, Volzar é ativada e Oscilio termina com 1 carta oculta na mão.');
+  if (state.pending.step === 4) addLog('Cloud Cover vai para o Pitch para pagar Echoflash, Volzar é ativada e Oscilio termina com 1 carta oculta na mão.');
   render();
 }
 
@@ -753,7 +763,7 @@ function finalDamagePrompt() {
   state.phase = 'preventPayment';
   state.pending = {
     kind: 'prevent',
-    label: 'Echoflash + descarte Cloud Cover + Volzar',
+    label: 'Echoflash + pitch de Cloud Cover + Volzar',
     amount: 2,
     after: 'finish',
     allowShelter: false,
