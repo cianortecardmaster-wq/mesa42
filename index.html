@@ -3,191 +3,105 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mesa 42 | Cianorte Card Masters</title>
-  <meta name="description" content="Mesa 42 é o arquivo narrativo do Cianorte Card Masters: visual novels, fanfics, HQs e histórias fictícias sobre card games." />
+  <title>Mesa 42 | Arquivo narrativo da comunidade</title>
+  <meta name="description" content="Mesa 42 é um arquivo narrativo da comunidade: textos fantasiosos, documentos falsos, reportagens impossíveis e projetos de realidade duvidosa." />
   <meta name="theme-color" content="#06120d" />
 
   <meta property="og:title" content="Mesa 42" />
-  <meta property="og:description" content="A mesa onde tudo pode acontecer. Visual novels, fanfics, HQs e histórias fictícias sobre card games." />
+  <meta property="og:description" content="A mesa onde tudo pode acontecer. Textos fantasiosos, documentos falsos e projetos de realidade duvidosa." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/logo-mesa-42.png" />
 
   <link rel="icon" type="image/png" href="assets/icon-mesa42.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;700;800&family=Bangers&family=Fugaz+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Bangers&family=Fugaz+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <div class="site-bg" aria-hidden="true"></div>
 
-  <header class="hero">
-    <div class="hero-banner">
-    <nav class="topbar" aria-label="Navegação principal">
+  <header class="masthead" id="inicio">
+    <nav class="topbar" aria-label="Navegação superior">
       <a class="brand-cc" href="https://cianortecardmasters.com.br" aria-label="Voltar para Cianorte Card Masters">
         <img src="assets/logo-cc-masters.png" alt="Logo Cianorte Card Masters" />
         <span>Cianorte Card Masters apresenta</span>
       </a>
-      <a class="ghost-link" href="https://cianortecardmasters.com.br">Voltar ao CC Masters</a>
+      <a class="return-link" href="https://cianortecardmasters.com.br">Voltar ao CC Masters</a>
     </nav>
 
-    <section class="hero-grid">
-      <div class="hero-copy">
+    <div class="title-area">
+      <div class="title-copy">
         <p class="eyebrow">Arquivo narrativo da comunidade</p>
         <h1>Mesa 42</h1>
         <p class="tagline">A mesa onde tudo pode acontecer.</p>
         <p class="intro">
-          Visual novels, graphic novels, fanfics, HQs, imagens e histórias fictícias
-          inspiradas por card games, blefes, derrotas, obsessões e pequenas lendas locais.
+          Textos fantasiosos, documentos falsos, reportagens impossíveis e projetos de realidade duvidosa.
         </p>
-        <div class="hero-actions">
-          <a class="primary-button" href="#obras">Ver obras</a>
-          <a class="secondary-button" href="https://cianortecardmasters.com.br">Conhecer a comunidade</a>
-        </div>
       </div>
-
-      <div class="hero-emblem" aria-label="Logo Mesa 42">
-        <img src="assets/logo-mesa-42.png" alt="Mesa 42" />
-      </div>
-    </section>
+      <img class="mesa-mark" src="assets/logo-mesa-42.png" alt="Mesa 42" />
     </div>
+
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a>
+      <a href="#acervo">Acervo</a>
+      <a href="#ficcao-documental">Ficção Documental</a>
+      <a href="#contos">Contos</a>
+      <a href="#cartas">Cartas</a>
+      <a href="#series">Séries</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
   </header>
 
   <main>
-    <section class="manifesto" aria-label="Sobre o projeto Mesa 42">
-      <div class="manifesto-card">
-        <img src="assets/icon-mesa42.png" alt="Ícone Mesa 42" />
-        <div>
-          <h2>Nem toda partida termina quando os pontos de vida acabam.</h2>
-          <p>
-            Algumas histórias nascem entre uma rodada e outra. Aqui, uma carta pode ser pista,
-            maldição, piada interna ou o começo de uma queda muito estranha.
-          </p>
-        </div>
-      </div>
+    <section class="spotlight" aria-labelledby="destaque-title">
+      <div class="section-kicker">Texto em destaque</div>
+      <div id="spotlightRoot"></div>
+      <p class="rule-note">O destaque é escolhido automaticamente pela tag <strong>favorita</strong> ou <strong>destaque</strong>. Se houver mais de uma obra marcada, entra a mais recente.</p>
     </section>
 
-    <section class="library" id="obras" aria-labelledby="obras-title">
-      <div class="section-head">
+    <section class="latest" aria-labelledby="latest-title">
+      <div class="section-heading">
+        <p class="eyebrow">Leitura por tipo</p>
+        <h2 id="latest-title">Últimos textos por categoria</h2>
+      </div>
+
+      <div class="latest-list" id="latestByCategory"></div>
+    </section>
+
+    <section class="archive" id="acervo" aria-labelledby="archive-title">
+      <div class="section-heading archive-heading">
         <div>
-          <p class="eyebrow">Escolha uma cadeira</p>
-          <h2 id="obras-title">Obras publicadas</h2>
+          <p class="eyebrow">Repositório</p>
+          <h2 id="archive-title">Acervo</h2>
         </div>
-        <p>Cada obra abre em uma página própria, com arquivos e layout independentes.</p>
+        <p class="archive-note">A home mostra as 10 últimas obras publicadas no Mesa 42. O acervo completo pode virar uma página separada depois.</p>
       </div>
 
-      <div class="filters" aria-label="Filtros de obras">
-        <button class="filter-button active" type="button" data-filter="todas">Todas</button>
-        <button class="filter-button" type="button" data-filter="Visual Novel">Visual Novels</button>
-        <button class="filter-button" type="button" data-filter="Página fictícia">Páginas fictícias</button>
-        <button class="filter-button" type="button" data-filter="Mini game">Mini games</button>
-        <button class="filter-button" type="button" data-filter="Fanfic">Fanfics</button>
-        <button class="filter-button" type="button" data-filter="HQ">HQs</button>
-        <button class="filter-button" type="button" data-filter="em-breve">Em breve</button>
-      </div>
+      <div class="filters" id="archiveFilters" aria-label="Filtros do acervo"></div>
 
-      <div class="works-grid">
-        <article class="work-card featured" data-tipo="Visual Novel" data-disponivel="sim">
-          <div class="work-media command-media">
-            <img src="assets/command-and-conquer-card-art.png" alt="Arte de Command and Conquer — História #001" loading="lazy" />
-          </div>
-          <div class="work-body">
-            <div class="work-meta">
-              <span class="pill">História #001</span>
-              <span class="pill">Visual Novel</span>
-              <span class="pill status-disponivel">Disponível</span>
-            </div>
-            <h3 class="work-title">Command and Conquer</h3>
-            <p class="work-summary">
-              JP compra uma carta especial por um preço muito abaixo do mercado. Quando ela entra no deck, sua sorte muda — e fica difícil saber se é só uma Command and Conquer ou se tem algo querendo surgir dela.
-            </p>
-            <a class="work-button" href="./obras/command-and-conquer/">Abrir obra</a>
-          </div>
-        </article>
+      <div class="archive-list" id="archiveList"></div>
+    </section>
 
-        <article class="work-card" data-tipo="Página fictícia" data-disponivel="sim">
-          <div class="work-media nosso-dinheiro-media">
-            <img src="assets/nosso-dinheiro-logo.svg" alt="NossoDinheiro — financiamento coletivo fictício" loading="lazy" />
-          </div>
-          <div class="work-body">
-            <div class="work-meta">
-              <span class="pill">História #002</span>
-              <span class="pill">Página fictícia</span>
-              <span class="pill status-disponivel">Disponível</span>
-            </div>
-            <h3 class="work-title">Financiamento coletivo para salvar todas as cartas colecionáveis existentes</h3>
-            <p class="work-summary">
-              Uma campanha fictícia do NossoDinheiro para preservar, catalogar e proteger todas as cartas colecionáveis já impressas.
-            </p>
-            <a class="work-button" href="./obras/financiamento-coletivo-cartas-nosso-dinheiro/index.html">Abrir obra</a>
-          </div>
-        </article>
-
-
-
-        <article class="work-card" data-tipo="Mini game" data-disponivel="sim">
-          <div class="work-media campeao-media">
-            <img src="./obras/venca-o-campeao-nacional/assets/arena-de-batalha.png" alt="Vença o campeão nacional — mini game de Flesh and Blood" loading="lazy" />
-          </div>
-          <div class="work-body">
-            <div class="work-meta">
-              <span class="pill">História #003</span>
-              <span class="pill">Mini game</span>
-              <span class="pill status-disponivel">Disponível</span>
-            </div>
-            <h3 class="work-title">Vença o campeão nacional</h3>
-            <p class="work-summary">
-              Um exercício interativo de final de partida: ambos estão com 1 de vida, o Oscilio tem uma resposta arcana preparada e você precisa encontrar a linha correta com Victor Goldmane.
-            </p>
-            <a class="work-button" href="./obras/venca-o-campeao-nacional/index.html">Abrir obra</a>
-          </div>
-        </article>
-
-        <article class="work-card" data-tipo="Fanfic" data-disponivel="nao">
-          <div class="work-media">
-            <img src="assets/placeholders/obra-placeholder.svg" alt="Arquivo Secreto — em breve" loading="lazy" />
-          </div>
-          <div class="work-body">
-            <div class="work-meta">
-              <span class="pill">Em breve</span>
-              <span class="pill">Fanfic</span>
-              <span class="pill status-em-breve">Em desenvolvimento</span>
-            </div>
-            <h3 class="work-title">Arquivo Secreto</h3>
-            <p class="work-summary">
-              Um relato estranho encontrado depois de um torneio. Ninguém lembra quem escreveu. Todo mundo lembra da última rodada.
-            </p>
-            <span class="work-button disabled">Em breve</span>
-          </div>
-        </article>
-
-        <article class="work-card" data-tipo="HQ" data-disponivel="nao">
-          <div class="work-media">
-            <img src="assets/placeholders/obra-placeholder.svg" alt="Relato Perdido — em breve" loading="lazy" />
-          </div>
-          <div class="work-body">
-            <div class="work-meta">
-              <span class="pill">Em breve</span>
-              <span class="pill">HQ</span>
-              <span class="pill status-em-breve">Em breve</span>
-            </div>
-            <h3 class="work-title">Relato Perdido</h3>
-            <p class="work-summary">
-              Cartas na mesa, risadas fora de hora e uma história que provavelmente não deveria ter sido desenhada.
-            </p>
-            <span class="work-button disabled">Em breve</span>
-          </div>
-        </article>
-      </div>
+    <section class="about" id="sobre" aria-labelledby="about-title">
+      <p class="eyebrow">Sobre o arquivo</p>
+      <h2 id="about-title">Uma publicação, não uma vitrine</h2>
+      <p>
+        O Mesa 42 funciona como um arquivo narrativo: cada obra pode ter formato próprio, mas a entrada principal organiza tudo como acervo. Título, autor, data, categoria e resumo vêm antes do impacto visual. A imagem ajuda quando existe, mas o texto continua sendo o centro da página.
+      </p>
     </section>
   </main>
 
   <footer class="footer">
     <div>
       <strong>Mesa 42</strong>
-      <p>Projeto fictício e narrativo do Cianorte Card Masters.</p>
+      <p>Este site é uma obra de ficção. Textos, projetos, documentos, campanhas, instituições, depoimentos e acontecimentos apresentados aqui podem ser inventados, distorcidos ou impossíveis.</p>
     </div>
-    <a href="https://cianortecardmasters.com.br">cianortecardmasters.com.br</a>
+    <div class="footer-links">
+      <a href="#inicio">Voltar ao início</a>
+      <a href="#acervo">Ver acervo</a>
+      <a href="https://cianortecardmasters.com.br">CC Masters</a>
+    </div>
   </footer>
 
   <script src="js/obras.js"></script>
