@@ -1,5 +1,19 @@
 const obras = [
   {
+    titulo: 'O caso H4r78lump3r7 Fl0657r0p3d',
+    autor: 'Neto',
+    data: '2026-07-09',
+    dataLabel: '9 de julho de 2026',
+    categoria: 'Reportagem fictícia',
+    chamadaCategoria: 'Última reportagem fictícia',
+    resumo: 'Um relatório jornalístico sobre a carta Desmembramento Permanente, uma anomalia neuropsicogravitacional e o projeto artístico bilíngue recuperado de um designer sintético.',
+    url: './obras/caso-h4r78lump3r7-desmembramento-permanente/index.html',
+    imagem: './obras/caso-h4r78lump3r7-desmembramento-permanente/assets/thumb-desmembramento-permanente.webp',
+    imagemAlt: 'Arte da carta Desmembramento Permanente com Bethaniano e Alpha TRAPPIST',
+    cta: 'Ler relatório',
+    tags: ['reportagem fictícia', 'ficção documental', 'projeto artístico', 'card game']
+  },
+  {
     titulo: 'Vença o campeão nacional',
     autor: 'Neto',
     data: '2026-07-03',
