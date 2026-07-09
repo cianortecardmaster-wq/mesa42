@@ -131,12 +131,12 @@ main,
 .title-area {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 170px;
-  gap: 28px;
+  grid-template-columns: minmax(0, 1fr) 150px;
+  gap: 24px;
   align-items: center;
   overflow: hidden;
-  min-height: 330px;
-  padding: 44px;
+  min-height: 260px;
+  padding: 34px 44px;
   border: 1px solid var(--line);
   border-radius: 22px;
   background:
@@ -179,7 +179,7 @@ p {
 h1 {
   margin-bottom: 8px;
   font-family: Bangers, Impact, sans-serif;
-  font-size: clamp(5.2rem, 13vw, 9.4rem);
+  font-size: clamp(4.8rem, 10vw, 8.2rem);
   line-height: .84;
   letter-spacing: .04em;
   color: #2f4f3c;
@@ -202,7 +202,7 @@ h1 {
 }
 
 .mesa-mark {
-  width: min(170px, 34vw);
+  width: min(150px, 32vw);
   justify-self: end;
   filter: drop-shadow(0 12px 18px rgba(77, 58, 28, .2));
 }
@@ -226,7 +226,15 @@ h1 {
 .latest,
 .archive,
 .about {
-  padding: 28px 0 48px;
+  padding: 24px 0 44px;
+}
+
+.archive {
+  padding-top: 18px;
+}
+
+.latest {
+  padding-top: 12px;
 }
 
 .section-heading {
@@ -244,7 +252,7 @@ h1 {
 
 .spotlight-grid {
   display: grid;
-  grid-template-columns: minmax(240px, .52fr) minmax(0, 1fr);
+  grid-template-columns: minmax(190px, .34fr) minmax(0, 1fr);
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 22px;
@@ -255,8 +263,8 @@ h1 {
 .spotlight-media {
   display: grid;
   place-items: center;
-  min-height: 310px;
-  padding: 34px;
+  min-height: 245px;
+  padding: 24px;
   border-right: 1px solid var(--line-soft);
   background:
     radial-gradient(circle at 50% 40%, rgba(155, 122, 53, .14), transparent 58%),
@@ -264,14 +272,14 @@ h1 {
 }
 
 .spotlight-media img {
-  width: min(340px, 80%);
-  max-height: 240px;
+  width: min(280px, 92%);
+  max-height: 190px;
   object-fit: contain;
   filter: drop-shadow(0 12px 18px rgba(77, 58, 28, .18));
 }
 
 .spotlight-body {
-  padding: 34px;
+  padding: 30px;
 }
 
 .meta-row {
@@ -316,7 +324,7 @@ h1 {
   margin-bottom: 10px;
   color: var(--ink);
   font-family: "Fugaz One", Barlow, sans-serif;
-  font-size: clamp(1.9rem, 4.2vw, 3.5rem);
+  font-size: clamp(1.8rem, 3.2vw, 2.85rem);
   line-height: 1.03;
 }
 
@@ -346,22 +354,20 @@ h1 {
 .latest-list {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 44px;
   border-top: 1px solid var(--line);
-  border-left: 1px solid var(--line);
-  background: rgba(255, 250, 240, .48);
+  background: transparent;
 }
 
 .latest-item {
   min-height: 100%;
-  padding: 24px;
-  border-right: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-  background: rgba(255, 250, 240, .66);
+  padding: 18px 0 20px;
+  border-bottom: 1px solid var(--line-soft);
+  background: transparent;
 }
 
 .latest-item.is-empty {
-  opacity: .78;
-  background: rgba(251, 244, 232, .52);
+  opacity: .7;
 }
 
 .latest-item h3,
@@ -373,7 +379,7 @@ h1 {
 }
 
 .latest-item h3 {
-  font-size: clamp(1.32rem, 2.8vw, 2rem);
+  font-size: clamp(1.24rem, 2vw, 1.62rem);
 }
 
 .latest-item h3 a,
@@ -426,7 +432,7 @@ h1 {
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr);
   gap: 22px;
-  padding: 24px 0;
+  padding: 22px 0;
   border-bottom: 1px solid var(--line-soft);
 }
 
@@ -530,7 +536,7 @@ h1 {
   .title-area {
     grid-template-columns: 1fr;
     min-height: auto;
-    padding: 34px;
+    padding: 30px;
   }
 
   .mesa-mark {
@@ -544,7 +550,7 @@ h1 {
   }
 
   .spotlight-media {
-    min-height: 250px;
+    min-height: 210px;
     border-right: 0;
     border-bottom: 1px solid var(--line-soft);
   }
@@ -572,7 +578,7 @@ h1 {
   }
 
   .title-area {
-    padding: 24px 18px;
+    padding: 22px 18px;
     border-radius: 18px;
     background:
       linear-gradient(180deg, rgba(255, 250, 240, .96) 0%, rgba(255, 250, 240, .86) 100%),
@@ -592,7 +598,7 @@ h1 {
   .latest,
   .archive,
   .about {
-    padding: 22px 0 36px;
+    padding: 20px 0 34px;
   }
 
   .spotlight-body,
