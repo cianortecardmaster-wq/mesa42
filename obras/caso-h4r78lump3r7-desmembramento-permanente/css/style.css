@@ -394,3 +394,26 @@
     padding: 16px;
   }
 }
+
+.series-list {
+  display: grid;
+  gap: 10px;
+  padding-left: 20px;
+}
+
+.series-list li {
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.series-list a {
+  color: var(--accent);
+  font-weight: 800;
+  text-underline-offset: 3px;
+}
+
+.series-disclaimer {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line-soft);
+}

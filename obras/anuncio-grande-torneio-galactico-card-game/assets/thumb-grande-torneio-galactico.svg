@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img" aria-labelledby="title desc">
+  <title id="title">Plantão do Canal 5</title>
+  <desc id="desc">Silhuetas de naves ao redor da Lua e chamada para o Grande Torneio Galáctico de Card Game.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12261c"/>
+      <stop offset="1" stop-color="#315f46"/>
+    </linearGradient>
+    <radialGradient id="moon" cx="38%" cy="35%" r="65%">
+      <stop offset="0" stop-color="#fff8df"/>
+      <stop offset="1" stop-color="#b8ad91"/>
+    </radialGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="9"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g opacity=".14" fill="none" stroke="#f2e4c3" stroke-width="2">
+    <path d="M0 120h1600M0 240h1600M0 360h1600M0 480h1600M0 600h1600M0 720h1600"/>
+    <path d="M160 0v900M320 0v900M480 0v900M640 0v900M800 0v900M960 0v900M1120 0v900M1280 0v900M1440 0v900"/>
+  </g>
+  <circle cx="1240" cy="250" r="150" fill="#d9bf7a" opacity=".18" filter="url(#glow)"/>
+  <circle cx="1240" cy="250" r="110" fill="url(#moon)"/>
+  <g fill="#151a16" stroke="#d9bf7a" stroke-width="5">
+    <path d="M170 170l86-28 96 28-42 28H212z"/>
+    <path d="M430 105l64-20 72 20-32 22h-72z"/>
+    <path d="M760 170l92-27 100 27-46 31H804z"/>
+    <path d="M1040 105l66-18 75 18-34 24h-74z"/>
+    <path d="M1320 95l72-21 82 21-36 25h-82z"/>
+  </g>
+  <rect x="0" y="615" width="1600" height="285" fill="#fffaf0"/>
+  <rect x="0" y="615" width="1600" height="22" fill="#9b7a35"/>
+  <rect x="80" y="660" width="210" height="72" rx="8" fill="#315f46"/>
+  <text x="185" y="710" text-anchor="middle" font-family="Arial, sans-serif" font-size="42" font-weight="900" fill="#fffaf0">CANAL 5</text>
+  <text x="330" y="706" font-family="Arial, sans-serif" font-size="34" font-weight="900" fill="#9b7a35" letter-spacing="5">TRANSMISSÃO EXTRAORDINÁRIA</text>
+  <text x="80" y="790" font-family="Arial, sans-serif" font-size="62" font-weight="900" fill="#2a241c">GRANDE TORNEIO GALÁCTICO</text>
+  <text x="80" y="850" font-family="Arial, sans-serif" font-size="38" font-weight="700" fill="#315f46">O SOL FOI ANUNCIADO COMO PRÊMIO</text>
+</svg>

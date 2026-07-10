@@ -1,5 +1,19 @@
 const obras = [
   {
+    titulo: 'O anúncio do Grande Torneio Galáctico de Card Game',
+    autor: 'Neto',
+    data: '2026-07-10',
+    dataLabel: '10 de julho de 2026',
+    categoria: 'Reportagem fictícia',
+    chamadaCategoria: 'Última reportagem fictícia',
+    resumo: 'Milhares de naves retornam à Terra, a Lua entra em disputa e uma possível invasão se transforma no anúncio do maior torneio de card game do universo conhecido.',
+    url: './obras/anuncio-grande-torneio-galactico-card-game/index.html',
+    imagem: './obras/anuncio-grande-torneio-galactico-card-game/assets/thumb-grande-torneio-galactico.svg',
+    imagemAlt: 'Plantão do Canal 5 sobre a chegada dos Galurianos e o anúncio do torneio galáctico',
+    cta: 'Ler transmissão',
+    tags: ['reportagem fictícia', 'série', 'grande torneio galáctico de card game', 'telejornal']
+  },
+  {
     titulo: 'O caso H4r78lump3r7 Fl0657r0p3d',
     autor: 'Neto',
     data: '2026-07-09',
@@ -11,7 +25,7 @@ const obras = [
     imagem: './obras/caso-h4r78lump3r7-desmembramento-permanente/assets/thumb-desmembramento-permanente.webp',
     imagemAlt: 'Arte da carta Desmembramento Permanente com Bethaniano e Alpha TRAPPIST',
     cta: 'Ler relatório',
-    tags: ['reportagem fictícia', 'ficção documental', 'projeto artístico', 'card game']
+    tags: ['reportagem fictícia', 'ficção documental', 'projeto artístico', 'card game', 'série', 'grande torneio galáctico de card game']
   },
   {
     titulo: 'Vença o campeão nacional',
