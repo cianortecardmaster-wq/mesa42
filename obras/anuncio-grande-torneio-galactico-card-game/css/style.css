@@ -21,77 +21,6 @@
   max-width: 710px;
 }
 
-.dateline {
-  margin-bottom: 22px;
-  padding: 14px 16px;
-  border: 1px solid var(--line-soft);
-  border-radius: 14px;
-  background: var(--paper-soft);
-  color: var(--ink-soft) !important;
-  font-weight: 800;
-}
-
-.series-note {
-  margin: 0 0 34px;
-  padding: 18px 20px;
-  border: 1px solid var(--line);
-  border-left: 5px solid var(--gold);
-  border-radius: 0 16px 16px 0;
-  background: var(--gold-soft);
-}
-
-.series-note span {
-  display: block;
-  margin-bottom: 6px;
-  color: var(--accent);
-  font-size: .72rem;
-  font-weight: 900;
-  letter-spacing: .16em;
-}
-
-.series-note strong {
-  color: var(--ink);
-  font-family: "Fugaz One", Barlow, sans-serif;
-}
-
-.series-note p {
-  margin: 8px 0 0;
-  color: var(--ink-soft);
-  font-size: .98rem;
-  line-height: 1.6;
-}
-
-.broadcast-chapter {
-  margin: 48px 0 22px;
-  padding-top: 22px;
-  border-top: 1px solid var(--line);
-}
-
-.broadcast-chapter:first-of-type {
-  margin-top: 32px;
-}
-
-.broadcast-chapter .chapter-number {
-  margin-bottom: 8px;
-  color: var(--gold);
-  font-size: .74rem;
-  font-weight: 900;
-  letter-spacing: .16em;
-}
-
-.broadcast-chapter h2 {
-  margin: 0 0 8px;
-  max-width: 18ch;
-}
-
-.broadcast-chapter > p:last-child {
-  max-width: 620px;
-  margin: 0;
-  color: var(--ink-soft);
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
 .broadcast-block {
   max-width: 710px;
   margin: 0 0 16px;
@@ -153,6 +82,15 @@
 
 .broadcast-block.is-correspondent {
   border-left-color: #5b665e;
+}
+
+.broadcast-block.is-witness {
+  border-left-color: #7a6c56;
+  background: #f6f0e5;
+}
+
+.broadcast-block.is-witness .speaker {
+  color: #7a6c56;
 }
 
 .broadcast-block.is-official {
