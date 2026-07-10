@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Mesa 42 | Arquivo narrativo da comunidade</title>
   <meta name="description" content="Mesa 42 é um arquivo narrativo da comunidade: textos fantasiosos, documentos falsos, reportagens impossíveis e projetos de realidade duvidosa." />
-  <meta name="theme-color" content="#f4ecdd" />
+  <meta name="theme-color" content="#063f31" />
 
   <meta property="og:title" content="Mesa 42" />
   <meta property="og:description" content="A mesa onde tudo pode acontecer. Textos fantasiosos, documentos falsos e projetos de realidade duvidosa." />
@@ -13,95 +13,149 @@
   <meta property="og:image" content="assets/logo-mesa-42.png" />
 
   <link rel="icon" type="image/png" href="assets/icon-mesa42.png" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Bangers&family=Fugaz+One&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Fugaz+One&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="site-bg" aria-hidden="true"></div>
+  <div class="announcement-bar" aria-label="Conteúdo mais recente">
+    <div class="announcement-inner">
+      <span class="announcement-label">Novo conteúdo</span>
+      <a id="announcementLatest" href="#acervo">Nova obra publicada no Mesa 42.</a>
 
-  <header class="masthead" id="inicio">
-    <nav class="topbar" aria-label="Navegação superior">
-      <a class="brand-cc" href="https://cianortecardmasters.com.br" aria-label="Voltar para Cianorte Card Masters">
-        <img src="assets/logo-cc-masters.png" alt="Logo Cianorte Card Masters" />
-        <span>Cianorte Card Masters apresenta</span>
-      </a>
-      <a class="return-link" href="https://cianortecardmasters.com.br">Voltar ao CC Masters</a>
-    </nav>
-
-    <div class="title-area">
-      <div class="title-copy">
-        <p class="eyebrow">Arquivo narrativo da comunidade</p>
-        <h1>Mesa 42</h1>
-        <p class="tagline">A mesa onde tudo pode acontecer.</p>
-        <p class="intro">
-          Textos fantasiosos, documentos falsos, reportagens impossíveis e projetos de realidade duvidosa.
-        </p>
-      </div>
-      <img class="mesa-mark" src="assets/logo-mesa-42.png" alt="Mesa 42" />
+      <nav class="announcement-social" aria-label="Redes do Cianorte Card Masters">
+        <a href="https://www.youtube.com/@cianortecardmaster" target="_blank" rel="noopener noreferrer" aria-label="YouTube do Cianorte Card Masters">
+          <img src="assets/icon-youtube.png" alt="" />
+        </a>
+        <a href="https://www.instagram.com/cianortecardmasters/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Cianorte Card Masters">
+          <img src="assets/icon-instagram.png" alt="" />
+        </a>
+        <a href="https://www.facebook.com/p/Cianorte-Card-Masters-61573789171734/" target="_blank" rel="noopener noreferrer" aria-label="Facebook do Cianorte Card Masters">
+          <img src="assets/icon-facebook.png" alt="" />
+        </a>
+        <a href="https://cianortecardmasters.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Site Cianorte Card Masters">
+          <img src="assets/favicon-cc-48x48.png" alt="" />
+        </a>
+      </nav>
     </div>
+  </div>
 
-    <nav class="main-nav" aria-label="Navegação principal">
-      <a href="#inicio">Início</a>
-      <a href="#acervo">Acervo</a>
-      <a href="#ficcao-documental">Ficção Documental</a>
-      <a href="#contos">Contos</a>
-      <a href="#cartas">Cartas</a>
-      <a href="#series">Séries</a>
-      <a href="#sobre">Sobre</a>
-    </nav>
+  <header class="site-header" id="inicio">
+    <div class="header-inner">
+      <a class="mesa-brand" href="#inicio" aria-label="Mesa 42 — voltar ao início">
+        <img src="assets/logo-mesa-42.png" alt="" />
+        <span class="mesa-brand-text">
+          <strong>Mesa 42</strong>
+          <small>A mesa onde tudo pode acontecer.</small>
+        </span>
+      </a>
+
+      <p class="header-description">
+        Textos fantasiosos, documentos falsos, reportagens impossíveis e projetos de realidade duvidosa.
+      </p>
+    </div>
   </header>
 
-  <main>
-    <section class="spotlight" aria-labelledby="destaque-title">
-      <div class="section-kicker">Texto em destaque</div>
-      <div id="spotlightRoot"></div>
-      <p class="rule-note">O destaque é escolhido automaticamente pela tag <strong>favorita</strong> ou <strong>destaque</strong>. Se houver mais de uma obra marcada, entra a mais recente.</p>
-    </section>
+  <div class="navigation-shell">
+    <nav class="main-nav" aria-label="Navegação principal">
+      <a class="is-active" href="#inicio">Início</a>
+      <a href="#acervo" data-filter-link="todas">Acervo</a>
+      <a href="#acervo" data-filter-link="Ficção documental">Ficção Documental</a>
+      <a href="#acervo" data-filter-link="Contos">Contos</a>
+      <a href="#acervo" data-filter-link="Cartas">Cartas</a>
+      <a href="#acervo" data-filter-link="Séries">Séries</a>
+      <a href="#sobre">Sobre</a>
+      <button class="theme-button" type="button" id="themeButton" aria-label="Alternar contraste da página" title="Alternar contraste">
+        <span aria-hidden="true">☀</span>
+      </button>
+    </nav>
+  </div>
 
-    <section class="archive" id="acervo" aria-labelledby="archive-title">
-      <div class="section-heading archive-heading">
+  <main class="home-layout" id="acervo">
+    <section class="content-column" aria-labelledby="archive-title">
+      <div class="content-heading">
         <div>
-          <p class="eyebrow">Repositório</p>
-          <h2 id="archive-title">Acervo</h2>
+          <p class="section-kicker">Publicações recentes</p>
+          <h1 id="archive-title">Últimas obras</h1>
         </div>
-        <p class="archive-note">A home mostra as 10 últimas obras publicadas no Mesa 42. O acervo completo pode virar uma página separada depois.</p>
+        <button class="clear-filter" id="clearFilter" type="button" hidden>Mostrar todas</button>
       </div>
 
-      <div class="filters" id="archiveFilters" aria-label="Filtros do acervo"></div>
-
+      <p class="search-status" id="searchStatus" aria-live="polite"></p>
       <div class="archive-list" id="archiveList"></div>
     </section>
 
-    <section class="latest" aria-labelledby="latest-title">
-      <div class="section-heading">
-        <p class="eyebrow">Leitura por tipo</p>
-        <h2 id="latest-title">Últimos textos por categoria</h2>
-      </div>
+    <aside class="sidebar" aria-label="Recursos do Mesa 42">
+      <section class="sidebar-card search-card" aria-labelledby="search-title">
+        <h2 id="search-title">Buscar</h2>
+        <form class="search-form" id="searchForm" role="search">
+          <label class="sr-only" for="siteSearch">Buscar no Mesa 42</label>
+          <input id="siteSearch" name="busca" type="search" placeholder="Buscar no Mesa 42..." autocomplete="off" />
+          <button type="submit" aria-label="Executar busca">
+            <svg aria-hidden="true" viewBox="0 0 24 24">
+              <path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" />
+            </svg>
+          </button>
+        </form>
+      </section>
 
-      <div class="latest-list" id="latestByCategory"></div>
-    </section>
+      <section class="sidebar-card crew-card" id="tripulacao" aria-labelledby="crew-title">
+        <div class="crew-symbol" aria-hidden="true">✦</div>
+        <h2 id="crew-title">Entre para a Tripulação.</h2>
+        <p>Receba cartas inéditas, bastidores e missões exclusivas por e-mail.</p>
+        <button type="button" id="subscribeButton">Assinar boletim</button>
+        <p class="crew-feedback" id="crewFeedback" aria-live="polite"></p>
+      </section>
 
-    <section class="about" id="sobre" aria-labelledby="about-title">
-      <p class="eyebrow">Sobre o arquivo</p>
-      <h2 id="about-title">Uma publicação, não uma vitrine</h2>
-      <p>
-        O Mesa 42 funciona como um arquivo narrativo: cada obra pode ter formato próprio, mas a entrada principal organiza tudo como acervo. Título, autor, data, categoria e resumo vêm antes do impacto visual. A imagem ajuda quando existe, mas o texto continua sendo o centro da página.
-      </p>
-    </section>
+      <section class="sidebar-card zine-card" aria-labelledby="zine-title">
+        <h2 id="zine-title">Último Zine</h2>
+        <div class="zine-content">
+          <div class="zine-cover-placeholder" aria-label="Espaço reservado para a capa do último zine">
+            <img src="assets/placeholders/zine-placeholder.svg" alt="Capa do Zine Mesa 42 em breve" />
+          </div>
+          <div>
+            <p>Espaço reservado para a capa do novo zine.</p>
+            <span class="disabled-link" aria-disabled="true">Abrir repositório do zine</span>
+            <small>Em breve</small>
+          </div>
+        </div>
+      </section>
+
+      <section class="sidebar-card useful-card" aria-labelledby="useful-title">
+        <h2 id="useful-title">Links úteis</h2>
+        <div class="useful-links">
+          <a href="https://www.youtube.com/@cianortecardmaster" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-youtube.png" alt="" />
+            <span>YouTube</span>
+          </a>
+          <a href="https://cianortecardmasters.com.br/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/favicon-cc-48x48.png" alt="" />
+            <span>Site</span>
+          </a>
+          <a href="https://www.facebook.com/p/Cianorte-Card-Masters-61573789171734/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-facebook.png" alt="" />
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/cianortecardmasters/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/icon-instagram.png" alt="" />
+            <span>Instagram</span>
+          </a>
+        </div>
+      </section>
+    </aside>
   </main>
 
-  <footer class="footer">
+  <footer class="footer" id="sobre">
     <div>
       <strong>Mesa 42</strong>
       <p>Este site é uma obra de ficção. Textos, projetos, documentos, campanhas, instituições, depoimentos e acontecimentos apresentados aqui podem ser inventados, distorcidos ou impossíveis.</p>
     </div>
-    <div class="footer-links">
+    <nav aria-label="Links do rodapé">
       <a href="#inicio">Voltar ao início</a>
       <a href="#acervo">Ver acervo</a>
-      <a href="https://cianortecardmasters.com.br">CC Masters</a>
-    </div>
+      <a href="https://cianortecardmasters.com.br/" target="_blank" rel="noopener noreferrer">CC Masters</a>
+    </nav>
   </footer>
 
   <script src="js/obras.js"></script>
