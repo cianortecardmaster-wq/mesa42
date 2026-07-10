@@ -1,0 +1,324 @@
+:root {
+  --site-green-950: #052c23;
+  --site-green-900: #073b2f;
+  --site-green-800: #0b4c3a;
+  --site-green-700: #176044;
+  --site-green-100: #e8f1ed;
+  --site-gold-600: #c99316;
+  --site-gold-500: #dfa91f;
+  --site-paper: #ffffff;
+}
+
+.site-announcement-bar,
+.site-header,
+.site-navigation-shell {
+  font-family: Barlow, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.site-announcement-bar *,
+.site-header *,
+.site-navigation-shell * {
+  box-sizing: border-box;
+}
+
+.site-announcement-bar img,
+.site-header img {
+  display: block;
+  max-width: 100%;
+}
+
+.site-announcement-bar {
+  min-height: 48px;
+  color: #fff;
+  background: var(--site-green-950);
+}
+
+.site-announcement-inner {
+  width: min(1320px, calc(100% - 36px));
+  min-height: 48px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.site-announcement-label {
+  flex: 0 0 auto;
+  padding: 6px 13px;
+  border: 2px solid var(--site-gold-500);
+  border-radius: 999px;
+  color: #fff;
+  font-weight: 800;
+  font-size: .82rem;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.site-announcement-inner > a {
+  min-width: 0;
+  overflow: hidden;
+  color: var(--site-gold-500);
+  font-weight: 700;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.site-announcement-inner > a:hover,
+.site-announcement-inner > a:focus-visible {
+  color: #fff;
+}
+
+.site-announcement-social {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.site-announcement-social a {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 2px solid var(--site-gold-500);
+  border-radius: 50%;
+  background: #fff;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.site-announcement-social a:hover,
+.site-announcement-social a:focus-visible {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 0 rgba(0, 0, 0, .24);
+}
+
+.site-announcement-social img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.site-header {
+  background: var(--site-paper);
+}
+
+.site-header-inner {
+  width: min(1320px, calc(100% - 36px));
+  min-height: 132px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 44px;
+  padding: 20px 0;
+}
+
+.site-mesa-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: max-content;
+  color: var(--site-green-950);
+  text-decoration: none;
+}
+
+.site-mesa-brand > img {
+  width: 88px;
+  height: 88px;
+  object-fit: contain;
+}
+
+.site-mesa-brand-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-mesa-brand-text strong {
+  font-family: "Fugaz One", Barlow, sans-serif;
+  font-size: clamp(2.35rem, 4.8vw, 4rem);
+  line-height: .92;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+}
+
+.site-mesa-brand-text small {
+  margin-top: 8px;
+  color: var(--site-green-700);
+  font-size: .98rem;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.site-header-description {
+  max-width: 440px;
+  margin: 0;
+  padding-left: 28px;
+  border-left: 2px solid var(--site-gold-500);
+  color: var(--site-green-950);
+  font-size: clamp(1rem, 1.5vw, 1.16rem);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
+.site-navigation-shell {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  border-top: 2px solid var(--site-green-950);
+  border-bottom: 2px solid var(--site-green-950);
+  background: var(--site-paper);
+  box-shadow: 0 7px 0 var(--site-green-950);
+}
+
+.site-main-nav {
+  width: min(1320px, calc(100% - 36px));
+  min-height: 56px;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  gap: 34px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.site-main-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.site-main-nav a {
+  position: relative;
+  flex: 0 0 auto;
+  padding: 18px 0 16px;
+  color: var(--site-green-950);
+  font-weight: 800;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.site-main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 8px;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--site-gold-500);
+  transform: scaleX(0);
+  transition: transform .18s ease;
+}
+
+.site-main-nav a:hover::after,
+.site-main-nav a:focus-visible::after,
+.site-main-nav a.is-active::after {
+  transform: scaleX(1);
+}
+
+.site-main-nav a.is-active {
+  color: var(--site-green-800);
+}
+
+.site-theme-button {
+  flex: 0 0 auto;
+  width: 38px;
+  height: 38px;
+  margin-left: auto;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  border: 2px solid var(--site-gold-500);
+  border-radius: 50%;
+  color: var(--site-gold-600);
+  background: #fff;
+  font-size: 1.1rem;
+}
+
+.site-theme-button:hover,
+.site-theme-button:focus-visible {
+  color: #fff;
+  background: var(--site-green-950);
+  outline: none;
+}
+
+body.site-high-contrast {
+  --site-green-950: #001c15;
+  --site-green-900: #002a20;
+  --site-paper: #ffffff;
+}
+
+@media (max-width: 850px) {
+  .site-header-inner {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .site-header-description {
+    max-width: 680px;
+    padding-left: 0;
+    border-left: 0;
+  }
+
+  .site-main-nav {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .site-announcement-inner,
+  .site-header-inner,
+  .site-main-nav {
+    width: min(100% - 22px, 1320px);
+  }
+
+  .site-announcement-inner {
+    gap: 10px;
+  }
+
+  .site-announcement-label {
+    padding: 5px 9px;
+    font-size: .68rem;
+  }
+
+  .site-announcement-social {
+    display: none;
+  }
+
+  .site-header-inner {
+    min-height: 118px;
+    padding: 17px 0;
+  }
+
+  .site-mesa-brand {
+    min-width: 0;
+  }
+
+  .site-mesa-brand > img {
+    width: 68px;
+    height: 68px;
+  }
+
+  .site-mesa-brand-text strong {
+    font-size: clamp(2rem, 12vw, 3rem);
+  }
+
+  .site-mesa-brand-text small {
+    font-size: .84rem;
+  }
+
+  .site-header-description {
+    font-size: .94rem;
+  }
+
+  .site-main-nav {
+    min-height: 54px;
+    gap: 22px;
+  }
+
+  .site-main-nav a {
+    padding: 17px 0 15px;
+    font-size: .92rem;
+  }
+}

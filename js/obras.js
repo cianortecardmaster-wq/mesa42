@@ -5,6 +5,7 @@ const obras = [
     data: '2026-07-10',
     dataLabel: '10 de julho de 2026',
     categoria: 'Reportagem fictícia',
+    tipos: ['textos', 'series'],
     resumo: 'Milhares de naves retornam à Terra, a Lua entra em disputa e uma possível invasão se transforma no anúncio do maior torneio de card game do universo conhecido.',
     url: './obras/anuncio-grande-torneio-galactico-card-game/index.html',
     imagem: './obras/anuncio-grande-torneio-galactico-card-game/assets/thumb-grande-torneio-galactico.svg',
@@ -18,6 +19,7 @@ const obras = [
     data: '2026-07-09',
     dataLabel: '9 de julho de 2026',
     categoria: 'Reportagem fictícia',
+    tipos: ['textos', 'series'],
     resumo: 'Um relatório jornalístico sobre a carta Desmembramento Permanente, uma anomalia neuropsicogravitacional e o projeto artístico bilíngue recuperado de um designer sintético.',
     url: './obras/caso-h4r78lump3r7-desmembramento-permanente/index.html',
     imagem: './obras/caso-h4r78lump3r7-desmembramento-permanente/assets/thumb-desmembramento-permanente.webp',
@@ -31,6 +33,7 @@ const obras = [
     data: '2026-07-03',
     dataLabel: '3 de julho de 2026',
     categoria: 'Jogos narrativos',
+    tipos: ['interativos'],
     resumo: 'Um mini game de Flesh and Blood em que a leitura correta da mesa decide a final contra o campeão nacional.',
     url: './obras/venca-o-campeao-nacional/index.html',
     imagem: './obras/venca-o-campeao-nacional/assets/arena-de-batalha.png',
@@ -44,6 +47,7 @@ const obras = [
     data: '2026-07-02',
     dataLabel: '2 de julho de 2026',
     categoria: 'Séries',
+    tipos: ['series', 'interativos'],
     resumo: 'JP compra uma carta especial por um preço muito abaixo do mercado. Quando ela entra no deck, sua sorte muda — e a carta começa a parecer mais importante do que deveria.',
     url: './obras/command-and-conquer/',
     imagem: './assets/command-and-conquer-card-art.png',
@@ -57,6 +61,7 @@ const obras = [
     data: '2026-05-12',
     dataLabel: '12 de maio de 2026',
     categoria: 'Ficção documental',
+    tipos: ['interativos'],
     resumo: 'Uma campanha fictícia do NossoDinheiro para preservar, catalogar e proteger todas as cartas colecionáveis já impressas. Um projeto que começa como piada de colecionador e termina com cara de documento público impossível.',
     url: './obras/financiamento-coletivo-cartas-nosso-dinheiro/index.html',
     imagem: './assets/nosso-dinheiro-logo.svg',
@@ -74,9 +79,13 @@ const normalizar = (valor) => String(valor || '')
 
 const obrasOrdenadas = [...obras].sort((a, b) => new Date(b.data) - new Date(a.data));
 
+const colecoesValidas = ['todas', 'textos', 'series', 'interativos'];
+const parametrosIniciais = new URLSearchParams(window.location.search);
+const colecaoInicial = normalizar(parametrosIniciais.get('tipo'));
+
 const state = {
   busca: '',
-  categoria: 'todas'
+  categoria: colecoesValidas.includes(colecaoInicial) ? colecaoInicial : 'todas'
 };
 
 const icons = {
@@ -128,8 +137,7 @@ const filtrarObras = () => {
 
   return obrasOrdenadas.filter((obra) => {
     const correspondeCategoria = categoria === 'todas'
-      || normalizar(obra.categoria) === categoria
-      || (obra.tags || []).some((tag) => normalizar(tag) === categoria);
+      || (obra.tipos || []).some((tipo) => normalizar(tipo) === categoria);
 
     const textoCompleto = normalizar([
       obra.titulo,
@@ -159,7 +167,10 @@ const atualizarStatus = (quantidade) => {
 
   const partes = [];
   if (state.busca) partes.push(`busca “${state.busca}”`);
-  if (state.categoria !== 'todas') partes.push(`categoria “${state.categoria}”`);
+  if (state.categoria !== 'todas') {
+    const rotulos = { textos: 'Textos', series: 'Séries', interativos: 'Interativos' };
+    partes.push(`seção “${rotulos[state.categoria] || state.categoria}”`);
+  }
   status.textContent = `${quantidade} ${quantidade === 1 ? 'obra encontrada' : 'obras encontradas'} para ${partes.join(' e ')}.`;
 };
 
@@ -209,14 +220,48 @@ const configurarBusca = () => {
   input.addEventListener('input', aplicarBusca);
 };
 
+const marcarNavegacaoAtiva = () => {
+  document.querySelectorAll('.main-nav a').forEach((item) => item.classList.remove('is-active'));
+  const inicioSemFiltro = state.categoria === 'todas' && !state.busca && !window.location.hash;
+  const seletor = inicioSemFiltro
+    ? '.main-nav a[href="#inicio"]'
+    : state.categoria === 'todas'
+      ? '[data-collection-link="todas"]'
+      : `[data-collection-link="${state.categoria}"]`;
+  document.querySelector(seletor)?.classList.add('is-active');
+};
+
+const atualizarUrlDaColecao = () => {
+  const url = new URL(window.location.href);
+  if (state.categoria === 'todas') url.searchParams.delete('tipo');
+  else url.searchParams.set('tipo', state.categoria);
+  url.hash = 'acervo';
+  window.history.replaceState({}, '', url);
+};
+
 const configurarNavegacao = () => {
-  document.querySelectorAll('[data-filter-link]').forEach((link) => {
-    link.addEventListener('click', () => {
-      state.categoria = link.dataset.filterLink || 'todas';
-      document.querySelectorAll('.main-nav a').forEach((item) => item.classList.remove('is-active'));
-      link.classList.add('is-active');
+  document.querySelectorAll('[data-collection-link]').forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault();
+      state.categoria = link.dataset.collectionLink || 'todas';
+      marcarNavegacaoAtiva();
+      atualizarUrlDaColecao();
       montarAcervo();
+      document.querySelector('#acervo')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
+  });
+
+  document.querySelector('.main-nav a[href="#inicio"]')?.addEventListener('click', () => {
+    state.busca = '';
+    state.categoria = 'todas';
+    const input = document.querySelector('#siteSearch');
+    if (input) input.value = '';
+    const url = new URL(window.location.href);
+    url.searchParams.delete('tipo');
+    url.hash = '';
+    window.history.replaceState({}, '', url);
+    montarAcervo();
+    marcarNavegacaoAtiva();
   });
 
   const clear = document.querySelector('#clearFilter');
@@ -225,10 +270,12 @@ const configurarNavegacao = () => {
     state.busca = '';
     state.categoria = 'todas';
     if (input) input.value = '';
-    document.querySelectorAll('.main-nav a').forEach((item) => item.classList.remove('is-active'));
-    document.querySelector('.main-nav a[href="#inicio"]')?.classList.add('is-active');
+    marcarNavegacaoAtiva();
+    atualizarUrlDaColecao();
     montarAcervo();
   });
+
+  marcarNavegacaoAtiva();
 };
 
 const configurarAnuncio = () => {

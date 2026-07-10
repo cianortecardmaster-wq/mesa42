@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>O anúncio do Grande Torneio Galáctico de Card Game | Mesa 42</title>
   <meta name="description" content="Uma transmissão extraordinária acompanha a volta dos Galurianos, a ocupação da Lua e o anúncio do maior torneio de card game do universo conhecido." />
-  <meta name="theme-color" content="#f4ecdd" />
+  <meta name="theme-color" content="#052c23" />
 
   <meta property="og:title" content="O anúncio do Grande Torneio Galáctico de Card Game" />
   <meta property="og:description" content="A volta dos Galurianos transforma uma crise global no anúncio do maior torneio de card game do universo conhecido." />
@@ -16,19 +16,48 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Bangers&family=Fugaz+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../../css/site-header.css" />
   <link rel="stylesheet" href="../../css/obra-texto.css" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="site-bg" aria-hidden="true"></div>
+  <div class="site-announcement-bar" aria-label="Conteúdo mais recente">
+    <div class="site-announcement-inner">
+      <span class="site-announcement-label">Novo conteúdo</span>
+      <a href="../../obras/anuncio-grande-torneio-galactico-card-game/">O anúncio do Grande Torneio Galáctico de Card Game já está no ar!</a>
+      <nav class="site-announcement-social" aria-label="Redes do Cianorte Card Masters">
+        <a href="https://www.youtube.com/@cianortecardmaster" target="_blank" rel="noopener noreferrer" aria-label="YouTube do Cianorte Card Masters"><img src="../../assets/icon-youtube.png" alt="" /></a>
+        <a href="https://www.instagram.com/cianortecardmasters/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Cianorte Card Masters"><img src="../../assets/icon-instagram.png" alt="" /></a>
+        <a href="https://www.facebook.com/p/Cianorte-Card-Masters-61573789171734/" target="_blank" rel="noopener noreferrer" aria-label="Facebook do Cianorte Card Masters"><img src="../../assets/icon-facebook.png" alt="" /></a>
+        <a href="https://cianortecardmasters.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Site Cianorte Card Masters"><img src="../../assets/favicon-cc-48x48.png" alt="" /></a>
+      </nav>
+    </div>
+  </div>
 
-  <header class="text-topbar">
-    <a class="brand-link" href="../../" aria-label="Voltar para Mesa 42">
-      <img src="../../assets/logo-mesa-42.png" alt="Mesa 42" />
-      <span>Mesa 42</span>
-    </a>
-    <a class="back-link" href="../../#acervo">Voltar ao acervo</a>
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-mesa-brand" href="../../" aria-label="Mesa 42 — voltar ao início">
+        <img src="../../assets/logo-mesa-42.png" alt="" />
+        <span class="site-mesa-brand-text">
+          <strong>Mesa 42</strong>
+          <small>A mesa onde tudo pode acontecer.</small>
+        </span>
+      </a>
+      <p class="site-header-description">Textos fantasiosos, documentos falsos, reportagens impossíveis e projetos de realidade duvidosa.</p>
+    </div>
   </header>
+
+  <div class="site-navigation-shell">
+    <nav class="site-main-nav" aria-label="Navegação principal">
+      <a href="../../">Início</a>
+      <a href="../../#acervo">Acervo</a>
+      <a class="is-active" href="../../?tipo=textos#acervo">Textos</a>
+      <a href="../../?tipo=series#acervo">Séries</a>
+      <a href="../../?tipo=interativos#acervo">Interativos</a>
+      <a href="../../#sobre">Sobre</a>
+      <button class="site-theme-button" type="button" data-site-theme-button aria-label="Alternar contraste da página" title="Alternar contraste"><span aria-hidden="true">☀</span></button>
+    </nav>
+  </div>
 
   <main class="text-shell broadcast-shell">
     <article class="text-article broadcast-article">
@@ -606,5 +635,6 @@
       <a href="https://cianortecardmasters.com.br">CC Masters</a>
     </div>
   </footer>
+  <script src="../../js/site-header.js"></script>
 </body>
 </html>
