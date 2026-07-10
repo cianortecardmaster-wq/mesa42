@@ -1,0 +1,73 @@
+window.MESA42_OBRAS = [
+  {
+    titulo: 'O anúncio do Grande Torneio Galáctico de Card Game',
+    autor: 'Neto',
+    data: '2026-07-10',
+    dataLabel: '10 de julho de 2026',
+    categoria: 'Reportagem fictícia',
+    tipos: ['textos', 'series'],
+    resumo: 'Milhares de naves retornam à Terra, a Lua entra em disputa e uma possível invasão se transforma no anúncio do maior torneio de card game do universo conhecido.',
+    url: 'obras/anuncio-grande-torneio-galactico-card-game/',
+    imagem: 'obras/anuncio-grande-torneio-galactico-card-game/assets/thumb-grande-torneio-galactico.svg',
+    imagemAlt: 'Plantão do Canal 5 sobre a chegada dos Galurianos e o anúncio do torneio galáctico',
+    cta: 'Ler transmissão',
+    tags: ['reportagem fictícia', 'série', 'grande torneio galáctico', 'telejornal']
+  },
+  {
+    titulo: 'O caso H4r78lump3r7 Fl0657r0p3d',
+    autor: 'Neto',
+    data: '2026-07-09',
+    dataLabel: '9 de julho de 2026',
+    categoria: 'Reportagem fictícia',
+    tipos: ['textos', 'series'],
+    resumo: 'Um relatório jornalístico sobre a carta Desmembramento Permanente, uma anomalia neuropsicogravitacional e o projeto artístico bilíngue recuperado de um designer sintético.',
+    url: 'obras/caso-h4r78lump3r7-desmembramento-permanente/',
+    imagem: 'obras/caso-h4r78lump3r7-desmembramento-permanente/assets/thumb-desmembramento-permanente.webp',
+    imagemAlt: 'Arte da carta Desmembramento Permanente com Bethaniano e Alpha TRAPPIST',
+    cta: 'Ler relatório',
+    tags: ['ficção documental', 'projeto artístico', 'card game', 'série']
+  },
+  {
+    titulo: 'Vença o campeão nacional',
+    autor: 'Neto',
+    data: '2026-07-03',
+    dataLabel: '3 de julho de 2026',
+    categoria: 'Jogo narrativo',
+    tipos: ['interativos'],
+    resumo: 'Um mini game de Flesh and Blood em que a leitura correta da mesa decide a final contra o campeão nacional.',
+    url: 'obras/venca-o-campeao-nacional/',
+    imagem: 'obras/venca-o-campeao-nacional/assets/arena-de-batalha.png',
+    imagemAlt: 'Arena de batalha do mini game Vença o campeão nacional',
+    cta: 'Jogar',
+    tags: ['mini game', 'Flesh and Blood', 'final de partida']
+  },
+  {
+    titulo: 'Command and Conquer',
+    autor: 'Neto',
+    data: '2026-07-02',
+    dataLabel: '2 de julho de 2026',
+    categoria: 'Visual novel seriada',
+    tipos: ['series', 'interativos'],
+    resumo: 'JP compra uma carta especial por um preço muito abaixo do mercado. Quando ela entra no deck, sua sorte muda — e a carta começa a parecer mais importante do que deveria.',
+    url: 'obras/command-and-conquer/',
+    imagem: 'assets/command-and-conquer-card-art.png',
+    imagemAlt: 'Arte da obra Command and Conquer',
+    cta: 'Ver capítulos',
+    tags: ['série', 'visual novel', 'card game']
+  },
+  {
+    titulo: 'Financiamento coletivo para salvar todas as cartas colecionáveis existentes',
+    autor: 'Neto',
+    data: '2026-05-12',
+    dataLabel: '12 de maio de 2026',
+    categoria: 'Site fictício interativo',
+    tipos: ['interativos'],
+    resumo: 'Uma campanha fictícia do NossoDinheiro para preservar, catalogar e proteger todas as cartas colecionáveis já impressas. Um projeto que começa como piada de colecionador e termina com cara de documento público impossível.',
+    url: 'obras/financiamento-coletivo-cartas-nosso-dinheiro/',
+    imagem: 'assets/nosso-dinheiro-logo.svg',
+    imagemAlt: 'Logo fictício NossoDinheiro',
+    imagemModo: 'contain',
+    cta: 'Abrir experiência',
+    tags: ['destaque', 'ficção documental', 'campanha falsa']
+  }
+];

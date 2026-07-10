@@ -35,11 +35,12 @@ obras/minha-obra/index.html
 <img src="../../assets/logo-mesa-42.png" alt="Mesa 42" />
 <link rel="stylesheet" href="../../css/site-header.css" />
 <link rel="stylesheet" href="../../css/obra-texto.css" />
+<link rel="stylesheet" href="../../css/site-footer.css" />
 <script src="../../js/site-header.js"></script>
 ```
 
 4. Mantenha no cabeçalho as abas `Início`, `Acervo`, `Textos`, `Séries`, `Interativos` e `Sobre`.
 
-5. Cadastre a obra em `js/obras.js`, preenchendo título, autor, data, categoria, tipos, resumo, imagem, link e tags. Use `textos`, `series` e/ou `interativos` no campo `tipos`.
+5. Cadastre a obra em `js/obras-data.js`, preenchendo título, autor, data, categoria, tipos, resumo, imagem, link e tags. Use `textos`, `series` e/ou `interativos` no campo `tipos`.
 
 6. Para colocar a obra em destaque na home, adicione a tag `favorita` ou `destaque`. Se houver mais de uma, a mais recente fica em destaque.

@@ -24,6 +24,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Bangers&family=Fugaz+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/site-header.css" />
+  <link rel="stylesheet" href="../css/site-footer.css" />
   <link rel="stylesheet" href="../css/obra-texto.css" />
 </head>
 <body>
@@ -56,11 +57,11 @@
   <div class="site-navigation-shell">
     <nav class="site-main-nav" aria-label="Navegação principal">
       <a href="../">Início</a>
-      <a href="../#acervo">Acervo</a>
-      <a class="is-active" href="../?tipo=textos#acervo">Textos</a>
-      <a href="../?tipo=series#acervo">Séries</a>
-      <a href="../?tipo=interativos#acervo">Interativos</a>
-      <a href="../#sobre">Sobre</a>
+      <a href="../acervo/">Acervo</a>
+      <a class="is-active" href="../textos/">Textos</a>
+      <a href="../series/">Séries</a>
+      <a href="../interativos/">Interativos</a>
+      <a href="../sobre/">Sobre</a>
       <button class="site-theme-button" type="button" data-site-theme-button aria-label="Alternar contraste da página" title="Alternar contraste"><span aria-hidden="true">☀</span></button>
     </nav>
   </div>
@@ -155,16 +156,45 @@
     </aside>
   </main>
 
-  <footer class="text-footer">
-    <p>
-      Mesa 42 é um arquivo narrativo de ficção. Textos, projetos, documentos, campanhas,
-      instituições, depoimentos e acontecimentos apresentados aqui podem ser inventados,
-      distorcidos ou impossíveis.
-    </p>
-    <div class="footer-links">
-      <a href="../">Acervo</a>
-      <a href="https://cianortecardmasters.com.br">CC Masters</a>
+  <footer class="global-footer">
+    <div class="global-footer-inner">
+      <section class="global-footer-brand" aria-labelledby="footer-brand-title">
+        <img src="../assets/logo-mesa-42.png" alt="" />
+        <div>
+          <h2 id="footer-brand-title">Mesa 42</h2>
+          <p>Um arquivo de ficção criado por fãs. Textos, notícias, documentos, campanhas, personagens, instituições e acontecimentos apresentados aqui podem ser inventados, distorcidos ou impossíveis.</p>
+        </div>
+      </section>
+      <section>
+        <h3>Mapa do site</h3>
+        <nav aria-label="Mapa do site">
+          <a href="../">Início</a><a href="../acervo/">Acervo</a><a href="../textos/">Textos</a><a href="../series/">Séries</a><a href="../interativos/">Interativos</a><a href="../sobre/">Sobre</a>
+        </nav>
+      </section>
+      <section>
+        <h3>Cianorte Card Masters</h3>
+        <nav aria-label="Links do Cianorte Card Masters">
+          <a href="https://cianortecardmasters.com.br/" target="_blank" rel="noopener noreferrer">Site da comunidade</a>
+          <a href="https://www.youtube.com/@cianortecardmaster" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://www.instagram.com/cianortecardmasters/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/p/Cianorte-Card-Masters-61573789171734/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </nav>
+      </section>
+      <section>
+        <h3>Informações</h3>
+        <nav aria-label="Informações legais"><a href="../privacidade/">Política de Privacidade</a></nav>
+        <div class="global-footer-social" aria-label="Redes sociais">
+          <a href="https://www.youtube.com/@cianortecardmaster" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="../assets/icon-youtube.png" alt="" /></a>
+          <a href="https://www.instagram.com/cianortecardmasters/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="../assets/icon-instagram.png" alt="" /></a>
+          <a href="https://www.facebook.com/p/Cianorte-Card-Masters-61573789171734/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="../assets/icon-facebook.png" alt="" /></a>
+          <a href="https://cianortecardmasters.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Cianorte Card Masters"><img src="../assets/favicon-cc-48x48.png" alt="" /></a>
+        </div>
+      </section>
     </div>
+    <div class="global-footer-bottom"><div class="global-footer-bottom-inner">
+      <p>© 2026 Mesa 42. Projeto independente de fãs, sem afiliação oficial com as empresas responsáveis pelos card games citados.</p>
+      <p>Todas as marcas pertencem aos seus respectivos proprietários.</p>
+    </div></div>
   </footer>
   <script src="../js/site-header.js"></script>
 </body>

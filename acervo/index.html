@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Acervo | Mesa 42</title>
+  <meta name="description" content="Todo o conteúdo do Mesa 42 reunido em ordem de publicação: textos, séries, visual novels, mini games e experiências interativas." />
+  <meta name="theme-color" content="#052c23" />
+  <link rel="icon" type="image/png" href="../assets/icon-mesa42.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Fugaz+One&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/site-header.css" />
+  <link rel="stylesheet" href="../css/catalogo.css" />
+  <link rel="stylesheet" href="../css/site-footer.css" />
+</head>
+<body data-root="../" data-catalog-type="todas">
+  <div class="site-announcement-bar" aria-label="Conteúdo mais recente">
+    <div class="site-announcement-inner">
+      <span class="site-announcement-label">Novo conteúdo</span>
+      <a href="../obras/anuncio-grande-torneio-galactico-card-game/">O anúncio do Grande Torneio Galáctico de Card Game já está no ar!</a>
+      <nav class="site-announcement-social" aria-label="Redes do Cianorte Card Masters"><a href="https://www.youtube.com/@cianortecardmaster" target="_blank" rel="noopener noreferrer" aria-label="YouTube do Cianorte Card Masters"><img src="../assets/icon-youtube.png" alt="" /></a><a href="https://www.instagram.com/cianortecardmasters/" target="_blank" rel="noopener noreferrer" aria-label="Instagram do Cianorte Card Masters"><img src="../assets/icon-instagram.png" alt="" /></a><a href="https://www.facebook.com/p/Cianorte-Card-Masters-61573789171734/" target="_blank" rel="noopener noreferrer" aria-label="Facebook do Cianorte Card Masters"><img src="../assets/icon-facebook.png" alt="" /></a><a href="https://cianortecardmasters.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Site Cianorte Card Masters"><img src="../assets/favicon-cc-48x48.png" alt="" /></a></nav>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <a class="site-mesa-brand" href="../" aria-label="Mesa 42 — voltar ao início">
+        <img src="../assets/logo-mesa-42.png" alt="" />
+        <span class="site-mesa-brand-text">
+          <strong>Mesa 42</strong>
+          <small>A mesa onde tudo pode acontecer.</small>
+        </span>
+      </a>
+      <p class="site-header-description">Textos fantasiosos, documentos falsos, reportagens impossíveis e projetos de realidade duvidosa.</p>
+    </div>
+  </header>
+
+  <div class="site-navigation-shell">
+    <nav class="site-main-nav" aria-label="Navegação principal">
+      <a class="" href="../">Início</a><a class="is-active" href="../acervo/">Acervo</a><a class="" href="../textos/">Textos</a><a class="" href="../series/">Séries</a><a class="" href="../interativos/">Interativos</a><a class="" href="../sobre/">Sobre</a>
+      <button class="site-theme-button" type="button" data-site-theme-button aria-label="Alternar contraste da página" title="Alternar contraste"><span aria-hidden="true">☀</span></button>
+    </nav>
+  </div>
+
+  <main class="catalog-shell">
+    <section class="catalog-main" aria-labelledby="catalog-title">
+      <header class="catalog-header">
+        <p class="catalog-kicker">Todas as publicações</p>
+        <h1 id="catalog-title">Acervo</h1>
+        <p class="catalog-intro">Todo o conteúdo do Mesa 42 reunido em ordem de publicação: textos, séries, visual novels, mini games e experiências interativas.</p>
+      </header>
+
+      <div class="catalog-toolbar">
+        <p class="catalog-status" id="catalogStatus" aria-live="polite"></p>
+        <button class="catalog-clear" id="catalogClear" type="button" hidden>Limpar busca</button>
+      </div>
+      <div class="catalog-list" id="catalogList"></div>
+      <nav class="catalog-pagination" id="catalogPagination" aria-label="Paginação do acervo"></nav>
+    </section>
+
+    <aside class="catalog-sidebar" aria-label="Ferramentas do acervo">
+      <section class="catalog-side-card" aria-labelledby="catalog-search-title">
+        <h2 id="catalog-search-title">Buscar</h2>
+        <form class="catalog-search-form" id="catalogSearchForm" role="search">
+          <label class="sr-only" for="catalogSearch">Buscar nesta seção</label>
+          <input id="catalogSearch" type="search" name="busca" placeholder="Buscar no Mesa 42..." autocomplete="off" />
+          <button type="submit" aria-label="Executar busca">
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" /></svg>
+          </button>
+        </form>
+      </section>
+
+      <section class="catalog-side-card" aria-labelledby="catalog-nav-title">
+        <h2 id="catalog-nav-title">Navegar</h2>
+        <nav class="catalog-nav-list" aria-label="Seções do acervo">
+          <a class="is-active" href="../acervo/">Acervo completo <span>→</span></a>
+          <a class="" href="../textos/">Textos <span>→</span></a>
+          <a class="" href="../series/">Séries <span>→</span></a>
+          <a class="" href="../interativos/">Interativos <span>→</span></a>
+        </nav>
+      </section>
+
+      <section class="catalog-side-card catalog-note">
+        <h2>25 por página</h2>
+        <p>As obras aparecem da mais recente para a mais antiga. Quando o acervo passar de 25 itens, os links de navegação levam às publicações anteriores.</p>
+      </section>
+    </aside>
+  </main>
+
+  <footer class="global-footer">
+    <div class="global-footer-inner">
+      <section class="global-footer-brand" aria-labelledby="footer-brand-title">
+        <img src="../assets/logo-mesa-42.png" alt="" />
+        <div>
+          <h2 id="footer-brand-title">Mesa 42</h2>
+          <p>Um arquivo de ficção criado por fãs. Textos, notícias, documentos, campanhas, personagens, instituições e acontecimentos apresentados aqui podem ser inventados, distorcidos ou impossíveis.</p>
+        </div>
+      </section>
+
+      <section>
+        <h3>Mapa do site</h3>
+        <nav aria-label="Mapa do site">
+          <a href="../">Início</a>
+          <a href="../acervo/">Acervo</a>
+          <a href="../textos/">Textos</a>
+          <a href="../series/">Séries</a>
+          <a href="../interativos/">Interativos</a>
+          <a href="../sobre/">Sobre</a>
+        </nav>
+      </section>
+
+      <section>
+        <h3>Cianorte Card Masters</h3>
+        <nav aria-label="Links do Cianorte Card Masters">
+          <a href="https://cianortecardmasters.com.br/" target="_blank" rel="noopener noreferrer">Site da comunidade</a>
+          <a href="https://www.youtube.com/@cianortecardmaster" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://www.instagram.com/cianortecardmasters/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.facebook.com/p/Cianorte-Card-Masters-61573789171734/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        </nav>
+      </section>
+
+      <section>
+        <h3>Informações</h3>
+        <nav aria-label="Informações legais">
+          <a href="../privacidade/">Política de Privacidade</a>
+        </nav>
+        <div class="global-footer-social" aria-label="Redes sociais">
+          <a href="https://www.youtube.com/@cianortecardmaster" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><img src="../assets/icon-youtube.png" alt="" /></a>
+          <a href="https://www.instagram.com/cianortecardmasters/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><img src="../assets/icon-instagram.png" alt="" /></a>
+          <a href="https://www.facebook.com/p/Cianorte-Card-Masters-61573789171734/" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><img src="../assets/icon-facebook.png" alt="" /></a>
+          <a href="https://cianortecardmasters.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Cianorte Card Masters"><img src="../assets/favicon-cc-48x48.png" alt="" /></a>
+        </div>
+      </section>
+    </div>
+    <div class="global-footer-bottom">
+      <div class="global-footer-bottom-inner">
+        <p>© 2026 Mesa 42. Projeto independente de fãs, sem afiliação oficial com as empresas responsáveis pelos card games citados.</p>
+        <p>Todas as marcas pertencem aos seus respectivos proprietários.</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/obras-data.js"></script>
+  <script src="../js/catalogo.js"></script>
+  <script src="../js/site-header.js"></script>
+</body>
+</html>

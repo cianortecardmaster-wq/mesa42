@@ -15,14 +15,16 @@ Home do projeto Mesa 42, área narrativa do Cianorte Card Masters.
 index.html              # home do arquivo narrativo
 css/style.css           # visual da home
 css/obra-texto.css      # padrão das páginas de texto
-js/obras.js             # cadastro das obras exibidas na home
+js/obras-data.js        # cadastro central das obras
+js/obras.js             # renderização e busca da home
+js/catalogo.js           # filtros e paginação das páginas de acervo
 modelos/obra-texto.html # modelo para obras estilo blog/texto
 obras/                  # páginas das obras
 ```
 
 ## Obras cadastradas na home
 
-As obras exibidas na homepage ficam em `js/obras.js`.
+As obras exibidas na homepage e nas páginas Acervo, Textos, Séries e Interativos ficam em `js/obras-data.js`.
 
 Cada item deve ter, no mínimo:
 
@@ -33,21 +35,21 @@ Cada item deve ter, no mínimo:
   data: '2026-07-09',
   dataLabel: '9 de julho de 2026',
   categoria: 'Contos',
-  chamadaCategoria: 'Último conto',
   resumo: 'Resumo curto da obra.',
-  url: './obras/nome-da-obra/index.html',
-  imagem: './obras/nome-da-obra/assets/capa.png',
+  tipos: ['textos'],
+  url: 'obras/nome-da-obra/',
+  imagem: 'obras/nome-da-obra/assets/capa.png',
   imagemAlt: 'Descrição da imagem',
   cta: 'Ler',
   tags: ['conto', 'mesa 42']
 }
 ```
 
-A home mostra as 10 últimas obras publicadas.
+A home mostra as 10 últimas obras publicadas. As páginas de catálogo mostram até 25 itens por página e criam a navegação para publicações anteriores automaticamente.
 
-## Destaque da home
+## Marcação de destaque
 
-Para colocar uma obra no destaque principal, adicione a tag:
+Para dar destaque visual a uma obra nos cards, adicione a tag:
 
 ```js
 tags: ['favorita']
@@ -59,7 +61,7 @@ ou:
 tags: ['destaque']
 ```
 
-Se houver mais de uma obra marcada, a mais recente pela data fica em destaque.
+A tag recebe um tratamento visual especial nos cards. A ordem das obras continua sendo definida pela data de publicação.
 
 ## Páginas estilo blog/texto
 
@@ -97,5 +99,5 @@ obras/financiamento-coletivo-cartas-nosso-dinheiro/
 1. Crie uma pasta em `obras/`.
 2. Para texto simples, copie `modelos/obra-texto.html` para a pasta da nova obra.
 3. Para obra com visual próprio, crie HTML/CSS/JS próprios dentro da pasta da obra.
-4. Cadastre a obra em `js/obras.js`.
-5. Use a tag `favorita` ou `destaque` apenas quando quiser que ela apareça no destaque da home.
+4. Cadastre a obra em `js/obras-data.js` e informe em `tipos` se ela pertence a `textos`, `series` e/ou `interativos`.
+5. Use a tag `favorita` ou `destaque` apenas quando quiser dar tratamento visual especial ao card.
