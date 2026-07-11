@@ -101,3 +101,49 @@ obras/financiamento-coletivo-cartas-nosso-dinheiro/
 3. Para obra com visual próprio, crie HTML/CSS/JS próprios dentro da pasta da obra.
 4. Cadastre a obra em `js/obras-data.js` e informe em `tipos` se ela pertence a `textos`, `series` e/ou `interativos`.
 5. Use a tag `favorita` ou `destaque` apenas quando quiser dar tratamento visual especial ao card.
+
+## RSS de todas as obras
+
+O arquivo público do feed fica em:
+
+```txt
+https://mesa42.cianortecardmasters.com.br/feed.xml
+```
+
+Todas as obras cadastradas em `js/obras-data.js` entram no RSS, independentemente do tipo. Isso inclui textos, séries, visual novels, mini games e outros projetos interativos.
+
+O `feed.xml` é gerado pelo script:
+
+```txt
+scripts/generate-rss.mjs
+```
+
+Para gerar ou conferir o feed no computador:
+
+```bash
+node scripts/generate-rss.mjs
+```
+
+O fluxo `.github/workflows/generate-rss.yml` executa esse script automaticamente quando `js/obras-data.js` é alterado na branch `main`. Caso o conteúdo do feed tenha mudado, o GitHub Actions atualiza e publica `feed.xml` no próprio repositório.
+
+Para cada obra, mantenha estáveis os campos `url` e `data`. Correções no título, resumo, imagem ou conteúdo da página não criam uma nova entrada, pois o endereço da obra é usado como identificador permanente (`guid`).
+
+Ao cadastrar uma nova obra, os campos usados pelo RSS são:
+
+```js
+{
+  titulo: 'Título da obra',
+  autor: 'Neto',
+  data: '2026-07-11',
+  categoria: 'Jogo narrativo',
+  resumo: 'Resumo curto da obra.',
+  url: 'obras/nome-da-obra/',
+  imagem: 'obras/nome-da-obra/assets/capa.png',
+  imagemAlt: 'Descrição da imagem',
+  cta: 'Jogar',
+  tipos: ['interativos'],
+  tags: ['mini game']
+}
+```
+
+Não é necessário editar `feed.xml` manualmente.
