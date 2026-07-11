@@ -17,6 +17,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Fugaz+One&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/newsletter.css" />
   <link rel="stylesheet" href="css/site-footer.css" />
 </head>
 <body data-root="">
@@ -100,12 +101,33 @@
         </form>
       </section>
 
-      <section class="sidebar-card crew-card" id="tripulacao" aria-labelledby="crew-title">
-        <div class="crew-symbol" aria-hidden="true">✦</div>
-        <h2 id="crew-title">Entre para a Tripulação.</h2>
-        <p>Receba cartas inéditas, bastidores e missões exclusivas por e-mail.</p>
-        <button type="button" id="subscribeButton">Assinar boletim</button>
-        <p class="crew-feedback" id="crewFeedback" aria-live="polite"></p>
+      <section class="sidebar-card crew-card newsletter-card" id="tripulacao" aria-labelledby="newsletter-title">
+        <span class="newsletter-eyebrow">Transmissão quinzenal</span>
+        <h2 id="newsletter-title">Receba novas transmissões</h2>
+        <p>
+          Contos, documentos recuperados, card games e atualizações do Mesa 42 e Cianorte Card Masters diretamente no seu e-mail.
+        </p>
+
+        <form
+          action="https://buttondown.com/api/emails/embed-subscribe/mesa_42"
+          method="post"
+          class="embeddable-buttondown-form newsletter-form"
+        >
+          <label for="bd-email" class="sr-only">Seu e-mail</label>
+          <div class="newsletter-form-row">
+            <input
+              type="email"
+              name="email"
+              id="bd-email"
+              placeholder="seu@email.com"
+              autocomplete="email"
+              required
+            />
+            <button type="submit">Assinar</button>
+          </div>
+        </form>
+
+        <small>Uma transmissão a cada quinze dias. Sem spam. Provavelmente.</small>
       </section>
 
       <section class="sidebar-card zine-card" aria-labelledby="zine-title" data-latest-zine>
