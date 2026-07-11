@@ -8,7 +8,7 @@ window.MESA42_OBRAS = [
     tipos: ['textos', 'series'],
     resumo: 'Milhares de naves retornam à Terra, a Lua entra em disputa e uma possível invasão se transforma no anúncio do maior torneio de card game do universo conhecido.',
     url: 'obras/anuncio-grande-torneio-galactico-card-game/',
-    imagem: 'obras/anuncio-grande-torneio-galactico-card-game/assets/thumb-grande-torneio-galactico.svg',
+    imagem: 'obras/anuncio-grande-torneio-galactico-card-game/assets/thumb-grande-torneio-galactico.png',
     imagemAlt: 'Plantão do Canal 5 sobre a chegada dos Galurianos e o anúncio do torneio galáctico',
     cta: 'Ler transmissão',
     tags: ['reportagem fictícia', 'série', 'grande torneio galáctico', 'telejornal']
