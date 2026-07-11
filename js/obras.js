@@ -52,7 +52,7 @@
             <span class="meta-separator">•</span>
             <span class="meta-item">${icons.folder}<span>${obra.categoria}</span></span>
           </p>
-          <p class="work-summary">${obra.resumo}</p>
+          <p class="work-summary">${obra.resumoHome || obra.resumo}</p>
         </div>
       </article>`;
   };
@@ -78,6 +78,7 @@
       obra.titulo,
       obra.autor,
       obra.categoria,
+      obra.resumoHome,
       obra.resumo,
       ...(obra.tags || [])
     ].join(' ')).includes(termo));

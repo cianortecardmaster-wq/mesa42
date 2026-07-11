@@ -8,8 +8,8 @@ window.MESA42_OBRAS = [
     tipos: ['textos', 'series'],
     resumo: 'Milhares de naves retornam à Terra, a Lua entra em disputa e uma possível invasão se transforma no anúncio do maior torneio de card game do universo conhecido.',
     url: 'obras/anuncio-grande-torneio-galactico-card-game/',
-    imagem: 'obras/anuncio-grande-torneio-galactico-card-game/assets/thumb-grande-torneio-galactico.png',
-    imagemAlt: 'Naves espaciais triangulares cruzando o céu diante de uma grande lua',
+    imagem: 'obras/anuncio-grande-torneio-galactico-card-game/assets/thumb-grande-torneio-galactico.svg',
+    imagemAlt: 'Plantão do Canal 5 sobre a chegada dos Galurianos e o anúncio do torneio galáctico',
     cta: 'Ler transmissão',
     tags: ['reportagem fictícia', 'série', 'grande torneio galáctico', 'telejornal']
   },
@@ -35,6 +35,7 @@ window.MESA42_OBRAS = [
     categoria: 'Jogo narrativo',
     tipos: ['interativos'],
     resumo: 'Um mini game de Flesh and Blood em que a leitura correta da mesa decide a final contra o campeão nacional.',
+    resumoHome: 'Este minigame simula uma jogada de Flesh and Blood inspirada em um momento real e emocionante de partida. A proposta é estudar, na prática, janelas de prioridade, ações e reações dentro de um único turno. Em uma partida real, ainda seria preciso acompanhar o cemitério do oponente e lembrar as cartas usadas para pitch. Aqui, o cenário foi simplificado para focar nas decisões: temos instants defensivos na mão, ataques de alto custo, possibilidade de compra de cartas e um oponente capaz de atacar durante o nosso próprio turno.',
     url: 'obras/venca-o-campeao-nacional/',
     imagem: 'obras/venca-o-campeao-nacional/assets/arena-de-batalha.png',
     imagemAlt: 'Arena de batalha do mini game Vença o campeão nacional',
