@@ -101,16 +101,57 @@ a {
 
 .announcement-inner > a {
   min-width: 0;
+  height: 48px;
+  flex: 1 1 auto;
+  position: relative;
   overflow: hidden;
   color: var(--gold-500);
   font-weight: 700;
   text-decoration: none;
-  text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.announcement-message {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: max-content;
+  color: inherit;
+  animation: announcement-ticker 22s linear infinite;
+  will-change: left, transform;
 }
 
 .announcement-inner > a:hover {
   color: #fff;
+}
+
+.announcement-inner > a:hover .announcement-message,
+.announcement-inner > a:focus-visible .announcement-message {
+  animation-play-state: paused;
+}
+
+@keyframes announcement-ticker {
+  from {
+    left: 100%;
+    transform: translate(0, -50%);
+  }
+
+  to {
+    left: 0;
+    transform: translate(-100%, -50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .announcement-message {
+    position: static;
+    display: block;
+    overflow: hidden;
+    animation: none;
+    line-height: 48px;
+    text-overflow: ellipsis;
+    transform: none;
+  }
 }
 
 .announcement-social {
@@ -648,33 +689,18 @@ a {
 
 .zine-content {
   display: grid;
-  grid-template-columns: 132px minmax(0, 1fr);
-  gap: 15px;
+  grid-template-columns: 112px minmax(0, 1fr);
+  gap: 16px;
   align-items: center;
   padding: 16px 18px 20px;
 }
 
 .zine-cover-placeholder {
-  display: block;
   aspect-ratio: 5 / 7;
   overflow: hidden;
   border: 2px dashed #7b8882;
-  border-radius: 9px;
+  border-radius: 8px;
   background: #f2f4f3;
-  box-shadow: 0 4px 0 rgba(5, 44, 35, .18);
-  text-decoration: none;
-  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
-}
-
-.zine-card.is-loaded .zine-cover-placeholder {
-  border-style: solid;
-  border-color: var(--green-950);
-}
-
-.zine-cover-placeholder:hover,
-.zine-cover-placeholder:focus-visible {
-  transform: translateY(-3px);
-  box-shadow: 0 7px 0 rgba(5, 44, 35, .22);
 }
 
 .zine-cover-placeholder img {
@@ -683,40 +709,32 @@ a {
   object-fit: cover;
 }
 
-.zine-details {
-  min-width: 0;
-  display: grid;
-  gap: 12px;
-}
-
 .zine-content p {
-  margin: 0;
-  color: var(--green-950);
-  font-size: 1.02rem;
-  font-weight: 800;
-  line-height: 1.25;
+  margin: 0 0 12px;
+  color: #26312d;
+  line-height: 1.35;
 }
 
-.zine-repository-link {
+.disabled-link {
   display: block;
-  padding: 10px 9px;
-  border: 2px solid var(--gold-600);
+  padding: 9px 10px;
+  border: 2px solid #88958f;
   border-radius: 8px;
-  color: var(--green-950);
-  background: var(--gold-500);
-  box-shadow: 0 4px 0 rgba(0, 0, 0, .20);
-  font-size: .86rem;
-  font-weight: 800;
-  line-height: 1.2;
+  color: #59645f;
+  background: #f3f5f4;
+  font-size: .88rem;
+  font-weight: 700;
+  line-height: 1.25;
   text-align: center;
-  text-decoration: none;
-  transition: transform .16s ease, box-shadow .16s ease;
 }
 
-.zine-repository-link:hover,
-.zine-repository-link:focus-visible {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 0 rgba(0, 0, 0, .24);
+.zine-content small {
+  display: block;
+  margin-top: 7px;
+  color: var(--gold-600);
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .useful-links {

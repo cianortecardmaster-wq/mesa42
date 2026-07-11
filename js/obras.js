@@ -115,7 +115,6 @@
   const announcement = document.querySelector('#announcementLatest');
   if (latest && announcement) {
     announcement.href = caminho(latest.url);
-    announcement.textContent = `${latest.titulo} já está no ar!`;
   }
 
   document.querySelector('#subscribeButton')?.addEventListener('click', () => {

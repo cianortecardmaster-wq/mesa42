@@ -18,13 +18,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&family=Fugaz+One&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
   <link rel="stylesheet" href="css/site-footer.css" />
-  <link rel="alternate" type="application/rss+xml" title="Mesa 42 — Novas obras" href="https://mesa42.cianortecardmasters.com.br/feed.xml" />
 </head>
 <body data-root="">
   <div class="announcement-bar" aria-label="Conteúdo mais recente">
     <div class="announcement-inner">
       <span class="announcement-label">Novo conteúdo</span>
-      <a id="announcementLatest" href="#acervo">Nova obra publicada no Mesa 42.</a>
+      <a id="announcementLatest" class="announcement-marquee" href="#acervo"><span class="announcement-message">O anúncio do Grande Torneio Galáctico de Card Game já está no ar! comece agora série de textos sobre uma invasão alienígena.</span></a>
 
       <nav class="announcement-social" aria-label="Redes do Cianorte Card Masters">
         <a href="https://www.youtube.com/@cianortecardmaster" target="_blank" rel="noopener noreferrer" aria-label="YouTube do Cianorte Card Masters">
@@ -109,32 +108,16 @@
         <p class="crew-feedback" id="crewFeedback" aria-live="polite"></p>
       </section>
 
-      <section class="sidebar-card zine-card" aria-labelledby="zine-title" data-latest-zine>
+      <section class="sidebar-card zine-card" aria-labelledby="zine-title">
         <h2 id="zine-title">Último Zine</h2>
         <div class="zine-content">
-          <a
-            class="zine-cover-placeholder"
-            id="latestZineCoverLink"
-            href="https://revista.cianortecardmasters.com.br/"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Abrir o repositório da CC Masters Zine"
-          >
-            <img
-              id="latestZineCover"
-              src="assets/placeholders/zine-placeholder.svg"
-              alt="Capa da edição mais recente da CC Masters Zine"
-            />
-          </a>
-          <div class="zine-details">
-            <p id="latestZineEdition" aria-live="polite">Edição —</p>
-            <a
-              class="zine-repository-link"
-              id="latestZineRepository"
-              href="https://revista.cianortecardmasters.com.br/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >Abrir repositório</a>
+          <div class="zine-cover-placeholder" aria-label="Espaço reservado para a capa do último zine">
+            <img src="assets/placeholders/zine-placeholder.svg" alt="Capa do Zine Mesa 42 em breve" />
+          </div>
+          <div>
+            <p>Espaço reservado para a capa do novo zine.</p>
+            <span class="disabled-link" aria-disabled="true">Abrir repositório do zine</span>
+            <small>Em breve</small>
           </div>
         </div>
       </section>
@@ -218,6 +201,5 @@
 
   <script src="js/obras-data.js"></script>
   <script src="js/obras.js"></script>
-  <script src="js/zine-latest.js"></script>
 </body>
 </html>

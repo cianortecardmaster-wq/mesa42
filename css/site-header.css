@@ -56,17 +56,58 @@
 
 .site-announcement-inner > a {
   min-width: 0;
+  height: 48px;
+  flex: 1 1 auto;
+  position: relative;
   overflow: hidden;
   color: var(--site-gold-500);
   font-weight: 700;
   text-decoration: none;
-  text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.site-announcement-message {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  width: max-content;
+  color: inherit;
+  animation: site-announcement-ticker 22s linear infinite;
+  will-change: left, transform;
 }
 
 .site-announcement-inner > a:hover,
 .site-announcement-inner > a:focus-visible {
   color: #fff;
+}
+
+.site-announcement-inner > a:hover .site-announcement-message,
+.site-announcement-inner > a:focus-visible .site-announcement-message {
+  animation-play-state: paused;
+}
+
+@keyframes site-announcement-ticker {
+  from {
+    left: 100%;
+    transform: translate(0, -50%);
+  }
+
+  to {
+    left: 0;
+    transform: translate(-100%, -50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-announcement-message {
+    position: static;
+    display: block;
+    overflow: hidden;
+    animation: none;
+    line-height: 48px;
+    text-overflow: ellipsis;
+    transform: none;
+  }
 }
 
 .site-announcement-social {
