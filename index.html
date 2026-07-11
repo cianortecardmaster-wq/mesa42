@@ -108,16 +108,32 @@
         <p class="crew-feedback" id="crewFeedback" aria-live="polite"></p>
       </section>
 
-      <section class="sidebar-card zine-card" aria-labelledby="zine-title">
+      <section class="sidebar-card zine-card" aria-labelledby="zine-title" data-latest-zine>
         <h2 id="zine-title">Último Zine</h2>
         <div class="zine-content">
-          <div class="zine-cover-placeholder" aria-label="Espaço reservado para a capa do último zine">
-            <img src="assets/placeholders/zine-placeholder.svg" alt="Capa do Zine Mesa 42 em breve" />
-          </div>
-          <div>
-            <p>Espaço reservado para a capa do novo zine.</p>
-            <span class="disabled-link" aria-disabled="true">Abrir repositório do zine</span>
-            <small>Em breve</small>
+          <a
+            class="zine-cover-placeholder"
+            id="latestZineCoverLink"
+            href="https://revista.cianortecardmasters.com.br/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Abrir o repositório da CC Masters Zine"
+          >
+            <img
+              id="latestZineCover"
+              src="assets/placeholders/zine-placeholder.svg"
+              alt="Capa da edição mais recente da CC Masters Zine"
+            />
+          </a>
+          <div class="zine-details">
+            <p id="latestZineEdition" aria-live="polite">Edição —</p>
+            <a
+              class="zine-repository-link"
+              id="latestZineRepository"
+              href="https://revista.cianortecardmasters.com.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Abrir repositório</a>
           </div>
         </div>
       </section>
@@ -201,5 +217,6 @@
 
   <script src="js/obras-data.js"></script>
   <script src="js/obras.js"></script>
+  <script src="js/zine-latest.js"></script>
 </body>
 </html>
