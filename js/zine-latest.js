@@ -11,6 +11,9 @@
   const coverLink = document.getElementById("latestZineCoverLink");
   const editionLabel = document.getElementById("latestZineEdition");
   const repositoryLink = document.getElementById("latestZineRepository");
+  const status = document.getElementById("latestZineStatus");
+
+  if (!cover || !coverLink || !editionLabel || !repositoryLink) return;
 
   function safeHttpUrl(value, fallback = "") {
     try {
@@ -63,6 +66,9 @@
 
   feedScript.src = `${feedUrl}?v=${Date.now()}`;
   feedScript.async = true;
-  feedScript.onerror = () => card.classList.add("has-feed-error");
+  feedScript.onerror = () => {
+    card.classList.add("has-feed-error");
+    if (status) status.textContent = "Não foi possível carregar a edição automaticamente.";
+  };
   document.head.appendChild(feedScript);
 })();
