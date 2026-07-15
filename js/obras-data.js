@@ -30,6 +30,10 @@ window.MESA42_OBRAS = [
     imagem: 'obras/anuncio-grande-torneio-galactico-card-game/assets/thumb-grande-torneio-galactico.png',
     imagemAlt: 'Plantão do Canal 5 sobre a chegada dos Galurianos e o anúncio do torneio galáctico',
     cta: 'Ler transmissão',
+    palavras: 4597,
+    tempoLeitura: 23,
+    leituraAdultos: true,
+    avisoLeitura: 'Palavrões, mutilações, pânico global e decisões diplomáticas questionáveis.',
     tags: ['reportagem fictícia', 'série', 'grande torneio galáctico', 'telejornal']
   },
   {
@@ -44,6 +48,10 @@ window.MESA42_OBRAS = [
     imagem: 'obras/caso-h4r78lump3r7-desmembramento-permanente/assets/thumb-desmembramento-permanente.webp',
     imagemAlt: 'Arte da carta Desmembramento Permanente com Bethaniano e Alpha TRAPPIST',
     cta: 'Ler relatório',
+    palavras: 3943,
+    tempoLeitura: 20,
+    leituraAdultos: true,
+    avisoLeitura: 'Desmembramento, violência gráfica, mutilações e decisões artísticas questionáveis.',
     tags: ['ficção documental', 'projeto artístico', 'card game', 'série']
   },
   {
