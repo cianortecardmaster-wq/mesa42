@@ -535,6 +535,20 @@ a {
   font-weight: 900;
 }
 
+.work-reading-advisory {
+  margin: 10px 0 0;
+  padding: 9px 11px;
+  border-left: 3px solid var(--gold-500);
+  background: rgba(196, 151, 54, 0.08);
+  color: var(--green-700);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.work-reading-advisory strong {
+  color: var(--green-900);
+}
+
 .work-summary {
   margin: 0;
   color: #26312d;

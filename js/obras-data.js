@@ -13,6 +13,8 @@ window.MESA42_OBRAS = [
     cta: 'Ler conto',
     palavras: 1983,
     tempoLeitura: 10,
+    leituraAdultos: true,
+    avisoLeitura: 'Palavrões, sexo, drogas digitais e decisões financeiras questionáveis.',
     anuncio: 'Paga meu TIX já está no ar. Deva e Blorf só queriam resolver um pequeno problema de trânsito.',
     tags: ['ficção científica', 'humor absurdo', 'card game']
   },

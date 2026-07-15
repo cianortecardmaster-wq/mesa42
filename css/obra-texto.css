@@ -142,6 +142,19 @@ h1 {
   color: var(--gold);
 }
 
+.reading-advisory {
+  margin: 18px 0 0;
+  padding: 12px 14px;
+  border-left: 3px solid var(--gold);
+  background: rgba(196, 151, 54, 0.08);
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+.reading-advisory strong {
+  color: var(--green-900);
+}
+
 .tag-list {
   display: flex;
   flex-wrap: wrap;
