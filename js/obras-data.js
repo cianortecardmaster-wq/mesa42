@@ -1,5 +1,22 @@
 window.MESA42_OBRAS = [
   {
+    titulo: 'Paga meu TIX',
+    autor: 'Neto',
+    data: '2026-07-14',
+    dataLabel: '14 de julho de 2026',
+    categoria: 'Conto',
+    tipos: ['textos'],
+    resumo: 'Um acidente de trânsito, uma nave bethaniana e cinco mil TIX colocam Deva e Blorf no meio de uma negociação completamente razoável.',
+    url: 'obras/paga-meu-tix/',
+    imagem: 'assets/placeholders/obra-placeholder.svg',
+    imagemAlt: 'Imagem de arquivo do Mesa 42 para o conto Paga meu TIX',
+    cta: 'Ler conto',
+    palavras: 1983,
+    tempoLeitura: 10,
+    anuncio: 'Paga meu TIX já está no ar. Deva e Blorf só queriam resolver um pequeno problema de trânsito.',
+    tags: ['ficção científica', 'humor absurdo', 'card game']
+  },
+  {
     titulo: 'O anúncio do Grande Torneio Galáctico de Card Game',
     autor: 'Neto',
     data: '2026-07-10',

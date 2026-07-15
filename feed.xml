@@ -9,7 +9,7 @@
     <link>https://mesa42.cianortecardmasters.com.br/</link>
     <description>Textos fantasiosos, documentos falsos, reportagens impossíveis, séries e experiências interativas do Mesa 42.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Fri, 10 Jul 2026 15:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 14 Jul 2026 15:00:00 GMT</lastBuildDate>
     <generator>Mesa 42 RSS Generator</generator>
     <ttl>60</ttl>
     <atom:link href="https://mesa42.cianortecardmasters.com.br/feed.xml" rel="self" type="application/rss+xml" />
@@ -18,6 +18,23 @@
       <title>Mesa 42</title>
       <link>https://mesa42.cianortecardmasters.com.br/</link>
     </image>
+
+    <item>
+      <title><![CDATA[Paga meu TIX]]></title>
+      <link>https://mesa42.cianortecardmasters.com.br/obras/paga-meu-tix/</link>
+      <guid isPermaLink="true">https://mesa42.cianortecardmasters.com.br/obras/paga-meu-tix/</guid>
+      <pubDate>Tue, 14 Jul 2026 15:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Neto]]></dc:creator>
+      <category>Conto</category>
+      <category>textos</category>
+      <category>ficção científica</category>
+      <category>humor absurdo</category>
+      <category>card game</category>
+      <description><![CDATA[<p><a href="https://mesa42.cianortecardmasters.com.br/obras/paga-meu-tix/"><img src="https://mesa42.cianortecardmasters.com.br/assets/placeholders/obra-placeholder.svg" alt="Imagem de arquivo do Mesa 42 para o conto Paga meu TIX" /></a></p><p>Um acidente de trânsito, uma nave bethaniana e cinco mil TIX colocam Deva e Blorf no meio de uma negociação completamente razoável.</p><p><a href="https://mesa42.cianortecardmasters.com.br/obras/paga-meu-tix/">Ler conto no Mesa 42</a></p>]]></description>
+      <content:encoded><![CDATA[<p><a href="https://mesa42.cianortecardmasters.com.br/obras/paga-meu-tix/"><img src="https://mesa42.cianortecardmasters.com.br/assets/placeholders/obra-placeholder.svg" alt="Imagem de arquivo do Mesa 42 para o conto Paga meu TIX" /></a></p><p>Um acidente de trânsito, uma nave bethaniana e cinco mil TIX colocam Deva e Blorf no meio de uma negociação completamente razoável.</p><p><a href="https://mesa42.cianortecardmasters.com.br/obras/paga-meu-tix/">Ler conto no Mesa 42</a></p>]]></content:encoded>
+      <media:content url="https://mesa42.cianortecardmasters.com.br/assets/placeholders/obra-placeholder.svg" medium="image" type="image/svg+xml" />
+      <media:thumbnail url="https://mesa42.cianortecardmasters.com.br/assets/placeholders/obra-placeholder.svg" />
+    </item>
 
     <item>
       <title><![CDATA[O anúncio do Grande Torneio Galáctico de Card Game]]></title>

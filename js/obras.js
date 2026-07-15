@@ -20,7 +20,9 @@
   const icons = {
     user: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20 21a8 8 0 0 0-16 0m12-13a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z"/></svg>',
     calendar: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M7 3v4m10-4v4M4 10h16M5 5h14a1 1 0 0 1 1 1v14H4V6a1 1 0 0 1 1-1Z"/></svg>',
-    folder: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 6h7l2 2h9v11H3V6Z"/></svg>'
+    folder: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M3 6h7l2 2h9v11H3V6Z"/></svg>',
+    words: '<svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 5h16M4 10h16M4 15h10M4 20h7"/></svg>',
+    clock: '<svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>'
   };
 
   const destaque = (tag) => ['destaque', 'favorita'].includes(normalizar(tag));
@@ -51,6 +53,8 @@
             <span class="meta-item">${icons.calendar}<span>${obra.dataLabel}</span></span>
             <span class="meta-separator">•</span>
             <span class="meta-item">${icons.folder}<span>${obra.categoria}</span></span>
+            ${obra.palavras ? `<span class="meta-separator">•</span><span class="meta-item">${icons.words}<span>${Number(obra.palavras).toLocaleString('pt-BR')} palavras</span></span>` : ''}
+            ${obra.tempoLeitura ? `<span class="meta-separator">•</span><span class="meta-item">${icons.clock}<span>${obra.tempoLeitura} min de leitura</span></span>` : ''}
           </p>
           <p class="work-summary">${obra.resumoHome || obra.resumo}</p>
         </div>
@@ -116,6 +120,10 @@
   const announcement = document.querySelector('#announcementLatest');
   if (latest && announcement) {
     announcement.href = caminho(latest.url);
+    const announcementMessage = announcement.querySelector('.announcement-message');
+    if (announcementMessage) {
+      announcementMessage.textContent = latest.anuncio || `${latest.titulo} já está no ar.`;
+    }
   }
 
   document.querySelector('#subscribeButton')?.addEventListener('click', () => {
