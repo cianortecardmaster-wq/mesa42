@@ -1,5 +1,24 @@
 window.MESA42_OBRAS = [
   {
+    titulo: 'Descoberta absurda no Reddit',
+    autor: 'Neto',
+    data: '2026-07-27',
+    dataLabel: '27 de julho de 2026',
+    categoria: 'Ficção documental',
+    tipos: ['textos'],
+    resumo: 'Um vídeo apagado, centenas de Túnicas destruídas e uma discussão arquivada revelam um comércio que talvez devesse ter permanecido escondido.',
+    url: 'obras/descoberta-absurda-no-reddit/',
+    imagem: 'obras/descoberta-absurda-no-reddit/assets/thumb-descoberta-reddit.svg',
+    imagemAlt: 'Discussão de fórum escura ao lado de uma carta colecionável fragmentada',
+    cta: 'Ler arquivo',
+    palavras: 1319,
+    tempoLeitura: 7,
+    leituraAdultos: true,
+    avisoLeitura: 'Descrições de mutilação, linguagem explícita, violência e humor macabro.',
+    anuncio: 'Descoberta absurda no Reddit já está no ar. Um vídeo apagado e centenas de Túnicas destruídas.',
+    tags: ['ficção documental', 'humor macabro', 'Flesh and Blood', 'fórum arquivado']
+  },
+  {
     titulo: 'Paga meu TIX',
     autor: 'Neto',
     data: '2026-07-14',
