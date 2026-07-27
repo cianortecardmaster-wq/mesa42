@@ -1,7 +1,7 @@
 (() => {
-  const REPOSITORY = 'cianortecardmaster-wq/mesa42';
-  const CATEGORY_PRIORITY = ['Comentários', 'Comments', 'Announcements', 'General'];
+  const FALLBACK_REPOSITORY = 'cianortecardmaster-wq/mesa42';
   const sections = document.querySelectorAll('[data-giscus-comments]');
+  const loaderScript = document.currentScript;
 
   if (!sections.length) return;
 
@@ -14,26 +14,38 @@
     status.innerHTML = message;
   };
 
-  const chooseCategory = (categories) => {
-    for (const name of CATEGORY_PRIORITY) {
-      const match = categories.find(
-        (category) => category.name.toLocaleLowerCase('pt-BR') === name.toLocaleLowerCase('pt-BR'),
-      );
-      if (match) return match;
+  const configUrl = (() => {
+    if (loaderScript?.src) {
+      return new URL('giscus-config.json', loaderScript.src);
     }
 
-    return categories[0];
+    return new URL('/js/giscus-config.json', window.location.origin);
+  })();
+
+  const validateConfig = (config) => {
+    const repository = config?.repository || FALLBACK_REPOSITORY;
+    const repositoryId = config?.repositoryId;
+    const category = config?.category;
+    const categoryId = config?.categoryId;
+
+    if (!repositoryId || !category || !categoryId) {
+      throw new Error(
+        'A configuração do Giscus ainda não foi gerada. Execute a ação "Configurar comentários".',
+      );
+    }
+
+    return { repository, repositoryId, category, categoryId };
   };
 
-  const createGiscusScript = ({ repositoryId, category }) => {
+  const createGiscusScript = ({ repository, repositoryId, category, categoryId }) => {
     const script = document.createElement('script');
     script.src = 'https://giscus.app/client.js';
     script.async = true;
     script.crossOrigin = 'anonymous';
-    script.dataset.repo = REPOSITORY;
+    script.dataset.repo = repository;
     script.dataset.repoId = repositoryId;
-    script.dataset.category = category.name;
-    script.dataset.categoryId = category.id;
+    script.dataset.category = category;
+    script.dataset.categoryId = categoryId;
     script.dataset.mapping = 'pathname';
     script.dataset.strict = '1';
     script.dataset.reactionsEnabled = '1';
@@ -41,35 +53,36 @@
     script.dataset.inputPosition = 'top';
     script.dataset.theme = 'light';
     script.dataset.lang = 'pt';
-    script.dataset.loading = 'lazy';
     return script;
   };
 
   const loadComments = async () => {
     try {
-      const endpoint = new URL('https://giscus.app/api/discussions/categories');
-      endpoint.searchParams.set('repo', REPOSITORY);
-
-      const response = await fetch(endpoint, {
+      const response = await fetch(configUrl, {
+        cache: 'no-store',
         headers: { Accept: 'application/json' },
       });
 
       if (!response.ok) {
-        throw new Error(`Giscus respondeu com status ${response.status}.`);
+        throw new Error(`Não foi possível carregar ${configUrl.pathname} (${response.status}).`);
       }
 
-      const data = await response.json();
-      const categories = Array.isArray(data.categories) ? data.categories : [];
-      const category = chooseCategory(categories);
-
-      if (!data.repositoryId || !category?.id) {
-        throw new Error('O repositório ainda não possui uma categoria de discussão disponível.');
-      }
+      const config = validateConfig(await response.json());
 
       sections.forEach((section) => {
         const status = section.querySelector('[data-giscus-status]');
         if (status) status.hidden = true;
-        section.append(createGiscusScript({ repositoryId: data.repositoryId, category }));
+
+        const script = createGiscusScript(config);
+        script.addEventListener('error', () => {
+          setStatus(
+            section,
+            '<strong>Não foi possível carregar os comentários.</strong><span>Tente atualizar a página em alguns instantes.</span>',
+            true,
+          );
+        });
+
+        section.append(script);
       });
     } catch (error) {
       console.error('[Mesa 42] Não foi possível carregar os comentários.', error);
@@ -78,7 +91,7 @@
         section.classList.add('giscus-section--setup');
         setStatus(
           section,
-          '<strong>Os comentários ainda não estão disponíveis.</strong><span>É necessário ativar o GitHub Discussions e autorizar o aplicativo Giscus no repositório do Mesa 42.</span>',
+          '<strong>Os comentários estão sendo configurados.</strong><span>Se esta mensagem continuar aparecendo, execute novamente a ação “Configurar comentários” no GitHub.</span>',
           true,
         );
       });
