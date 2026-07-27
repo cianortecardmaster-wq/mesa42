@@ -59,3 +59,38 @@
     padding-bottom: 17px;
   }
 }
+
+.giscus-status {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding: 15px 17px;
+  border: 1px solid var(--line-soft, #cad6d1);
+  border-radius: 12px;
+  color: var(--muted, #586660);
+  background: var(--paper-soft, #f5f8f6);
+  font-size: .95rem;
+  line-height: 1.5;
+}
+
+.giscus-status[hidden] {
+  display: none;
+}
+
+.giscus-status strong,
+.giscus-status span {
+  display: block;
+}
+
+.giscus-status.is-error {
+  border-left: 4px solid var(--gold, #c99316);
+}
+
+.giscus-section--setup .giscus {
+  display: none;
+}
+
+.giscus-section .giscus-frame {
+  min-height: 160px;
+  border: 0;
+}

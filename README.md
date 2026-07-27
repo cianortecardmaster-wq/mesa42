@@ -82,6 +82,27 @@ css/obra-texto.css
 
 Esse padrão não deve ser usado em obras com visual próprio, como visual novel, mini game, campanha falsa muito específica ou experiência interativa.
 
+
+## Comentários nas obras textuais
+
+As páginas cadastradas como textos usam o Giscus, com os comentários armazenados no GitHub Discussions do repositório `cianortecardmaster-wq/mesa42`.
+
+O carregador fica em:
+
+```txt
+js/comments.js
+```
+
+Ele consulta automaticamente o ID do repositório e das categorias disponíveis. A prioridade de categoria é: `Comentários`, `Comments`, `Announcements` e `General`. Assim, não é necessário copiar IDs manualmente para cada página.
+
+Para liberar os comentários no GitHub:
+
+1. Abra **Settings > General > Features** no repositório e ative **Discussions**.
+2. Instale ou configure o aplicativo **Giscus** com acesso ao repositório `cianortecardmaster-wq/mesa42`.
+3. Mantenha ao menos uma categoria de discussão ativa. A categoria **Announcements** é a opção recomendada para o Giscus.
+
+Os comentários foram incluídos somente nas obras textuais. O arquivo `modelos/obra-texto.html` já contém o bloco necessário para novas obras desse tipo.
+
 ## Obras com visual próprio
 
 Obras interativas ou com identidade específica mantêm seus próprios arquivos de HTML, CSS e JS dentro da pasta da obra.
