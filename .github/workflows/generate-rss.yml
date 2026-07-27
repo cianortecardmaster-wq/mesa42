@@ -1,4 +1,4 @@
-name: Atualizar RSS
+name: Atualizar arquivos gerados
 
 on:
   push:
@@ -6,7 +6,9 @@ on:
       - main
     paths:
       - "js/obras-data.js"
+      - "js/comments.js"
       - "scripts/generate-rss.mjs"
+      - "scripts/generate-giscus-config.mjs"
       - "CNAME"
       - ".github/workflows/generate-rss.yml"
   workflow_dispatch:
@@ -15,11 +17,11 @@ permissions:
   contents: write
 
 concurrency:
-  group: atualizar-rss-main
+  group: atualizar-arquivos-main
   cancel-in-progress: true
 
 jobs:
-  gerar-feed:
+  gerar-arquivos:
     runs-on: ubuntu-latest
 
     steps:
@@ -31,18 +33,21 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Gerar feed.xml
+      - name: Gerar feed RSS
         run: node scripts/generate-rss.mjs
 
-      - name: Publicar feed atualizado
+      - name: Configurar comentários
+        run: node scripts/generate-giscus-config.mjs
+
+      - name: Publicar arquivos atualizados
         run: |
-          if git diff --quiet -- feed.xml; then
-            echo "O feed.xml já está atualizado."
+          if git diff --quiet -- feed.xml js/giscus-config.json; then
+            echo "Os arquivos gerados já estão atualizados."
             exit 0
           fi
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add feed.xml
-          git commit -m "Atualiza RSS do Mesa 42"
+          git add feed.xml js/giscus-config.json
+          git commit -m "Atualiza arquivos gerados do Mesa 42"
           git push
