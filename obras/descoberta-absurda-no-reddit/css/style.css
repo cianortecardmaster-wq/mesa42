@@ -16,6 +16,10 @@
   max-width: none;
 }
 
+.reddit-story-body > p:last-of-type {
+  margin-bottom: 0;
+}
+
 .reddit-archive {
   --reddit-bg: #ffffff;
   --reddit-surface: #ffffff;
@@ -30,7 +34,7 @@
   --reddit-green: #42c99a;
   --reddit-bleed: clamp(28px, 5vw, 52px);
   width: calc(100% + (var(--reddit-bleed) * 2));
-  margin: 44px calc(var(--reddit-bleed) * -1) calc(var(--reddit-bleed) * -1);
+  margin: 0 calc(var(--reddit-bleed) * -1) calc(var(--reddit-bleed) * -1);
   padding: clamp(20px, 3.5vw, 34px);
   border-top: 3px solid var(--line);
   border-radius: 0 0 14px 14px;
@@ -367,7 +371,7 @@
   .reddit-archive {
     --reddit-bleed: 20px;
     width: calc(100% + (var(--reddit-bleed) * 2));
-    margin: 34px calc(var(--reddit-bleed) * -1) -24px;
+    margin: 0 calc(var(--reddit-bleed) * -1) -24px;
     padding: 18px 12px 24px;
     border-radius: 0 0 12px 12px;
   }

@@ -37,6 +37,7 @@ obras/minha-obra/index.html
 <link rel="stylesheet" href="../../css/obra-texto.css" />
 <link rel="stylesheet" href="../../css/site-footer.css" />
 <script src="../../js/site-header.js"></script>
+<script src="../../js/share.js"></script>
 ```
 
 4. Mantenha no cabeçalho as abas `Início`, `Acervo`, `Textos`, `Séries`, `Interativos` e `Sobre`.
@@ -44,3 +45,7 @@ obras/minha-obra/index.html
 5. Cadastre a obra em `js/obras-data.js`, preenchendo título, autor, data, categoria, tipos, resumo, imagem, link e tags. Use `textos`, `series` e/ou `interativos` no campo `tipos`.
 
 6. Para colocar a obra em destaque na home, adicione a tag `favorita` ou `destaque`. Se houver mais de uma, a mais recente fica em destaque.
+
+7. Atualize as metatags `canonical`, `og:*` e `twitter:*` com a URL pública, o título, o subtítulo e a imagem de capa da obra. Use URLs absolutas para que WhatsApp, Facebook e X consigam montar a prévia do link.
+
+8. Mantenha o script `../../js/share.js`. Ele insere automaticamente o seletor de compartilhamento antes do rodapé da obra.
