@@ -1,0 +1,87 @@
+.live-transcript {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(rgba(251, 250, 244, .96), rgba(251, 250, 244, .96)), repeating-linear-gradient(90deg, transparent 0 20px, rgba(11, 108, 84, .08) 20px 21px);
+}
+
+.live-transcript::before {
+  content: "01001101 01000001 01010100";
+  position: absolute;
+  top: 18px;
+  right: -22px;
+  color: rgba(11, 108, 84, .08);
+  font: 700 1.05rem/1.3 "Roboto Mono", monospace;
+  letter-spacing: .15em;
+  writing-mode: vertical-rl;
+  pointer-events: none;
+}
+
+.live-status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 700px;
+  margin: 0 0 28px;
+  padding: 12px 15px;
+  border: 2px solid var(--line);
+  border-radius: 12px;
+  background: var(--green-900);
+  color: #fff;
+  font: 700 .82rem/1 "Roboto Mono", monospace;
+  letter-spacing: .06em;
+}
+
+.live-status span:last-child { margin-left: auto; opacity: .75; }
+.live-dot { width: 10px; height: 10px; border-radius: 50%; background: #ff4b3e; box-shadow: 0 0 0 4px rgba(255, 75, 62, .2); }
+
+.live-transcript .mat-speech {
+  position: relative;
+  margin: 1.45em 0;
+  padding-left: 19px;
+  border-left: 5px solid var(--gold-bright);
+  color: var(--ink);
+  font-size: clamp(1.13rem, 1.55vw, 1.25rem);
+  font-weight: 600;
+  line-height: 1.76;
+}
+
+.live-transcript .mat-speech::before {
+  content: "MAT · ÁUDIO";
+  display: block;
+  margin-bottom: 7px;
+  color: var(--gold);
+  font: 800 .7rem/1 "Roboto Mono", monospace;
+  letter-spacing: .13em;
+}
+
+.live-transcript .mat-speech.continuation::before { content: "MAT · CONTINUA FALANDO"; }
+.live-transcript .mat-speech.short { font-size: clamp(1.2rem, 1.8vw, 1.38rem); }
+
+.live-transcript .chat {
+  position: relative;
+  width: min(91%, 610px);
+  margin: 12px 0 12px auto;
+  padding: 13px 16px 14px 82px;
+  border: 1px solid rgba(5, 44, 35, .28);
+  border-radius: 13px 3px 13px 13px;
+  background: rgba(5, 44, 35, .075);
+  box-shadow: 4px 4px 0 rgba(5, 44, 35, .1);
+  font-family: "Roboto Mono", monospace;
+}
+
+.live-transcript .chat.alien { border-color: rgba(0, 122, 91, .46); background: linear-gradient(100deg, rgba(8, 122, 91, .11), rgba(201, 242, 210, .2)); }
+.live-transcript .chat time { position: absolute; top: 15px; left: 14px; color: var(--muted); font-size: .72rem; font-weight: 600; }
+.live-transcript .chat strong { display: block; margin-bottom: 4px; color: var(--green-900); font-size: .82rem; }
+.live-transcript .chat p { margin: 0; color: var(--ink-soft); font-size: .93rem; line-height: 1.52; }
+.live-transcript .chat.removed { opacity: .62; font-style: italic; }
+
+.live-transcript .stage-direction { margin: 1.2em auto; color: var(--muted); font-size: .94rem; font-style: italic; text-align: center; }
+.live-transcript .system-event { margin: 1.2em auto; padding: 7px 12px; color: var(--green-700); font: 700 .78rem/1.4 "Roboto Mono", monospace; text-align: center; letter-spacing: .03em; }
+.live-transcript .donation { color: #956a00; }
+.live-transcript .ban { color: #9a302a; }
+.live-transcript .ended { margin-top: 2.2em; border-top: 2px dashed var(--line-soft); padding-top: 22px; color: #9a302a; }
+
+@media (max-width: 620px) {
+  .live-transcript .chat { width: 100%; padding-left: 70px; }
+  .live-transcript .mat-speech { padding-left: 14px; }
+}

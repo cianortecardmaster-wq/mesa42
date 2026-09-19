@@ -1,5 +1,24 @@
 window.MESA42_OBRAS = [
   {
+    titulo: 'Interface gosmenta',
+    autor: 'Neto',
+    data: '2026-09-19',
+    dataLabel: '19 de setembro de 2026',
+    categoria: 'Transmissão fictícia',
+    tipos: ['textos'],
+    resumo: 'Uma live sobre Flesh and Blood sai do controle quando espectadores de outras galáxias começam a discutir a estranha anatomia do apresentador.',
+    url: 'obras/interface-gosmenta/',
+    imagem: 'obras/interface-gosmenta/assets/interface-gosmenta.webp',
+    imagemAlt: 'Apresentador terrestre em uma live cercado por alienígenas e códigos do tradutor visual',
+    cta: 'Assistir à transmissão',
+    palavras: 1150,
+    tempoLeitura: 6,
+    leituraAdultos: true,
+    avisoLeitura: 'Linguagem imprópria, anatomia alienígena, flerte interestelar e decisões questionáveis.',
+    anuncio: 'Interface gosmenta já está no ar. Uma live terrestre, dois mil alienígenas e absolutamente nenhum controle do chat.',
+    tags: ['ficção científica', 'humor absurdo', 'card game']
+  },
+  {
     titulo: 'Descoberta absurda no Reddit',
     autor: 'Neto',
     data: '2026-07-27',
