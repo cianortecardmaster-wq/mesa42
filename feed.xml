@@ -9,7 +9,7 @@
     <link>https://mesa42.cianortecardmasters.com.br/</link>
     <description>Textos fantasiosos, documentos falsos, reportagens impossíveis, séries e experiências interativas do Mesa 42.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 19 Sep 2026 15:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 22 Sep 2026 15:00:00 GMT</lastBuildDate>
     <generator>Mesa 42 RSS Generator</generator>
     <ttl>60</ttl>
     <atom:link href="https://mesa42.cianortecardmasters.com.br/feed.xml" rel="self" type="application/rss+xml" />
@@ -18,6 +18,24 @@
       <title>Mesa 42</title>
       <link>https://mesa42.cianortecardmasters.com.br/</link>
     </image>
+
+    <item>
+      <title><![CDATA[O Surgimento de uma Lenda]]></title>
+      <link>https://mesa42.cianortecardmasters.com.br/obras/o-surgimento-de-uma-lenda/</link>
+      <guid isPermaLink="true">https://mesa42.cianortecardmasters.com.br/obras/o-surgimento-de-uma-lenda/</guid>
+      <pubDate>Tue, 22 Sep 2026 15:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Neto]]></dc:creator>
+      <category>Conto</category>
+      <category>textos</category>
+      <category>ficção científica</category>
+      <category>humor absurdo</category>
+      <category>Flesh and Blood</category>
+      <category>LactoCocos</category>
+      <description><![CDATA[<p><a href="https://mesa42.cianortecardmasters.com.br/obras/o-surgimento-de-uma-lenda/"><img src="https://mesa42.cianortecardmasters.com.br/obras/o-surgimento-de-uma-lenda/assets/lactococos.webp" alt="LactoCocos de terno diante de uma janela lunar com a Terra ao fundo, em ilustração retrô de ficção científica" /></a></p><p>Guilherme só queria terminar mais um dia, assistir a um torneio de Flesh and Blood e evitar qualquer contato desnecessário com o trabalho, com a ex e, se possível, com a vida adulta. Mas um iogurte esquecido na geladeira muda seus planos de forma bastante inconveniente. Entre decisões ruins, ciência duvidosa, partidas de card game e consequências cada vez mais estranhas, começa a história improvável de uma lenda.</p><p><a href="https://mesa42.cianortecardmasters.com.br/obras/o-surgimento-de-uma-lenda/">Ler conto no Mesa 42</a></p>]]></description>
+      <content:encoded><![CDATA[<p><a href="https://mesa42.cianortecardmasters.com.br/obras/o-surgimento-de-uma-lenda/"><img src="https://mesa42.cianortecardmasters.com.br/obras/o-surgimento-de-uma-lenda/assets/lactococos.webp" alt="LactoCocos de terno diante de uma janela lunar com a Terra ao fundo, em ilustração retrô de ficção científica" /></a></p><p>Guilherme só queria terminar mais um dia, assistir a um torneio de Flesh and Blood e evitar qualquer contato desnecessário com o trabalho, com a ex e, se possível, com a vida adulta. Mas um iogurte esquecido na geladeira muda seus planos de forma bastante inconveniente. Entre decisões ruins, ciência duvidosa, partidas de card game e consequências cada vez mais estranhas, começa a história improvável de uma lenda.</p><p><a href="https://mesa42.cianortecardmasters.com.br/obras/o-surgimento-de-uma-lenda/">Ler conto no Mesa 42</a></p>]]></content:encoded>
+      <media:content url="https://mesa42.cianortecardmasters.com.br/obras/o-surgimento-de-uma-lenda/assets/lactococos.webp" medium="image" type="image/webp" />
+      <media:thumbnail url="https://mesa42.cianortecardmasters.com.br/obras/o-surgimento-de-uma-lenda/assets/lactococos.webp" />
+    </item>
 
     <item>
       <title><![CDATA[Interface gosmenta]]></title>
