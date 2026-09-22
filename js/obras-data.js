@@ -1,5 +1,24 @@
 window.MESA42_OBRAS = [
   {
+    titulo: 'O Surgimento de uma Lenda',
+    autor: 'Neto',
+    data: '2026-09-22',
+    dataLabel: '22 de setembro de 2026',
+    categoria: 'Conto',
+    tipos: ['textos'],
+    resumo: 'Guilherme só queria terminar mais um dia, assistir a um torneio de Flesh and Blood e evitar qualquer contato desnecessário com o trabalho, com a ex e, se possível, com a vida adulta. Mas um iogurte esquecido na geladeira muda seus planos de forma bastante inconveniente. Entre decisões ruins, ciência duvidosa, partidas de card game e consequências cada vez mais estranhas, começa a história improvável de uma lenda.',
+    url: 'obras/o-surgimento-de-uma-lenda/',
+    imagem: 'obras/o-surgimento-de-uma-lenda/assets/lactococos.webp',
+    imagemAlt: 'LactoCocos de terno diante de uma janela lunar com a Terra ao fundo, em ilustração retrô de ficção científica',
+    cta: 'Ler conto',
+    palavras: 2056,
+    tempoLeitura: 11,
+    leituraAdultos: true,
+    avisoLeitura: 'Linguagem imprópria, drogas, escatologia, violência e morte.',
+    anuncio: 'O Surgimento de uma Lenda já está no ar. Um iogurte esquecido, ciência duvidosa e o nascimento improvável de LactoCocos.',
+    tags: ['ficção científica', 'humor absurdo', 'Flesh and Blood', 'LactoCocos']
+  },
+  {
     titulo: 'Interface gosmenta',
     autor: 'Neto',
     data: '2026-09-19',
