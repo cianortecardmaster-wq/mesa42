@@ -11,7 +11,7 @@ window.MESA42_OBRAS = [
     imagem: 'obras/o-surgimento-de-uma-lenda/assets/lactococos.webp',
     imagemAlt: 'LactoCocos de terno diante de uma janela lunar com a Terra ao fundo, em ilustração retrô de ficção científica',
     cta: 'Ler conto',
-    palavras: 2056,
+    palavras: 2030,
     tempoLeitura: 11,
     leituraAdultos: true,
     avisoLeitura: 'Linguagem imprópria, drogas, escatologia, violência e morte.',
