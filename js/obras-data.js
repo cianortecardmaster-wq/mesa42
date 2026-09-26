@@ -1,5 +1,24 @@
 window.MESA42_OBRAS = [
   {
+    titulo: 'Os Ilusionistas',
+    autor: 'Neto',
+    data: '2026-09-26',
+    dataLabel: '26 de setembro de 2026',
+    categoria: 'Conto',
+    tipos: ['textos'],
+    resumo: 'Um deck de Ilusionista comprado barato leva Deva e Jussara de uma conversa sobre cartas pimpadas à fundação completamente razoável de uma nova religião.',
+    url: 'obras/os-ilusionistas/',
+    imagem: 'obras/os-ilusionistas/assets/os-ilusionistas.webp',
+    imagemAlt: 'Carta de Zyggy Starlight pairando sobre um deck em um cenário cósmico retrô de ficção científica',
+    cta: 'Ler conto',
+    palavras: 574,
+    tempoLeitura: 3,
+    leituraAdultos: true,
+    avisoLeitura: 'Linguagem imprópria, sátira religiosa e decisões financeiras questionáveis.',
+    anuncio: 'Novo conto no ar: Os Ilusionistas. Um deck caro, uma conversão religiosa e o nascimento de uma fé perfeitamente conveniente.',
+    tags: ['ficção científica', 'humor absurdo', 'card game', 'Flesh and Blood']
+  },
+  {
     titulo: 'O Surgimento de uma Lenda',
     autor: 'Neto',
     data: '2026-09-22',

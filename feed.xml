@@ -9,7 +9,7 @@
     <link>https://mesa42.cianortecardmasters.com.br/</link>
     <description>Textos fantasiosos, documentos falsos, reportagens impossíveis, séries e experiências interativas do Mesa 42.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Tue, 22 Sep 2026 15:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sat, 26 Sep 2026 15:00:00 GMT</lastBuildDate>
     <generator>Mesa 42 RSS Generator</generator>
     <ttl>60</ttl>
     <atom:link href="https://mesa42.cianortecardmasters.com.br/feed.xml" rel="self" type="application/rss+xml" />
@@ -18,6 +18,24 @@
       <title>Mesa 42</title>
       <link>https://mesa42.cianortecardmasters.com.br/</link>
     </image>
+
+    <item>
+      <title><![CDATA[Os Ilusionistas]]></title>
+      <link>https://mesa42.cianortecardmasters.com.br/obras/os-ilusionistas/</link>
+      <guid isPermaLink="true">https://mesa42.cianortecardmasters.com.br/obras/os-ilusionistas/</guid>
+      <pubDate>Sat, 26 Sep 2026 15:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Neto]]></dc:creator>
+      <category>Conto</category>
+      <category>textos</category>
+      <category>ficção científica</category>
+      <category>humor absurdo</category>
+      <category>card game</category>
+      <category>Flesh and Blood</category>
+      <description><![CDATA[<p><a href="https://mesa42.cianortecardmasters.com.br/obras/os-ilusionistas/"><img src="https://mesa42.cianortecardmasters.com.br/obras/os-ilusionistas/assets/os-ilusionistas.webp" alt="Carta de Zyggy Starlight pairando sobre um deck em um cenário cósmico retrô de ficção científica" /></a></p><p>Um deck de Ilusionista comprado barato leva Deva e Jussara de uma conversa sobre cartas pimpadas à fundação completamente razoável de uma nova religião.</p><p><a href="https://mesa42.cianortecardmasters.com.br/obras/os-ilusionistas/">Ler conto no Mesa 42</a></p>]]></description>
+      <content:encoded><![CDATA[<p><a href="https://mesa42.cianortecardmasters.com.br/obras/os-ilusionistas/"><img src="https://mesa42.cianortecardmasters.com.br/obras/os-ilusionistas/assets/os-ilusionistas.webp" alt="Carta de Zyggy Starlight pairando sobre um deck em um cenário cósmico retrô de ficção científica" /></a></p><p>Um deck de Ilusionista comprado barato leva Deva e Jussara de uma conversa sobre cartas pimpadas à fundação completamente razoável de uma nova religião.</p><p><a href="https://mesa42.cianortecardmasters.com.br/obras/os-ilusionistas/">Ler conto no Mesa 42</a></p>]]></content:encoded>
+      <media:content url="https://mesa42.cianortecardmasters.com.br/obras/os-ilusionistas/assets/os-ilusionistas.webp" medium="image" type="image/webp" />
+      <media:thumbnail url="https://mesa42.cianortecardmasters.com.br/obras/os-ilusionistas/assets/os-ilusionistas.webp" />
+    </item>
 
     <item>
       <title><![CDATA[O Surgimento de uma Lenda]]></title>
