@@ -1,5 +1,22 @@
 window.MESA42_OBRAS = [
   {
+    titulo: 'A carta “Eu Existo” realmente existiu — e deu trabalho',
+    autor: 'Neto',
+    data: '2026-09-29',
+    dataLabel: '29 de setembro de 2026',
+    categoria: 'Artigo fictício',
+    tipos: ['textos'],
+    resumo: 'Uma carta sem texto, sem arte, sem classe e, aparentemente, sem muita utilidade conseguiu causar mais problemas do que muita carta realmente forte. Entre decisões de design, soluções de marketing, discussões sobre o meta e um banimento precoce, “Eu Existo” provou que até aquilo que ninguém consegue ver pode mudar bastante coisa.',
+    url: 'obras/a-carta-eu-existo-realmente-existiu/',
+    imagem: 'obras/a-carta-eu-existo-realmente-existiu/assets/eu-existo.webp',
+    imagemAlt: 'Pessoa mostrando uma pasta de cartas colecionáveis com três espaços vazios, em uma ilustração retrô de ficção científica',
+    cta: 'Ler artigo',
+    palavras: 1201,
+    tempoLeitura: 7,
+    anuncio: 'Novo artigo no ar: “Eu Existo” realmente existiu — e deu trabalho. Uma carta invisível, um banimento e três espaços vazios na pasta.',
+    tags: ['ficção documental', 'humor absurdo', 'card game', 'Flesh and Blood']
+  },
+  {
     titulo: 'Os Ilusionistas',
     autor: 'Neto',
     data: '2026-09-26',

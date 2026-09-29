@@ -9,7 +9,7 @@
     <link>https://mesa42.cianortecardmasters.com.br/</link>
     <description>Textos fantasiosos, documentos falsos, reportagens impossíveis, séries e experiências interativas do Mesa 42.</description>
     <language>pt-BR</language>
-    <lastBuildDate>Sat, 26 Sep 2026 15:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2026 15:00:00 GMT</lastBuildDate>
     <generator>Mesa 42 RSS Generator</generator>
     <ttl>60</ttl>
     <atom:link href="https://mesa42.cianortecardmasters.com.br/feed.xml" rel="self" type="application/rss+xml" />
@@ -18,6 +18,24 @@
       <title>Mesa 42</title>
       <link>https://mesa42.cianortecardmasters.com.br/</link>
     </image>
+
+    <item>
+      <title><![CDATA[A carta “Eu Existo” realmente existiu — e deu trabalho]]></title>
+      <link>https://mesa42.cianortecardmasters.com.br/obras/a-carta-eu-existo-realmente-existiu/</link>
+      <guid isPermaLink="true">https://mesa42.cianortecardmasters.com.br/obras/a-carta-eu-existo-realmente-existiu/</guid>
+      <pubDate>Tue, 29 Sep 2026 15:00:00 GMT</pubDate>
+      <dc:creator><![CDATA[Neto]]></dc:creator>
+      <category>Artigo fictício</category>
+      <category>textos</category>
+      <category>ficção documental</category>
+      <category>humor absurdo</category>
+      <category>card game</category>
+      <category>Flesh and Blood</category>
+      <description><![CDATA[<p><a href="https://mesa42.cianortecardmasters.com.br/obras/a-carta-eu-existo-realmente-existiu/"><img src="https://mesa42.cianortecardmasters.com.br/obras/a-carta-eu-existo-realmente-existiu/assets/eu-existo.webp" alt="Pessoa mostrando uma pasta de cartas colecionáveis com três espaços vazios, em uma ilustração retrô de ficção científica" /></a></p><p>Uma carta sem texto, sem arte, sem classe e, aparentemente, sem muita utilidade conseguiu causar mais problemas do que muita carta realmente forte. Entre decisões de design, soluções de marketing, discussões sobre o meta e um banimento precoce, “Eu Existo” provou que até aquilo que ninguém consegue ver pode mudar bastante coisa.</p><p><a href="https://mesa42.cianortecardmasters.com.br/obras/a-carta-eu-existo-realmente-existiu/">Ler artigo no Mesa 42</a></p>]]></description>
+      <content:encoded><![CDATA[<p><a href="https://mesa42.cianortecardmasters.com.br/obras/a-carta-eu-existo-realmente-existiu/"><img src="https://mesa42.cianortecardmasters.com.br/obras/a-carta-eu-existo-realmente-existiu/assets/eu-existo.webp" alt="Pessoa mostrando uma pasta de cartas colecionáveis com três espaços vazios, em uma ilustração retrô de ficção científica" /></a></p><p>Uma carta sem texto, sem arte, sem classe e, aparentemente, sem muita utilidade conseguiu causar mais problemas do que muita carta realmente forte. Entre decisões de design, soluções de marketing, discussões sobre o meta e um banimento precoce, “Eu Existo” provou que até aquilo que ninguém consegue ver pode mudar bastante coisa.</p><p><a href="https://mesa42.cianortecardmasters.com.br/obras/a-carta-eu-existo-realmente-existiu/">Ler artigo no Mesa 42</a></p>]]></content:encoded>
+      <media:content url="https://mesa42.cianortecardmasters.com.br/obras/a-carta-eu-existo-realmente-existiu/assets/eu-existo.webp" medium="image" type="image/webp" />
+      <media:thumbnail url="https://mesa42.cianortecardmasters.com.br/obras/a-carta-eu-existo-realmente-existiu/assets/eu-existo.webp" />
+    </item>
 
     <item>
       <title><![CDATA[Os Ilusionistas]]></title>
