@@ -1,92 +1,93 @@
 (() => {
-  const roots = document.querySelectorAll('[data-share-root]');
-  if (!roots.length) return;
+  'use strict';
 
-  const ogTitle = document.querySelector('meta[property="og:title"]')?.content?.trim();
-  const ogDescription = document.querySelector('meta[property="og:description"]')?.content?.trim();
-  const ogUrl = document.querySelector('meta[property="og:url"]')?.content?.trim();
-  const pageTitle = ogTitle || document.querySelector('h1')?.textContent?.trim() || document.title;
-  const pageSubtitle = ogDescription || document.querySelector('.subtitle')?.textContent?.trim() || '';
-  const pageUrl = ogUrl || window.location.href;
-  const composedText = pageSubtitle ? `${pageTitle} — ${pageSubtitle}` : pageTitle;
-  const instaText = `${pageTitle}
-${pageSubtitle}
-${pageUrl}`.trim();
+  const whatsappButtons = document.querySelectorAll('[data-share-whatsapp]');
+  const facebookButtons = document.querySelectorAll('[data-share-facebook]');
+  const xButtons = document.querySelectorAll('[data-share-x]');
+  const instagramButtons = document.querySelectorAll('[data-share-instagram]');
 
-  let openRoot = null;
+  if (!whatsappButtons.length && !facebookButtons.length && !xButtons.length && !instagramButtons.length) return;
 
-  const closePanel = (root) => {
-    const trigger = root.querySelector('[data-share-trigger]');
-    const panel = root.querySelector('[data-share-panel]');
-    if (!trigger || !panel) return;
-    panel.hidden = true;
-    trigger.setAttribute('aria-expanded', 'false');
-    if (openRoot === root) openRoot = null;
+  const getMeta = (selector, fallback = '') => {
+    const element = document.querySelector(selector);
+    return element?.getAttribute('content')?.trim() || fallback;
   };
 
-  const openPanel = (root) => {
-    if (openRoot && openRoot !== root) closePanel(openRoot);
-    const trigger = root.querySelector('[data-share-trigger]');
-    const panel = root.querySelector('[data-share-panel]');
-    if (!trigger || !panel) return;
-    panel.hidden = false;
-    trigger.setAttribute('aria-expanded', 'true');
-    openRoot = root;
+  const pageTitle = getMeta('meta[property="og:title"]', document.querySelector('h1')?.textContent?.trim() || document.title);
+  const pageSummary = getMeta('meta[property="og:description"]', document.querySelector('.subtitle')?.textContent?.trim() || '');
+  const pageUrl = document.querySelector('link[rel="canonical"]')?.href || getMeta('meta[property="og:url"]', window.location.href);
+  const shareText = [pageTitle, pageSummary, pageUrl].filter(Boolean).join('\n\n');
+  const postText = [pageTitle, pageSummary].filter(Boolean).join(' — ');
+
+  const encodedUrl = encodeURIComponent(pageUrl);
+  const encodedShareText = encodeURIComponent(shareText);
+  const encodedPostText = encodeURIComponent(postText);
+
+  whatsappButtons.forEach((button) => {
+    button.href = `https://wa.me/?text=${encodedShareText}`;
+  });
+
+  facebookButtons.forEach((button) => {
+    button.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+  });
+
+  xButtons.forEach((button) => {
+    button.href = `https://x.com/intent/post?text=${encodedPostText}&url=${encodedUrl}`;
+  });
+
+  let toastTimer = null;
+  const showToast = (message) => {
+    let toast = document.querySelector('[data-share-toast]');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.className = 'share-toast';
+      toast.dataset.shareToast = '';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      document.body.appendChild(toast);
+    }
+
+    toast.textContent = message;
+    toast.classList.add('is-visible');
+    window.clearTimeout(toastTimer);
+    toastTimer = window.setTimeout(() => toast.classList.remove('is-visible'), 3200);
   };
 
-  roots.forEach((root) => {
-    const trigger = root.querySelector('[data-share-trigger]');
-    const panel = root.querySelector('[data-share-panel]');
-    const whatsapp = root.querySelector('[data-share-whatsapp]');
-    const facebook = root.querySelector('[data-share-facebook]');
-    const x = root.querySelector('[data-share-x]');
-    const instagram = root.querySelector('[data-share-instagram]');
-    const feedback = root.querySelector('[data-share-feedback]');
+  const copyText = async (text) => {
+    if (navigator.clipboard?.writeText) {
+      await navigator.clipboard.writeText(text);
+      return;
+    }
 
-    if (!trigger || !panel || !whatsapp || !facebook || !x || !instagram) return;
+    const input = document.createElement('textarea');
+    input.value = text;
+    input.setAttribute('readonly', '');
+    input.style.position = 'fixed';
+    input.style.opacity = '0';
+    document.body.appendChild(input);
+    input.select();
+    document.execCommand('copy');
+    input.remove();
+  };
 
-    const encodedUrl = encodeURIComponent(pageUrl);
-    const encodedText = encodeURIComponent(`${composedText} ${pageUrl}`);
-    const encodedXText = encodeURIComponent(composedText);
-
-    whatsapp.href = `https://api.whatsapp.com/send?text=${encodedText}`;
-    facebook.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
-    x.href = `https://x.com/intent/post?text=${encodedXText}&url=${encodedUrl}`;
-
-    trigger.addEventListener('click', () => {
-      const expanded = trigger.getAttribute('aria-expanded') === 'true';
-      if (expanded) closePanel(root); else openPanel(root);
-    });
-
-    const setFeedback = (message) => {
-      if (feedback) feedback.textContent = message;
-    };
-
-    instagram.addEventListener('click', async () => {
-      try {
-        if (navigator.share && /Android|iPhone|iPad|iPod/i.test(navigator.userAgent)) {
-          await navigator.share({ title: pageTitle, text: pageSubtitle, url: pageUrl });
-          setFeedback('Compartilhamento aberto no aparelho.');
-        } else if (navigator.clipboard?.writeText) {
-          await navigator.clipboard.writeText(instaText);
-          setFeedback('Texto copiado. Cole no Instagram e adicione a imagem da obra.');
-          window.open('https://www.instagram.com/', '_blank', 'noopener');
-        } else {
-          setFeedback('Copie manualmente o link desta página para usar no Instagram.');
+  instagramButtons.forEach((button) => {
+    button.addEventListener('click', async () => {
+      if (navigator.share) {
+        try {
+          await navigator.share({ title: pageTitle, text: pageSummary, url: pageUrl });
+          return;
+        } catch (error) {
+          if (error?.name === 'AbortError') return;
         }
-      } catch (error) {
-        setFeedback('Não foi possível compartilhar agora.');
+      }
+
+      try {
+        await copyText(shareText);
+        showToast('Título, resumo, tempo de leitura e link copiados. Cole no Instagram.');
+        window.open('https://www.instagram.com/', '_blank', 'noopener,noreferrer');
+      } catch {
+        showToast('Não foi possível copiar automaticamente. Copie o endereço desta página.');
       }
     });
-  });
-
-  document.addEventListener('click', (event) => {
-    if (!openRoot) return;
-    if (openRoot.contains(event.target)) return;
-    closePanel(openRoot);
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && openRoot) closePanel(openRoot);
   });
 })();
