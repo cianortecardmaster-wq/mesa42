@@ -6,6 +6,10 @@
   const searchForm = document.querySelector('#searchForm');
   const status = document.querySelector('#searchStatus');
   const clearButton = document.querySelector('#clearFilter');
+  const paginationRoot = document.querySelector('#homePagination');
+  const limite = 10;
+  const params = new URLSearchParams(window.location.search);
+  let pagina = Math.max(1, Number.parseInt(params.get('pagina') || '1', 10) || 1);
 
   const normalizar = (valor) => String(valor || '')
     .normalize('NFD')
@@ -78,6 +82,33 @@
     });
   };
 
+  const criarUrlPagina = (numero) => {
+    const url = new URL(window.location.href);
+    if (numero > 1) url.searchParams.set('pagina', String(numero));
+    else url.searchParams.delete('pagina');
+    url.searchParams.delete('busca');
+    return `${url.pathname}${url.search}`;
+  };
+
+  const montarPaginacao = (paginaAtual, totalPaginas) => {
+    if (!paginationRoot) return;
+    if (busca || totalPaginas <= 1) {
+      paginationRoot.innerHTML = '';
+      paginationRoot.hidden = true;
+      return;
+    }
+
+    paginationRoot.hidden = false;
+    const anteriores = paginaAtual > 1
+      ? `<a class="home-pagination-link" href="${criarUrlPagina(paginaAtual - 1)}">← Obras mais recentes</a>`
+      : '<span class="home-pagination-link is-disabled" aria-disabled="true">← Obras mais recentes</span>';
+    const antigas = paginaAtual < totalPaginas
+      ? `<a class="home-pagination-link" href="${criarUrlPagina(paginaAtual + 1)}">Obras mais antigas →</a>`
+      : '<span class="home-pagination-link is-disabled" aria-disabled="true">Obras mais antigas →</span>';
+
+    paginationRoot.innerHTML = `${anteriores}<span class="home-pagination-page">Página ${paginaAtual} de ${totalPaginas}</span>${antigas}`;
+  };
+
   const renderizar = () => {
     if (!root) return;
     const termo = normalizar(busca);
@@ -89,32 +120,47 @@
       obra.resumo,
       ...(obra.tags || [])
     ].join(' ')).includes(termo));
-    const exibidas = filtradas.slice(0, 10);
+    const totalPaginas = Math.max(1, Math.ceil(filtradas.length / limite));
+    if (busca) pagina = 1;
+    pagina = Math.min(pagina, totalPaginas);
+    const inicio = (pagina - 1) * limite;
+    const exibidas = filtradas.slice(inicio, inicio + limite);
 
     root.innerHTML = exibidas.length
       ? exibidas.map(montarCard).join('')
       : '<div class="empty-state">Nenhuma obra corresponde à busca. Tente outro termo.</div>';
 
-    if (status) status.textContent = busca
-      ? `${filtradas.length} ${filtradas.length === 1 ? 'obra encontrada' : 'obras encontradas'} para “${busca}”.`
-      : '';
+    if (status) {
+      if (busca) {
+        status.textContent = `${filtradas.length} ${filtradas.length === 1 ? 'obra encontrada' : 'obras encontradas'} para “${busca}”.`;
+      } else if (filtradas.length) {
+        const fim = Math.min(inicio + limite, filtradas.length);
+        status.textContent = `Exibindo ${inicio + 1}–${fim} de ${filtradas.length} obras, da mais recente para a mais antiga.`;
+      } else {
+        status.textContent = '';
+      }
+    }
     if (clearButton) clearButton.hidden = !busca;
+    montarPaginacao(pagina, totalPaginas);
     ativarCards();
   };
 
   searchForm?.addEventListener('submit', (event) => {
     event.preventDefault();
     busca = searchInput?.value.trim() || '';
+    pagina = 1;
     renderizar();
   });
 
   searchInput?.addEventListener('input', () => {
     busca = searchInput.value.trim();
+    pagina = 1;
     renderizar();
   });
 
   clearButton?.addEventListener('click', () => {
     busca = '';
+    pagina = 1;
     if (searchInput) searchInput.value = '';
     renderizar();
   });

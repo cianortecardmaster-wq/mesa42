@@ -415,3 +415,16 @@ body.high-contrast { --catalog-page: #eef2f0; --catalog-shadow: #001c15; }
   .catalog-pagination a,
   .catalog-pagination > span:not(.pagination-gap) { min-width: 38px; min-height: 38px; padding: 7px 9px; }
 }
+
+/* Séries são um catálogo enxuto de obras realmente sequenciais. */
+.series-page .catalog-shell {
+  width: min(1040px, calc(100% - 36px));
+  grid-template-columns: 1fr;
+}
+.series-page .catalog-card {
+  grid-template-columns: minmax(280px, 38%) minmax(0, 1fr);
+}
+@media (max-width: 760px) {
+  .series-page .catalog-shell { width: min(100% - 22px, 1040px); }
+  .series-page .catalog-card { grid-template-columns: 1fr; }
+}

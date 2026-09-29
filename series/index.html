@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Séries | Mesa 42</title>
-  <meta name="description" content="Capítulos, obras continuadas e textos ligados pelo mesmo universo. As publicações aparecem pela data mais recente." />
+  <meta name="description" content="Obras publicadas em capítulos ou com continuidade direta entre suas partes." />
   <meta name="theme-color" content="#052c23" />
   <link rel="icon" type="image/png" href="../assets/icon-mesa42.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="../css/catalogo.css" />
   <link rel="stylesheet" href="../css/site-footer.css" />
 </head>
-<body data-root="../" data-catalog-type="series">
+<body class="series-page" data-root="../" data-catalog-type="series">
   <div class="site-announcement-bar" aria-label="Conteúdo mais recente">
     <div class="site-announcement-inner">
       <span class="site-announcement-label">Novo conteúdo</span>
@@ -38,7 +38,9 @@
 
   <div class="site-navigation-shell">
     <nav class="site-main-nav" aria-label="Navegação principal">
-      <a class="" href="../">Início</a><a class="" href="../acervo/">Acervo</a><a class="" href="../textos/">Textos</a><a class="is-active" href="../series/">Séries</a><a class="" href="../interativos/">Interativos</a><a class="" href="../sobre/">Sobre</a>
+      <a href="../">Início</a>
+      <a class="is-active" href="../series/">Séries</a>
+      <a href="../sobre/">Sobre</a>
       <button class="site-theme-button" type="button" data-site-theme-button aria-label="Alternar contraste da página" title="Alternar contraste"><span aria-hidden="true">☀</span></button>
     </nav>
   </div>
@@ -46,46 +48,17 @@
   <main class="catalog-shell">
     <section class="catalog-main" aria-labelledby="catalog-title">
       <header class="catalog-header">
-        <p class="catalog-kicker">Histórias conectadas</p>
+        <p class="catalog-kicker">Obras sequenciais</p>
         <h1 id="catalog-title">Séries</h1>
-        <p class="catalog-intro">Capítulos, obras continuadas e textos ligados pelo mesmo universo. As publicações aparecem pela data mais recente.</p>
+        <p class="catalog-intro">Obras publicadas em capítulos ou com continuidade direta entre suas partes. No momento, a série disponível é <strong>Command and Conquer</strong>.</p>
       </header>
 
       <div class="catalog-toolbar">
         <p class="catalog-status" id="catalogStatus" aria-live="polite"></p>
-        <button class="catalog-clear" id="catalogClear" type="button" hidden>Limpar busca</button>
       </div>
       <div class="catalog-list" id="catalogList"></div>
       <nav class="catalog-pagination" id="catalogPagination" aria-label="Paginação do acervo"></nav>
     </section>
-
-    <aside class="catalog-sidebar" aria-label="Ferramentas do acervo">
-      <section class="catalog-side-card" aria-labelledby="catalog-search-title">
-        <h2 id="catalog-search-title">Buscar</h2>
-        <form class="catalog-search-form" id="catalogSearchForm" role="search">
-          <label class="sr-only" for="catalogSearch">Buscar nesta seção</label>
-          <input id="catalogSearch" type="search" name="busca" placeholder="Buscar no Mesa 42..." autocomplete="off" />
-          <button type="submit" aria-label="Executar busca">
-            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z" /></svg>
-          </button>
-        </form>
-      </section>
-
-      <section class="catalog-side-card" aria-labelledby="catalog-nav-title">
-        <h2 id="catalog-nav-title">Navegar</h2>
-        <nav class="catalog-nav-list" aria-label="Seções do acervo">
-          <a class="" href="../acervo/">Acervo completo <span>→</span></a>
-          <a class="" href="../textos/">Textos <span>→</span></a>
-          <a class="is-active" href="../series/">Séries <span>→</span></a>
-          <a class="" href="../interativos/">Interativos <span>→</span></a>
-        </nav>
-      </section>
-
-      <section class="catalog-side-card catalog-note">
-        <h2>25 por página</h2>
-        <p>As obras aparecem da mais recente para a mais antiga. Quando o acervo passar de 25 itens, os links de navegação levam às publicações anteriores.</p>
-      </section>
-    </aside>
   </main>
 
   <footer class="global-footer">
@@ -102,10 +75,7 @@
         <h3>Mapa do site</h3>
         <nav aria-label="Mapa do site">
           <a href="../">Início</a>
-          <a href="../acervo/">Acervo</a>
-          <a href="../textos/">Textos</a>
           <a href="../series/">Séries</a>
-          <a href="../interativos/">Interativos</a>
           <a href="../sobre/">Sobre</a>
         </nav>
       </section>

@@ -62,11 +62,8 @@
   <div class="navigation-shell">
     <nav class="main-nav" aria-label="Navegação principal">
       <a class="is-active" href="./">Início</a>
-      <a href="acervo/">Acervo</a>
-      <a href="textos/">Textos</a>
-      <a href="series/">Séries</a>
-      <a href="interativos/">Interativos</a>
-      <a href="sobre/">Sobre</a>
+      <a href="./series/">Séries</a>
+      <a href="./sobre/">Sobre</a>
       <button class="theme-button" type="button" id="themeButton" aria-label="Alternar contraste da página" title="Alternar contraste">
         <span aria-hidden="true">☀</span>
       </button>
@@ -77,14 +74,15 @@
     <section class="content-column" aria-labelledby="archive-title">
       <div class="content-heading">
         <div>
-          <p class="section-kicker">Publicações recentes</p>
-          <h1 id="archive-title">Últimas obras</h1>
+          <p class="section-kicker">Arquivo em ordem de publicação</p>
+          <h1 id="archive-title">Todas as obras</h1>
         </div>
         <button class="clear-filter" id="clearFilter" type="button" hidden>Mostrar todas</button>
       </div>
 
       <p class="search-status" id="searchStatus" aria-live="polite"></p>
       <div class="archive-list" id="archiveList"></div>
+      <nav class="home-pagination" id="homePagination" aria-label="Navegação entre publicações"></nav>
     </section>
 
     <aside class="sidebar" aria-label="Recursos do Mesa 42">
@@ -198,12 +196,9 @@
       <section>
         <h3>Mapa do site</h3>
         <nav aria-label="Mapa do site">
-          <a href="">Início</a>
-          <a href="acervo/">Acervo</a>
-          <a href="textos/">Textos</a>
-          <a href="series/">Séries</a>
-          <a href="interativos/">Interativos</a>
-          <a href="sobre/">Sobre</a>
+          <a href="./">Início</a>
+          <a href="./series/">Séries</a>
+          <a href="./sobre/">Sobre</a>
         </nav>
       </section>
 

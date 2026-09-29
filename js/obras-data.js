@@ -117,7 +117,7 @@ window.MESA42_OBRAS = [
     data: '2026-07-10',
     dataLabel: '10 de julho de 2026',
     categoria: 'Reportagem fictícia',
-    tipos: ['textos', 'series'],
+    tipos: ['textos'],
     resumo: 'Milhares de naves retornam à Terra, a Lua entra em disputa e uma possível invasão se transforma no anúncio do maior torneio de card game do universo conhecido.',
     url: 'obras/anuncio-grande-torneio-galactico-card-game/',
     imagem: 'obras/anuncio-grande-torneio-galactico-card-game/assets/thumb-grande-torneio-galactico.png',
@@ -127,7 +127,7 @@ window.MESA42_OBRAS = [
     tempoLeitura: 23,
     leituraAdultos: true,
     avisoLeitura: 'Palavrões, mutilações, pânico global e decisões diplomáticas questionáveis.',
-    tags: ['reportagem fictícia', 'série', 'grande torneio galáctico', 'telejornal']
+    tags: ['reportagem fictícia', 'grande torneio galáctico', 'telejornal']
   },
   {
     titulo: 'O caso H4r78lump3r7 Fl0657r0p3d',
@@ -135,7 +135,7 @@ window.MESA42_OBRAS = [
     data: '2026-07-09',
     dataLabel: '9 de julho de 2026',
     categoria: 'Reportagem fictícia',
-    tipos: ['textos', 'series'],
+    tipos: ['textos'],
     resumo: 'Um relatório jornalístico sobre a carta Desmembramento Permanente, uma anomalia neuropsicogravitacional e o projeto artístico bilíngue recuperado de um designer sintético.',
     url: 'obras/caso-h4r78lump3r7-desmembramento-permanente/',
     imagem: 'obras/caso-h4r78lump3r7-desmembramento-permanente/assets/thumb-desmembramento-permanente.webp',
@@ -145,7 +145,7 @@ window.MESA42_OBRAS = [
     tempoLeitura: 20,
     leituraAdultos: true,
     avisoLeitura: 'Desmembramento, violência gráfica, mutilações e decisões artísticas questionáveis.',
-    tags: ['ficção documental', 'projeto artístico', 'card game', 'série']
+    tags: ['ficção documental', 'projeto artístico', 'card game']
   },
   {
     titulo: 'Vença o campeão nacional',

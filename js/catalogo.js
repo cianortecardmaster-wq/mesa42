@@ -150,7 +150,9 @@
       const faixaFim = Math.min(inicio + limite, filtradas.length);
       statusRoot.textContent = busca
         ? `${filtradas.length} ${filtradas.length === 1 ? 'resultado' : 'resultados'} para “${busca}”. Exibindo ${faixaInicio}–${faixaFim}.`
-        : `${filtradas.length} ${filtradas.length === 1 ? 'publicação' : 'publicações'} em ordem da mais recente para a mais antiga.`;
+        : tipo === 'series'
+          ? `${filtradas.length} ${filtradas.length === 1 ? 'série disponível' : 'séries disponíveis'}.`
+          : `${filtradas.length} ${filtradas.length === 1 ? 'publicação' : 'publicações'} em ordem da mais recente para a mais antiga.`;
     }
 
     if (clearButton) clearButton.hidden = !busca;

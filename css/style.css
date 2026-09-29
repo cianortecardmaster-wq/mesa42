@@ -378,6 +378,49 @@ a {
   gap: 22px;
 }
 
+.home-pagination {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+}
+
+.home-pagination-link {
+  min-height: 46px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  border: 2px solid var(--green-950);
+  border-radius: 11px;
+  color: var(--green-950);
+  background: var(--paper);
+  box-shadow: 4px 4px 0 var(--shadow);
+  font-weight: 800;
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+
+.home-pagination-link:not(.is-disabled):hover,
+.home-pagination-link:not(.is-disabled):focus-visible {
+  transform: translate(-2px, -2px);
+  background: var(--gold-100);
+  box-shadow: 6px 6px 0 var(--shadow);
+}
+
+.home-pagination-link.is-disabled {
+  opacity: .35;
+  box-shadow: none;
+}
+
+.home-pagination-page {
+  color: var(--muted);
+  font-size: .9rem;
+  font-weight: 750;
+  text-align: center;
+}
+
 .work-card {
   position: relative;
   display: grid;
@@ -1052,5 +1095,15 @@ a {
   *::after {
     transition-duration: .01ms !important;
     animation-duration: .01ms !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-pagination {
+    grid-template-columns: 1fr 1fr;
+  }
+  .home-pagination-page {
+    grid-column: 1 / -1;
+    grid-row: 1;
   }
 }
