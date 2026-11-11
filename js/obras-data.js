@@ -1,5 +1,24 @@
 window.MESA42_OBRAS = [
   {
+    titulo: "Tudo, em Todo Lugar, Está Ofendido",
+    autor: "Neto",
+    data: "2026-11-11",
+    dataLabel: "11 de novembro de 2026",
+    categoria: "Conto",
+    tipos: ["textos"],
+    resumo: "Num planeta inóspito, um sujeito pousa a quinze metros de uma pedra, saca um megafone e a insulta. A pedra, que até então vinha se comportando como uma pedra, leva para o lado pessoal. Em outro universo, um juiz de torneio acha que o problema é slow play. Em outro, o governo autoriza gastar o que for preciso para descobrir até onde a ofensa pode chegar. Quanto ao rei, a equipe tomou todas as precauções. Deixou que ele relaxasse jogando cartas na internet.",
+    url: "obras/tudo-em-todo-lugar-esta-ofendido/",
+    imagem: "assets/hero-banner-bg.png",
+    imagemAlt: "Arte de fundo do Mesa 42",
+    cta: "Ler conto",
+    palavras: 1430,
+    tempoLeitura: 8,
+    leituraAdultos: true,
+    avisoLeitura: "Linguagem imprópria e violência.",
+    anuncio: "Novo conto no ar: Tudo, em Todo Lugar, Está Ofendido. Uma pedra ofendida, um torneio e uma crise no multiverso.",
+    tags: ["SCI-FI", "Multiverso", "Flesh and Blood", "Comédia"]
+  },
+  {
     titulo: 'A carta “Eu Existo” realmente existiu — e deu trabalho',
     autor: 'Neto',
     data: '2026-09-29',
