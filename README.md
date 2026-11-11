@@ -111,7 +111,6 @@ Exemplos:
 
 ```txt
 obras/command-and-conquer/
-obras/venca-o-campeao-nacional/
 obras/financiamento-coletivo-cartas-nosso-dinheiro/
 ```
 
